@@ -13,42 +13,14 @@
             background-color: #121212;
             color: #ffffff;
         }
-        .toggle-button {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
     </style>
 </head>
-<body>
-    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<body class="dark-mode">
     <h1>Welcome to My Projects</h1>
     <ul>
         <li><a href="project1/index.html">Project 1</a></li>
         <li><a href="project2/index.html">Project 2</a></li>
         <!-- Add more projects as needed -->
     </ul>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            // Save the preference to localStorage
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                localStorage.removeItem('darkMode');
-            }
-        }
-
-        // Check for saved preference and apply dark mode if enabled
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            document.body.classList.add('dark-mode');
-        }
-    </script>
 </body>
 </html>
