@@ -1,9 +1,11 @@
-name: CI
+name: Commit Message Lint
 
-on: [push, pull_request]
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
 
 jobs:
-  build:
+  commit-lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,5 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Lint commit messages
+        run: npx commitlint --from=HEAD~10 --to=HEAD
+        env:
+          CI: true
