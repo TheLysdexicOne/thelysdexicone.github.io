@@ -1,9 +1,3 @@
-Let's keep organized.
+# Prompt
 
-Create a folder for documentation: `.github/documentation/`
-
-This is where all AI generate docs will go. Make sure it is ignored by git.
-
-The let's update copilot-instructions.md to help future us understand how this project is structured and how to use it.
-
-As well put rules in there just like the documentation rule to keep things consistent and organized.
+A few chat sessions ago you mentioned about a script and proxy to be able to deploy all the projects and navigate between them.  Tell me how that will work.

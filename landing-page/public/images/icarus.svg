@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+    <defs>
+        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a5490;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#87ceeb;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="400" height="300" fill="url(#skyGrad)"/>
+    <path d="M 150 50 L 200 100 L 250 50 L 240 55 L 200 120 L 160 55 Z" fill="#fff" opacity="0.9"/>
+    <path d="M 100 80 L 130 110 L 160 80 L 155 85 L 130 125 L 105 85 Z" fill="#fff" opacity="0.7"/>
+    <path d="M 240 100 L 270 130 L 300 100 L 295 105 L 270 145 L 245 105 Z" fill="#fff" opacity="0.6"/>
+    <circle cx="200" cy="180" r="50" fill="#ff6347" opacity="0.8"/>
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">ICARUS</text>
+</svg>

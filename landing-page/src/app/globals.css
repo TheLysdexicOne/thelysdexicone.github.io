@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Import shared global styles for all projects */
+@import '../../../shared/styles/globals.css';
 
-@font-face {
-  font-family: 'TimesNewPixel';
-  src: url('/fonts/times-new-pixel.ttf') format('truetype');
-}
+/* Landing page specific font definitions */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +15,8 @@ html {
 }
 
 body {
-  font-family: 'TimesNewPixel', monospace;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

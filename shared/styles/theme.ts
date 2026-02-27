@@ -30,7 +30,7 @@ export interface ThemeConfig {
 }
 
 /**
- * Default theme (used by BALL X PIT Companion)
+ * Default theme for all projects
  * Warm, earthy tones with amber highlights
  */
 export const defaultTheme: ThemeConfig = {
@@ -63,10 +63,6 @@ export const defaultTheme: ThemeConfig = {
  */
 export function getThemeForProject(projectId: string): ThemeConfig {
   // Future: Map projectId to custom theme variants
-  switch (projectId) {
-    case 'ball-x-pit-companion':
-      return defaultTheme;
-    default:
-      return defaultTheme;
-  }
+  // All projects currently use the default theme
+  return defaultTheme;
 }

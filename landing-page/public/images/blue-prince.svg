@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+    <defs>
+        <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="400" height="300" fill="#0f172a"/>
+    <circle cx="200" cy="100" r="35" fill="url(#blueGrad)" stroke="#60a5fa" stroke-width="3"/>
+    <path d="M 200 135 L 200 200" stroke="url(#blueGrad)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 170 160 L 200 170 L 230 160" stroke="url(#blueGrad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 200 200 L 180 250" stroke="url(#blueGrad)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 200 200 L 220 250" stroke="url(#blueGrad)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="185" cy="90" r="5" fill="#fff"/>
+    <circle cx="215" cy="90" r="5" fill="#fff"/>
+    <path d="M 170 110 Q 200 105 230 110" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="200" y="285" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#60a5fa" text-anchor="middle">BLUE PRINCE</text>
+</svg>

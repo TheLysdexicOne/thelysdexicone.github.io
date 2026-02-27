@@ -14,12 +14,7 @@ const { execSync } = require("child_process");
 const rootDir = path.join(__dirname, "..");
 const distDir = path.join(rootDir, "dist");
 const landingPageOutDir = path.join(rootDir, "landing-page", "out");
-const companionOutDir = path.join(
-  rootDir,
-  "projects",
-  "ball-x-pit-companion",
-  "out",
-);
+const projectsDir = path.join(rootDir, "projects");
 
 console.log("🚀 Starting monorepo deployment...\n");
 
@@ -44,20 +39,33 @@ try {
   process.exit(1);
 }
 
-// Step 3: Build ball-x-pit-companion
-console.log("\n🔨 Building BALL X PIT Companion...");
-try {
-  process.chdir(path.join(rootDir, "projects", "ball-x-pit-companion"));
-  execSync("npm run build", { stdio: "inherit" });
+// Step 3: Build all projects
+console.log("\n🔨 Building projects...");
+const projects = fs.readdirSync(projectsDir).filter((name) => {
+  const projectPath = path.join(projectsDir, name);
+  return (
+    fs.statSync(projectPath).isDirectory() &&
+    fs.existsSync(path.join(projectPath, "package.json"))
+  );
+});
 
-  // Copy companion output to dist/ball-x-pit-companion
-  console.log("📋 Copying companion to dist/ball-x-pit-companion...");
-  const companionDistDir = path.join(distDir, "ball-x-pit-companion");
-  fs.mkdirSync(companionDistDir, { recursive: true });
-  copyDir(companionOutDir, companionDistDir);
-} catch (error) {
-  console.error("❌ Companion build failed:", error.message);
-  process.exit(1);
+for (const projectName of projects) {
+  console.log(`\n🔨 Building ${projectName}...`);
+  try {
+    const projectPath = path.join(projectsDir, projectName);
+    process.chdir(projectPath);
+    execSync("npm run build", { stdio: "inherit" });
+
+    // Copy project output to dist/<project-name>
+    const projectOutDir = path.join(projectPath, "out");
+    const projectDistDir = path.join(distDir, projectName);
+    console.log(`📋 Copying ${projectName} to dist/${projectName}...`);
+    fs.mkdirSync(projectDistDir, { recursive: true });
+    copyDir(projectOutDir, projectDistDir);
+  } catch (error) {
+    console.error(`❌ ${projectName} build failed:`, error.message);
+    process.exit(1);
+  }
 }
 
 // Step 4: Create .nojekyll file (required for Next.js static export)
@@ -78,9 +86,9 @@ try {
 console.log("\n✅ Deployment complete!");
 console.log("\nGitHub Pages will serve from:");
 console.log("  https://thelysdexicone.github.io/ (landing page)");
-console.log(
-  "  https://thelysdexicone.github.io/ball-x-pit-companion/ (companion)",
-);
+projects.forEach((project) => {
+  console.log(`  https://thelysdexicone.github.io/${project}/`);
+});
 
 /**
  * Helper function to recursively copy directory

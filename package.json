@@ -4,12 +4,25 @@
   "description": "GitHub Pages monorepo for TheLysdexicOne projects",
   "private": true,
   "scripts": {
-    "install-all": "npm install && npm install -w landing-page && npm install -w projects/ball-x-pit-companion",
+    "install-all": "npm install && npm install -w landing-page && npm install -w projects/ball-x-pit && npm install -w projects/icarus && npm install -w projects/kingdom-come-deliverance-ii && npm install -w projects/blue-prince && npm install -w projects/factorio && npm install -w projects/satisfactory && npm install -w projects/widget-inc",
+    "dev:all": "node scripts/dev-all.js",
     "dev:landing": "npm run dev -w landing-page",
-    "dev:ball-x-pit": "npm run dev -w projects/ball-x-pit-companion",
+    "dev:ball-x-pit": "npm run dev -w projects/ball-x-pit",
+    "dev:icarus": "npm run dev -w projects/icarus",
+    "dev:kingdom-come": "npm run dev -w projects/kingdom-come-deliverance-ii",
+    "dev:blue-prince": "npm run dev -w projects/blue-prince",
+    "dev:factorio": "npm run dev -w projects/factorio",
+    "dev:satisfactory": "npm run dev -w projects/satisfactory",
+    "dev:widget-inc": "npm run dev -w projects/widget-inc",
     "build:landing": "npm run build -w landing-page",
-    "build:ball-x-pit": "npm run build -w projects/ball-x-pit-companion",
-    "build": "npm run build:landing && npm run build:ball-x-pit",
+    "build:ball-x-pit": "npm run build -w projects/ball-x-pit",
+    "build:icarus": "npm run build -w projects/icarus",
+    "build:kingdom-come": "npm run build -w projects/kingdom-come-deliverance-ii",
+    "build:blue-prince": "npm run build -w projects/blue-prince",
+    "build:factorio": "npm run build -w projects/factorio",
+    "build:satisfactory": "npm run build -w projects/satisfactory",
+    "build:widget-inc": "npm run build -w projects/widget-inc",
+    "build": "npm run build:landing && npm run build:ball-x-pit && npm run build:icarus && npm run build:kingdom-come && npm run build:blue-prince && npm run build:factorio && npm run build:satisfactory && npm run build:widget-inc",
     "build:all": "npm run install-all && npm run build",
     "deploy": "npm run build && node scripts/deploy.js",
     "test": "jest",
@@ -19,6 +32,7 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "gh-pages": "^6.3.0",
+    "http-proxy": "^1.18.1",
     "jest": "^29.7.0"
   },
   "config": {
@@ -28,6 +42,12 @@
   },
   "workspaces": [
     "landing-page",
-    "projects/ball-x-pit-companion"
+    "projects/ball-x-pit",
+    "projects/icarus",
+    "projects/kingdom-come-deliverance-ii",
+    "projects/blue-prince",
+    "projects/factorio",
+    "projects/satisfactory",
+    "projects/widget-inc"
   ]
 }
