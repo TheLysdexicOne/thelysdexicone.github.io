@@ -5,6 +5,9 @@ npm-debug.log
 yarn-debug.log
 yarn-error.log
 
+# AI-generated docs (kept out of git)
+.github/documentation/
+
 # Build outputs
 /dist
 /landing-page/.next
