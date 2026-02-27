@@ -1,0 +1,1219 @@
+[
+  {
+    "Type": "kDefault",
+    "Name": "Default",
+    "Slug": "lvl_default",
+    "Description": "Default 1x1 enemy.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeleton Warrior",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceDefault_graveyard_icon"
+      },
+      "kSnowy": {
+        "DisplayName": "Icebound Warrior",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceDefault_snowy_icon"
+      },
+      "kSavanna": {
+        "DisplayName": "Warg Rider",
+        "LevelEnemyIndex": 1,
+        "IconName": "PieceDefault_savanna_icon"
+      },
+      "kHell": {
+        "DisplayName": "Dragonling",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceDefault_hell_icon"
+      },
+      "kClouds": {
+        "DisplayName": "Angelspawn",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceDefault_clouds_icon"
+      },
+      "kShroom": {
+        "DisplayName": "Shroom Fighter",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceDefault_shroom_icon"
+      },
+      "kDesert": {
+        "DisplayName": "Lizard",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceDefault_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kOcta",
+    "Name": "Octa",
+    "Slug": "lvl_octa",
+    "Description": "Has octagonal edges.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 2,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Octa",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Bone Behemoth",
+        "LevelEnemyIndex": 6,
+        "IconName": "PieceOcta_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSmall",
+    "Name": "Small",
+    "Slug": "lvl_small",
+    "Description": "",
+    "GridWidth": 0.5,
+    "GridHeight": 0.5,
+    "HealthScale": 0.5,
+    "SpeedMultiplier": 1.25,
+    "DisplayName": "Small",
+    "LevelVariants": {
+      "kSavanna": {
+        "DisplayName": "Mouse",
+        "LevelEnemyIndex": 3,
+        "IconName": "PieceSmall_savanna_icon"
+      },
+      "kHell": {
+        "DisplayName": "Grub",
+        "LevelEnemyIndex": 6,
+        "IconName": "PieceSmall_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kArcher",
+    "Name": "",
+    "Slug": "lvl_archer",
+    "Description": "Shoots arrows at the player.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeleton Archer",
+        "LevelEnemyIndex": 5,
+        "IconName": "PieceArcher_graveyard_icon"
+      },
+      "kSavanna": {
+        "DisplayName": "Warg Archer",
+        "LevelEnemyIndex": 2,
+        "IconName": "PieceArcher_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBig",
+    "Name": "Basic Boss",
+    "Slug": "lvl_big",
+    "Description": "Basic boss enemy.",
+    "GridWidth": 3,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Basic Boss",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeletal Brigade",
+        "LevelEnemyIndex": 7,
+        "IconName": "PieceBig_graveyard_icon"
+      },
+      "kSavanna": {
+        "DisplayName": "Goblin Warlord",
+        "LevelEnemyIndex": 5,
+        "IconName": "PieceBig_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kShieldFront",
+    "Name": "Shield Bearer (Front)",
+    "Slug": "lvl_shieldfront",
+    "Description": "Immune to ball damage from a shielded side.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Shield Bearer (Front)",
+    "LevelVariants": {
+      "kSnowy": {
+        "DisplayName": "Icebound Shieldbearer",
+        "LevelEnemyIndex": 5,
+        "IconName": "ShieldFront_snowy_icon"
+      }
+    }
+  },
+  {
+    "Type": "kCircle",
+    "Name": "Circle-shaped",
+    "Slug": "lvl_circle",
+    "Description": "Circle-shaped enemy.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Circle-shaped",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Moonling",
+        "LevelEnemyIndex": 0,
+        "IconName": "PieceCircle_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigArcher",
+    "Name": "Basic Boss Archer",
+    "Slug": "lvl_bigarcher",
+    "Description": "Shoots waves of arrows at the player.",
+    "GridWidth": 3.5,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Basic Boss Archer",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Bone Ballista",
+        "LevelEnemyIndex": 8,
+        "IconName": "PieceBigArcher_graveyard_icon"
+      },
+      "kSavanna": {
+        "DisplayName": "Goblin Sniper",
+        "LevelEnemyIndex": 6,
+        "IconName": "PieceBigArcher_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kTetrisL",
+    "Name": "TetrisL",
+    "Slug": "lvl_tetrisl",
+    "Description": "Tetris-shaped L block.",
+    "GridWidth": 3,
+    "GridHeight": 2,
+    "HealthScale": 6,
+    "SpeedMultiplier": 1,
+    "DisplayName": "TetrisL",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeletal Bastion",
+        "LevelEnemyIndex": 4,
+        "IconName": "TetrisL_graveyard_icon"
+      },
+      "kSnowy": {
+        "DisplayName": "Icebound Bastion",
+        "LevelEnemyIndex": 4,
+        "IconName": "TetrisL_snowy_icon"
+      },
+      "kHell": {
+        "DisplayName": "Dragonling Clan",
+        "LevelEnemyIndex": 4,
+        "IconName": "TetrisL_hell_icon"
+      },
+      "kClouds": {
+        "DisplayName": "Angelspawn Choir",
+        "LevelEnemyIndex": 4,
+        "IconName": "TetrisL_clouds_icon"
+      },
+      "kShroom": {
+        "DisplayName": "Enoki Cluster",
+        "LevelEnemyIndex": 4,
+        "IconName": "TetrisL_shroom_icon"
+      },
+      "kDesert": {
+        "DisplayName": "Lizard Bastion",
+        "LevelEnemyIndex": 4,
+        "IconName": "TetrisL_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kTripleL",
+    "Name": "TripleL",
+    "Slug": "lvl_triplel",
+    "Description": "L-shaped block with 3 tiles.",
+    "GridWidth": 2,
+    "GridHeight": 2,
+    "HealthScale": 4,
+    "SpeedMultiplier": 1,
+    "DisplayName": "TripleL",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeletal Bishop",
+        "LevelEnemyIndex": 3,
+        "IconName": "TripleL_graveyard_icon"
+      },
+      "kSnowy": {
+        "DisplayName": "Icebound Band",
+        "LevelEnemyIndex": 3,
+        "IconName": "TripleL_snowy_icon"
+      },
+      "kHell": {
+        "DisplayName": "Dragonling Butcher",
+        "LevelEnemyIndex": 3,
+        "IconName": "TripleL_hell_icon"
+      },
+      "kClouds": {
+        "DisplayName": "Angelspawn Berserker",
+        "LevelEnemyIndex": 3,
+        "IconName": "TripleL_clouds_icon"
+      },
+      "kShroom": {
+        "DisplayName": "Bracket Fungus",
+        "LevelEnemyIndex": 3,
+        "IconName": "TripleL_shroom_icon"
+      },
+      "kDesert": {
+        "DisplayName": "Lizard Strongman",
+        "LevelEnemyIndex": 3,
+        "IconName": "TripleL_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kDoubleWide",
+    "Name": "Wide",
+    "Slug": "lvl_doublewide",
+    "Description": "2 tiles wide.",
+    "GridWidth": 2,
+    "GridHeight": 1,
+    "HealthScale": 3,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Wide",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeletal Brute",
+        "LevelEnemyIndex": 1,
+        "IconName": "DoubleWide_graveyard_icon"
+      },
+      "kSnowy": {
+        "DisplayName": "Icebound Brute",
+        "LevelEnemyIndex": 1,
+        "IconName": "DoubleWide_snowy_icon"
+      },
+      "kHell": {
+        "DisplayName": "Dragonling Brute",
+        "LevelEnemyIndex": 1,
+        "IconName": "DoubleWide_hell_icon"
+      },
+      "kClouds": {
+        "DisplayName": "Angelic Twinhead",
+        "LevelEnemyIndex": 1,
+        "IconName": "DoubleWide_clouds_icon"
+      },
+      "kShroom": {
+        "DisplayName": "Twin Shrooms",
+        "LevelEnemyIndex": 1,
+        "IconName": "DoubleWide_shroom_icon"
+      },
+      "kDesert": {
+        "DisplayName": "Lizard Brute",
+        "LevelEnemyIndex": 1,
+        "IconName": "DoubleWide_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kDoubleLong",
+    "Name": "Long",
+    "Slug": "lvl_doublelong",
+    "Description": "2 tiles long.",
+    "GridWidth": 1,
+    "GridHeight": 2,
+    "HealthScale": 3,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Long",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeletal Beast",
+        "LevelEnemyIndex": 2,
+        "IconName": "DoubleLong_graveyard_icon"
+      },
+      "kSnowy": {
+        "DisplayName": "Icebound Beast",
+        "LevelEnemyIndex": 2,
+        "IconName": "DoubleLong_snowy_icon"
+      },
+      "kSavanna": {
+        "DisplayName": "Warg",
+        "LevelEnemyIndex": 0,
+        "IconName": "DoubleLong_savanna_icon"
+      },
+      "kHell": {
+        "DisplayName": "Dragonling Thrall",
+        "LevelEnemyIndex": 2,
+        "IconName": "DoubleLong_hell_icon"
+      },
+      "kClouds": {
+        "DisplayName": "Angelic Great Owl",
+        "LevelEnemyIndex": 2,
+        "IconName": "DoubleLong_clouds_icon"
+      },
+      "kShroom": {
+        "DisplayName": "Shroom Stalker",
+        "LevelEnemyIndex": 2,
+        "IconName": "DoubleLong_shroom_icon"
+      },
+      "kDesert": {
+        "DisplayName": "Slizard",
+        "LevelEnemyIndex": 2,
+        "IconName": "DoubleLong_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigShieldFront",
+    "Name": "Boss Shield Bearer (Front)",
+    "Slug": "lvl_bigshieldfront",
+    "Description": "Immune to ball damage from the front.",
+    "GridWidth": 3,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Shield Bearer (Front)",
+    "LevelVariants": {
+      "kSnowy": {
+        "DisplayName": "Icebound Champion",
+        "LevelEnemyIndex": 7,
+        "IconName": "ShieldBigFront_snowy_icon"
+      }
+    }
+  },
+  {
+    "Type": "kRiderMelee",
+    "Name": "Melee Rider",
+    "Slug": "lvl_ridermelee",
+    "Description": "Rides on long enemies.",
+    "GridWidth": 1,
+    "GridHeight": 2,
+    "HealthScale": 3,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Melee Rider",
+    "LevelVariants": {
+      "kSavanna": {
+        "DisplayName": "Warg Rider",
+        "LevelEnemyIndex": 0,
+        "IconName": "RiderMelee_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kRiderArcher",
+    "Name": "Archer Rider",
+    "Slug": "lvl_riderarcher",
+    "Description": "Rides on long pieces and shoots arrows.",
+    "GridWidth": 1,
+    "GridHeight": 2,
+    "HealthScale": 3,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Archer Rider",
+    "LevelVariants": {
+      "kSavanna": {
+        "DisplayName": "Warg Archer",
+        "LevelEnemyIndex": 0,
+        "IconName": "RiderArcher_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kDoubleLongBig",
+    "Name": "Long Boss",
+    "Slug": "lvl_doublelongbig",
+    "Description": "4 tiles long and 2 tiles wide.",
+    "GridWidth": 2,
+    "GridHeight": 4,
+    "HealthScale": 20,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Long Boss",
+    "LevelVariants": {
+      "kSavanna": {
+        "DisplayName": "Ancient Warg",
+        "LevelEnemyIndex": 4,
+        "IconName": "DoubleLongBig_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kEggSac",
+    "Name": "Egg Sac",
+    "Slug": "lvl_eggsac",
+    "Description": "Explodes into a bunch of Grubs when destroyed.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Egg Sac",
+    "LevelVariants": {
+      "kHell": {
+        "DisplayName": "Grub Cluster",
+        "LevelEnemyIndex": 5,
+        "IconName": "EggSac_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSpawner",
+    "Name": "Spawner",
+    "Slug": "lvl_spawner",
+    "Description": "Spawns Grubs over time.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Spawner",
+    "LevelVariants": {
+      "kHell": {
+        "DisplayName": "Grub Mother",
+        "LevelEnemyIndex": 8,
+        "IconName": "Spawner_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBoulderThrower",
+    "Name": "Boulder Thrower",
+    "Slug": "lvl_boulderthrower",
+    "Description": "Spits fireballs at the player.",
+    "GridWidth": 2,
+    "GridHeight": 1,
+    "HealthScale": 1.5,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boulder Thrower",
+    "LevelVariants": {
+      "kHell": {
+        "DisplayName": "Firespitter",
+        "LevelEnemyIndex": 7,
+        "IconName": "BoulderThrower_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kEater",
+    "Name": "Eater",
+    "Slug": "lvl_eater",
+    "Description": "Catches and holds onto one of your balls until you destroy it.",
+    "GridWidth": 2,
+    "GridHeight": 1,
+    "HealthScale": 2,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Eater",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Angelspawn Snatcher",
+        "LevelEnemyIndex": 8,
+        "IconName": "Eater_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigEggSac",
+    "Name": "Boss Egg Sac",
+    "Slug": "lvl_bigeggsac",
+    "Description": "Explodes into a bunch of Grub Clusters when destroyed.",
+    "GridWidth": 2,
+    "GridHeight": 2,
+    "HealthScale": 16,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Egg Sac",
+    "LevelVariants": {
+      "kHell": {
+        "DisplayName": "Great Grub Cluster",
+        "LevelEnemyIndex": 9,
+        "IconName": "EggSacBig_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigBoulderThrower",
+    "Name": "Boss Boulder Thrower",
+    "Slug": "lvl_bigboulderthrower",
+    "Description": "Spits a long stream of fireballs at the player.",
+    "GridWidth": 5,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Boulder Thrower",
+    "LevelVariants": {
+      "kHell": {
+        "DisplayName": "Flamespitter",
+        "LevelEnemyIndex": 10,
+        "IconName": "BoulderThrowerBig_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kHealer",
+    "Name": "Healer",
+    "Slug": "lvl_healer",
+    "Description": "Heals nearby enemies every once in a while.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Healer",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Angelspawn Priestess",
+        "LevelEnemyIndex": 7,
+        "IconName": "Healer_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kFlyer",
+    "Name": "Flyer",
+    "Slug": "lvl_flyer",
+    "Description": "Flies into the air every once in a while. Can't be hit by balls while in air.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Flyer",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Winged Angelspawn",
+        "LevelEnemyIndex": 5,
+        "IconName": "Flyer_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kFlyerArcher",
+    "Name": "Flying Archer",
+    "Slug": "lvl_flyerarcher",
+    "Description": "Flies into the air every once in a while and shoots arrows. Can't be hit by balls while in air.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Flying Archer",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Winged Angelspawn Scout",
+        "LevelEnemyIndex": 6,
+        "IconName": "FlyerArcher_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSpearThrower",
+    "Name": "Spear Thrower",
+    "Slug": "lvl_spearthrower",
+    "Description": "Throws icicles at the player which freeze the player on hit.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Spear Thrower",
+    "LevelVariants": {
+      "kSnowy": {
+        "DisplayName": "Icebound Hurler",
+        "LevelEnemyIndex": 6,
+        "IconName": "SpearThrower_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigEater",
+    "Name": "Boss Eater",
+    "Slug": "lvl_bigeater",
+    "Description": "Catches and holds onto 3 of your balls at a time.",
+    "GridWidth": 4,
+    "GridHeight": 4,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Eater",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Wizened Snatcher",
+        "LevelEnemyIndex": 11,
+        "IconName": "BigEater_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigFlyer",
+    "Name": "Boss Flyer",
+    "Slug": "lvl_bigflyer",
+    "Description": "Flies into the air every once in a while.",
+    "GridWidth": 4,
+    "GridHeight": 4,
+    "HealthScale": 20,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Boss Flyer",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Restless One",
+        "LevelEnemyIndex": 10,
+        "IconName": "BigFlyer_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kMage",
+    "Name": "Mage",
+    "Slug": "lvl_mage",
+    "Description": "Shoots homing arrows at the player.",
+    "GridWidth": 1,
+    "GridHeight": 2,
+    "HealthScale": 2,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Mage",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Cupid",
+        "LevelEnemyIndex": 9,
+        "IconName": "Mage_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kCircleArcher",
+    "Name": "Circle-shaped Archer",
+    "Slug": "lvl_circlearcher",
+    "Description": "Spits rocks at the player.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Circle-shaped Archer",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Moonling Archer",
+        "LevelEnemyIndex": 1,
+        "IconName": "CircleArcher_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kCircleSmall",
+    "Name": "Circle-shaped Small Enemy",
+    "Slug": "lvl_circlesmall",
+    "Description": "Small circle-shaped enemy.",
+    "GridWidth": 0.5,
+    "GridHeight": 0.5,
+    "HealthScale": 0.5,
+    "SpeedMultiplier": 1.25,
+    "DisplayName": "Circle-shaped Small Enemy",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Moonrock",
+        "LevelEnemyIndex": 3,
+        "IconName": "CircleSmall_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kCircleSac",
+    "Name": "Circle-shaped Egg Sac",
+    "Slug": "lvl_circlesac",
+    "Description": "Explodes into a few Moonrocks when destroyed.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Circle-shaped Egg Sac",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Moonling Geode",
+        "LevelEnemyIndex": 2,
+        "IconName": "CircleSac_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigCircle",
+    "Name": "Boss Circle",
+    "Slug": "lvl_bigcircle",
+    "Description": "Boss circle-shaped enemy.",
+    "GridWidth": 2,
+    "GridHeight": 2,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Circle",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Moonkin",
+        "LevelEnemyIndex": 7,
+        "IconName": "BigCircle_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigCircleSac",
+    "Name": "Boss Circle Egg Sac",
+    "Slug": "lvl_bigcirclesac",
+    "Description": "Explodes into a few Moonling Geodes when destroyed.",
+    "GridWidth": 2,
+    "GridHeight": 2,
+    "HealthScale": 16,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Circle Egg Sac",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Moonkin Geode",
+        "LevelEnemyIndex": 8,
+        "IconName": "BigCircleSac_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kMoon",
+    "Name": "Moon",
+    "Slug": "lvl_moon",
+    "Description": "The final boss.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 40,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Moon",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "The Moon",
+        "LevelEnemyIndex": 9,
+        "IconName": "Moon_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigSpearThrower",
+    "Name": "Boss Spear Thrower",
+    "Slug": "lvl_bigspearthrower",
+    "Description": "Throws multiple icicles towards the player, which freeze them on hit.",
+    "GridWidth": 3.6,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Spear Thrower",
+    "LevelVariants": {
+      "kSnowy": {
+        "DisplayName": "Icebound Howler",
+        "LevelEnemyIndex": 8,
+        "IconName": "BigSpearThrower_snowy_icon"
+      }
+    }
+  },
+  {
+    "Type": "kCannon",
+    "Name": "Cannon",
+    "Slug": "lvl_cannon",
+    "Description": "Shoots a projectile into the air which lands in your vicinity after a delay.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Cannon",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Boomshroom",
+        "LevelEnemyIndex": 5,
+        "IconName": "Cannon_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSpiky",
+    "Name": "Default",
+    "Slug": "lvl_spiky",
+    "Description": "Emits a small projectile into the air on hit, which falls near the player after a delay.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Shroomboomer",
+        "LevelEnemyIndex": 8,
+        "IconName": "Spiky_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSpeedy",
+    "Name": "Default",
+    "Slug": "lvl_speedy",
+    "Description": "Increases the move speed of nearby enemies.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 2,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Rushroom",
+        "LevelEnemyIndex": 7,
+        "IconName": "Speedy_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kTar",
+    "Name": "Default",
+    "Slug": "lvl_tar",
+    "Description": "Spits tar at the player, which slows them down on hit.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Cordyceps Spitter",
+        "LevelEnemyIndex": 6,
+        "IconName": "Tar_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigCannon",
+    "Name": "Basic Boss Archer",
+    "Slug": "lvl_bigcannon",
+    "Description": "Shoots a large projectile into the air which lands in your vicinity after a delay.",
+    "GridWidth": 3,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Basic Boss Archer",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Elder Boomshroom",
+        "LevelEnemyIndex": 10,
+        "IconName": "BigCannon_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigTar",
+    "Name": "Basic Boss Archer",
+    "Slug": "lvl_bigtar",
+    "Description": "Shoots multiple tar blobs towards the player, which slow them down on hit.",
+    "GridWidth": 3,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Basic Boss Archer",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Cordyceps Queen",
+        "LevelEnemyIndex": 9,
+        "IconName": "BigTar_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kLaser",
+    "Name": "Healer",
+    "Slug": "lvl_laser",
+    "Description": "Aims and shoots lasers at player.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Healer",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Laser Locust",
+        "LevelEnemyIndex": 5,
+        "IconName": "Laser_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBurrowerArcher",
+    "Name": "",
+    "Slug": "lvl_burrowerarcher",
+    "Description": "Burrows underground and spits venom at the player each time it emerges.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Worm",
+        "LevelEnemyIndex": 6,
+        "IconName": "BurrowerArcher_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSideStepper",
+    "Name": "Default",
+    "Slug": "lvl_sidestepper",
+    "Description": "Moves from side to side.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 2,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Sandwalker",
+        "LevelEnemyIndex": 7,
+        "IconName": "SideStepper_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kShapeShifter",
+    "Name": "Default",
+    "Slug": "lvl_shapeshifter",
+    "Description": "Shifts between a square and diamond-shaped platform.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Shifting Cobra",
+        "LevelEnemyIndex": 8,
+        "IconName": "ShapeShifter_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kRotator",
+    "Name": "Default",
+    "Slug": "lvl_rotator",
+    "Description": "Has a rotating platform.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Default",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Desert Sentinel",
+        "LevelEnemyIndex": 9,
+        "IconName": "Rotator_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigRotator",
+    "Name": "Boss Spear Thrower",
+    "Slug": "lvl_bigrotator",
+    "Description": "Has a large rotating platform.",
+    "GridWidth": 2.6,
+    "GridHeight": 2.6,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "Boss Spear Thrower",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Great Sentinel",
+        "LevelEnemyIndex": 11,
+        "IconName": "BigRotator_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kBigLaser",
+    "Name": "",
+    "Slug": "lvl_biglaser",
+    "Description": "Shoots a large laser beam at the player.",
+    "GridWidth": 3,
+    "GridHeight": 3,
+    "HealthScale": 20,
+    "SpeedMultiplier": 0.7,
+    "DisplayName": "",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Seething Locust",
+        "LevelEnemyIndex": 10,
+        "IconName": "BigLaser_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSkeletonKing",
+    "Name": "Skeleton King",
+    "Slug": "lvl_skeletonking",
+    "Description": "The king of the graveyard.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 30,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Skeleton King",
+    "LevelVariants": {
+      "kGraveyard": {
+        "DisplayName": "Skeleton King",
+        "LevelEnemyIndex": 9,
+        "IconName": "SkeletonKing_graveyard_icon"
+      }
+    }
+  },
+  {
+    "Type": "kYetiQueen",
+    "Name": "Icebound Queen",
+    "Slug": "lvl_yetiqueen",
+    "Description": "The queen of the mountain.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 5,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Icebound Queen",
+    "LevelVariants": {
+      "kSnowy": {
+        "DisplayName": "Icebound Queen",
+        "LevelEnemyIndex": 9,
+        "IconName": "YetiQueen_snowy_icon"
+      }
+    }
+  },
+  {
+    "Type": "kPyramidTank",
+    "Name": "The Twisted Serpent",
+    "Slug": "lvl_pyramidtank",
+    "Description": "One of the wonders of the depths.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 35,
+    "SpeedMultiplier": 0,
+    "DisplayName": "The Twisted Serpent",
+    "LevelVariants": {
+      "kDesert": {
+        "DisplayName": "Twisted Serpent",
+        "LevelEnemyIndex": 12,
+        "IconName": "PyramidTank_desert_icon"
+      }
+    }
+  },
+  {
+    "Type": "kSabertooth",
+    "Name": "Ancient Sabertooth",
+    "Slug": "lvl_sabertooth",
+    "Description": "King of the Grasslands.",
+    "GridWidth": 7,
+    "GridHeight": 8,
+    "HealthScale": 40,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Ancient Sabertooth",
+    "LevelVariants": {
+      "kSavanna": {
+        "DisplayName": "Sabertooth",
+        "LevelEnemyIndex": 7,
+        "IconName": "Sabertooth_savanna_icon"
+      }
+    }
+  },
+  {
+    "Type": "kShroomSwarm",
+    "Name": "Shroom Swarm",
+    "Slug": "lvl_shroomswarm",
+    "Description": "A swarm of shrooms.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 8,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Shroom Swarm",
+    "LevelVariants": {
+      "kShroom": {
+        "DisplayName": "Shroom Swarm",
+        "LevelEnemyIndex": 11,
+        "IconName": "ShroomSwarm_shroom_icon"
+      }
+    }
+  },
+  {
+    "Type": "kDragonPrince",
+    "Name": "Dragon Prince",
+    "Slug": "lvl_dragonprince",
+    "Description": "Prince of the dragons.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 40,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Dragon Prince",
+    "LevelVariants": {
+      "kHell": {
+        "DisplayName": "Dragon Prince",
+        "LevelEnemyIndex": 11,
+        "IconName": "DragonPrince_hell_icon"
+      }
+    }
+  },
+  {
+    "Type": "kOwlLord",
+    "Name": "Lord of Owls",
+    "Slug": "lvl_owllord",
+    "Description": "Owls do have a lord.",
+    "GridWidth": 7,
+    "GridHeight": 7,
+    "HealthScale": 40,
+    "SpeedMultiplier": 0,
+    "DisplayName": "Lord of Owls",
+    "LevelVariants": {
+      "kClouds": {
+        "DisplayName": "Lord of Owls",
+        "LevelEnemyIndex": 12,
+        "IconName": "OwlLord_clouds_icon"
+      }
+    }
+  },
+  {
+    "Type": "kVoidSoldier",
+    "Name": "Void Soldier",
+    "Slug": "lvl_voidsoldier",
+    "Description": "All balls pass through this enemy.",
+    "GridWidth": 1,
+    "GridHeight": 1,
+    "HealthScale": 1,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Void Soldier",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Voidling",
+        "LevelEnemyIndex": 4,
+        "IconName": "VoidSoldier_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kCrescent",
+    "Name": "Crescent",
+    "Slug": "lvl_crescent",
+    "Description": "Crescent-shaped enemy.",
+    "GridWidth": 2.5,
+    "GridHeight": 1,
+    "HealthScale": 4,
+    "SpeedMultiplier": 1,
+    "DisplayName": "Crescent",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Crescent Moonling",
+        "LevelEnemyIndex": 5,
+        "IconName": "Crescent_moon_icon"
+      }
+    }
+  },
+  {
+    "Type": "kWaning",
+    "Name": "TetrisL",
+    "Slug": "lvl_waning",
+    "Description": "Tetris-shaped L block.",
+    "GridWidth": 2.5,
+    "GridHeight": 2,
+    "HealthScale": 6,
+    "SpeedMultiplier": 1,
+    "DisplayName": "TetrisL",
+    "LevelVariants": {
+      "kMoon": {
+        "DisplayName": "Waning Moonling",
+        "LevelEnemyIndex": 6,
+        "IconName": "Waning_moon_icon"
+      }
+    }
+  }
+]

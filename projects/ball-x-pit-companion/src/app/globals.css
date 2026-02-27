@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font will be loaded via layout.tsx to handle basePath correctly */
+
+@layer base {
+  /* Prevent horizontal scroll */
+  html {
+    @apply overflow-y-scroll;
+  }
+
+  body {
+    @apply overflow-x-hidden;
+  }
+
+  /* Prevent scroll when mobile menu is open - target body to allow pull-to-refresh */
+  body:has(.no-doc-scroll) {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  /* Set default text colors */
+  body {
+    @apply text-secondary;
+  }
+
+  /* Headings use primary color by default */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-primary;
+  }
+
+  .btn-body-primary {
+    @apply rounded-lg border-2 px-6 py-4 text-center transition-colors;
+    @apply border-primary bg-btn-primary text-secondary;
+    @apply hover:border-btn-highlight hover:bg-btn-primary-highlight hover:text-primary;
+  }
+
+  .btn-body-secondary {
+    @apply rounded-lg border-2 px-6 py-4 text-center transition-colors;
+    @apply border-primary bg-btn-primary text-secondary;
+  }
+
+  .card-primary {
+    @apply mb-4 w-full rounded-lg border-nav bg-body p-4 text-center;
+  }
+
+  .card-primary-header {
+    @apply -mx-4 -mt-4 mb-4 rounded-t-lg bg-card-header px-4 py-3;
+  }
+
+  .card-text-box {
+    @apply bg-btn-primary text-secondary;
+    @apply rounded-lg p-4 px-6 text-center;
+    @apply text-base sm:text-lg;
+  }
+
+  .hr-separator {
+    @apply m-2 border-t border-primary;
+  }
+
+  /* Firefox scrollbar */
+  nav {
+    /* Colors */
+    @apply border-r-2 border-nav bg-nav;
+    /* Positioning */
+    @apply fixed left-0 top-0 z-40 h-screen w-64;
+    /* Animation */
+    @apply transform transition-transform duration-300 ease-in-out;
+    @apply nav-scroll;
+  }
+
+  .standard-card {
+    @apply bg-card;
+  }
+
+  /* Pixelated rendering for all images */
+  img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar for nav menu */
+  .nav-scroll::-webkit-scrollbar {
+    width: 8px; /* Set scrollbar width */
+  }
+
+  .nav-scroll::-webkit-scrollbar-track {
+    @apply rounded-full bg-secondary;
+  }
+
+  .nav-scroll::-webkit-scrollbar-thumb {
+    @apply bg-highlight;
+    border-radius: 6px; /* Rounded corners for the thumb */
+  }
+}

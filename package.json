@@ -1,15 +1,20 @@
 {
   "name": "thelysdexicone.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "GitHub Pages monorepo for TheLysdexicOne projects",
+  "private": true,
   "scripts": {
+    "install-all": "npm install && npm install -w landing-page && npm install -w projects/ball-x-pit-companion",
+    "dev:landing": "npm run dev -w landing-page",
+    "dev:companion": "npm run dev -w projects/ball-x-pit-companion",
+    "build:landing": "npm run build -w landing-page",
+    "build:companion": "npm run build -w projects/ball-x-pit-companion",
+    "build": "npm run build:landing && npm run build:companion",
+    "build:all": "npm run install-all && npm run build",
+    "deploy": "npm run build && node scripts/deploy.js",
     "test": "jest",
     "commit": "cz"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
@@ -19,5 +24,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "workspaces": [
+    "landing-page",
+    "projects/ball-x-pit-companion"
+  ]
 }

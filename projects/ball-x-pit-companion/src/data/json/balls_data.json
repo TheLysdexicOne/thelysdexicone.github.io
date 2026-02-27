@@ -1,0 +1,6694 @@
+[
+  {
+    "Type": "0",
+    "Name": "Burn",
+    "Slug": "hupg_burn",
+    "Description": "Add 1 stack of burn on hit for {[burn_length]} seconds (max {[max_burn_stacks]} stacks). Burnt units are dealt {[min_burn_damage]}-{[max_burn_damage]} damage per stack per second.",
+    "Properties": {
+      "kBurnLength": 3,
+      "kMinBurnDamage": 4,
+      "kMaxBurnDamage": 8,
+      "kMaxBurnStacks": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "burn_length": 3,
+          "min_burn_damage": 4,
+          "max_burn_damage": 8,
+          "max_burn_stacks": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "burn_length": 3,
+          "min_burn_damage": 7,
+          "max_burn_damage": 11,
+          "max_burn_stacks": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "burn_length": 5,
+          "min_burn_damage": 7,
+          "max_burn_damage": 11,
+          "max_burn_stacks": 5
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "burn_length": 5,
+          "min_burn_damage": 10,
+          "max_burn_damage": 14,
+          "max_burn_stacks": 5
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "burn_length": 7,
+          "min_burn_damage": 10,
+          "max_burn_damage": 14,
+          "max_burn_stacks": 7
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_bomb",
+      "hupg_magma",
+      "hupg_inferno",
+      "hupg_berserk",
+      "hupg_sun",
+      "hupg_frozenflame"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 1.00, g: 0.49, b: 0.13, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBurn"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.67, g: 0.23, b: 0.15, a: 1.00",
+      "r: 0.78, g: 0.45, b: 0.21, a: 1.00",
+      "r: 0.92, g: 0.68, b: 0.08, a: 1.00",
+      "r: 0.89, g: 0.81, b: 0.47, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.37, g: 0.00, b: 0.33, a: 0.00",
+      "r: 0.60, g: 0.06, b: 0.05, a: 0.00",
+      "r: 0.60, g: 0.06, b: 0.05, a: 1.00",
+      "r: 0.42, g: 0.13, b: 0.26, a: 0.00",
+      "r: 0.75, g: 0.07, b: 0.00, a: 1.00",
+      "r: 1.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 1.00, g: 0.56, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.71, b: 0.06, a: 1.00",
+      "r: 0.70, g: 0.75, b: 0.06, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "1",
+    "Name": "Lightning",
+    "Slug": "hupg_lightning",
+    "Description": "Deals {[min_lightning_damage]}-{[max_lightning_damage]} damage to up to {[lightning_limit]} nearby enemies",
+    "Properties": {
+      "kLightningLimit": 3,
+      "kMinLightningDamage": 1,
+      "kMaxLightningDamage": 20
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "lightning_limit": 3,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 20
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "lightning_limit": 3,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 30
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "lightning_limit": 5,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 30
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "lightning_limit": 5,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 40
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "lightning_limit": 7,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 40
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_lightningrod",
+      "hupg_blizzard",
+      "hupg_flash",
+      "hupg_storm",
+      "hupg_lovestruck"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.97, g: 0.85, b: 0.55, a: 1.00",
+    "DamageType": "kLightning",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kLightning"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.73, g: 0.56, b: 0.53, a: 1.00",
+      "r: 0.86, g: 0.75, b: 0.46, a: 1.00",
+      "r: 0.86, g: 0.81, b: 0.59, a: 1.00",
+      "r: 0.97, g: 0.85, b: 0.55, a: 1.00",
+      "r: 0.98, g: 0.95, b: 0.83, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.60, b: 0.09, a: 0.00",
+      "r: 0.75, g: 0.71, b: 0.45, a: 1.00",
+      "r: 0.75, g: 0.75, b: 0.36, a: 1.00",
+      "r: 0.75, g: 0.75, b: 0.65, a: 0.00",
+      "r: 1.00, g: 0.80, b: 0.49, a: 1.00",
+      "r: 1.00, g: 0.96, b: 0.18, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "2",
+    "Name": "Freeze",
+    "Slug": "hupg_freeze",
+    "Description": "Has a {[freeze_pct]} chance to freeze enemies for {[freeze_length]} seconds. Frozen enemies receive {[freeze_damage_pct]} more damage",
+    "Properties": {
+      "kFreezeLength": 50,
+      "kFreezePct": 4,
+      "kFreezeDamagePct": 25
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "freeze_length": 5,
+          "freeze_pct": 4,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "freeze_length": 5,
+          "freeze_pct": 7,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "freeze_length": 8,
+          "freeze_pct": 7,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "freeze_length": 8,
+          "freeze_pct": 10,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "freeze_length": 11,
+          "freeze_pct": 10,
+          "freeze_damage_pct": 25
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_wraith",
+      "hupg_blizzard",
+      "hupg_freezeray",
+      "hupg_glacier",
+      "hupg_frozenflame"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.42, g: 0.80, b: 0.68, a: 1.00",
+    "DamageType": "kIce",
+    "RotationType": "kAlignToDirAndSpin",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kFrozen"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.08, g: 0.32, b: 0.44, a: 1.00",
+      "r: 0.08, g: 0.35, b: 0.46, a: 1.00",
+      "r: 0.11, g: 0.38, b: 0.53, a: 1.00",
+      "r: 0.17, g: 0.57, b: 0.53, a: 1.00",
+      "r: 0.42, g: 0.80, b: 0.68, a: 1.00",
+      "r: 0.91, g: 0.84, b: 0.56, a: 1.00",
+      "r: 1.00, g: 0.96, b: 0.83, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.41, g: 0.75, b: 0.74, a: 0.00",
+      "r: 0.38, g: 0.84, b: 0.69, a: 1.00",
+      "r: 0.78, g: 0.94, b: 1.00, a: 1.00",
+      "r: 0.76, g: 1.00, b: 0.99, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.08, g: 0.32, b: 0.44, a: 1.00",
+      "r: 0.11, g: 0.38, b: 0.53, a: 1.00",
+      "r: 0.13, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.38, g: 0.84, b: 0.69, a: 1.00",
+      "r: 0.94, g: 0.85, b: 0.53, a: 1.00",
+      "r: 1.00, g: 0.96, b: 0.83, a: 1.00"
+    ]
+  },
+  {
+    "Type": "3",
+    "Name": "Laser (Horizontal)",
+    "Slug": "hupg_laserhorz",
+    "Description": "Deals {[min_laser_damage]}-{[max_laser_damage]} damage to all enemies in the same row",
+    "Properties": {
+      "kMinLaserDamage": 9,
+      "kMaxLaserDamage": 18
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "min_laser_damage": 9,
+          "max_laser_damage": 18
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "min_laser_damage": 11,
+          "max_laser_damage": 26
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "min_laser_damage": 13,
+          "max_laser_damage": 34
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "min_laser_damage": 15,
+          "max_laser_damage": 42
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "min_laser_damage": 17,
+          "max_laser_damage": 50
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_lasercross",
+      "hupg_freezeray",
+      "hupg_laserbeam",
+      "hupg_radiationbeam"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.81, g: 0.52, b: 0.13, a: 1.00",
+    "DamageType": "kLaser",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kLaserHorz"
+    ],
+    "Specials": [],
+    "IconPriority": 2,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.23, g: 0.12, b: 0.17, a: 1.00",
+      "r: 0.37, g: 0.16, b: 0.05, a: 1.00",
+      "r: 0.31, g: 0.20, b: 0.25, a: 1.00",
+      "r: 0.36, g: 0.24, b: 0.32, a: 1.00",
+      "r: 0.83, g: 0.27, b: 0.09, a: 1.00",
+      "r: 0.67, g: 0.41, b: 0.07, a: 1.00",
+      "r: 0.81, g: 0.52, b: 0.13, a: 1.00",
+      "r: 0.87, g: 0.80, b: 0.54, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.18, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.18, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.35, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.59, b: 0.21, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.23, g: 0.18, b: 0.10, a: 1.00",
+      "r: 0.36, g: 0.25, b: 0.16, a: 1.00",
+      "r: 0.58, g: 0.43, b: 0.29, a: 1.00",
+      "r: 0.67, g: 0.55, b: 0.35, a: 1.00",
+      "r: 0.12, g: 0.02, b: 0.03, a: 1.00",
+      "r: 0.25, g: 0.06, b: 0.05, a: 1.00",
+      "r: 0.29, g: 0.07, b: 0.05, a: 1.00",
+      "r: 0.37, g: 0.17, b: 0.09, a: 1.00"
+    ]
+  },
+  {
+    "Type": "4",
+    "Name": "Laser (Vertical)",
+    "Slug": "hupg_laservert",
+    "Description": "Deals {[min_laser_damage]}-{[max_laser_damage]} damage to all enemies in the same column",
+    "Properties": {
+      "kMinLaserDamage": 9,
+      "kMaxLaserDamage": 18
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "min_laser_damage": 9,
+          "max_laser_damage": 18
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "min_laser_damage": 11,
+          "max_laser_damage": 26
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "min_laser_damage": 13,
+          "max_laser_damage": 34
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "min_laser_damage": 15,
+          "max_laser_damage": 42
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "min_laser_damage": 17,
+          "max_laser_damage": 50
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_lasercross",
+      "hupg_freezeray",
+      "hupg_laserbeam",
+      "hupg_radiationbeam"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.81, g: 0.52, b: 0.13, a: 1.00",
+    "DamageType": "kLaser",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kLaserVert"
+    ],
+    "Specials": [],
+    "IconPriority": 2,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.23, g: 0.12, b: 0.17, a: 1.00",
+      "r: 0.37, g: 0.16, b: 0.05, a: 1.00",
+      "r: 0.31, g: 0.20, b: 0.25, a: 1.00",
+      "r: 0.36, g: 0.24, b: 0.32, a: 1.00",
+      "r: 0.83, g: 0.27, b: 0.09, a: 1.00",
+      "r: 0.67, g: 0.41, b: 0.07, a: 1.00",
+      "r: 0.81, g: 0.52, b: 0.13, a: 1.00",
+      "r: 0.87, g: 0.80, b: 0.54, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.18, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.18, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.35, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.59, b: 0.21, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.23, g: 0.18, b: 0.10, a: 1.00",
+      "r: 0.36, g: 0.25, b: 0.16, a: 1.00",
+      "r: 0.58, g: 0.43, b: 0.29, a: 1.00",
+      "r: 0.67, g: 0.55, b: 0.35, a: 1.00",
+      "r: 0.12, g: 0.02, b: 0.03, a: 1.00",
+      "r: 0.25, g: 0.06, b: 0.05, a: 1.00",
+      "r: 0.29, g: 0.07, b: 0.05, a: 1.00",
+      "r: 0.37, g: 0.17, b: 0.09, a: 1.00"
+    ]
+  },
+  {
+    "Type": "5",
+    "Name": "Poison",
+    "Slug": "hupg_poison",
+    "Description": "Applies 1 stack of poison on hit (max {[max_poison_stacks]} stacks). Poison lasts for {[poison_length]} seconds and each stack deals {[min_poison_damage]}-{[max_poison_damage]} damage per second",
+    "Properties": {
+      "kPoisonLength": 6,
+      "kMaxPoisonStacks": 5,
+      "kMinPoisonDamage": 1,
+      "kMaxPoisonDamage": 4
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "poison_length": 6,
+          "max_poison_stacks": 5,
+          "min_poison_damage": 1,
+          "max_poison_damage": 4
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "poison_length": 6,
+          "max_poison_stacks": 5,
+          "min_poison_damage": 2,
+          "max_poison_damage": 5
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "poison_length": 9,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 2,
+          "max_poison_damage": 5
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "poison_length": 9,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 3,
+          "max_poison_damage": 6
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "poison_length": 15,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 3,
+          "max_poison_damage": 6
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_swamp",
+      "hupg_nuke",
+      "hupg_virus",
+      "hupg_radiationbeam",
+      "hupg_noxious"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.35, g: 0.82, b: 0.11, a: 1.00",
+    "DamageType": "kPoison",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kPoison"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.20, g: 0.15, b: 0.18, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.41, g: 0.51, b: 0.28, a: 1.00",
+      "r: 0.40, g: 0.65, b: 0.26, a: 1.00",
+      "r: 0.53, g: 0.82, b: 0.37, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.33, g: 0.71, b: 0.01, a: 0.00",
+      "r: 0.48, g: 0.75, b: 0.00, a: 0.00",
+      "r: 0.47, g: 0.75, b: 0.17, a: 0.00",
+      "r: 0.59, g: 0.75, b: 0.11, a: 0.00",
+      "r: 0.64, g: 1.00, b: 0.00, a: 1.00",
+      "r: 0.75, g: 1.00, b: 0.00, a: 0.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "6",
+    "Name": "Bomb",
+    "Slug": "hupg_bomb",
+    "Description": "Explodes when hitting an enemy, dealing {[min_bomb_damage]}-{[max_bomb_damage]} damage to nearby enemies. Has a {[cooldown_length]} second cooldown before it can be shot again.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinBombDamage": 150,
+      "kMaxBombDamage": 300,
+      "kRange": 3,
+      "kCooldownLength": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_bomb_damage": 150,
+          "max_bomb_damage": 300,
+          "range": 3,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_bomb_damage": 200,
+          "max_bomb_damage": 400,
+          "range": 3,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_bomb_damage": 200,
+          "max_bomb_damage": 400,
+          "range": 4,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_bomb_damage": 250,
+          "max_bomb_damage": 500,
+          "range": 4,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_bomb_damage": 250,
+          "max_bomb_damage": 500,
+          "range": 5,
+          "cooldown_length": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_nuke"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_burn",
+        "hupg_heavy"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.90, g: 0.26, b: 0.04, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kRollForward",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kBomb"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.24, g: 0.12, b: 0.18, a: 1.00",
+      "r: 0.58, g: 0.16, b: 0.21, a: 1.00",
+      "r: 0.37, g: 0.25, b: 0.33, a: 1.00",
+      "r: 0.51, g: 0.33, b: 0.02, a: 1.00",
+      "r: 0.90, g: 0.26, b: 0.04, a: 1.00",
+      "r: 0.55, g: 0.45, b: 0.43, a: 1.00",
+      "r: 0.73, g: 0.49, b: 0.09, a: 1.00",
+      "r: 0.73, g: 0.60, b: 0.50, a: 1.00",
+      "r: 0.92, g: 0.60, b: 0.15, a: 1.00",
+      "r: 0.91, g: 0.84, b: 0.56, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.35, b: 0.00, a: 1.00",
+      "r: 0.78, g: 0.79, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.11, g: 0.13, b: 0.25, a: 1.00",
+      "r: 0.17, g: 0.20, b: 0.31, a: 1.00",
+      "r: 0.22, g: 0.26, b: 0.40, a: 1.00",
+      "r: 0.28, g: 0.32, b: 0.45, a: 1.00"
+    ]
+  },
+  {
+    "Type": "7",
+    "Name": "Bleed",
+    "Slug": "hupg_bleed",
+    "Description": "Inflicts {[bleed_amt]} stacks of bleed. Bleeding enemies receive 1 damage per stack when hit by a ball (Max {[bleed_max_stacks]} stacks)",
+    "Properties": {
+      "kBleedAmt": 2,
+      "kBleedMaxStacks": 8
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bleed_amt": 2,
+          "bleed_max_stacks": 8
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bleed_amt": 4,
+          "bleed_max_stacks": 11
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bleed_amt": 4,
+          "bleed_max_stacks": 14
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bleed_amt": 6,
+          "bleed_max_stacks": 17
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bleed_amt": 6,
+          "bleed_max_stacks": 20
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_vampirelord",
+      "hupg_leech",
+      "hupg_virus",
+      "hupg_berserk",
+      "hupg_sacrifice",
+      "hupg_hemorrhage"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.55, g: 0.14, b: 0.05, a: 1.00",
+    "DamageType": "kBleed",
+    "RotationType": "kRoll",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBleed"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.34, g: 0.06, b: 0.00, a: 1.00",
+      "r: 0.28, g: 0.15, b: 0.11, a: 1.00",
+      "r: 0.48, g: 0.09, b: 0.00, a: 1.00",
+      "r: 0.55, g: 0.14, b: 0.05, a: 1.00",
+      "r: 0.44, g: 0.22, b: 0.15, a: 1.00",
+      "r: 0.29, g: 0.27, b: 0.27, a: 1.00",
+      "r: 0.44, g: 0.23, b: 0.09, a: 1.00",
+      "r: 0.73, g: 0.13, b: 0.13, a: 1.00",
+      "r: 0.55, g: 0.29, b: 0.22, a: 1.00",
+      "r: 0.45, g: 0.39, b: 0.38, a: 1.00",
+      "r: 0.91, g: 0.29, b: 0.15, a: 1.00",
+      "r: 0.68, g: 0.53, b: 0.49, a: 1.00",
+      "r: 0.85, g: 0.77, b: 0.75, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.28, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.44, g: 0.07, b: 0.07, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.10, g: 0.05, b: 0.07, a: 1.00",
+      "r: 0.17, g: 0.07, b: 0.05, a: 1.00",
+      "r: 0.24, g: 0.13, b: 0.07, a: 1.00",
+      "r: 0.20, g: 0.15, b: 0.17, a: 1.00",
+      "r: 0.25, g: 0.18, b: 0.18, a: 1.00",
+      "r: 0.44, g: 0.22, b: 0.12, a: 1.00",
+      "r: 0.47, g: 0.34, b: 0.35, a: 1.00",
+      "r: 0.57, g: 0.51, b: 0.40, a: 1.00",
+      "r: 0.65, g: 0.58, b: 0.43, a: 1.00",
+      "r: 0.83, g: 0.72, b: 0.63, a: 1.00",
+      "r: 1.00, g: 1.00, b: 0.87, a: 1.00"
+    ]
+  },
+  {
+    "Type": "8",
+    "Name": "Earthquake",
+    "Slug": "hupg_earthquake",
+    "Description": "Deals {[min_earthquake_damage]}-{[max_earthquake_damage]} damage to nearby units in a {[range]}x{[range]} tile square",
+    "Properties": {
+      "kMinEarthquakeDamage": 5,
+      "kMaxEarthquakeDamage": 13,
+      "kRange": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "min_earthquake_damage": 5,
+          "max_earthquake_damage": 13,
+          "range": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "min_earthquake_damage": 9,
+          "max_earthquake_damage": 17,
+          "range": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "min_earthquake_damage": 9,
+          "max_earthquake_damage": 17,
+          "range": 4
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "min_earthquake_damage": 13,
+          "max_earthquake_damage": 21,
+          "range": 4
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "min_earthquake_damage": 13,
+          "max_earthquake_damage": 21,
+          "range": 5
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_magma",
+      "hupg_swamp",
+      "hupg_glacier",
+      "hupg_sandstorm",
+      "hupg_overgrowth"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.45, g: 0.34, b: 0.22, a: 1.00",
+    "DamageType": "kEarthquake",
+    "RotationType": "kRotate",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kEarthquake"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.23, g: 0.11, b: 0.07, a: 1.00",
+      "r: 0.28, g: 0.15, b: 0.11, a: 1.00",
+      "r: 0.40, g: 0.22, b: 0.18, a: 1.00",
+      "r: 0.45, g: 0.34, b: 0.22, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.29, g: 0.20, b: 0.13, a: 1.00",
+      "r: 0.40, g: 0.22, b: 0.18, a: 1.00",
+      "r: 1.00, g: 0.24, b: 0.00, a: 1.00",
+      "r: 0.93, g: 0.77, b: 0.61, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.23, g: 0.11, b: 0.07, a: 1.00",
+      "r: 0.40, g: 0.22, b: 0.18, a: 1.00",
+      "r: 0.45, g: 0.33, b: 0.22, a: 1.00",
+      "r: 0.45, g: 0.34, b: 0.22, a: 1.00"
+    ]
+  },
+  {
+    "Type": "9",
+    "Name": "Ghost",
+    "Slug": "hupg_ghost",
+    "Description": "Passes through enemies.",
+    "Properties": {},
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {}
+      },
+      {
+        "Level": 2,
+        "Properties": {}
+      },
+      {
+        "Level": 3,
+        "Properties": {}
+      },
+      {
+        "Level": 4,
+        "Properties": {}
+      },
+      {
+        "Level": 5,
+        "Properties": {}
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_wraith",
+      "hupg_assassin",
+      "hupg_virus",
+      "hupg_phantom",
+      "hupg_soulsucker"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.31, g: 0.47, b: 0.70, a: 0.80",
+    "DamageType": "kGhost",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kGhost"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.16, g: 0.25, b: 0.45, a: 1.00",
+      "r: 0.22, g: 0.35, b: 0.59, a: 1.00",
+      "r: 0.31, g: 0.47, b: 0.70, a: 1.00",
+      "r: 0.55, g: 0.78, b: 0.93, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.18, g: 0.34, b: 0.75, a: 1.00",
+      "r: 0.19, g: 0.34, b: 0.75, a: 0.00",
+      "r: 0.18, g: 0.45, b: 1.00, a: 0.00",
+      "r: 0.41, g: 0.56, b: 0.75, a: 0.00",
+      "r: 0.78, g: 0.94, b: 1.00, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "10",
+    "Name": "Holy Laser",
+    "Slug": "hupg_lasercross",
+    "Description": "Deals {[min_laser_damage]}-{[max_laser_damage]} damage to all enemies in the same row and column",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinLaserDamage": 24,
+      "kMaxLaserDamage": 36
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_laser_damage": 24,
+          "max_laser_damage": 36
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_laser_damage": 27,
+          "max_laser_damage": 48
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_laser_damage": 30,
+          "max_laser_damage": 60
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_laser_damage": 33,
+          "max_laser_damage": 72
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_laser_damage": 36,
+          "max_laser_damage": 84
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_laserhorz",
+        "hupg_laservert"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 1.00, g: 0.97, b: 0.69, a: 1.00",
+    "DamageType": "kLightning",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kLaserHorz",
+      "kLaserVert"
+    ],
+    "Specials": [],
+    "IconPriority": 2,
+    "IconColorList": [
+      "r: 0.48, g: 0.24, b: 0.11, a: 1.00",
+      "r: 0.75, g: 0.50, b: 0.23, a: 1.00",
+      "r: 0.73, g: 0.71, b: 0.51, a: 1.00",
+      "r: 0.98, g: 0.83, b: 0.34, a: 1.00",
+      "r: 1.00, g: 0.97, b: 0.69, a: 1.00",
+      "r: 1.00, g: 0.98, b: 0.80, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.35, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.67, b: 0.21, a: 0.00",
+      "r: 0.75, g: 0.73, b: 0.04, a: 1.00",
+      "r: 0.75, g: 0.74, b: 0.29, a: 1.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 0.81, b: 0.00, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.37, g: 0.10, b: 0.11, a: 1.00",
+      "r: 0.65, g: 0.35, b: 0.14, a: 1.00",
+      "r: 0.89, g: 0.74, b: 0.23, a: 1.00",
+      "r: 1.00, g: 0.98, b: 0.45, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ]
+  },
+  {
+    "Type": "11",
+    "Name": "Vampire",
+    "Slug": "hupg_vampire",
+    "Description": "Each hit has a {[lifesteal_chance]} chance of healing {[lifesteal_heal]} health",
+    "Properties": {
+      "kLifeStealHeal": 1,
+      "kLifeStealChance": 45
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "lifesteal_heal": 1,
+          "lifesteal_chance": 45
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "lifesteal_heal": 1,
+          "lifesteal_chance": 60
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "lifesteal_heal": 2,
+          "lifesteal_chance": 60
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "lifesteal_heal": 2,
+          "lifesteal_chance": 75
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "lifesteal_heal": 3,
+          "lifesteal_chance": 75
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_vampirelord",
+      "hupg_mosquito",
+      "hupg_mosquitoking",
+      "hupg_succubus",
+      "hupg_soulsucker"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.52, g: 0.09, b: 0.46, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kVampire"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.21, g: 0.18, b: 0.20, a: 1.00",
+      "r: 0.37, g: 0.13, b: 0.19, a: 1.00",
+      "r: 0.38, g: 0.11, b: 0.34, a: 1.00",
+      "r: 0.40, g: 0.18, b: 0.21, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.52, g: 0.09, b: 0.46, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.62, g: 0.18, b: 0.18, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.16, g: 0.00, b: 0.75, a: 1.00",
+      "r: 0.25, g: 0.00, b: 0.75, a: 1.00",
+      "r: 0.25, g: 0.00, b: 0.75, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.30, g: 0.28, b: 0.22, a: 1.00",
+      "r: 1.00, g: 0.95, b: 0.80, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00",
+      "r: 0.21, g: 0.18, b: 0.20, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.33, g: 0.25, b: 0.34, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00"
+    ]
+  },
+  {
+    "Type": "12",
+    "Name": "Brood Mother",
+    "Slug": "hupg_broodmother",
+    "Description": "Has a {[birth_chance]} chance of birthing a baby ball each time it hits an enemy",
+    "Properties": {
+      "kBirthChance": 25
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "birth_chance": 25
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "birth_chance": 35
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "birth_chance": 45
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "birth_chance": 55
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "birth_chance": 60
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_spiderqueen",
+      "hupg_leech",
+      "hupg_mosquitoking",
+      "hupg_maggot"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.91, g: 0.48, b: 0.29, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRollForward",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kBroodMother"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.37, g: 0.12, b: 0.15, a: 1.00",
+      "r: 0.51, g: 0.20, b: 0.23, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.91, g: 0.48, b: 0.29, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.61, b: 0.18, a: 1.00",
+      "r: 0.75, g: 0.64, b: 0.30, a: 1.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.37, g: 0.12, b: 0.15, a: 1.00",
+      "r: 0.43, g: 0.17, b: 0.17, a: 1.00",
+      "r: 0.51, g: 0.20, b: 0.23, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.37, g: 0.19, b: 0.10, a: 1.00",
+      "r: 0.90, g: 0.69, b: 0.33, a: 1.00",
+      "r: 0.91, g: 0.48, b: 0.29, a: 1.00"
+    ]
+  },
+  {
+    "Type": "13",
+    "Name": "Iron",
+    "Slug": "hupg_heavy",
+    "Description": "Deals double damage but moves {[reduce_speed_pct]} slower",
+    "Properties": {
+      "kDamageMultiplier": 200,
+      "kReduceSpeedPct": 40
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "damage_multiplier": 2,
+          "reduce_speed_pct": 40
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "damage_multiplier": 2,
+          "reduce_speed_pct": 40
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "damage_multiplier": 2,
+          "reduce_speed_pct": 30
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "damage_multiplier": 2,
+          "reduce_speed_pct": 30
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "damage_multiplier": 2,
+          "reduce_speed_pct": 20
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_bomb",
+      "hupg_assassin",
+      "hupg_lightningrod",
+      "hupg_shotgun",
+      "hupg_hemorrhage"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.21, g: 0.15, b: 0.18, a: 1.00",
+      "r: 0.16, g: 0.32, b: 0.30, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.29, g: 0.45, b: 0.43, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.55, g: 0.67, b: 0.63, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.92, g: 0.38, b: 1.00, a: 0.00",
+      "r: 1.00, g: 0.67, b: 0.89, a: 0.96",
+      "r: 0.97, g: 0.78, b: 1.00, a: 0.00",
+      "r: 0.93, g: 0.93, b: 0.82, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.21, g: 0.15, b: 0.18, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "14",
+    "Name": "Vampire Lord",
+    "Slug": "hupg_vampirelord",
+    "Description": "Each hit inflicts {[bleed_amt]} stacks of bleed. Heals {[lifesteal_heal]} health and consumes all stacks when hitting an enemy with at least {[lifesteal_bleed_stacks]} stacks of bleed.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kLifeStealHeal": 1,
+      "kBleedAmt": 3,
+      "kBleedMaxStacks": 20,
+      "kLifestealBleedStacks": 10
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "lifesteal_heal": 1,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 20,
+          "lifesteal_bleed_stacks": 10
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "lifesteal_heal": 1,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 26,
+          "lifesteal_bleed_stacks": 10
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "lifesteal_heal": 1,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 26,
+          "lifesteal_bleed_stacks": 9
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "lifesteal_heal": 1,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 32,
+          "lifesteal_bleed_stacks": 9
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "lifesteal_heal": 1,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 38,
+          "lifesteal_bleed_stacks": 9
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_nosferatu"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_vampire",
+        "hupg_bleed"
+      ],
+      [
+        "hupg_vampire",
+        "hupg_dark"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.62, g: 0.18, b: 0.18, a: 1.00",
+    "DamageType": "kBleed",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBleed"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kVampireLord"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.27, g: 0.09, b: 0.12, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.28, g: 0.15, b: 0.11, a: 1.00",
+      "r: 0.37, g: 0.13, b: 0.19, a: 1.00",
+      "r: 0.42, g: 0.20, b: 0.15, a: 1.00",
+      "r: 0.62, g: 0.18, b: 0.18, a: 1.00",
+      "r: 0.40, g: 0.34, b: 0.32, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.62, g: 0.18, b: 0.18, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.27, g: 0.09, b: 0.12, a: 1.00",
+      "r: 0.39, g: 0.05, b: 0.16, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.52, g: 0.11, b: 0.15, a: 1.00",
+      "r: 0.42, g: 0.20, b: 0.15, a: 1.00",
+      "r: 0.47, g: 0.17, b: 0.18, a: 1.00",
+      "r: 0.67, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.61, b: 0.43, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "15",
+    "Name": "Wraith",
+    "Slug": "hupg_wraith",
+    "Description": "Freezes any enemy it passes through for {[freeze_length]} seconds",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kFreezeLength": 8,
+      "kFreezePct": 100,
+      "kFreezeDamagePct": 25
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "freeze_length": 0.8,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "freeze_length": 1.3,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "freeze_length": 1.8,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "freeze_length": 2.1,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "freeze_length": 2.4,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_freeze",
+        "hupg_ghost"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.34, g: 0.58, b: 0.59, a: 1.00",
+    "DamageType": "kGhost",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kFrozen"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kGhost"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.12, g: 0.27, b: 0.35, a: 1.00",
+      "r: 0.16, g: 0.33, b: 0.42, a: 1.00",
+      "r: 0.23, g: 0.45, b: 0.42, a: 1.00",
+      "r: 0.34, g: 0.58, b: 0.59, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.51, g: 0.75, b: 0.71, a: 0.00",
+      "r: 0.63, g: 1.00, b: 0.99, a: 1.00",
+      "r: 0.78, g: 0.94, b: 1.00, a: 1.00",
+      "r: 0.76, g: 1.00, b: 0.99, a: 0.57",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.05"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.16, g: 0.33, b: 0.42, a: 1.00",
+      "r: 0.23, g: 0.45, b: 0.42, a: 1.00",
+      "r: 0.34, g: 0.58, b: 0.59, a: 1.00"
+    ]
+  },
+  {
+    "Type": "16",
+    "Name": "Assassin",
+    "Slug": "hupg_assassin",
+    "Description": "Passes through the front of enemies, but not the back. Backstabs deal {[damage_pct]} bonus damage.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kBonusDamagePct": 30
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "damage_pct": 30
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "damage_pct": 40
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "damage_pct": 50
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "damage_pct": 60
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "damage_pct": 70
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_heavy",
+        "hupg_ghost"
+      ],
+      [
+        "hupg_heavy",
+        "hupg_dark"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.33, g: 0.04, b: 0.31, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRotate",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kAssassin"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.33, g: 0.04, b: 0.31, a: 1.00",
+      "r: 0.21, g: 0.14, b: 0.18, a: 1.00",
+      "r: 0.34, g: 0.27, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.45, b: 0.44, a: 1.00",
+      "r: 0.82, g: 0.78, b: 0.62, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.21, g: 0.15, b: 0.75, a: 1.00",
+      "r: 0.11, g: 0.55, b: 0.24, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.11, g: 0.09, b: 0.11, a: 1.00",
+      "r: 0.21, g: 0.14, b: 0.18, a: 1.00",
+      "r: 0.34, g: 0.27, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.45, b: 0.44, a: 1.00"
+    ]
+  },
+  {
+    "Type": "17",
+    "Name": "Magma",
+    "Slug": "hupg_magma",
+    "Description": "Emits lava blobs over time. Enemies who walk into lava blobs are dealt {[min_magma_damage]} - {[max_magma_damage]} damage and gain 1 stack of burn (max {[max_burn_stacks]} stacks). Burn lasts for {[burn_length]} seconds, dealing  {[min_burn_damage]}-{[max_burn_damage]} damage per stack per second.  This ball and its lava blobs also deal {[min_earthquake_damage]}-{[max_earthquake_damage]} damage to nearby units.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kLavaLen": 5,
+      "kBurnLength": 3,
+      "kMinBurnDamage": 3,
+      "kMaxBurnDamage": 8,
+      "kMaxBurnStacks": 3,
+      "kMinMagmaDamage": 15,
+      "kMaxMagmaDamage": 30,
+      "kMinEarthquakeDamage": 6,
+      "kMaxEarthquakeDamage": 12,
+      "kRange": 4
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lava_len": 5,
+          "burn_length": 3,
+          "min_burn_damage": 3,
+          "max_burn_damage": 8,
+          "max_burn_stacks": 3,
+          "min_magma_damage": 15,
+          "max_magma_damage": 30,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lava_len": 5,
+          "burn_length": 3,
+          "min_burn_damage": 5,
+          "max_burn_damage": 10,
+          "max_burn_stacks": 3,
+          "min_magma_damage": 15,
+          "max_magma_damage": 30,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lava_len": 5,
+          "burn_length": 3,
+          "min_burn_damage": 5,
+          "max_burn_damage": 10,
+          "max_burn_stacks": 3,
+          "min_magma_damage": 20,
+          "max_magma_damage": 35,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lava_len": 5,
+          "burn_length": 3,
+          "min_burn_damage": 7,
+          "max_burn_damage": 12,
+          "max_burn_stacks": 3,
+          "min_magma_damage": 20,
+          "max_magma_damage": 35,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lava_len": 5,
+          "burn_length": 3,
+          "min_burn_damage": 9,
+          "max_burn_damage": 14,
+          "max_burn_stacks": 3,
+          "min_magma_damage": 20,
+          "max_magma_damage": 35,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_burn",
+        "hupg_earthquake"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 1.00, g: 0.34, b: 0.13, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBurn"
+    ],
+    "AOETypes": [
+      "kEarthquake"
+    ],
+    "Specials": [
+      "kMagmaBlob"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.14, g: 0.13, b: 0.13, a: 1.00",
+      "r: 0.34, g: 0.08, b: 0.05, a: 1.00",
+      "r: 0.19, g: 0.19, b: 0.19, a: 1.00",
+      "r: 0.39, g: 0.11, b: 0.17, a: 1.00",
+      "r: 0.61, g: 0.09, b: 0.03, a: 1.00",
+      "r: 0.29, g: 0.25, b: 0.25, a: 1.00",
+      "r: 0.88, g: 0.47, b: 0.11, a: 1.00",
+      "r: 0.93, g: 0.79, b: 0.28, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.05, b: 0.00, a: 0.00",
+      "r: 0.31, g: 0.39, b: 0.39, a: 0.00",
+      "r: 0.78, g: 0.94, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "18",
+    "Name": "Egg Sac",
+    "Slug": "hupg_eggsac",
+    "Description": "Explodes into {[min_babies]}-{[max_babies]} baby balls on hitting an enemy. Has a {[cooldown_length]} second cooldown before it can be shot again.",
+    "Properties": {
+      "kMinBabies": 2,
+      "kMaxBabies": 4,
+      "kCooldownLength": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "min_babies": 2,
+          "max_babies": 4,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "min_babies": 2,
+          "max_babies": 5,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "min_babies": 3,
+          "max_babies": 5,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "min_babies": 3,
+          "max_babies": 6,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "min_babies": 4,
+          "max_babies": 6,
+          "cooldown_length": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_spiderqueen",
+      "hupg_mosquito",
+      "hupg_shotgun",
+      "hupg_eggsacsac"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRotate",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kEggSac"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.26, g: 0.17, b: 0.24, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.75, b: 0.75, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.26, g: 0.17, b: 0.24, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00"
+    ]
+  },
+  {
+    "Type": "19",
+    "Name": "Lightning Rod",
+    "Slug": "hupg_lightningrod",
+    "Description": "Plants a lightning rod into enemies it hits. These enemies are struck by lightning every {[lightning_rod_length]} seconds, dealing {[min_lightning_damage]}-{[max_lightning_damage]} damage to up to {[lightning_limit]} nearby enemies",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kLightningLimit": 8,
+      "kMinLightningDamage": 1,
+      "kMaxLightningDamage": 30,
+      "kLightningRodCycleLen": 30
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lightning_limit": 8,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 30,
+          "lightning_rod_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lightning_limit": 8,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 40,
+          "lightning_rod_length": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lightning_limit": 8,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 40,
+          "lightning_rod_length": 2.5
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lightning_limit": 8,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 50,
+          "lightning_rod_length": 2.5
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lightning_limit": 8,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 50,
+          "lightning_rod_length": 2
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_lightning",
+        "hupg_heavy"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+    "DamageType": "kLightning",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kLightningRod"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.21, g: 0.15, b: 0.18, a: 1.00",
+      "r: 0.16, g: 0.32, b: 0.30, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.29, g: 0.45, b: 0.43, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.55, g: 0.67, b: 0.63, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.92, g: 0.38, b: 1.00, a: 0.00",
+      "r: 0.75, g: 0.71, b: 0.45, a: 1.00",
+      "r: 0.97, g: 0.78, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "20",
+    "Name": "Spider Queen",
+    "Slug": "hupg_spiderqueen",
+    "Description": "Has a {[birth_chance]} chance of birthing an Egg Sac each time it hits an enemy",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kBirthChance": 25
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "birth_chance": 25
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "birth_chance": 35
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "birth_chance": 45
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "birth_chance": 50
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "birth_chance": 53
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_nosferatu"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_broodmother",
+        "hupg_eggsac"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRollForward",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kSpiderQueen"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.26, g: 0.17, b: 0.24, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.47, g: 0.27, b: 0.29, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.78, g: 0.48, b: 0.35, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.75, b: 0.75, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.15, g: 0.11, b: 0.16, a: 1.00",
+      "r: 0.15, g: 0.12, b: 0.16, a: 1.00",
+      "r: 0.23, g: 0.18, b: 0.23, a: 1.00",
+      "r: 0.38, g: 0.24, b: 0.06, a: 1.00",
+      "r: 0.42, g: 0.20, b: 0.20, a: 1.00",
+      "r: 0.31, g: 0.26, b: 0.31, a: 1.00",
+      "r: 0.39, g: 0.31, b: 0.35, a: 1.00",
+      "r: 0.59, g: 0.31, b: 0.31, a: 1.00",
+      "r: 0.80, g: 0.47, b: 0.35, a: 1.00",
+      "r: 0.78, g: 0.60, b: 0.38, a: 1.00",
+      "r: 0.85, g: 0.74, b: 0.60, a: 1.00",
+      "r: 0.94, g: 0.86, b: 0.76, a: 1.00"
+    ]
+  },
+  {
+    "Type": "21",
+    "Name": "Swamp",
+    "Slug": "hupg_swamp",
+    "Description": "Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt {[min_tar_damage]} - {[max_tar_damage]}, are slowed by {[slow_pct]} for {[slow_len]} seconds and gain 1 stack of poison (max {[max_poison_stacks]} stacks). Each stack of poison deals  {[min_poison_damage]}-{[max_poison_damage]} damage per second.  This ball and its tar blobs also deal {[min_earthquake_damage]}-{[max_earthquake_damage]} damage to nearby units.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kSlowPct": 50,
+      "kSlowLen": 7,
+      "kPoisonLength": 15,
+      "kMaxPoisonStacks": 8,
+      "kMinPoisonDamage": 1,
+      "kMaxPoisonDamage": 3,
+      "kMinTarDamage": 15,
+      "kMaxTarDamage": 30,
+      "kMinEarthquakeDamage": 6,
+      "kMaxEarthquakeDamage": 12,
+      "kRange": 4
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "slow_pct": 50,
+          "slow_len": 7,
+          "poison_length": 15,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 1,
+          "max_poison_damage": 3,
+          "min_tar_damage": 15,
+          "max_tar_damage": 30,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "slow_pct": 50,
+          "slow_len": 7,
+          "poison_length": 15,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 2,
+          "max_poison_damage": 4,
+          "min_tar_damage": 15,
+          "max_tar_damage": 30,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "slow_pct": 50,
+          "slow_len": 7,
+          "poison_length": 15,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 2,
+          "max_poison_damage": 4,
+          "min_tar_damage": 25,
+          "max_tar_damage": 40,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "slow_pct": 70,
+          "slow_len": 7,
+          "poison_length": 15,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 2,
+          "max_poison_damage": 4,
+          "min_tar_damage": 25,
+          "max_tar_damage": 40,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "slow_pct": 70,
+          "slow_len": 7,
+          "poison_length": 15,
+          "max_poison_stacks": 8,
+          "min_poison_damage": 3,
+          "max_poison_damage": 5,
+          "min_tar_damage": 25,
+          "max_tar_damage": 40,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_poison",
+        "hupg_earthquake"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.70, g: 0.65, b: 0.33, a: 1.00",
+    "DamageType": "kPoison",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kPoison"
+    ],
+    "AOETypes": [
+      "kEarthquake"
+    ],
+    "Specials": [
+      "kTarBlob"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.19, g: 0.13, b: 0.16, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.47, g: 0.45, b: 0.23, a: 1.00",
+      "r: 0.57, g: 0.45, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.70, g: 0.65, b: 0.33, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.02, g: 0.01, b: 0.00, a: 0.00",
+      "r: 0.58, g: 0.51, b: 0.10, a: 1.00",
+      "r: 0.62, g: 0.84, b: 0.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "22",
+    "Name": "Blizzard",
+    "Slug": "hupg_blizzard",
+    "Description": "Freezes all enemies within a {[range]} tile radius for {[freeze_length]} seconds, dealing {[min_lightning_damage]}-{[max_lightning_damage]} damage.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kFreezeLength": 8,
+      "kFreezeDamagePct": 25,
+      "kRange": 2,
+      "kMinLightningDamage": 1,
+      "kMaxLightningDamage": 50
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 0.8,
+          "freeze_damage_pct": 25,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 50
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 1.3,
+          "freeze_damage_pct": 25,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 50
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 1.3,
+          "freeze_damage_pct": 25,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 70
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 1.6,
+          "freeze_damage_pct": 25,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 70
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 1.6,
+          "freeze_damage_pct": 25,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 90
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_freeze",
+        "hupg_lightning"
+      ],
+      [
+        "hupg_freeze",
+        "hupg_wind"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.49, g: 0.73, b: 0.65, a: 1.00",
+    "DamageType": "kIce",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kBlizzard"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.15, g: 0.22, b: 0.53, a: 1.00",
+      "r: 0.13, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.38, g: 0.84, b: 0.69, a: 1.00",
+      "r: 0.94, g: 0.85, b: 0.53, a: 1.00",
+      "r: 1.00, g: 0.96, b: 0.83, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.20, g: 0.27, b: 0.62, a: 0.00",
+      "r: 0.38, g: 0.84, b: 0.69, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.13, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.38, g: 0.84, b: 0.69, a: 1.00",
+      "r: 0.94, g: 0.85, b: 0.53, a: 1.00",
+      "r: 1.00, g: 0.96, b: 0.83, a: 1.00"
+    ]
+  },
+  {
+    "Type": "23",
+    "Name": "Freeze Ray",
+    "Slug": "hupg_freezeray",
+    "Description": "Emits a freeze ray when hitting an enemy, dealing  {[min_laser_damage]}-{[max_laser_damage]} to all enemies in its path, with a {[freeze_pct]} chance of freezing them for {[freeze_length]} seconds",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kFreezeLength": 100,
+      "kFreezePct": 10,
+      "kFreezeDamagePct": 25,
+      "kMinLaserDamage": 20,
+      "kMaxLaserDamage": 50
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 10,
+          "freeze_pct": 10,
+          "freeze_damage_pct": 25,
+          "min_laser_damage": 20,
+          "max_laser_damage": 50
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 10,
+          "freeze_pct": 10,
+          "freeze_damage_pct": 25,
+          "min_laser_damage": 25,
+          "max_laser_damage": 65
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 13,
+          "freeze_pct": 10,
+          "freeze_damage_pct": 25,
+          "min_laser_damage": 25,
+          "max_laser_damage": 65
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 13,
+          "freeze_pct": 10,
+          "freeze_damage_pct": 25,
+          "min_laser_damage": 30,
+          "max_laser_damage": 80
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 13,
+          "freeze_pct": 15,
+          "freeze_damage_pct": 25,
+          "min_laser_damage": 30,
+          "max_laser_damage": 80
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_freeze",
+        "hupg_laserhorz"
+      ],
+      [
+        "hupg_freeze",
+        "hupg_laservert"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.09, g: 0.65, b: 0.59, a: 1.00",
+    "DamageType": "kIce",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kFrozen"
+    ],
+    "AOETypes": [
+      "kRay"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.31, g: 0.04, b: 0.17, a: 1.00",
+      "r: 0.44, g: 0.07, b: 0.25, a: 1.00",
+      "r: 0.03, g: 0.34, b: 0.49, a: 1.00",
+      "r: 0.58, g: 0.23, b: 0.15, a: 1.00",
+      "r: 0.78, g: 0.31, b: 0.19, a: 1.00",
+      "r: 0.09, g: 0.65, b: 0.59, a: 1.00",
+      "r: 0.33, g: 0.89, b: 0.71, a: 1.00",
+      "r: 0.97, g: 0.87, b: 0.50, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.39, g: 0.75, b: 0.73, a: 1.00",
+      "r: 0.43, g: 0.75, b: 0.72, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 0.78, g: 0.94, b: 1.00, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.17, g: 0.03, b: 0.10, a: 1.00",
+      "r: 0.23, g: 0.06, b: 0.10, a: 1.00",
+      "r: 0.31, g: 0.07, b: 0.13, a: 1.00",
+      "r: 0.45, g: 0.10, b: 0.18, a: 1.00",
+      "r: 0.53, g: 0.13, b: 0.13, a: 1.00",
+      "r: 0.03, g: 0.34, b: 0.49, a: 1.00",
+      "r: 0.58, g: 0.23, b: 0.15, a: 1.00",
+      "r: 0.78, g: 0.31, b: 0.19, a: 1.00",
+      "r: 0.09, g: 0.65, b: 0.59, a: 1.00",
+      "r: 0.33, g: 0.89, b: 0.71, a: 1.00",
+      "r: 0.97, g: 0.87, b: 0.50, a: 1.00"
+    ]
+  },
+  {
+    "Type": "24",
+    "Name": "Leech",
+    "Slug": "hupg_leech",
+    "Description": "Attaches up to 1 leech onto enemies it hits, which adds {[bleed_amt]} stacks of bleed per second (Max {[bleed_max_stacks]} stacks)",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kBleedAmt": 2,
+      "kBleedMaxStacks": 24
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 2,
+          "bleed_max_stacks": 24
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 36
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 48
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 4,
+          "bleed_max_stacks": 60
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 4,
+          "bleed_max_stacks": 72
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_broodmother",
+        "hupg_bleed"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+    "DamageType": "kBleed",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBleed",
+      "kLeech"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.22, g: 0.08, b: 0.13, a: 1.00",
+      "r: 0.27, g: 0.09, b: 0.12, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.21, g: 0.18, b: 0.20, a: 1.00",
+      "r: 0.48, g: 0.14, b: 0.16, a: 1.00",
+      "r: 0.51, g: 0.14, b: 0.18, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.63, g: 0.16, b: 0.18, a: 1.00",
+      "r: 0.83, g: 0.14, b: 0.16, a: 1.00",
+      "r: 0.57, g: 0.45, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.70, g: 0.65, b: 0.33, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.00, b: 0.03, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.26, g: 0.05, b: 0.13, a: 1.00",
+      "r: 0.45, g: 0.09, b: 0.15, a: 1.00",
+      "r: 0.80, g: 0.11, b: 0.22, a: 1.00",
+      "r: 0.95, g: 0.86, b: 0.72, a: 1.00",
+      "r: 0.15, g: 0.03, b: 0.07, a: 1.00",
+      "r: 0.09, g: 0.08, b: 0.08, a: 1.00",
+      "r: 0.13, g: 0.11, b: 0.12, a: 1.00",
+      "r: 0.16, g: 0.13, b: 0.15, a: 1.00",
+      "r: 0.21, g: 0.18, b: 0.20, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.36, g: 0.30, b: 0.33, a: 1.00",
+      "r: 0.57, g: 0.33, b: 0.25, a: 1.00",
+      "r: 0.57, g: 0.45, b: 0.25, a: 1.00"
+    ]
+  },
+  {
+    "Type": "25",
+    "Name": "Mosquito Swarm",
+    "Slug": "hupg_mosquito",
+    "Description": "Explodes into {[min_mosquitos]}-{[max_mosquitos]} mosquitos. Mosquitos attack random enemies, dealing {[min_mosquito_damage]} - {[max_mosquito_damage]} damage each. If a mosquito kills an enemy, they steal {[lifesteal_heal]} health.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinMosquitos": 3,
+      "kMaxMosquitos": 6,
+      "kMinMosquitoDamage": 80,
+      "kMaxMosquitoDamage": 120,
+      "kLifeStealHeal": 1
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquitos": 3,
+          "max_mosquitos": 6,
+          "min_mosquito_damage": 80,
+          "max_mosquito_damage": 120,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquitos": 3,
+          "max_mosquitos": 6,
+          "min_mosquito_damage": 100,
+          "max_mosquito_damage": 150,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquitos": 4,
+          "max_mosquitos": 8,
+          "min_mosquito_damage": 100,
+          "max_mosquito_damage": 150,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquitos": 4,
+          "max_mosquitos": 8,
+          "min_mosquito_damage": 120,
+          "max_mosquito_damage": 180,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquitos": 5,
+          "max_mosquitos": 10,
+          "min_mosquito_damage": 120,
+          "max_mosquito_damage": 180,
+          "lifesteal_heal": 2
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_vampire",
+        "hupg_eggsac"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": true,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+    "DamageType": "kBleed",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kMosquitoSwarm"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.24, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.45, g: 0.11, b: 0.15, a: 1.00",
+      "r: 0.37, g: 0.16, b: 0.27, a: 1.00",
+      "r: 0.43, g: 0.19, b: 0.35, a: 1.00",
+      "r: 0.58, g: 0.16, b: 0.21, a: 1.00",
+      "r: 0.82, g: 0.30, b: 0.11, a: 1.00",
+      "r: 0.66, g: 0.38, b: 0.32, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.44, g: 0.04, b: 0.04, a: 1.00",
+      "r: 0.75, g: 0.10, b: 0.02, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "26",
+    "Name": "Mosquito King",
+    "Slug": "hupg_mosquitoking",
+    "Description": "Spawns a mosquito each time it hits an enemy. Mosquitos attack a random enemy, dealing {[min_mosquito_damage]} - {[max_mosquito_damage]} damage each. If a mosquito kills an enemy, they steal {[lifesteal_heal]} health.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinMosquitoDamage": 80,
+      "kMaxMosquitoDamage": 120,
+      "kMinMosquitos": 1,
+      "kMaxMosquitos": 1,
+      "kLifeStealHeal": 1
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquito_damage": 80,
+          "max_mosquito_damage": 120,
+          "min_mosquitos": 1,
+          "max_mosquitos": 1,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquito_damage": 100,
+          "max_mosquito_damage": 150,
+          "min_mosquitos": 1,
+          "max_mosquitos": 1,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquito_damage": 100,
+          "max_mosquito_damage": 150,
+          "min_mosquitos": 1,
+          "max_mosquitos": 1,
+          "lifesteal_heal": 2
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquito_damage": 120,
+          "max_mosquito_damage": 180,
+          "min_mosquitos": 1,
+          "max_mosquitos": 1,
+          "lifesteal_heal": 2
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_mosquito_damage": 120,
+          "max_mosquito_damage": 180,
+          "min_mosquitos": 1,
+          "max_mosquitos": 1,
+          "lifesteal_heal": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_nosferatu"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_vampire",
+        "hupg_broodmother"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": true,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kMosquitoKing"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.19, g: 0.14, b: 0.16, a: 1.00",
+      "r: 0.37, g: 0.19, b: 0.21, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.47, g: 0.27, b: 0.29, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.37, b: 0.16, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.01, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.02, g: 0.01, b: 0.01, a: 1.00",
+      "r: 0.04, g: 0.02, b: 0.01, a: 1.00",
+      "r: 0.05, g: 0.02, b: 0.02, a: 1.00",
+      "r: 0.06, g: 0.02, b: 0.02, a: 1.00",
+      "r: 0.29, g: 0.11, b: 0.13, a: 1.00",
+      "r: 0.30, g: 0.12, b: 0.14, a: 1.00",
+      "r: 0.31, g: 0.12, b: 0.14, a: 1.00",
+      "r: 0.56, g: 0.25, b: 0.22, a: 1.00",
+      "r: 0.58, g: 0.25, b: 0.22, a: 1.00",
+      "r: 0.59, g: 0.26, b: 0.23, a: 1.00",
+      "r: 0.59, g: 0.26, b: 0.23, a: 1.00",
+      "r: 0.67, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.68, g: 0.49, b: 0.25, a: 1.00",
+      "r: 0.09, g: 0.08, b: 0.08, a: 1.00",
+      "r: 0.25, g: 0.23, b: 0.24, a: 1.00"
+    ]
+  },
+  {
+    "Type": "27",
+    "Name": "Nosferatu",
+    "Slug": "hupg_nosferatu",
+    "Description": "Spawns a vampire bat each bounce. Vampire bats fly towards a random enemy, dealing {[min_vampire_bat_damage]}-{[max_vampire_bat_damage]} damage on hit, turning into a Vampire Lord.",
+    "Properties": {
+      "kBonusDamageMin": 54,
+      "kBonusDamageMax": 104,
+      "kMinVampireBatDamage": 132,
+      "kMaxVampireBatDamage": 176
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_vampire_bat_damage": 132,
+          "max_vampire_bat_damage": 176
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_vampire_bat_damage": 156,
+          "max_vampire_bat_damage": 224
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_vampire_bat_damage": 180,
+          "max_vampire_bat_damage": 272
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_vampire_bat_damage": 204,
+          "max_vampire_bat_damage": 320
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_vampire_bat_damage": 228,
+          "max_vampire_bat_damage": 368
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_vampirelord",
+        "hupg_spiderqueen",
+        "hupg_mosquitoking"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": true,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.82, g: 0.69, b: 0.53, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kNosferatu"
+    ],
+    "IconPriority": 10,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.24, g: 0.24, b: 0.20, a: 1.00",
+      "r: 0.34, g: 0.23, b: 0.29, a: 1.00",
+      "r: 0.68, g: 0.23, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.42, b: 0.37, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.69, b: 0.53, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 1.00, g: 0.38, b: 0.00, a: 1.00",
+      "r: 1.00, g: 0.64, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.38, g: 0.11, b: 0.20, a: 1.00",
+      "r: 0.16, g: 0.23, b: 0.22, a: 1.00",
+      "r: 0.24, g: 0.24, b: 0.20, a: 1.00",
+      "r: 0.52, g: 0.11, b: 0.15, a: 1.00",
+      "r: 0.34, g: 0.23, b: 0.29, a: 1.00",
+      "r: 0.47, g: 0.25, b: 0.27, a: 1.00",
+      "r: 0.27, g: 0.36, b: 0.34, a: 1.00",
+      "r: 0.13, g: 0.51, b: 0.52, a: 1.00",
+      "r: 0.52, g: 0.42, b: 0.37, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "28",
+    "Name": "Nuclear Bomb",
+    "Slug": "hupg_nuke",
+    "Description": "Explodes when hitting an enemy, dealing {[min_bomb_damage]}-{[max_bomb_damage]} damage to nearby enemies and applying 1 stack of radiation to everyone present indefinitely (max {[max_radiation_stacks]} stacks). Each stack of radiation increases damage received by {[radiation_pct]}. Has a {[cooldown_length]} second cooldown.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kMinBombDamage": 300,
+      "kMaxBombDamage": 500,
+      "kRange": 4,
+      "kMaxRadiationStacks": 5,
+      "kRadiationPct": 10,
+      "kRadiationLength": 9999,
+      "kCooldownLength": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_bomb_damage": 300,
+          "max_bomb_damage": 500,
+          "range": 4,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 9999,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_bomb_damage": 400,
+          "max_bomb_damage": 700,
+          "range": 4,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 9999,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_bomb_damage": 400,
+          "max_bomb_damage": 700,
+          "range": 5,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 15,
+          "radiation_length": 9999,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_bomb_damage": 500,
+          "max_bomb_damage": 900,
+          "range": 5,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 15,
+          "radiation_length": 9999,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_bomb_damage": 500,
+          "max_bomb_damage": 900,
+          "range": 6,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 20,
+          "radiation_length": 9999,
+          "cooldown_length": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_bomb",
+        "hupg_poison"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.47, g: 0.45, b: 0.23, a: 1.00",
+    "DamageType": "kBomb",
+    "RotationType": "kAlignToDirAndSpin",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kRadiation"
+    ],
+    "AOETypes": [
+      "kBomb",
+      "kNuke"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.47, g: 0.27, b: 0.29, a: 1.00",
+      "r: 0.45, g: 0.37, b: 0.35, a: 1.00",
+      "r: 0.47, g: 0.45, b: 0.23, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.57, g: 0.45, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.70, g: 0.65, b: 0.33, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.62, g: 0.00, b: 0.02, a: 1.00",
+      "r: 0.75, g: 0.28, b: 0.04, a: 0.00",
+      "r: 1.00, g: 0.38, b: 0.00, a: 1.00",
+      "r: 1.00, g: 0.64, b: 0.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.44, g: 0.00, b: 0.04, a: 1.00",
+      "r: 0.32, g: 0.17, b: 0.15, a: 1.00",
+      "r: 0.25, g: 0.20, b: 0.23, a: 1.00",
+      "r: 0.37, g: 0.29, b: 0.29, a: 1.00",
+      "r: 0.37, g: 0.31, b: 0.29, a: 1.00",
+      "r: 0.42, g: 0.33, b: 0.31, a: 1.00",
+      "r: 0.89, g: 0.21, b: 0.12, a: 1.00",
+      "r: 0.89, g: 0.35, b: 0.12, a: 1.00",
+      "r: 0.62, g: 0.50, b: 0.26, a: 1.00",
+      "r: 0.62, g: 0.56, b: 0.26, a: 1.00"
+    ]
+  },
+  {
+    "Type": "29",
+    "Name": "Virus",
+    "Slug": "hupg_virus",
+    "Description": "Applies 1 stack of disease to units it hits (max {[max_disease_stacks]} stacks). Disease lasts for {[disease_length]} seconds. Each stack of disease deals {[min_disease_damage]}-{[max_disease_damage]} damage per second and diseased units have a {[disease_chance]} chance of passing a stack to undiseased nearby enemies each second. ",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kDiseaseLength": 6,
+      "kMinDiseaseDamage": 3,
+      "kMaxDiseaseDamage": 6,
+      "kDiseaseChance": 15,
+      "kMaxDiseaseStacks": 8
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "disease_length": 6,
+          "min_disease_damage": 3,
+          "max_disease_damage": 6,
+          "disease_chance": 15,
+          "max_disease_stacks": 8
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "disease_length": 6,
+          "min_disease_damage": 5,
+          "max_disease_damage": 9,
+          "disease_chance": 15,
+          "max_disease_stacks": 8
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "disease_length": 6,
+          "min_disease_damage": 5,
+          "max_disease_damage": 9,
+          "disease_chance": 25,
+          "max_disease_stacks": 8
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "disease_length": 6,
+          "min_disease_damage": 7,
+          "max_disease_damage": 12,
+          "disease_chance": 25,
+          "max_disease_stacks": 8
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "disease_length": 12,
+          "min_disease_damage": 7,
+          "max_disease_damage": 12,
+          "disease_chance": 25,
+          "max_disease_stacks": 8
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_ghost",
+        "hupg_poison"
+      ],
+      [
+        "hupg_cell",
+        "hupg_poison"
+      ],
+      [
+        "hupg_bleed",
+        "hupg_poison"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.70, g: 0.65, b: 0.33, a: 1.00",
+    "DamageType": "kDisease",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kDisease"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.47, g: 0.45, b: 0.23, a: 1.00",
+      "r: 0.70, g: 0.65, b: 0.33, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.25, g: 0.28, b: 0.11, a: 0.00",
+      "r: 0.47, g: 0.75, b: 0.17, a: 0.00",
+      "r: 0.75, g: 0.62, b: 0.12, a: 0.00",
+      "r: 0.90, g: 0.75, b: 0.18, a: 0.00",
+      "r: 0.64, g: 1.00, b: 0.00, a: 1.00",
+      "r: 0.75, g: 1.00, b: 0.00, a: 0.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "30",
+    "Name": "Wind",
+    "Slug": "hupg_wind",
+    "Description": "Passes through enemies and slows them down by {[slow_pct]} for {[slow_len]} seconds, but deals 25% less damage.",
+    "Properties": {
+      "kDamageMultiplier": 75,
+      "kSlowPct": 30,
+      "kSlowLen": 5
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "damage_multiplier": 0.75,
+          "slow_pct": 30,
+          "slow_len": 5
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "damage_multiplier": 0.75,
+          "slow_pct": 30,
+          "slow_len": 8
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "damage_multiplier": 0.75,
+          "slow_pct": 45,
+          "slow_len": 8
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "damage_multiplier": 0.75,
+          "slow_pct": 45,
+          "slow_len": 11
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "damage_multiplier": 0.75,
+          "slow_pct": 45,
+          "slow_len": 14
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_blizzard",
+      "hupg_inferno",
+      "hupg_storm",
+      "hupg_noxious",
+      "hupg_sandstorm"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.81, g: 0.95, b: 0.93, a: 1.00",
+    "DamageType": "kWind",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kSlow"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kGhost"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.41, g: 0.44, b: 0.55, a: 1.00",
+      "r: 0.42, g: 0.81, b: 0.76, a: 1.00",
+      "r: 0.81, g: 0.95, b: 0.93, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.41, g: 0.44, b: 0.55, a: 1.00",
+      "r: 0.43, g: 0.75, b: 0.75, a: 0.00",
+      "r: 0.42, g: 0.81, b: 0.76, a: 1.00",
+      "r: 0.81, g: 0.95, b: 0.93, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "31",
+    "Name": "Inferno",
+    "Slug": "hupg_inferno",
+    "Description": "Applies 1 stack of burn every second to all enemies within a {[range]} tile radius. Burn lasts for {[burn_length]} seconds, dealing {[min_burn_damage]}-{[max_burn_damage]} damage per stack per second.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kBurnLength": 6,
+      "kMinBurnDamage": 3,
+      "kMaxBurnDamage": 7,
+      "kMaxBurnStacks": 5,
+      "kRange": 2
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "burn_length": 6,
+          "min_burn_damage": 3,
+          "max_burn_damage": 7,
+          "max_burn_stacks": 5,
+          "range": 2
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "burn_length": 10,
+          "min_burn_damage": 3,
+          "max_burn_damage": 7,
+          "max_burn_stacks": 5,
+          "range": 2
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "burn_length": 10,
+          "min_burn_damage": 6,
+          "max_burn_damage": 10,
+          "max_burn_stacks": 5,
+          "range": 2
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "burn_length": 10,
+          "min_burn_damage": 6,
+          "max_burn_damage": 10,
+          "max_burn_stacks": 5,
+          "range": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "burn_length": 10,
+          "min_burn_damage": 6,
+          "max_burn_damage": 10,
+          "max_burn_stacks": 5,
+          "range": 4
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_burn",
+        "hupg_wind"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 1.00, g: 0.26, b: 0.00, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kInferno"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.49, g: 0.06, b: 0.09, a: 1.00",
+      "r: 0.82, g: 0.04, b: 0.10, a: 1.00",
+      "r: 0.85, g: 0.30, b: 0.22, a: 1.00",
+      "r: 1.00, g: 0.49, b: 0.12, a: 1.00",
+      "r: 0.98, g: 0.86, b: 0.74, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.37, g: 0.00, b: 0.33, a: 0.00",
+      "r: 0.60, g: 0.06, b: 0.05, a: 0.00",
+      "r: 0.60, g: 0.06, b: 0.05, a: 1.00",
+      "r: 0.42, g: 0.13, b: 0.26, a: 0.00",
+      "r: 0.75, g: 0.07, b: 0.00, a: 1.00",
+      "r: 1.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 1.00, g: 0.56, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.71, b: 0.06, a: 1.00",
+      "r: 0.70, g: 0.75, b: 0.06, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "32",
+    "Name": "Charm",
+    "Slug": "hupg_charm",
+    "Description": "Each hit has a {[charm_chance]} chance of charming the enemy for {[charm_length]} seconds. Charmed units walk up the board and attack enemies.",
+    "Properties": {
+      "kCharmChance": 40,
+      "kCharmLength": 5
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "charm_chance": 40,
+          "charm_length": 5
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "charm_chance": 40,
+          "charm_length": 7
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "charm_chance": 50,
+          "charm_length": 7
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "charm_chance": 50,
+          "charm_length": 9
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "charm_chance": 50,
+          "charm_length": 11
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_succubus",
+      "hupg_berserk",
+      "hupg_incubus",
+      "hupg_lovestruck"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.94, g: 0.13, b: 0.51, a: 1.00",
+    "DamageType": "kCharm",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kCharm"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.62, g: 0.27, b: 0.37, a: 1.00",
+      "r: 1.00, g: 0.66, b: 0.66, a: 1.00",
+      "r: 1.00, g: 0.93, b: 0.93, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.13, b: 0.13, a: 0.00",
+      "r: 0.75, g: 0.51, b: 0.53, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "33",
+    "Name": "Succubus",
+    "Slug": "hupg_succubus",
+    "Description": "Each hit has a {[charm_chance]} chance of charming the enemy for {[charm_length]} seconds. Heals {[lifesteal_heal]} when hitting a charmed enemy.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kCharmChance": 40,
+      "kCharmLength": 9,
+      "kLifeStealHeal": 1
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 40,
+          "charm_length": 9,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 40,
+          "charm_length": 12,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 50,
+          "charm_length": 12,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 50,
+          "charm_length": 15,
+          "lifesteal_heal": 1
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 50,
+          "charm_length": 18,
+          "lifesteal_heal": 1
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_satan"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_charm",
+        "hupg_vampire"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.84, g: 0.30, b: 0.55, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kCharm"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kSuccubus"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.22, a: 1.00",
+      "r: 0.30, g: 0.13, b: 0.29, a: 1.00",
+      "r: 0.42, g: 0.13, b: 0.33, a: 1.00",
+      "r: 0.40, g: 0.18, b: 0.27, a: 1.00",
+      "r: 0.57, g: 0.17, b: 0.44, a: 1.00",
+      "r: 0.64, g: 0.18, b: 0.39, a: 1.00",
+      "r: 0.52, g: 0.46, b: 0.46, a: 1.00",
+      "r: 0.84, g: 0.30, b: 0.55, a: 1.00",
+      "r: 0.67, g: 0.58, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.74, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.00, b: 0.35, a: 1.00",
+      "r: 0.75, g: 0.00, b: 0.45, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.30, g: 0.13, b: 0.29, a: 1.00",
+      "r: 0.42, g: 0.13, b: 0.33, a: 1.00",
+      "r: 0.62, g: 0.26, b: 0.45, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "34",
+    "Name": "Berserk",
+    "Slug": "hupg_berserk",
+    "Description": "Each hit has a {[berserk_chance]} chance of causing enemies to go berserk for {[berserk_length]} seconds. Berserk enemies deal {[min_berserk_damage]}-{[max_berserk_damage]} damage to adjacent enemies every second.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kBerserkChance": 30,
+      "kMinBerserkDamage": 15,
+      "kMaxBerserkDamage": 24,
+      "kBerserkLength": 6
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "berserk_chance": 30,
+          "min_berserk_damage": 15,
+          "max_berserk_damage": 24,
+          "berserk_length": 6
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "berserk_chance": 30,
+          "min_berserk_damage": 19,
+          "max_berserk_damage": 28,
+          "berserk_length": 9
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "berserk_chance": 40,
+          "min_berserk_damage": 23,
+          "max_berserk_damage": 32,
+          "berserk_length": 9
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "berserk_chance": 40,
+          "min_berserk_damage": 27,
+          "max_berserk_damage": 36,
+          "berserk_length": 12
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "berserk_chance": 40,
+          "min_berserk_damage": 31,
+          "max_berserk_damage": 40,
+          "berserk_length": 15
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_charm",
+        "hupg_burn"
+      ],
+      [
+        "hupg_charm",
+        "hupg_bleed"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.91, g: 0.29, b: 0.49, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBerserk"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.19, g: 0.15, b: 0.25, a: 1.00",
+      "r: 0.36, g: 0.22, b: 0.52, a: 1.00",
+      "r: 0.22, g: 0.34, b: 0.36, a: 1.00",
+      "r: 0.47, g: 0.27, b: 0.29, a: 1.00",
+      "r: 0.45, g: 0.26, b: 0.70, a: 1.00",
+      "r: 0.29, g: 0.45, b: 0.43, a: 1.00",
+      "r: 0.73, g: 0.22, b: 0.62, a: 1.00",
+      "r: 0.91, g: 0.29, b: 0.49, a: 1.00",
+      "r: 0.78, g: 0.48, b: 0.35, a: 1.00",
+      "r: 0.72, g: 0.47, b: 0.78, a: 1.00",
+      "r: 0.93, g: 0.47, b: 0.62, a: 1.00",
+      "r: 0.48, g: 0.70, b: 0.67, a: 1.00",
+      "r: 0.78, g: 0.55, b: 0.84, a: 1.00",
+      "r: 0.55, g: 0.84, b: 0.81, a: 1.00",
+      "r: 1.00, g: 0.93, b: 0.31, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.15, b: 0.75, a: 1.00",
+      "r: 0.75, g: 0.09, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.22, g: 0.34, b: 0.36, a: 1.00",
+      "r: 0.29, g: 0.45, b: 0.43, a: 1.00",
+      "r: 0.49, g: 0.44, b: 0.32, a: 1.00",
+      "r: 0.48, g: 0.70, b: 0.67, a: 1.00",
+      "r: 0.55, g: 0.84, b: 0.81, a: 1.00",
+      "r: 0.36, g: 0.22, b: 0.52, a: 1.00",
+      "r: 0.45, g: 0.26, b: 0.70, a: 1.00",
+      "r: 0.73, g: 0.22, b: 0.62, a: 1.00",
+      "r: 0.91, g: 0.29, b: 0.49, a: 1.00"
+    ]
+  },
+  {
+    "Type": "35",
+    "Name": "Shotgun",
+    "Slug": "hupg_shotgun",
+    "Description": "Shoots {[min_babies]}-{[max_babies]} iron baby balls after hitting a wall. Iron baby balls move at {[base_speed]} speed but are destroyed upon hitting anything.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinBabies": 3,
+      "kMaxBabies": 7,
+      "kBaseSpeedPct": 200
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 3,
+          "max_babies": 7,
+          "base_speed": 200
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 4,
+          "max_babies": 8,
+          "base_speed": 200
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 5,
+          "max_babies": 9,
+          "base_speed": 200
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 6,
+          "max_babies": 10,
+          "base_speed": 200
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 7,
+          "max_babies": 11,
+          "base_speed": 200
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_heavy",
+        "hupg_eggsac"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.61, g: 0.50, b: 0.57, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kShotgun"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.36, g: 0.16, b: 0.14, a: 1.00",
+      "r: 0.25, g: 0.22, b: 0.24, a: 1.00",
+      "r: 0.45, g: 0.15, b: 0.12, a: 1.00",
+      "r: 0.78, g: 0.00, b: 0.11, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 1.00, g: 0.00, b: 0.13, a: 1.00",
+      "r: 0.48, g: 0.25, b: 0.22, a: 1.00",
+      "r: 0.43, g: 0.36, b: 0.40, a: 1.00",
+      "r: 0.68, g: 0.36, b: 0.25, a: 1.00",
+      "r: 0.61, g: 0.50, b: 0.57, a: 1.00",
+      "r: 0.82, g: 0.46, b: 0.25, a: 1.00",
+      "r: 0.89, g: 0.76, b: 0.58, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.22, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.33, b: 0.00, a: 1.00",
+      "r: 0.81, g: 0.36, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.20, g: 0.05, b: 0.05, a: 1.00",
+      "r: 0.17, g: 0.13, b: 0.14, a: 1.00",
+      "r: 0.30, g: 0.09, b: 0.09, a: 1.00",
+      "r: 0.27, g: 0.19, b: 0.20, a: 1.00",
+      "r: 0.37, g: 0.17, b: 0.10, a: 1.00",
+      "r: 0.37, g: 0.31, b: 0.29, a: 1.00",
+      "r: 0.48, g: 0.29, b: 0.15, a: 1.00",
+      "r: 0.50, g: 0.44, b: 0.37, a: 1.00",
+      "r: 0.63, g: 0.56, b: 0.45, a: 1.00"
+    ]
+  },
+  {
+    "Type": "36",
+    "Name": "Light",
+    "Slug": "hupg_light",
+    "Description": "Blinds enemies on hit for {[blind_length]} seconds. Blinded units have a hard time detecting you and have a 50% chance of missing when they attack.",
+    "Properties": {
+      "kBlindLength": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "blind_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "blind_length": 5
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "blind_length": 7
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "blind_length": 9
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "blind_length": 11
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_sun",
+      "hupg_laserbeam",
+      "hupg_flash",
+      "hupg_flicker",
+      "hupg_lovestruck"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.98, g: 0.95, b: 0.83, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBlind"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.38, g: 0.22, b: 0.16, a: 1.00",
+      "r: 0.79, g: 0.63, b: 0.43, a: 1.00",
+      "r: 0.97, g: 0.85, b: 0.55, a: 1.00",
+      "r: 1.00, g: 0.93, b: 0.69, a: 1.00",
+      "r: 0.98, g: 0.95, b: 0.83, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.64, g: 0.59, b: 0.36, a: 1.00",
+      "r: 0.75, g: 0.71, b: 0.28, a: 0.00",
+      "r: 0.75, g: 0.73, b: 0.39, a: 0.00",
+      "r: 0.75, g: 0.74, b: 0.47, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "37",
+    "Name": "Sun",
+    "Slug": "hupg_sun",
+    "Description": "Blind all enemies in view and add 1 stack of burn every second (max {[max_burn_stacks]} stacks). Burn lasts for {[burn_length]} seconds and deals {[min_burn_damage]}-{[max_burn_damage]} damage per stack per second.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kBurnLength": 6,
+      "kMaxBurnStacks": 5,
+      "kMinBurnDamage": 6,
+      "kMaxBurnDamage": 12
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "burn_length": 6,
+          "max_burn_stacks": 5,
+          "min_burn_damage": 6,
+          "max_burn_damage": 12
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "burn_length": 8,
+          "max_burn_stacks": 5,
+          "min_burn_damage": 6,
+          "max_burn_damage": 12
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "burn_length": 8,
+          "max_burn_stacks": 5,
+          "min_burn_damage": 9,
+          "max_burn_damage": 15
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "burn_length": 10,
+          "max_burn_stacks": 5,
+          "min_burn_damage": 9,
+          "max_burn_damage": 15
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "burn_length": 10,
+          "max_burn_stacks": 5,
+          "min_burn_damage": 12,
+          "max_burn_damage": 18
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_blackhole"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_burn",
+        "hupg_light"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 1.00, g: 0.78, b: 0.10, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBurn",
+      "kBlind"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kSun"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.59, g: 0.35, b: 0.08, a: 1.00",
+      "r: 1.00, g: 0.32, b: 0.00, a: 1.00",
+      "r: 0.91, g: 0.57, b: 0.06, a: 1.00",
+      "r: 1.00, g: 0.78, b: 0.10, a: 1.00",
+      "r: 1.00, g: 0.85, b: 0.41, a: 1.00",
+      "r: 1.00, g: 0.93, b: 0.72, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.14, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.16, b: 0.04, a: 0.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "38",
+    "Name": "Laser Beam",
+    "Slug": "hupg_laserbeam",
+    "Description": "Emit a laser beam on hit that deals {[min_laser_damage]}-{[max_laser_damage]} damage and blinds enemies for {[blind_length]} seconds.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kMinLaserDamage": 30,
+      "kMaxLaserDamage": 42,
+      "kBlindLength": 8
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_laser_damage": 30,
+          "max_laser_damage": 42,
+          "blind_length": 8
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_laser_damage": 38,
+          "max_laser_damage": 54,
+          "blind_length": 8
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_laser_damage": 46,
+          "max_laser_damage": 66,
+          "blind_length": 8
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_laser_damage": 54,
+          "max_laser_damage": 78,
+          "blind_length": 8
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_laser_damage": 62,
+          "max_laser_damage": 90,
+          "blind_length": 8
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_laserhorz",
+        "hupg_light"
+      ],
+      [
+        "hupg_laservert",
+        "hupg_light"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 1.00, g: 0.08, b: 0.08, a: 1.00",
+    "DamageType": "kLaserBeam",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBlind"
+    ],
+    "AOETypes": [
+      "kRay"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.46, g: 0.09, b: 0.09, a: 1.00",
+      "r: 0.70, g: 0.09, b: 0.09, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.87, g: 0.09, b: 0.09, a: 1.00",
+      "r: 1.00, g: 0.08, b: 0.08, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.84, g: 0.68, b: 0.64, a: 1.00",
+      "r: 1.00, g: 0.88, b: 0.85, a: 1.00",
+      "r: 1.00, g: 0.90, b: 0.90, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.00, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.15, b: 0.00, a: 0.00",
+      "r: 1.00, g: 0.24, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.59, b: 0.21, a: 0.00",
+      "r: 0.00, g: 1.00, b: 0.63, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.23, g: 0.10, b: 0.13, a: 1.00",
+      "r: 0.29, g: 0.22, b: 0.24, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.29, a: 1.00",
+      "r: 0.34, g: 0.31, b: 0.28, a: 1.00",
+      "r: 0.87, g: 0.25, b: 0.11, a: 1.00"
+    ]
+  },
+  {
+    "Type": "39",
+    "Name": "Dark",
+    "Slug": "hupg_dark",
+    "Description": "Deals {[damage_multiplier]}x damage but destroys itself after hitting an enemy. Has a {[cooldown_length]} second cooldown before it can be shot again.",
+    "Properties": {
+      "kDamageMultiplier": 300,
+      "kCooldownLength": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "damage_multiplier": 3,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "damage_multiplier": 4,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "damage_multiplier": 5,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "damage_multiplier": 6,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "damage_multiplier": 7,
+          "cooldown_length": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_vampirelord",
+      "hupg_assassin",
+      "hupg_phantom",
+      "hupg_sacrifice",
+      "hupg_incubus",
+      "hupg_blackhole",
+      "hupg_noxious",
+      "hupg_flicker"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.58, g: 0.00, b: 0.66, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kDark"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.22, g: 0.02, b: 0.21, a: 1.00",
+      "r: 0.38, g: 0.11, b: 0.34, a: 1.00",
+      "r: 0.52, g: 0.09, b: 0.46, a: 1.00",
+      "r: 0.73, g: 0.15, b: 0.48, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.04, g: 0.00, b: 0.16, a: 1.00",
+      "r: 0.16, g: 0.00, b: 0.16, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.38, g: 0.11, b: 0.34, a: 1.00",
+      "r: 0.52, g: 0.09, b: 0.46, a: 1.00",
+      "r: 0.73, g: 0.15, b: 0.48, a: 1.00"
+    ]
+  },
+  {
+    "Type": "40",
+    "Name": "Phantom",
+    "Slug": "hupg_phantom",
+    "Description": "Curse enemies on hit. Cursed enemies are dealt {[min_curse_damage]}-{[max_curse_damage]} damage after being hit {[curse_delay]} times.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinCurseDamage": 100,
+      "kMaxCurseDamage": 200,
+      "kCurseDelay": 5
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_curse_damage": 100,
+          "max_curse_damage": 200,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_curse_damage": 150,
+          "max_curse_damage": 250,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_curse_damage": 200,
+          "max_curse_damage": 300,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_curse_damage": 250,
+          "max_curse_damage": 350,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_curse_damage": 300,
+          "max_curse_damage": 400,
+          "curse_delay": 5
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_dark",
+        "hupg_ghost"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.47, g: 0.28, b: 0.51, a: 1.00",
+    "DamageType": "kGhost",
+    "RotationType": "kAlignToDirAndSpin",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kCurse"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kGhost"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.21, g: 0.07, b: 0.31, a: 1.00",
+      "r: 0.33, g: 0.19, b: 0.40, a: 1.00",
+      "r: 0.47, g: 0.28, b: 0.51, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.38, g: 0.28, b: 0.48, a: 1.00",
+      "r: 0.66, g: 0.49, b: 0.84, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.11, g: 0.09, b: 0.22, a: 1.00",
+      "r: 0.29, g: 0.19, b: 0.40, a: 1.00",
+      "r: 0.47, g: 0.28, b: 0.51, a: 1.00",
+      "r: 0.51, g: 0.28, b: 0.43, a: 1.00"
+    ]
+  },
+  {
+    "Type": "41",
+    "Name": "Sacrifice",
+    "Slug": "hupg_sacrifice",
+    "Description": "Inflicts {[bleed_amt]} stacks of bleed (Max {[bleed_max_stacks]} stacks) and applies curse to hit enemies. Cursed enemies are dealt {[min_curse_damage]}-{[max_curse_damage]} after being hit {[curse_delay]} times.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kBleedAmt": 4,
+      "kBleedMaxStacks": 15,
+      "kMinCurseDamage": 50,
+      "kMaxCurseDamage": 100,
+      "kCurseDelay": 5
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 4,
+          "bleed_max_stacks": 15,
+          "min_curse_damage": 50,
+          "max_curse_damage": 100,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 6,
+          "bleed_max_stacks": 15,
+          "min_curse_damage": 75,
+          "max_curse_damage": 125,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 6,
+          "bleed_max_stacks": 20,
+          "min_curse_damage": 75,
+          "max_curse_damage": 125,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 8,
+          "bleed_max_stacks": 20,
+          "min_curse_damage": 100,
+          "max_curse_damage": 150,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "bleed_amt": 8,
+          "bleed_max_stacks": 25,
+          "min_curse_damage": 100,
+          "max_curse_damage": 150,
+          "curse_delay": 5
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_bleed",
+        "hupg_dark"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.89, g: 0.31, b: 0.27, a: 1.00",
+    "DamageType": "kBleed",
+    "RotationType": "kAlignToDirAndSpin",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBleed",
+      "kCurse"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.33, g: 0.00, b: 0.10, a: 1.00",
+      "r: 0.50, g: 0.04, b: 0.11, a: 1.00",
+      "r: 0.68, g: 0.07, b: 0.07, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.89, g: 0.31, b: 0.27, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.33, g: 0.00, b: 0.10, a: 1.00",
+      "r: 0.37, g: 0.02, b: 0.00, a: 0.00",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.11, g: 0.07, b: 0.11, a: 1.00",
+      "r: 0.18, g: 0.13, b: 0.15, a: 1.00",
+      "r: 0.50, g: 0.04, b: 0.11, a: 1.00",
+      "r: 0.25, g: 0.20, b: 0.23, a: 1.00",
+      "r: 0.68, g: 0.07, b: 0.07, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.37, g: 0.29, b: 0.29, a: 1.00",
+      "r: 0.89, g: 0.21, b: 0.12, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.33, g: 0.00, b: 0.10, a: 1.00",
+      "r: 0.89, g: 0.31, b: 0.27, a: 1.00"
+    ]
+  },
+  {
+    "Type": "42",
+    "Name": "Incubus",
+    "Slug": "hupg_incubus",
+    "Description": "Each hit has a {[charm_chance]} chance of charming the enemy for {[charm_length]} seconds. Charmed enemies curse nearby enemies. Cursed enemies are dealt {[min_curse_damage]}-{[max_curse_damage]} after being hit {[curse_delay]} times.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kCharmChance": 40,
+      "kCharmLength": 9,
+      "kMinCurseDamage": 100,
+      "kMaxCurseDamage": 200,
+      "kCurseDelay": 5
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 40,
+          "charm_length": 9,
+          "min_curse_damage": 100,
+          "max_curse_damage": 200,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 40,
+          "charm_length": 9,
+          "min_curse_damage": 150,
+          "max_curse_damage": 250,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 50,
+          "charm_length": 9,
+          "min_curse_damage": 150,
+          "max_curse_damage": 250,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 50,
+          "charm_length": 9,
+          "min_curse_damage": 200,
+          "max_curse_damage": 300,
+          "curse_delay": 5
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "charm_chance": 50,
+          "charm_length": 9,
+          "min_curse_damage": 250,
+          "max_curse_damage": 350,
+          "curse_delay": 5
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_satan"
+    ],
+    "MergeComponents": [
+      [
+        "hupg_charm",
+        "hupg_dark"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.78, g: 0.25, b: 0.76, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kCharm"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kIncubus"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.22, g: 0.18, b: 0.32, a: 1.00",
+      "r: 0.25, g: 0.20, b: 0.36, a: 1.00",
+      "r: 0.40, g: 0.18, b: 0.21, a: 1.00",
+      "r: 0.43, g: 0.16, b: 0.40, a: 1.00",
+      "r: 0.57, g: 0.17, b: 0.33, a: 1.00",
+      "r: 0.45, g: 0.28, b: 0.51, a: 1.00",
+      "r: 0.62, g: 0.31, b: 0.66, a: 1.00",
+      "r: 0.78, g: 0.25, b: 0.76, a: 1.00",
+      "r: 0.84, g: 0.30, b: 0.40, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.75, g: 0.22, b: 0.47, a: 1.00",
+      "r: 0.75, g: 0.28, b: 0.51, a: 1.00",
+      "r: 0.79, g: 0.29, b: 0.53, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.25, g: 0.20, b: 0.36, a: 1.00",
+      "r: 0.33, g: 0.25, b: 0.34, a: 1.00",
+      "r: 0.45, g: 0.28, b: 0.51, a: 1.00",
+      "r: 0.62, g: 0.31, b: 0.66, a: 1.00",
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.20, g: 0.06, b: 0.11, a: 1.00",
+      "r: 0.32, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.21, g: 0.18, b: 0.20, a: 1.00",
+      "r: 0.40, g: 0.18, b: 0.21, a: 1.00",
+      "r: 0.29, g: 0.24, b: 0.27, a: 1.00",
+      "r: 0.57, g: 0.17, b: 0.33, a: 1.00",
+      "r: 0.84, g: 0.30, b: 0.40, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "43",
+    "Name": "Satan",
+    "Slug": "hupg_satan",
+    "Description": "While active, add 1 stack of burn to all active enemies per second (max {[max_burn_stacks]} stacks), dealing {[min_burn_damage]}-{[max_burn_damage]} damage per stack per second and make them go berserk, dealing {[min_berserk_damage]}-{[max_berserk_damage]} damage to adjacent enemies every second.",
+    "Properties": {
+      "kBonusDamageMin": 48,
+      "kBonusDamageMax": 92,
+      "kBurnLength": 2,
+      "kMinBurnDamage": 10,
+      "kMaxBurnDamage": 20,
+      "kMaxBurnStacks": 5,
+      "kMinBerserkDamage": 15,
+      "kMaxBerserkDamage": 24
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "burn_length": 2,
+          "min_burn_damage": 10,
+          "max_burn_damage": 20,
+          "max_burn_stacks": 5,
+          "min_berserk_damage": 15,
+          "max_berserk_damage": 24
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "burn_length": 2,
+          "min_burn_damage": 10,
+          "max_burn_damage": 20,
+          "max_burn_stacks": 5,
+          "min_berserk_damage": 21,
+          "max_berserk_damage": 30
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "burn_length": 2,
+          "min_burn_damage": 15,
+          "max_burn_damage": 30,
+          "max_burn_stacks": 5,
+          "min_berserk_damage": 21,
+          "max_berserk_damage": 30
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "burn_length": 2,
+          "min_burn_damage": 15,
+          "max_burn_damage": 30,
+          "max_burn_stacks": 5,
+          "min_berserk_damage": 27,
+          "max_berserk_damage": 36
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "burn_length": 2,
+          "min_burn_damage": 20,
+          "max_burn_damage": 40,
+          "max_burn_stacks": 5,
+          "min_berserk_damage": 27,
+          "max_berserk_damage": 36
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_incubus",
+        "hupg_succubus"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.87, g: 0.25, b: 0.11, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kSatan"
+    ],
+    "IconPriority": 9,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.38, g: 0.11, b: 0.20, a: 1.00",
+      "r: 0.52, g: 0.11, b: 0.15, a: 1.00",
+      "r: 0.75, g: 0.19, b: 0.18, a: 1.00",
+      "r: 0.87, g: 0.25, b: 0.11, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.87, g: 0.66, b: 0.37, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.54, b: 0.00, a: 0.68",
+      "r: 1.00, g: 0.71, b: 0.00, a: 0.68",
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.38, g: 0.11, b: 0.20, a: 1.00",
+      "r: 0.52, g: 0.11, b: 0.15, a: 1.00",
+      "r: 0.75, g: 0.19, b: 0.18, a: 1.00",
+      "r: 0.87, g: 0.25, b: 0.11, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.64, g: 0.64, b: 0.64, a: 1.00",
+      "r: 0.87, g: 0.66, b: 0.37, a: 1.00",
+      "r: 0.87, g: 0.83, b: 0.83, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ]
+  },
+  {
+    "Type": "44",
+    "Name": "Flash",
+    "Slug": "hupg_flash",
+    "Description": "Damage all enemies on screen for {[min_flash_damage]} - {[max_flash_damage]} damage after hitting an enemy and blind them for {[blind_length]} seconds.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kBlindLength": 2,
+      "kMinFlashDamage": 1,
+      "kMaxFlashDamage": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "blind_length": 2,
+          "min_flash_damage": 1,
+          "max_flash_damage": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "blind_length": 3,
+          "min_flash_damage": 1,
+          "max_flash_damage": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "blind_length": 3,
+          "min_flash_damage": 2,
+          "max_flash_damage": 4
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "blind_length": 4,
+          "min_flash_damage": 2,
+          "max_flash_damage": 4
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "blind_length": 4,
+          "min_flash_damage": 3,
+          "max_flash_damage": 5
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_lightning",
+        "hupg_light"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.87, g: 0.85, b: 0.92, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBlind"
+    ],
+    "AOETypes": [
+      "kFlash"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.09, g: 0.15, b: 0.35, a: 1.00",
+      "r: 0.29, g: 0.32, b: 0.53, a: 1.00",
+      "r: 0.37, g: 0.49, b: 0.84, a: 1.00",
+      "r: 0.39, g: 0.78, b: 0.88, a: 1.00",
+      "r: 0.87, g: 0.85, b: 0.92, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 0.00",
+      "r: 0.00, g: 0.03, b: 0.25, a: 0.00",
+      "r: 0.42, g: 0.31, b: 0.96, a: 0.00",
+      "r: 0.13, g: 0.57, b: 0.75, a: 0.00",
+      "r: 0.13, g: 0.58, b: 0.75, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "45",
+    "Name": "Cell",
+    "Slug": "hupg_cell",
+    "Description": "Splits into a clone on hit {[cell_limit]} times.",
+    "Properties": {
+      "kCellLimit": 2
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "cell_limit": 2
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "cell_limit": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "cell_limit": 4
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "cell_limit": 5
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "cell_limit": 6
+        }
+      }
+    ],
+    "EvolutionSlugs": [
+      "hupg_virus",
+      "hupg_eggsacsac",
+      "hupg_maggot",
+      "hupg_radiationbeam",
+      "hupg_overgrowth"
+    ],
+    "MergeComponents": [],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.36, g: 0.80, b: 0.49, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRollForward",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kCell"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.36, g: 0.11, b: 0.40, a: 1.00",
+      "r: 0.62, g: 0.11, b: 0.52, a: 1.00",
+      "r: 0.29, g: 0.51, b: 0.59, a: 1.00",
+      "r: 0.66, g: 0.53, b: 0.15, a: 1.00",
+      "r: 0.27, g: 0.79, b: 0.62, a: 1.00",
+      "r: 0.47, g: 0.94, b: 0.61, a: 1.00",
+      "r: 0.90, g: 0.87, b: 0.13, a: 1.00",
+      "r: 0.89, g: 1.00, b: 0.95, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.37, g: 0.00, b: 0.46, a: 0.00",
+      "r: 0.11, g: 0.55, b: 0.24, a: 1.00",
+      "r: 0.17, g: 0.75, b: 0.35, a: 1.00",
+      "r: 0.30, g: 0.75, b: 0.58, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.29, g: 0.59, b: 0.59, a: 1.00",
+      "r: 0.37, g: 0.87, b: 0.61, a: 1.00",
+      "r: 0.56, g: 0.99, b: 0.63, a: 1.00"
+    ]
+  },
+  {
+    "Type": "46",
+    "Name": "Voluptuous Egg Sac",
+    "Slug": "hupg_eggsacsac",
+    "Description": "Explodes into {[min_egg_sacs]}-{[max_egg_sacs]} egg sacs on hitting an enemy. Has a {[cooldown_length]} second cooldown before it can be shot again.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinEggSacs": 2,
+      "kMaxEggSacs": 3,
+      "kCooldownLength": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_egg_sacs": 2,
+          "max_egg_sacs": 3,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_egg_sacs": 2,
+          "max_egg_sacs": 4,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_egg_sacs": 3,
+          "max_egg_sacs": 4,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_egg_sacs": 3,
+          "max_egg_sacs": 5,
+          "cooldown_length": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_egg_sacs": 4,
+          "max_egg_sacs": 5,
+          "cooldown_length": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_eggsac",
+        "hupg_cell"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.79, g: 0.79, b: 0.79, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRotate",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kEggSacSac"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.26, g: 0.17, b: 0.24, a: 1.00",
+      "r: 0.25, g: 0.25, b: 0.09, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.39, g: 0.39, b: 0.09, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.54, b: 0.24, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00",
+      "r: 0.91, g: 0.84, b: 0.26, a: 1.00",
+      "r: 1.00, g: 0.78, b: 0.29, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.65, g: 0.62, b: 0.65, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.26, g: 0.17, b: 0.24, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00",
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.21, g: 0.13, b: 0.17, a: 1.00",
+      "r: 0.29, g: 0.22, b: 0.25, a: 1.00",
+      "r: 0.16, g: 0.34, b: 0.17, a: 1.00",
+      "r: 0.15, g: 0.41, b: 0.16, a: 1.00",
+      "r: 0.38, g: 0.35, b: 0.35, a: 1.00"
+    ]
+  },
+  {
+    "Type": "47",
+    "Name": "Maggot",
+    "Slug": "hupg_maggot",
+    "Description": "Infest enemies on hit with maggots. When they die, they explode into {[min_babies]}-{[max_babies]} baby balls",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinBabies": 1,
+      "kMaxBabies": 2
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 1,
+          "max_babies": 2
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 1,
+          "max_babies": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 2,
+          "max_babies": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 2,
+          "max_babies": 4
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_babies": 3,
+          "max_babies": 4
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_cell",
+        "hupg_broodmother"
+      ]
+    ],
+    "IsSpawner": true,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kRotate",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kMaggot"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.44, g: 0.39, b: 0.35, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.58, b: 0.31, a: 1.00",
+      "r: 0.75, g: 0.61, b: 0.27, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.07, g: 0.02, b: 0.01, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.44, g: 0.39, b: 0.35, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "48",
+    "Name": "Glacier",
+    "Slug": "hupg_glacier",
+    "Description": "Releases glacial spikes over time that deal {[min_glacier_damage]}-{[max_glacier_damage]} to enemies that touch them and freeze them for {[freeze_length]} seconds. This ball and its glacial spikes also deal {[min_earthquake_damage]}-{[max_earthquake_damage]} damage to nearby units.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kFreezeLength": 20,
+      "kFreezePct": 100,
+      "kFreezeDamagePct": 25,
+      "kMinGlacierDamage": 15,
+      "kMaxGlacierDamage": 30,
+      "kMinEarthquakeDamage": 6,
+      "kMaxEarthquakeDamage": 12,
+      "kRange": 4
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 2,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25,
+          "min_glacier_damage": 15,
+          "max_glacier_damage": 30,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 2,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25,
+          "min_glacier_damage": 25,
+          "max_glacier_damage": 40,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 3,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25,
+          "min_glacier_damage": 25,
+          "max_glacier_damage": 40,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 3,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25,
+          "min_glacier_damage": 35,
+          "max_glacier_damage": 50,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "freeze_length": 3,
+          "freeze_pct": 100,
+          "freeze_damage_pct": 25,
+          "min_glacier_damage": 45,
+          "max_glacier_damage": 60,
+          "min_earthquake_damage": 6,
+          "max_earthquake_damage": 12,
+          "range": 4
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_freeze",
+        "hupg_earthquake"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": true,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.37, g: 0.67, b: 0.75, a: 1.00",
+    "DamageType": "kIce",
+    "RotationType": "kAlignToDirAndSpin",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [
+      "kEarthquake"
+    ],
+    "Specials": [
+      "kGlacier"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.17, g: 0.29, b: 0.35, a: 1.00",
+      "r: 0.22, g: 0.35, b: 0.42, a: 1.00",
+      "r: 0.29, g: 0.52, b: 0.57, a: 1.00",
+      "r: 0.31, g: 0.76, b: 0.71, a: 1.00",
+      "r: 0.70, g: 0.92, b: 0.89, a: 1.00",
+      "r: 0.98, g: 0.96, b: 0.85, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.31, g: 0.76, b: 0.71, a: 1.00",
+      "r: 0.74, g: 0.64, b: 0.75, a: 0.00",
+      "r: 0.62, g: 0.89, b: 0.80, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.22, g: 0.35, b: 0.42, a: 1.00",
+      "r: 0.29, g: 0.52, b: 0.57, a: 1.00",
+      "r: 0.31, g: 0.76, b: 0.71, a: 1.00",
+      "r: 0.70, g: 0.92, b: 0.89, a: 1.00",
+      "r: 0.98, g: 0.96, b: 0.85, a: 1.00"
+    ]
+  },
+  {
+    "Type": "49",
+    "Name": "Storm",
+    "Slug": "hupg_storm",
+    "Description": "Emits lightning to strike nearby enemies every second, dealing {[min_lightning_damage]}-{[max_lightning_damage]} damage.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kRange": 2,
+      "kMinLightningDamage": 1,
+      "kMaxLightningDamage": 40
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 40
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 60
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 80
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 100
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "range": 2,
+          "min_lightning_damage": 1,
+          "max_lightning_damage": 120
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_lightning",
+        "hupg_wind"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.84, g: 0.75, b: 0.67, a: 1.00",
+    "DamageType": "kLightning",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kStorm",
+      "kGhost"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.84, g: 0.75, b: 0.67, a: 1.00",
+      "r: 0.92, g: 0.88, b: 0.75, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.75, b: 0.75, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.01, g: 0.00, b: 0.01, a: 1.00",
+      "r: 0.34, g: 0.28, b: 0.32, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.84, g: 0.75, b: 0.67, a: 1.00"
+    ]
+  },
+  {
+    "Type": "50",
+    "Name": "Frozen Flame",
+    "Slug": "hupg_frozenflame",
+    "Description": "Add 1 stack of frostburn on hit for {[frostburn_length]} seconds (max {[max_frostburn_stacks]} stacks). Frostburnt units are dealt {[min_frostburn_damage]}-{[max_frostburn_damage]} damage per stack per second and receive {[freeze_damage_pct]} more damage from other sources.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kFrostburnLength": 20,
+      "kMinFrostburnDamage": 8,
+      "kMaxFrostburnDamage": 12,
+      "kMaxFrostburnStacks": 4,
+      "kFreezeDamagePct": 25
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "frostburn_length": 20,
+          "min_frostburn_damage": 8,
+          "max_frostburn_damage": 12,
+          "max_frostburn_stacks": 4,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "frostburn_length": 20,
+          "min_frostburn_damage": 10,
+          "max_frostburn_damage": 16,
+          "max_frostburn_stacks": 4,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "frostburn_length": 30,
+          "min_frostburn_damage": 10,
+          "max_frostburn_damage": 16,
+          "max_frostburn_stacks": 5,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "frostburn_length": 30,
+          "min_frostburn_damage": 12,
+          "max_frostburn_damage": 20,
+          "max_frostburn_stacks": 5,
+          "freeze_damage_pct": 25
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "frostburn_length": 40,
+          "min_frostburn_damage": 12,
+          "max_frostburn_damage": 20,
+          "max_frostburn_stacks": 6,
+          "freeze_damage_pct": 25
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_burn",
+        "hupg_freeze"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.24, g: 0.81, b: 0.69, a: 1.00",
+    "DamageType": "kIce",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kFrostburn"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.31, g: 0.24, b: 0.35, a: 1.00",
+      "r: 0.18, g: 0.53, b: 0.58, a: 1.00",
+      "r: 0.24, g: 0.81, b: 0.69, a: 1.00",
+      "r: 0.75, g: 0.93, b: 0.88, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.32, g: 0.00, b: 0.29, a: 0.00",
+      "r: 0.28, g: 0.13, b: 0.42, a: 0.00",
+      "r: 0.05, g: 0.48, b: 0.60, a: 0.00",
+      "r: 0.05, g: 0.48, b: 0.60, a: 1.00",
+      "r: 0.06, g: 0.75, b: 0.51, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "51",
+    "Name": "Black Hole",
+    "Slug": "hupg_blackhole",
+    "Description": "Instantly kills the first non-boss enemy that it hits, but destroys itself afterwards. Has a {[cooldown_length]} second cooldown before it can be shot again.",
+    "Properties": {
+      "kBonusDamageMin": 54,
+      "kBonusDamageMax": 104,
+      "kCooldownLength": 7,
+      "kDamageMultiplier": 600
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "cooldown_length": 7,
+          "damage_multiplier": 6
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "cooldown_length": 6,
+          "damage_multiplier": 6
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "cooldown_length": 5,
+          "damage_multiplier": 6
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "cooldown_length": 4,
+          "damage_multiplier": 6
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "cooldown_length": 3,
+          "damage_multiplier": 6
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_dark",
+        "hupg_sun"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": false,
+    "BallColor": "r: 0.36, g: 0.00, b: 0.31, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kBlackHole"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.17, g: 0.01, b: 0.15, a: 1.00",
+      "r: 0.41, g: 0.15, b: 0.31, a: 1.00",
+      "r: 0.53, g: 0.17, b: 0.47, a: 1.00",
+      "r: 0.84, g: 0.53, b: 0.64, a: 1.00",
+      "r: 0.85, g: 0.65, b: 0.72, a: 1.00",
+      "r: 1.00, g: 0.97, b: 1.00, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.16, b: 0.37, a: 1.00",
+      "r: 0.75, g: 0.27, b: 0.48, a: 0.00",
+      "r: 0.75, g: 0.47, b: 0.57, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 0.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "52",
+    "Name": "Radiation Beam",
+    "Slug": "hupg_radiationbeam",
+    "Description": "Emit a radiation beam on hit that deals {[min_laser_damage]}-{[max_laser_damage]} damage and applies 1 stack of radiation (max {[max_radiation_stacks]} stacks). Radiation lasts for {[radiation_length]} seconds and cause enemies to receive {[radiation_pct]} more damage from all sources per stack.",
+    "Properties": {
+      "kBonusDamageMin": 54,
+      "kBonusDamageMax": 104,
+      "kMinLaserDamage": 24,
+      "kMaxLaserDamage": 48,
+      "kMaxRadiationStacks": 5,
+      "kRadiationPct": 10,
+      "kRadiationLength": 15
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_laser_damage": 24,
+          "max_laser_damage": 48,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 15
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_laser_damage": 30,
+          "max_laser_damage": 60,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 15
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_laser_damage": 36,
+          "max_laser_damage": 72,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 15
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_laser_damage": 42,
+          "max_laser_damage": 84,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 15
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 54,
+          "bonus_damage_max": 104,
+          "min_laser_damage": 48,
+          "max_laser_damage": 96,
+          "max_radiation_stacks": 5,
+          "radiation_pct": 10,
+          "radiation_length": 15
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_laserhorz",
+        "hupg_poison"
+      ],
+      [
+        "hupg_laserhorz",
+        "hupg_cell"
+      ],
+      [
+        "hupg_laservert",
+        "hupg_cell"
+      ],
+      [
+        "hupg_laservert",
+        "hupg_poison"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.23, g: 0.84, b: 0.26, a: 1.00",
+    "DamageType": "kLaser",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kRadiation"
+    ],
+    "AOETypes": [
+      "kRay"
+    ],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.21, g: 0.13, b: 0.17, a: 1.00",
+      "r: 0.29, g: 0.22, b: 0.25, a: 1.00",
+      "r: 0.16, g: 0.34, b: 0.17, a: 1.00",
+      "r: 0.15, g: 0.41, b: 0.16, a: 1.00",
+      "r: 0.38, g: 0.35, b: 0.35, a: 1.00",
+      "r: 0.25, g: 0.59, b: 0.26, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.23, g: 0.84, b: 0.26, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.12, g: 0.75, b: 0.00, a: 0.00",
+      "r: 0.43, g: 0.75, b: 0.47, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.17, g: 0.03, b: 0.10, a: 1.00",
+      "r: 0.23, g: 0.06, b: 0.10, a: 1.00",
+      "r: 0.21, g: 0.13, b: 0.17, a: 1.00",
+      "r: 0.29, g: 0.22, b: 0.25, a: 1.00",
+      "r: 0.16, g: 0.34, b: 0.17, a: 1.00",
+      "r: 0.15, g: 0.41, b: 0.16, a: 1.00",
+      "r: 0.38, g: 0.35, b: 0.35, a: 1.00",
+      "r: 0.25, g: 0.59, b: 0.26, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.23, g: 0.84, b: 0.26, a: 1.00",
+      "r: 0.82, g: 0.79, b: 0.65, a: 1.00"
+    ]
+  },
+  {
+    "Type": "53",
+    "Name": "Noxious",
+    "Slug": "hupg_noxious",
+    "Description": "Passes through enemies and applies {[max_poison_stacks]} stacks of poison to nearby enemies within a {[range]} tile radius. Poison lasts for {[poison_length]} seconds and each stack deals {[min_poison_damage]}-{[max_poison_damage]} damage per second.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kPoisonLength": 4,
+      "kMaxPoisonStacks": 3,
+      "kMinPoisonDamage": 1,
+      "kMaxPoisonDamage": 3,
+      "kRange": 2
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "poison_length": 4,
+          "max_poison_stacks": 3,
+          "min_poison_damage": 1,
+          "max_poison_damage": 3,
+          "range": 2
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "poison_length": 4,
+          "max_poison_stacks": 3,
+          "min_poison_damage": 2,
+          "max_poison_damage": 5,
+          "range": 2
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "poison_length": 6,
+          "max_poison_stacks": 3,
+          "min_poison_damage": 2,
+          "max_poison_damage": 5,
+          "range": 2
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "poison_length": 6,
+          "max_poison_stacks": 3,
+          "min_poison_damage": 3,
+          "max_poison_damage": 7,
+          "range": 2
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "poison_length": 8,
+          "max_poison_stacks": 3,
+          "min_poison_damage": 3,
+          "max_poison_damage": 7,
+          "range": 2
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_poison",
+        "hupg_wind"
+      ],
+      [
+        "hupg_dark",
+        "hupg_wind"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.32, g: 0.61, b: 0.24, a: 1.00",
+    "DamageType": "kFire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kPoison"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kNoxious",
+      "kGhost"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.30, g: 0.27, b: 0.22, a: 1.00",
+      "r: 0.41, g: 0.51, b: 0.28, a: 1.00",
+      "r: 0.40, g: 0.65, b: 0.26, a: 1.00",
+      "r: 0.53, g: 0.82, b: 0.37, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.40, g: 0.44, b: 0.18, a: 1.00",
+      "r: 0.40, g: 0.44, b: 0.18, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.29, g: 0.30, b: 0.22, a: 1.00",
+      "r: 0.38, g: 0.51, b: 0.28, a: 1.00",
+      "r: 0.40, g: 0.65, b: 0.26, a: 1.00",
+      "r: 0.53, g: 0.82, b: 0.37, a: 1.00"
+    ]
+  },
+  {
+    "Type": "54",
+    "Name": "Flicker",
+    "Slug": "hupg_flicker",
+    "Description": "Deals {[min_flicker_damage]}-{[max_flicker_damage]} damage to every enemy on screen every {[flicker_cycle]} seconds.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMinFlickerDamage": 1,
+      "kMaxFlickerDamage": 7,
+      "kFlickerCycle": 14
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_flicker_damage": 1,
+          "max_flicker_damage": 7,
+          "flicker_cycle": 1.4
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_flicker_damage": 2,
+          "max_flicker_damage": 10,
+          "flicker_cycle": 1.4
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_flicker_damage": 2,
+          "max_flicker_damage": 10,
+          "flicker_cycle": 1.2
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_flicker_damage": 3,
+          "max_flicker_damage": 13,
+          "flicker_cycle": 1.2
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "min_flicker_damage": 4,
+          "max_flicker_damage": 16,
+          "flicker_cycle": 1.2
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_light",
+        "hupg_dark"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": false,
+    "BallColor": "r: 1.00, g: 0.95, b: 0.91, a: 1.00",
+    "DamageType": "kNormal",
+    "RotationType": "kAlignToDirAndSpin",
+    "RotationSpeed": 3,
+    "HitEffects": [],
+    "AOETypes": [],
+    "Specials": [
+      "kFlicker"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.39, g: 0.31, b: 0.15, a: 1.00",
+      "r: 0.46, g: 0.40, b: 0.36, a: 1.00",
+      "r: 0.57, g: 0.45, b: 0.25, a: 1.00",
+      "r: 0.67, g: 0.61, b: 0.56, a: 1.00",
+      "r: 0.84, g: 0.65, b: 0.38, a: 1.00",
+      "r: 0.82, g: 0.69, b: 0.53, a: 1.00",
+      "r: 0.95, g: 0.84, b: 0.75, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.61, g: 0.55, b: 0.49, a: 1.00",
+      "r: 0.96, g: 0.85, b: 0.35, a: 0.00",
+      "r: 1.00, g: 0.83, b: 0.70, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.39, g: 0.31, b: 0.15, a: 1.00",
+      "r: 0.46, g: 0.40, b: 0.36, a: 1.00",
+      "r: 0.57, g: 0.45, b: 0.25, a: 1.00",
+      "r: 0.84, g: 0.65, b: 0.38, a: 1.00",
+      "r: 0.82, g: 0.69, b: 0.53, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ]
+  },
+  {
+    "Type": "55",
+    "Name": "Lovestruck",
+    "Slug": "hupg_lovestruck",
+    "Description": "Inflicts lovestruck on hit enemies for {[lovestruck_length]} seconds. Lovestruck units have a 50% chance of healing you for {[lovestruck_heal]} health when they attack.",
+    "Properties": {
+      "kBonusDamageMin": 48,
+      "kBonusDamageMax": 92,
+      "kLovestruckLength": 20,
+      "kLovestruckHeal": 5
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "lovestruck_length": 20,
+          "lovestruck_heal": 5
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "lovestruck_length": 20,
+          "lovestruck_heal": 8
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "lovestruck_length": 30,
+          "lovestruck_heal": 8
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "lovestruck_length": 30,
+          "lovestruck_heal": 11
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 48,
+          "bonus_damage_max": 92,
+          "lovestruck_length": 40,
+          "lovestruck_heal": 11
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_charm",
+        "hupg_light"
+      ],
+      [
+        "hupg_charm",
+        "hupg_lightning"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.68, g: 0.41, b: 0.42, a: 1.00",
+    "DamageType": "kVampire",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kLovestruck"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.55, g: 0.28, b: 0.29, a: 1.00",
+      "r: 0.68, g: 0.41, b: 0.42, a: 1.00",
+      "r: 0.73, g: 0.60, b: 0.35, a: 1.00",
+      "r: 0.94, g: 0.81, b: 0.57, a: 1.00",
+      "r: 1.00, g: 0.93, b: 0.93, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.75, g: 0.54, b: 0.25, a: 1.00",
+      "r: 0.75, g: 0.66, b: 0.51, a: 1.00",
+      "r: 0.94, g: 0.81, b: 0.57, a: 1.00",
+      "r: 1.00, g: 0.94, b: 0.81, a: 1.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "56",
+    "Name": "Hemorrhage",
+    "Slug": "hupg_hemorrhage",
+    "Description": "Inflicts {[bleed_amt]} stacks of bleed. When hitting an enemy with {[bleed_max_stacks]} stacks of bleed or more, consumes all stacks of bleed to deal {[hemorrhage_pct]} of their current health.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kHemorrhagePct": 20,
+      "kBleedAmt": 3,
+      "kBleedMaxStacks": 12
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "hemorrhage_pct": 20,
+          "bleed_amt": 3,
+          "bleed_max_stacks": 12
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "hemorrhage_pct": 20,
+          "bleed_amt": 4,
+          "bleed_max_stacks": 12
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "hemorrhage_pct": 30,
+          "bleed_amt": 4,
+          "bleed_max_stacks": 12
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "hemorrhage_pct": 30,
+          "bleed_amt": 5,
+          "bleed_max_stacks": 12
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "hemorrhage_pct": 40,
+          "bleed_amt": 5,
+          "bleed_max_stacks": 12
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_bleed",
+        "hupg_heavy"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.83, g: 0.14, b: 0.16, a: 1.00",
+    "DamageType": "kBleed",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBleed"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kHemorrhage"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.39, g: 0.06, b: 0.15, a: 1.00",
+      "r: 0.57, g: 0.09, b: 0.16, a: 1.00",
+      "r: 0.77, g: 0.11, b: 0.21, a: 1.00",
+      "r: 1.00, g: 0.75, b: 0.64, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.57, g: 0.09, b: 0.16, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "57",
+    "Name": "Sandstorm",
+    "Slug": "hupg_sandstorm",
+    "Description": "Goes through enemies and is surrounded by a raging storm dealing {[min_sandstorm_damage]}-{[max_sandstorm_damage]} damage per second and blinding nearby enemies for {[blind_length]} seconds.",
+    "Properties": {
+      "kBonusDamageMin": 42,
+      "kBonusDamageMax": 80,
+      "kMinSandstormDamage": 10,
+      "kMaxSandstormDamage": 20,
+      "kBlindLength": 3,
+      "kRange": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_sandstorm_damage": 10,
+          "max_sandstorm_damage": 20,
+          "blind_length": 3,
+          "range": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_sandstorm_damage": 15,
+          "max_sandstorm_damage": 30,
+          "blind_length": 3,
+          "range": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_sandstorm_damage": 15,
+          "max_sandstorm_damage": 30,
+          "blind_length": 4,
+          "range": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_sandstorm_damage": 20,
+          "max_sandstorm_damage": 40,
+          "blind_length": 4,
+          "range": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 42,
+          "bonus_damage_max": 80,
+          "min_sandstorm_damage": 20,
+          "max_sandstorm_damage": 40,
+          "blind_length": 5,
+          "range": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_earthquake",
+        "hupg_wind"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.82, g: 0.69, b: 0.53, a: 1.00",
+    "DamageType": "kEarthquake",
+    "RotationType": "kNone",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kBlind"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kSandstorm",
+      "kGhost"
+    ],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.52, g: 0.37, b: 0.17, a: 1.00",
+      "r: 0.73, g: 0.57, b: 0.35, a: 1.00",
+      "r: 0.82, g: 0.69, b: 0.53, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.73, g: 0.57, b: 0.35, a: 1.00"
+    ],
+    "MatTextureColorList": []
+  },
+  {
+    "Type": "58",
+    "Name": "Overgrowth",
+    "Slug": "hupg_overgrowth",
+    "Description": "Applies 1 stack of overgrowth. Upon reaching {[max_overgrowth_stacks]}, consume all stacks and deal {[min_overgrowth_damage]}-{[max_overgrowth_damage]} damage to all enemies in a {[range]}x{[range]} tile square.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kMaxOvergrowthStacks": 3,
+      "kMinOvergrowthDamage": 150,
+      "kMaxOvergrowthDamage": 200,
+      "kRange": 3
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "max_overgrowth_stacks": 3,
+          "min_overgrowth_damage": 150,
+          "max_overgrowth_damage": 200,
+          "range": 3
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "max_overgrowth_stacks": 3,
+          "min_overgrowth_damage": 180,
+          "max_overgrowth_damage": 250,
+          "range": 3
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "max_overgrowth_stacks": 2,
+          "min_overgrowth_damage": 180,
+          "max_overgrowth_damage": 250,
+          "range": 3
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "max_overgrowth_stacks": 2,
+          "min_overgrowth_damage": 210,
+          "max_overgrowth_damage": 300,
+          "range": 3
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "max_overgrowth_stacks": 1,
+          "min_overgrowth_damage": 210,
+          "max_overgrowth_damage": 300,
+          "range": 3
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_earthquake",
+        "hupg_cell"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": true,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.26, g: 0.77, b: 0.25, a: 1.00",
+    "DamageType": "kPoison",
+    "RotationType": "kRollForward",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kOvergrowth"
+    ],
+    "AOETypes": [],
+    "Specials": [],
+    "IconPriority": 0,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.23, g: 0.22, b: 0.12, a: 1.00",
+      "r: 0.11, g: 0.36, b: 0.19, a: 1.00",
+      "r: 0.20, g: 0.59, b: 0.33, a: 1.00",
+      "r: 0.57, g: 0.71, b: 0.35, a: 1.00",
+      "r: 0.34, g: 0.87, b: 0.35, a: 1.00",
+      "r: 0.82, g: 0.87, b: 0.34, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.27, g: 0.51, b: 0.25, a: 0.00",
+      "r: 1.00, g: 1.00, b: 1.00, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.11, g: 0.36, b: 0.19, a: 1.00",
+      "r: 0.20, g: 0.59, b: 0.33, a: 1.00",
+      "r: 0.34, g: 0.87, b: 0.35, a: 1.00",
+      "r: 0.72, g: 0.95, b: 0.45, a: 1.00"
+    ]
+  },
+  {
+    "Type": "59",
+    "Name": "Soul Sucker",
+    "Slug": "hupg_soulsucker",
+    "Description": "Passes through enemies and saps them, with a {[lifesteal_chance]} chance of stealing {[lifesteal_heal]} health and reducing their attack damage by {[reduce_dmg_pct]}. Lifesteal chance only applies once per enemy.",
+    "Properties": {
+      "kBonusDamageMin": 36,
+      "kBonusDamageMax": 68,
+      "kLifeStealHeal": 1,
+      "kReduceDmgPct": 20,
+      "kLifeStealChance": 300
+    },
+    "PropertiesByLevel": [
+      {
+        "Level": 1,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lifesteal_heal": 1,
+          "reduce_dmg_pct": 20,
+          "lifesteal_chance": 300
+        }
+      },
+      {
+        "Level": 2,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lifesteal_heal": 1,
+          "reduce_dmg_pct": 30,
+          "lifesteal_chance": 400
+        }
+      },
+      {
+        "Level": 3,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lifesteal_heal": 1,
+          "reduce_dmg_pct": 40,
+          "lifesteal_chance": 500
+        }
+      },
+      {
+        "Level": 4,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lifesteal_heal": 1,
+          "reduce_dmg_pct": 50,
+          "lifesteal_chance": 600
+        }
+      },
+      {
+        "Level": 5,
+        "Properties": {
+          "bonus_damage_min": 36,
+          "bonus_damage_max": 68,
+          "lifesteal_heal": 1,
+          "reduce_dmg_pct": 60,
+          "lifesteal_chance": 700
+        }
+      }
+    ],
+    "EvolutionSlugs": [],
+    "MergeComponents": [
+      [
+        "hupg_vampire",
+        "hupg_ghost"
+      ]
+    ],
+    "IsSpawner": false,
+    "IsMosquitoSpawner": false,
+    "IsGlacier": false,
+    "IsAOE": false,
+    "IsStatusEffect": true,
+    "BallColor": "r: 0.23, g: 0.75, b: 0.60, a: 1.00",
+    "DamageType": "kGhost",
+    "RotationType": "kAlignToDir",
+    "RotationSpeed": 3,
+    "HitEffects": [
+      "kSap"
+    ],
+    "AOETypes": [],
+    "Specials": [
+      "kGhost"
+    ],
+    "IconPriority": 3,
+    "IconColorList": [
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.16, g: 0.23, b: 0.22, a: 1.00",
+      "r: 0.32, g: 0.27, b: 0.25, a: 1.00",
+      "r: 0.27, g: 0.36, b: 0.34, a: 1.00",
+      "r: 0.13, g: 0.42, b: 0.43, a: 1.00",
+      "r: 0.43, g: 0.37, b: 0.36, a: 1.00",
+      "r: 0.13, g: 0.51, b: 0.52, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.23, g: 0.75, b: 0.60, a: 1.00",
+      "r: 0.64, g: 0.64, b: 0.64, a: 1.00",
+      "r: 0.87, g: 0.83, b: 0.83, a: 1.00",
+      "r: 0.63, g: 1.00, b: 0.89, a: 1.00"
+    ],
+    "VFXColorList": [
+      "r: 0.00, g: 0.75, b: 0.38, a: 0.00",
+      "r: 0.00, g: 0.75, b: 0.47, a: 1.00"
+    ],
+    "MatTextureColorList": [
+      "r: 0.32, g: 0.27, b: 0.25, a: 1.00",
+      "r: 0.52, g: 0.47, b: 0.46, a: 1.00",
+      "r: 0.64, g: 0.64, b: 0.64, a: 1.00",
+      "r: 0.87, g: 0.83, b: 0.83, a: 1.00",
+      "r: 0.00, g: 0.00, b: 0.00, a: 1.00",
+      "r: 0.13, g: 0.42, b: 0.43, a: 1.00",
+      "r: 0.43, g: 0.37, b: 0.36, a: 1.00",
+      "r: 0.13, g: 0.51, b: 0.52, a: 1.00",
+      "r: 0.23, g: 0.75, b: 0.60, a: 1.00",
+      "r: 0.63, g: 1.00, b: 0.89, a: 1.00"
+    ]
+  }
+]
