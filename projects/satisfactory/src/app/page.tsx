@@ -1,19 +1,16 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8">
-      <div className="text-center space-y-8">
-        <h1 className="text-6xl font-bold text-accent">Satisfactory</h1>
-        <div className="text-2xl text-secondary">
+    <main className="placeholder-main">
+      <div className="placeholder-content">
+        <h1 className="placeholder-title">Satisfactory</h1>
+        <div className="placeholder-kicker">
           <p>Coming Soon</p>
         </div>
-        <p className="text-lg text-gray-400 max-w-2xl">
+        <p className="placeholder-copy">
           This companion site is currently under development. Stay tuned for
           tools and resources to enhance your Satisfactory experience.
         </p>
-        <a
-          href="/"
-          className="inline-block px-6 py-3 bg-accent text-main rounded-lg hover:bg-accent-dark transition-colors"
-        >
+        <a href="/" className="placeholder-link">
           Back to Projects
         </a>
       </div>

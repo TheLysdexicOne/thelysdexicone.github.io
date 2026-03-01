@@ -15,7 +15,7 @@ const projects = [
     name: 'Icarus',
     description: 'Survival companion and resource guide for Icarus',
     href: '/icarus/',
-    image: '/images/icarus.svg',
+    image: '/images/T_ITEM_Supporters_Logo_2.png',
     isPinned: true,
     comingSoon: true,
   },
@@ -68,27 +68,29 @@ const projects = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-main p-4 sm:p-8">
-      <div className="mx-auto max-w-4xl">
+    <div className="app-shell">
+      <div className="app-container max-w-5xl">
         {/* Header */}
-        <header className="mb-12 text-center">
-          <h1 className="font-pixel text-4xl tracking-widest text-primary sm:text-5xl">
+        <header className="mb-8 text-center sm:mb-10 lg:mb-12">
+          <h1 className="font-pixel text-2xl leading-snug tracking-wide text-primary sm:text-4xl sm:tracking-widest lg:text-5xl">
             TheLysdexicOne
           </h1>
-          <p className="mt-2 text-lg text-secondary">Gaming Companion Sites</p>
+          <p className="mt-3 text-base text-secondary sm:text-lg">
+            Gaming Companion Sites
+          </p>
         </header>
 
         {/* Projects Grid */}
-        <main className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <main className="project-grid">
           {projects.map(project => (
             <a
               key={project.id}
               href={project.href}
-              className="group relative rounded-lg border-2 border-primary bg-card p-6 transition-all hover:border-secondary hover:bg-hover"
+              className="group relative flex h-full min-h-80 flex-col rounded-lg border-2 border-primary bg-card p-4 transition-all hover:border-secondary hover:bg-hover sm:p-6"
             >
               {/* Pin Badge */}
               {project.isPinned && (
-                <div className="bg-accent text-main absolute right-4 top-4 -mx-2 -my-2 rounded-full px-0 py-0 text-xs font-bold">
+                <div className="absolute right-4 top-4 rounded-full bg-highlight px-2 py-1 text-xs font-bold text-primary">
                   📌
                 </div>
               )}
@@ -98,27 +100,27 @@ export default function Home() {
                 <Image
                   src={project.image}
                   alt={project.name}
-                  width={200}
-                  height={150}
-                  className="rounded opacity-90 transition-opacity group-hover:opacity-100"
+                  width={192}
+                  height={192}
+                  className="h-36 w-36 rounded bg-nav object-contain opacity-90 transition-opacity group-hover:opacity-100 sm:h-44 sm:w-44"
                 />
               </div>
 
               {/* Project Info */}
-              <h2 className="font-pixel text-xl tracking-widest text-primary group-hover:text-secondary">
+              <h2 className="text-balance text-center font-pixel text-lg leading-snug tracking-wide text-primary group-hover:text-secondary sm:text-xl sm:tracking-widest lg:text-2xl">
                 {project.name}
               </h2>
-              <p className="mt-2 text-sm text-secondary">
+              {/* <p className="mt-2 text-sm text-secondary">
                 {project.description}
-              </p>
+              </p> */}
 
               {/* Coming Soon Badge */}
               {project.comingSoon ? (
-                <div className="text-main mt-4 inline-block rounded bg-secondary px-4 py-2 text-sm font-bold opacity-70">
+                <div className="text-main mt-4 inline-block rounded bg-secondary px-4 py-2 text-center text-sm font-bold opacity-70">
                   Coming Soon
                 </div>
               ) : (
-                <div className="mt-4 inline-block rounded bg-btn-primary px-4 py-2 text-sm text-primary transition-colors group-hover:bg-btn-primary-highlight">
+                <div className="mt-4 inline-block rounded bg-btn-primary px-4 py-2 text-center text-sm text-primary transition-colors group-hover:bg-btn-primary-highlight">
                   Visit →
                 </div>
               )}
@@ -127,11 +129,11 @@ export default function Home() {
         </main>
 
         {/* About */}
-        <section className="mt-12 rounded-lg border-2 border-primary bg-card p-6">
-          <h2 className="font-pixel text-2xl tracking-widest text-primary">
+        <section className="app-section rounded-lg border-2 border-primary bg-card p-4 sm:p-6">
+          <h2 className="font-pixel text-xl tracking-widest text-primary sm:text-2xl">
             About
           </h2>
-          <p className="mt-4 text-secondary">
+          <p className="mt-3 text-sm text-secondary sm:mt-4 sm:text-base">
             These are fan-made companion sites for games I enjoy. They provide
             helpful tools, progression tracking, and detailed game information.
           </p>

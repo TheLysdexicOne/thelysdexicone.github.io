@@ -49,6 +49,46 @@
 }
 
 @layer components {
+  .app-shell {
+    @apply min-h-screen bg-main px-4 py-6 sm:px-6 sm:py-8 lg:px-8;
+  }
+
+  .app-container {
+    @apply mx-auto w-full max-w-6xl;
+  }
+
+  .app-section {
+    @apply mt-8 sm:mt-10 lg:mt-12;
+  }
+
+  .project-grid {
+    @apply grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .placeholder-main {
+    @apply app-shell flex items-center justify-center;
+  }
+
+  .placeholder-content {
+    @apply mx-auto flex w-full max-w-3xl flex-col items-center gap-6 text-center sm:gap-8;
+  }
+
+  .placeholder-title {
+    @apply text-balance text-3xl font-bold text-primary sm:text-4xl md:text-5xl;
+  }
+
+  .placeholder-kicker {
+    @apply text-xl text-secondary sm:text-2xl;
+  }
+
+  .placeholder-copy {
+    @apply max-w-2xl text-base text-secondary sm:text-lg;
+  }
+
+  .placeholder-link {
+    @apply inline-block rounded-lg border-2 border-primary bg-btn-primary px-5 py-3 text-sm font-semibold text-primary transition-colors hover:border-secondary hover:bg-btn-primary-highlight sm:px-6;
+  }
+
   .btn-body-primary {
     @apply rounded-lg border-2 px-6 py-4 text-center transition-colors;
     @apply border-primary bg-btn-primary text-secondary;
