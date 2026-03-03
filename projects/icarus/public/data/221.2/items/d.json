@@ -1,0 +1,4614 @@
+{
+  "Item_Proxy_Dropship": {
+    "itemId": "Item_Proxy_Dropship",
+    "displayName": "Drop Ship",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Logos/Icon_Icarus.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Dropship",
+    "flavorText": null,
+    "weight": 1,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "IconEditor.Skip",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Rocketable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Worklamp_Directional": {
+    "itemId": "Worklamp_Directional",
+    "displayName": "Directional Worklamp",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Light_Worklamp_Directional.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A basic lamp for illuminating a large area.",
+    "flavorText": null,
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rug_Deer": {
+    "itemId": "Rug_Deer",
+    "displayName": "Deer Rug",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rug_Deer.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rug_Deer",
+        "requiredMillijoules": 3000,
+        "stationIds": [
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Deer_Head",
+            "itemName": "Deer Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rug_Deer",
+            "itemName": "Deer Rug",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 30
+            },
+            {
+              "itemId": "Deer_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Fiber",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Rug_Deer",
+            "Deer_Head",
+            "Fur",
+            "AnimalCarcass_Deer",
+            "Leather",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Fur",
+              "to": "Rug_Deer",
+              "count": 20,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Leather",
+              "to": "Rug_Deer",
+              "count": 10,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A decorative deer skin.",
+    "flavorText": "Instantly transforms your shelter or cabin into an 18th century hunting lodge.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Rug",
+      "Item.Rug",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Deer_Trophy": {
+    "itemId": "Deer_Trophy",
+    "displayName": "Deer Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Deer_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Deer_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Deer_Head",
+            "itemName": "Deer Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Deer_Trophy",
+            "itemName": "Deer Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Deer_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Deer_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Deer_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Deer_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted stag head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Deer_Head": {
+    "itemId": "Deer_Head",
+    "displayName": "Deer Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_Deer_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Deer.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dehumidifier": {
+    "itemId": "Dehumidifier",
+    "displayName": "Dehumidifier",
+    "category": "Benches",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Dehumidifer.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dehumidifier",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Glass",
+            "itemName": "Glass",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 50
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dehumidifier",
+            "itemName": "Dehumidifier",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 872
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 15
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 700
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 200
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 90
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 104
+            }
+          ],
+          "nodes": [
+            "Dehumidifier",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Oxite",
+            "Pyritic_Crust_Oxite"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Dehumidifier",
+              "count": 15,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Glass",
+              "to": "Dehumidifier",
+              "count": 4,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Dehumidifier",
+              "count": 12,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Electronics",
+              "to": "Dehumidifier",
+              "count": 20,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Dehumidifier",
+              "count": 50,
+              "recipeId": "Copper_Wire"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Powerful, portable protection against the effects of being underground.",
+    "flavorText": "Powered by charcoal, the dehumidifier heavily reduces bacterial growth in caves by reducing dampness.",
+    "weight": 20000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Faction_Mission_Tech1": {
+    "itemId": "Faction_Mission_Tech1",
+    "displayName": "Device Component",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_FactionMission_Tech1.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Element from an experimental Larkwell Martinez device.",
+    "flavorText": "Some sort of signal or force transmitter.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Faction_Mission_Tech2": {
+    "itemId": "Faction_Mission_Tech2",
+    "displayName": "Device Component",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_FactionMission_Tech2.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Element from an experimental Larkwell Martinez device.",
+    "flavorText": "A generator of some kind.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Faction_Mission_Tech3": {
+    "itemId": "Faction_Mission_Tech3",
+    "displayName": "Device Component",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_FactionMission_Tech3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Element from an experimental Larkwell Martinez device.",
+    "flavorText": "A power control unit, possibly.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Module_Poison_Resistance": {
+    "itemId": "Meta_Module_Poison_Resistance",
+    "displayName": "Detoxifier Module",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_ADV_PoisonRes.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Releases a steady micro dose of antivenom, enhancing poison resistance.",
+    "flavorText": "The Detoxifier is classified under UDA regulations as technically qualifying users as a cyborg.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta",
+      "Item.Upgrade.Passive",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 75
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 25
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "Meta_Module_Consumption": {
+    "itemId": "Meta_Module_Consumption",
+    "displayName": "DoseUp Module",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_UTILITY_Consumption.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Micro-doses the user with a high-potency enzyme supplement to reduce food, water and oxygen consumption.",
+    "flavorText": "\"Like terraforming for your body.\" - Anonymous Group 15 researcher",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta",
+      "Item.Upgrade.Passive",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 75
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 25
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "Mission_Thruster_Part": {
+    "itemId": "Mission_Thruster_Part",
+    "displayName": "Damaged Thruster Part",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_HighTech_1.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "The remains of what was a Ship Thruster.",
+    "flavorText": "Can be repaired on a Machining Bench",
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_Navigation_Part": {
+    "itemId": "Mission_Navigation_Part",
+    "displayName": "Damaged Guidance System Part",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_HighTech_1.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A few electrical parts with frayed wires.",
+    "flavorText": "Can be repaired on a Machining Bench",
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Drying_Rack": {
+    "itemId": "Drying_Rack",
+    "displayName": "Drying Rack",
+    "category": "Benches",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_DryingRack.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Drying_Rack",
+        "requiredMillijoules": 12500,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 50
+          },
+          {
+            "kind": "item",
+            "itemId": "Stick",
+            "itemName": "Stick",
+            "count": 25
+          },
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 50
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Drying_Rack",
+            "itemName": "Drying Rack",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 50
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 75
+            }
+          ],
+          "nodes": [
+            "Drying_Rack",
+            "Wood",
+            "Frozen_Wood",
+            "Stick",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Drying_Rack",
+              "count": 50,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Stick",
+              "to": "Drying_Rack",
+              "count": 25,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A rack for slowly drying various cuts of meat and curing leather.",
+    "flavorText": "Jerky is always a winner",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Giant_Steak_Dried": {
+    "itemId": "Giant_Steak_Dried",
+    "displayName": "Dried Giant Steak",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Cooked_Prime_MeatDried.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Giant_Steak",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Giant_Steak",
+            "itemName": "Raw Giant Steak",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Giant_Steak_Dried",
+            "itemName": "Dried Giant Steak",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Bull_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Giant_Steak_Dried",
+            "Giant_Steak",
+            "Bull_Head"
+          ],
+          "edges": [
+            {
+              "from": "Giant_Steak",
+              "to": "Giant_Steak_Dried",
+              "count": 1,
+              "recipeId": "Butcher_Meat_Bull"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A large dried piece of meat",
+    "flavorText": "A tough, chewy snack",
+    "weight": 1000,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Meat",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Gamey_Meat_Dried": {
+    "itemId": "Gamey_Meat_Dried",
+    "displayName": "Dried Gamey Meat",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_GameyDried.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Gamey_Meat",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Gamey_Meat_Dried",
+            "itemName": "Dried Gamey Meat",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Gamey_Meat_Dried",
+            "Gamey_Meat",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Gamey_Meat",
+              "to": "Gamey_Meat_Dried",
+              "count": 1,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A plain piece of dried meat",
+    "flavorText": "A tough, chewy snack",
+    "weight": 250,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Meat",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Soft_Meat_Dried": {
+    "itemId": "Soft_Meat_Dried",
+    "displayName": "Dried Soft Meat",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_SoftDried.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Soft_Meat",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Soft_Meat_Dried",
+            "itemName": "Dried Soft Meat",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_BabyDeer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Soft_Meat_Dried",
+            "Soft_Meat",
+            "AnimalCarcass_BabyDeer"
+          ],
+          "edges": [
+            {
+              "from": "Soft_Meat",
+              "to": "Soft_Meat_Dried",
+              "count": 1,
+              "recipeId": "Carcass_BabyDeer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A plain piece of dried meat",
+    "flavorText": "A tough, chewy snack",
+    "weight": 200,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Meat",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Stringy_Meat_Dried": {
+    "itemId": "Stringy_Meat_Dried",
+    "displayName": "Dried Stringy Meat",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_StringyDried.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Stringy_Meat",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Stringy_Meat_Dried",
+            "itemName": "Dried Stringy Meat",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Snow_Wolf",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Stringy_Meat_Dried",
+            "Stringy_Meat",
+            "AnimalCarcass_Snow_Wolf"
+          ],
+          "edges": [
+            {
+              "from": "Stringy_Meat",
+              "to": "Stringy_Meat_Dried",
+              "count": 1,
+              "recipeId": "Carcass_Snow_Wolf"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A plain piece of dried meat",
+    "flavorText": "A tough, chewy snack",
+    "weight": 250,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Meat",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "White_Meat_Dried": {
+    "itemId": "White_Meat_Dried",
+    "displayName": "Dried White Meat",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Meat_WhiteDried.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_White_Meat",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "White_Meat",
+            "itemName": "Raw White Meat",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "White_Meat_Dried",
+            "itemName": "Dried White Meat",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Kea",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "White_Meat_Dried",
+            "White_Meat",
+            "AnimalCarcass_Kea"
+          ],
+          "edges": [
+            {
+              "from": "White_Meat",
+              "to": "White_Meat_Dried",
+              "count": 1,
+              "recipeId": "Carcass_Kea"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A plain piece of dried meat",
+    "flavorText": "A tough, chewy snack",
+    "weight": 200,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Meat",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Scanner_DeepOre": {
+    "itemId": "Scanner_DeepOre",
+    "displayName": "Deep Mining Ore Scanner",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Scanner_DeepOre.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Deep_Ore_Scanner",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 16
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 30
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Scanner_DeepOre",
+            "itemName": "Deep Mining Ore Scanner",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 136
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 26
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 180
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 156
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 16
+            }
+          ],
+          "nodes": [
+            "Scanner_DeepOre",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Steel_Screw"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Scanner_DeepOre",
+              "count": 10,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Electronics",
+              "to": "Scanner_DeepOre",
+              "count": 4,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Scanner_DeepOre",
+              "count": 16,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Scanner_DeepOre",
+              "count": 30,
+              "recipeId": "Copper_Wire"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A scanner that can locate various deep ore deposits within the surrounding area",
+    "flavorText": "A truly remarkable piece of equipment.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Equipment",
+      "Item.Scanner.DeepOre",
+      "Traits.Actionable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_Gyro_Broken": {
+    "itemId": "Mission_Gyro_Broken",
+    "displayName": "Damaged Gyroscope",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_HighTech_1.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "This instrument has been damaged almost beyond repair.",
+    "flavorText": "What could have broken this so badly?",
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item.Gyro",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rustic_Decoration_Bench": {
+    "itemId": "Rustic_Decoration_Bench",
+    "displayName": "Decoration Bench",
+    "category": "Benches",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rustic_Decoration_Bench.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rustic_Decoration_Bench",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 60
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 50
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rustic_Decoration_Bench",
+            "itemName": "Decoration Bench",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 20
+            },
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 50
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Rustic_Decoration_Bench",
+            "Fiber",
+            "Wood",
+            "Frozen_Wood",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Rustic_Decoration_Bench",
+              "count": 50,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Stone",
+              "to": "Rustic_Decoration_Bench",
+              "count": 12,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Leather",
+              "to": "Rustic_Decoration_Bench",
+              "count": 20,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A bench for crafting decorations from a range of tech levels.",
+    "flavorText": "Pick up a new hobby, today!",
+    "weight": 20000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_Digested_Biomatter_Sample": {
+    "itemId": "Mission_Digested_Biomatter_Sample",
+    "displayName": "Digested Biomatter Sample",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Bio_Needle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A sample taken from a contaminated bear.",
+    "flavorText": "Its essentially some kind of Acid",
+    "weight": 250,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_Damaged_Bioweapon_Sample": {
+    "itemId": "Mission_Damaged_Bioweapon_Sample",
+    "displayName": "Damaged Bio-weapon Sample",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Bio_Needle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A damaged bio-weapon, it seems to be leaking.",
+    "flavorText": "Probably get rid of this ASAP",
+    "weight": 250,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_AudioLog_Prometheus_1": {
+    "itemId": "Mission_AudioLog_Prometheus_1",
+    "displayName": "Damaged Audio Log",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Compass.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Strange Audio log taken from a prospectors suit.",
+    "flavorText": null,
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_AudioLog_Prometheus_2": {
+    "itemId": "Mission_AudioLog_Prometheus_2",
+    "displayName": "Damaged Audio Log",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Compass.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Strange Audio log taken from a prospectors suit.",
+    "flavorText": null,
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Deep_Freeze": {
+    "itemId": "Deep_Freeze",
+    "displayName": "Deep Freeze",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Deep_Freeze.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Deep_Freeze",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Aluminium",
+            "itemName": "Aluminium Ingot",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Deep_Freeze",
+            "itemName": "Deep Freeze",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 870
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 15
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 450
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 150
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 90
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 70
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 100
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 100
+            }
+          ],
+          "nodes": [
+            "Deep_Freeze",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum"
+          ],
+          "edges": [
+            {
+              "from": "Aluminium",
+              "to": "Deep_Freeze",
+              "count": 20,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Electronics",
+              "to": "Deep_Freeze",
+              "count": 15,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Deep_Freeze",
+              "count": 10,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Deep_Freeze",
+              "count": 15,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Platinum_Ingot",
+              "to": "Deep_Freeze",
+              "count": 20,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A freezer that preserves food but amasses ice very slowly and uses a fairly large amount of power.",
+    "flavorText": "Energy efficiency is important on EVERY planet.",
+    "weight": 25000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Item.Deployable.Storage",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dogtags_Lure": {
+    "itemId": "Dogtags_Lure",
+    "displayName": "Dogtags Lure",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fishing/ITEM_Dogtags_Lure.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dogtags_Lure",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Fishing_Bench_Rods"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dogtags_Lure",
+            "itemName": "Dogtags Lure",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 30
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Dogtags_Lure",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Dogtags_Lure",
+              "count": 2,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Dogtags_Lure",
+              "count": 2,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Platinum_Weave",
+              "to": "Dogtags_Lure",
+              "count": 1,
+              "recipeId": "Platinum_Wave"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A flashy lure carefully crafted out of... dogtags?",
+    "flavorText": "Surely you\\'ll catch a big one with this in your kit.",
+    "weight": 250,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.FishingRod",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dried_Tomato": {
+    "itemId": "Dried_Tomato",
+    "displayName": "Dried Tomato",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_DriedTomato.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Tomato",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Tomato",
+            "itemName": "Tomato",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dried_Tomato",
+            "itemName": "Dried Tomato",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Tomato",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Dried_Tomato",
+            "Tomato"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A snack with an intense sweet and savory flavor",
+    "flavorText": "Another great snack from your Drying Rack.",
+    "weight": 100,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 50
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Fruit",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dried_Avocado": {
+    "itemId": "Dried_Avocado",
+    "displayName": "Dried Avocado",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_DriedAvocado.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Avocado",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Avocado",
+            "itemName": "Avocado",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dried_Avocado",
+            "itemName": "Dried Avocado",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Avocado",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Dried_Avocado",
+            "Avocado"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A snack with a chewy texture and concentrated flavor",
+    "flavorText": "Another great snack from your Drying Rack.",
+    "weight": 100,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 50
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Fruit",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dried_Rhubarb": {
+    "itemId": "Dried_Rhubarb",
+    "displayName": "Dried Rhubarb",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_DriedRhubarb.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Rhubarb",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rhubarb",
+            "itemName": "Rhubarb",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dried_Rhubarb",
+            "itemName": "Dried Rhubarb",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Rhubarb",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Dried_Rhubarb",
+            "Rhubarb"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A healthy snack with a rather tart flavor.",
+    "flavorText": "Another great snack from your Drying Rack.",
+    "weight": 100,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 50
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Vege",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dried_Freshwater_Fillet": {
+    "itemId": "Dried_Freshwater_Fillet",
+    "displayName": "Dried Freshwater Fillet",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Dried_Fishwater_Fish.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Freshwater_Fillet",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Freshwater_Fish_Fillet",
+            "itemName": "Freshwater Fish Fillet",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dried_Freshwater_Fillet",
+            "itemName": "Dried Freshwater Fillet",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Freshwater_Fish_Fillet",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Dried_Freshwater_Fillet",
+            "Freshwater_Fish_Fillet"
+          ],
+          "edges": [
+            {
+              "from": "Freshwater_Fish_Fillet",
+              "to": "Dried_Freshwater_Fillet",
+              "count": 1,
+              "recipeId": "Butcher_Fish_Freshwater"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A savory snack made by drying and preserving tender fillets of freshwater fish.",
+    "flavorText": "Can be dried using a Drying Rack. Rather chewy.",
+    "weight": 250,
+    "maxStack": 10,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Fish",
+      "Item.Resource",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dried_Saltwater_Fillet": {
+    "itemId": "Dried_Saltwater_Fillet",
+    "displayName": "Dried Saltwater Fillet",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Dried_Saltwater_Fish.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Saltwater_Fillet",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Saltwater_Fish_Fillet",
+            "itemName": "Saltwater Fish Fillet",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dried_Saltwater_Fillet",
+            "itemName": "Dried Saltwater Fillet",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Saltwater_Fish_Fillet",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Dried_Saltwater_Fillet",
+            "Saltwater_Fish_Fillet"
+          ],
+          "edges": [
+            {
+              "from": "Saltwater_Fish_Fillet",
+              "to": "Dried_Saltwater_Fillet",
+              "count": 1,
+              "recipeId": "Butcher_Fish_Saltwater"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A flavorful snack made by drying and preserving tender fillets of saltwater fish.",
+    "flavorText": "Can be dried using a Drying Rack. Rather chewy.",
+    "weight": 250,
+    "maxStack": 10,
+    "stats": {
+      "Food Recovery": 150,
+      "Health Recovery": 30
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked",
+      "Item.Resource",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Refined_Iron_Wood": {
+    "itemId": "Refined_Iron_Wood",
+    "displayName": "Distilled Miasmic Coating",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Iron_Wood_Refined.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Refined_Iron_Wood",
+        "requiredMillijoules": 12500,
+        "stationIds": [
+          "Chemistry_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Raw_Iron_Wood",
+            "itemName": "Crystallised Miasma",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Refined_Iron_Wood",
+            "itemName": "Distilled Miasmic Coating",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Raw_Iron_Wood",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Refined_Iron_Wood",
+            "Raw_Iron_Wood"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A distilled essence of the Miasma that can be found on creatures in heavily exotic-affected areas.",
+    "flavorText": "Exotics have been shown to warp and twist DNA on a molecular level, it would seem no living thing is safe.",
+    "weight": 300,
+    "maxStack": 50,
+    "stats": null,
+    "tags": [
+      "Item.Resource.Ingot",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "AlienFossil_Conch": {
+    "itemId": "AlienFossil_Conch",
+    "displayName": "Decorative shell",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Conch.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AlienFossil_Conch",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Masonry_Bench",
+          "Masonry_Bench_T3",
+          "Masonry_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Clay",
+            "itemName": "Clay",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Organic_Resin",
+            "itemName": "Organic Resin",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Scoria",
+            "itemName": "Scoria",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "AlienFossil_Conch",
+            "itemName": "Decorative shell",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Clay",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Scoria",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "AlienFossil_Conch",
+            "Clay",
+            "Pyritic_Crust_Clay",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Scoria",
+            "Pyritic_Crust_Scoria"
+          ],
+          "edges": [
+            {
+              "from": "Clay",
+              "to": "AlienFossil_Conch",
+              "count": 10,
+              "recipeId": "Pyritic_Crust_Clay"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "AlienFossil_Conch",
+              "count": 5,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Scoria",
+              "to": "AlienFossil_Conch",
+              "count": 20,
+              "recipeId": "Pyritic_Crust_Scoria"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A decorated conch shell etched with strange markings.",
+    "flavorText": "Who could have made this?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Drac_Head": {
+    "itemId": "Drac_Head",
+    "displayName": "Drac Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Drac.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Drac.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dreadwing_Head": {
+    "itemId": "Dreadwing_Head",
+    "displayName": "Dreadwing Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Dreadwing.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Dreadwing.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 500,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Drac_Trophy": {
+    "itemId": "Drac_Trophy",
+    "displayName": "Drac Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Drac_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dac_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Drac_Head",
+            "itemName": "Drac Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Drac_Trophy",
+            "itemName": "Drac Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Drac_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Drac_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Drac_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Drac_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A mounted Drac head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dreadwing_Trophy": {
+    "itemId": "Dreadwing_Trophy",
+    "displayName": "Dreadwing Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dreadwing_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dreadwing_Trophy",
+        "requiredMillijoules": 1500,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Dreadwing_Head",
+            "itemName": "Dreadwing Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dreadwing_Trophy",
+            "itemName": "Dreadwing Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Dreadwing_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Dreadwing_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Dreadwing_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Dreadwing_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A mounted Dreadwing head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Biolab_Inhaler_Scorpion": {
+    "itemId": "Meta_Biolab_Inhaler_Scorpion",
+    "displayName": "Defensive Combat Inhaler",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Scorpion.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "Workshop",
+    "description": "An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with surviving a wildlife attack.",
+    "flavorText": "Ah, the wonders of modern medicine.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Medicine.Meta",
+      "Item.Meta.Consumable",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Biomass",
+          "amount": 10
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 100
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Biomass",
+          "amount": 10
+        },
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Saddle_DeluxeLeather": {
+    "itemId": "Saddle_DeluxeLeather",
+    "displayName": "Deluxe Leather Saddle",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_DeluxeLeather.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Saddle_DeluxeLeather",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Advanced_Leather",
+            "itemName": "Cured Leather",
+            "count": 14
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Saddle_DeluxeLeather",
+            "itemName": "Deluxe Leather Saddle",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 90
+            },
+            {
+              "itemId": "Fiber",
+              "count": 24
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 112
+            }
+          ],
+          "nodes": [
+            "Saddle_DeluxeLeather",
+            "Advanced_Leather",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Fur",
+            "Rope",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Advanced_Leather",
+              "to": "Saddle_DeluxeLeather",
+              "count": 14,
+              "recipeId": "Cured_Leather"
+            },
+            {
+              "from": "Leather",
+              "to": "Advanced_Leather",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Advanced_Leather",
+              "count": 2,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Fur",
+              "to": "Saddle_DeluxeLeather",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Rope",
+              "to": "Saddle_DeluxeLeather",
+              "count": 2,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A fashionable saddle for your mount made from supple leather.",
+    "flavorText": "Riding in style.",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Equipment",
+      "Item.Mount.Saddle.DeluxeLeather",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Saddle_Desert": {
+    "itemId": "Saddle_Desert",
+    "displayName": "Desert Tracker Saddle",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Desert.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Saddle_Desert",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 14
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Saddle_Desert",
+            "itemName": "Desert Tracker Saddle",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 20
+            },
+            {
+              "itemId": "Fiber",
+              "count": 38
+            }
+          ],
+          "nodes": [
+            "Saddle_Desert",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Fiber",
+            "Rope"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Saddle_Desert",
+              "count": 20,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Rope",
+              "to": "Saddle_Desert",
+              "count": 2,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A fashionable saddle for your mount for the harsh Desert conditions.",
+    "flavorText": null,
+    "weight": 1500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Equipment",
+      "Item.Mount.Saddle.Desert",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dog_Bowl_Food": {
+    "itemId": "Dog_Bowl_Food",
+    "displayName": "Dog Food Bowl",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Bowl_Food.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dog_Bowl_Food",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 3
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dog_Bowl_Food",
+            "itemName": "Dog Food Bowl",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 3
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 18
+            }
+          ],
+          "nodes": [
+            "Dog_Bowl_Food",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Dog_Bowl_Food",
+              "count": 3,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A simple bowl to fill with food for your dog.",
+    "flavorText": "Wasn\\'t this full a minute ago?",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Deployable.Storage",
+      "Item.Deployable.Tame.Food",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dog_Bowl_Water": {
+    "itemId": "Dog_Bowl_Water",
+    "displayName": "Dog Water Bowl",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Bowl_Water.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dog_Bowl_Water",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 3
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dog_Bowl_Water",
+            "itemName": "Dog Water Bowl",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 3
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 18
+            }
+          ],
+          "nodes": [
+            "Dog_Bowl_Water",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Dog_Bowl_Water",
+              "count": 3,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A simple bowl to fill with water for your dog.",
+    "flavorText": "A hydrated pet is a happy pet.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Deployable.Tame.Water",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Food_Animal_Feed_Squash": {
+    "itemId": "Food_Animal_Feed_Squash",
+    "displayName": "Desert Animal Feed",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Squash.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Animal_Feed_Squash",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Seed",
+            "itemName": "Seed",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Squash",
+            "itemName": "Squash",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Food_Animal_Feed_Squash",
+            "itemName": "Desert Animal Feed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Seed",
+              "count": 10
+            },
+            {
+              "itemId": "Squash",
+              "count": 5
+            }
+          ],
+          "nodes": [
+            "Food_Animal_Feed_Squash",
+            "Seed",
+            "Squash"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A feed that will help animals survive desert environments.",
+    "flavorText": "Feeding time at the zoo.",
+    "weight": 500,
+    "maxStack": 100,
+    "stats": {
+      "Food Recovery": 125
+    },
+    "tags": [
+      "Item.AnimalFeed",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt_Frame": {
+    "itemId": "Dirt_Frame",
+    "displayName": "Dirt Foundation",
+    "category": "Buildings",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Dirt_Frame_0.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dirt_Frame",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Dirt",
+            "itemName": "Dirt",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dirt_Frame",
+            "itemName": "Dirt Foundation",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Dirt",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Dirt_Frame",
+            "Dirt"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple block of dirt that can serve as the foundation of a structure. Must be placed attached to the terrain.",
+    "flavorText": "The most basic of construction",
+    "weight": 2500,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 2500
+    },
+    "tags": [
+      "Audio.Shelter",
+      "Building.Dirt",
+      "Traits.Actionable",
+      "Traits.Buildable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt_Ramp": {
+    "itemId": "Dirt_Ramp",
+    "displayName": "Dirt Ramp",
+    "category": "Buildings",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Dirt_Ramp_0.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dirt_Ramp",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Dirt",
+            "itemName": "Dirt",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dirt_Ramp",
+            "itemName": "Dirt Ramp",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Dirt",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Dirt_Ramp",
+            "Dirt"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple dirt ramp that can serve as basic vertical travesal. Must be placed attached to the terrain.",
+    "flavorText": "The most basic of construction",
+    "weight": 2500,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 2500
+    },
+    "tags": [
+      "Audio.Shelter",
+      "Building.Dirt",
+      "Traits.Actionable",
+      "Traits.Buildable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt_Mound": {
+    "itemId": "Dirt_Mound",
+    "displayName": "Dirt Mound",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Dirt_Mound.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A place to plant crops.  Fully-grown crops left too long will eventually wither and only provide spoiled plants.",
+    "flavorText": "Dig (RMB) with a shovel to create. Higher tier shovels create better dirt mounds.",
+    "weight": 250,
+    "maxStack": 10,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Mound",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt": {
+    "itemId": "Dirt",
+    "displayName": "Dirt",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Dirt.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Some rich Icarus soil extracted from the ground with a shovel.",
+    "flavorText": "Not so useless.",
+    "weight": 200,
+    "maxStack": 50,
+    "stats": null,
+    "tags": [
+      "Item.Resource.Dirt",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt_Corner": {
+    "itemId": "Dirt_Corner",
+    "displayName": "Dirt Corner",
+    "category": "Buildings",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Dirt_Corner_0.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dirt_Corner",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Dirt",
+            "itemName": "Dirt",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dirt_Corner",
+            "itemName": "Dirt Corner",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Dirt",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Dirt_Corner",
+            "Dirt"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple corner to help with foundation building.",
+    "flavorText": "The most basic of construction",
+    "weight": 2500,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 2500
+    },
+    "tags": [
+      "Audio.Shelter",
+      "Building.Dirt",
+      "Traits.Actionable",
+      "Traits.Buildable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dried_Kiwifruit": {
+    "itemId": "Dried_Kiwifruit",
+    "displayName": "Dried Kiwifruit Chips",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Kiwifruit_Chips.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Dried_Kiwifruit",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Drying_Rack",
+          "T3_Smoker",
+          "T4_Smoker"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Kiwi_Fruit",
+            "itemName": "Kiwifruit",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Dried_Kiwifruit",
+            "itemName": "Dried Kiwifruit Chips",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Kiwi_Fruit",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Dried_Kiwifruit",
+            "Kiwi_Fruit"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Sliced and dried kiwifruit, good for a quick snack.",
+    "flavorText": "Tasty and Healthy.",
+    "weight": 20,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 50
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Fruit",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt_Mound_With_Tier": {
+    "itemId": "Dirt_Mound_With_Tier",
+    "displayName": "Dirt Mound",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Dirt_Mound.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A place to plant crops.  Fully-grown crops left too long will eventually wither and only provide spoiled plants.",
+    "flavorText": "Dig (RMB) with a shovel to create. Higher tier shovels create better dirt mounds.",
+    "weight": 250,
+    "maxStack": 10,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Mound",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Mini_Hippo_Trophy": {
+    "itemId": "Mini_Hippo_Trophy",
+    "displayName": "Dribbo Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Mini_Hippo_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Mini_Hippo_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Mini_Hippo_Head",
+            "itemName": "Dribbo Vestige",
+            "count": 3
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Mini_Hippo_Trophy",
+            "itemName": "Dribbo Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Mini_Hippo_Head",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Mini_Hippo_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Mini_Hippo_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Mini_Hippo_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Three mounted Dribbos, mounted for all to see.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Mini_Hippo_Head": {
+    "itemId": "Mini_Hippo_Head",
+    "displayName": "Dribbo Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Mini_Hippo_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a unique creature.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Bunker_Antenna": {
+    "itemId": "Bunker_Antenna",
+    "displayName": "Damaged Communication Antenna",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Bunker_Antenna.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "ArtDeco",
+    "description": "A non-functional antenna which was previously used in a communications network.",
+    "flavorText": "Storms on Icarus can do some damage.",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.ArtDeco",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Bunker_Aircon": {
+    "itemId": "Bunker_Aircon",
+    "displayName": "Damaged Air Conditioning Unit",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Bunker_Aircon.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "ArtDeco",
+    "description": "An old Air conditioning unit that is past its prime.",
+    "flavorText": "Has taken a beating.",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.ArtDeco",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Bunker_Prop": {
+    "itemId": "Bunker_Prop",
+    "displayName": "Damaged Electrical Equipment",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Bunker_Prop.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "ArtDeco",
+    "description": "Equipment that was once used for something important.",
+    "flavorText": "Pity it can\\'t be salvaged.",
+    "weight": 5000,
+    "maxStack": 5,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.ArtDeco",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Bunker_SolarPanel": {
+    "itemId": "Bunker_SolarPanel",
+    "displayName": "Damaged Solar Panel",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Bunker_SolarPanel.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "ArtDeco",
+    "description": "Once a fully functioning solar panel.",
+    "flavorText": "Handy if it could be repaired",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.ArtDeco",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Saddle_Basic_Desert": {
+    "itemId": "Saddle_Basic_Desert",
+    "displayName": "Desert Riding Saddle",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Basic_Desert.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Saddle_Basic_Desert",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 25
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Saddle_Basic_Desert",
+            "itemName": "Desert Riding Saddle",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 30
+            },
+            {
+              "itemId": "Fiber",
+              "count": 24
+            }
+          ],
+          "nodes": [
+            "Saddle_Basic_Desert",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Fur",
+            "Rope",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Saddle_Basic_Desert",
+              "count": 25,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Fur",
+              "to": "Saddle_Basic_Desert",
+              "count": 5,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Rope",
+              "to": "Saddle_Basic_Desert",
+              "count": 2,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Place this saddle inside a tamed creature\\'s inventory to allow it to become rideable",
+    "flavorText": "Feel the wind in your hair.",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Equipment",
+      "Item.Mount.Saddle.BasicDesert",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dirt_Stack_50": {
+    "itemId": "Dirt_Stack_50",
+    "displayName": "Dirt",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Dirt.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Some rich Icarus soil extracted from the ground with a shovel.",
+    "flavorText": "Not so useless.",
+    "weight": 200,
+    "maxStack": 50,
+    "stats": null,
+    "tags": [
+      "Item.Resource.Dirt",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dead_Researcher": {
+    "itemId": "Dead_Researcher",
+    "displayName": "Dead Researcher",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Icons/Icon_PassiveCreature.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Not all experiments work out.",
+    "flavorText": null,
+    "weight": 100,
+    "maxStack": 10,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "IgnoreValidation",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dead_Miner": {
+    "itemId": "Dead_Miner",
+    "displayName": "Dead Miner",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Icons/Icon_PassiveCreature.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Mining is a Dangerous Career.",
+    "flavorText": "Delved too Deep.",
+    "weight": 100,
+    "maxStack": 10,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "IgnoreValidation",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Prop_Pipe2": {
+    "itemId": "Prop_Pipe2",
+    "displayName": "Dark Wall Pipes",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Pipe2_A.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Pipes that carry all sorts of wires and electrical elements.",
+    "flavorText": "Just for Decoration.",
+    "weight": 2000,
+    "maxStack": 10,
+    "stats": null,
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.Lab",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_DNA_Supernatant": {
+    "itemId": "Mission_DNA_Supernatant",
+    "displayName": "DNA Supernatant Solution",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Mission_DNA_Supernatant.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Result of Separating components of a Lysate solution.",
+    "flavorText": "Garganutan Science!",
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "GreatHunts.Ape.C.Item",
+      "Item.Equip.Quickbar",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_DNA_Pellet": {
+    "itemId": "Mission_DNA_Pellet",
+    "displayName": "DNA Pellet Solution",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Mission_DNA_Pellet.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "The Result of Separating Precipitated DNA in a Centrifuge.",
+    "flavorText": "Garganutan Science!",
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "GreatHunts.Ape.C.Item",
+      "Item.Equip.Quickbar",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Dead_Ape": {
+    "itemId": "Dead_Ape",
+    "displayName": "Dead Ape",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Icons/Icon_PassiveCreature.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Killed by Something Nearby.",
+    "flavorText": "There is always a bigger fish.",
+    "weight": 100,
+    "maxStack": 10,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "IgnoreValidation",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  }
+}

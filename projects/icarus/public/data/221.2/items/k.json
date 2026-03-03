@@ -1,0 +1,1383 @@
+{
+  "Kitchen_Bench": {
+    "itemId": "Kitchen_Bench",
+    "displayName": "Kitchen Bench",
+    "category": "Benches",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kitchen_Bench.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kitchen_Bench",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kitchen_Bench",
+            "itemName": "Kitchen Bench",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 350
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Kitchen_Bench",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kitchen_Bench",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Kitchen_Bench",
+              "count": 8,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kitchen_Bench",
+              "count": 20,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Kitchen_Bench",
+              "count": 20,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A modular workspace for cooking and concocting complex recipes.",
+    "flavorText": "Prep advanced food recipes here to assist on your adventures",
+    "weight": 20000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kitchen_Storage": {
+    "itemId": "Kitchen_Storage",
+    "displayName": "Kitchen Storage Block",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kitchen_Storage.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kitchen_Storage",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kitchen_Storage",
+            "itemName": "Kitchen Storage Block",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 350
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Kitchen_Storage",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kitchen_Storage",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Kitchen_Storage",
+              "count": 2,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kitchen_Storage",
+              "count": 20,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Kitchen_Storage",
+              "count": 12,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A compact module for all your kitchen storage needs.",
+    "flavorText": "For the demanding Icarus ingredient hoarder, a small module with 40 storage slots.",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Deployable.Storage",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Module_Fall_Damage": {
+    "itemId": "Meta_Module_Fall_Damage",
+    "displayName": "KickFall Module",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_UTILITY_FallDamage.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Drastic movement causes a piezoelectric sensor to deliver an electric charge to a small fragment of exotics, briefly reducing mass and diminishing fall damage.",
+    "flavorText": "TL;DR: Dark magic",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta",
+      "Item.Upgrade.Passive",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 75
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 25
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "Kumara": {
+    "itemId": "Kumara",
+    "displayName": "Kumara",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Kumara.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A sweet potato, typically with red skin and yellow or orange flesh.",
+    "flavorText": "Often found in Pacific island and Maori cuisine.",
+    "weight": 100,
+    "maxStack": 100,
+    "stats": {
+      "Food Recovery": 20
+    },
+    "tags": [
+      "FieldGuide.WorkshopOnly",
+      "Item.Consumable.Food.Raw",
+      "Item.Plant.Vegetable",
+      "Item.Resource",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Kumara_Seed": {
+    "itemId": "Meta_Kumara_Seed",
+    "displayName": "Kumara Farming Packet",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_FarmingPacket_Kumara.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Right click to open a packet of Kumara Seeds that have been stabilised for off-world farming",
+    "flavorText": "Right click to open",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 20
+        }
+      ]
+    }
+  },
+  "Kea_Head": {
+    "itemId": "Kea_Head",
+    "displayName": "Kea Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Kea.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Kea.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 500,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Kea_Trophy": {
+    "itemId": "Kea_Trophy",
+    "displayName": "Kea Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kea_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kea_Trophy",
+        "requiredMillijoules": 1500,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Kea_Head",
+            "itemName": "Kea Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kea_Trophy",
+            "itemName": "Kea Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Kea_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Kea_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Kea_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kea_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted Kea.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Komodo_Head": {
+    "itemId": "Komodo_Head",
+    "displayName": "Komodo Vestige",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Komodo_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Komodo.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Komodo_Trophy": {
+    "itemId": "Komodo_Trophy",
+    "displayName": "Komodo Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Komodo_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Komodo_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Komodo_Head",
+            "itemName": "Komodo Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Komodo_Trophy",
+            "itemName": "Komodo Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Komodo_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Komodo_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Komodo_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Komodo_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted Komodo head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Scorpion_Rifle": {
+    "itemId": "LegendaryWeapon_Scorpion_Rifle",
+    "displayName": "Kinetic Rifle",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Scorpion_Rifle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Rifle created via studying of the Giant Scorpion.",
+    "flavorText": "How did Norex turn a Scorpion into a Rifle? You know what, I don\\'t wanna know.",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 35000,
+      "Fire Rate (RPM)": 85,
+      "Mag Size": 6,
+      "Reload Time (s)": 3
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Firearm.Rifle",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kiwi_Head": {
+    "itemId": "Kiwi_Head",
+    "displayName": "Kiwi Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Kiwi_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a small flightless bird.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Uncommon",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Kitchen_Corner": {
+    "itemId": "Kitchen_Corner",
+    "displayName": "Kitchen Corner Bench",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kitchen_Corner_Bench.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kitchen_Corner",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kitchen_Corner",
+            "itemName": "Kitchen Corner Bench",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 180
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Kitchen_Corner",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kitchen_Corner",
+              "count": 20,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Kitchen_Corner",
+              "count": 2,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kitchen_Corner",
+              "count": 10,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Kitchen_Corner",
+              "count": 12,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be used to make unique kitchen designs.",
+    "flavorText": "For all your kitchen needs",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Deployable.Storage",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kiwi_Fruit": {
+    "itemId": "Kiwi_Fruit",
+    "displayName": "Kiwifruit",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Kiwi_Fruit.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Sweet and Refreshing and a little bit Tangy.",
+    "flavorText": "Also known as a Chinese Gooseberry",
+    "weight": 50,
+    "maxStack": 100,
+    "stats": {
+      "Food Recovery": 50,
+      "Water Recovery": 60
+    },
+    "tags": [
+      "Item.Consumable.Food",
+      "Item.Plant.Fruit",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Kiwi_Fruit_Seed": {
+    "itemId": "Meta_Kiwi_Fruit_Seed",
+    "displayName": "Kiwi Fruit Farming Packet",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_FarmingPacket_Kiwi_Fruit.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Right click to open a packet of Kiwi Fruit Seeds that have been stabilised for off-world farming",
+    "flavorText": "Right click to open",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 20
+        }
+      ]
+    }
+  },
+  "Kiwi_Trophy": {
+    "itemId": "Kiwi_Trophy",
+    "displayName": "Kiwi Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kiwi_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kiwi_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Kiwi_Head",
+            "itemName": "Kiwi Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kiwi_Trophy",
+            "itemName": "Kiwi Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Kiwi_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Kiwi_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Kiwi_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kiwi_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved flightless bird, that once lived on Icarus.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kiwifruit_Jam": {
+    "itemId": "Kiwifruit_Jam",
+    "displayName": "Kiwifruit Jam",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Kiwifruit_Jam.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kiwifruit_Jam",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Kitchen_Bench",
+          "Advanced_Kitchen_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Glass_Jar",
+            "itemName": "Glass Jar",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Kiwi_Fruit",
+            "itemName": "Kiwifruit",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kiwifruit_Jam",
+            "itemName": "Kiwifruit Jam",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Kiwi_Fruit",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Kiwifruit_Jam",
+            "Glass_Jar",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Kiwi_Fruit"
+          ],
+          "edges": [
+            {
+              "from": "Glass_Jar",
+              "to": "Kiwifruit_Jam",
+              "count": 1,
+              "recipeId": "Glass_Jar"
+            },
+            {
+              "from": "Glass",
+              "to": "Glass_Jar",
+              "count": 1,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Glass_Jar",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Tangy Jam made from Kiwifuit.",
+    "flavorText": "A handy snack made at your Kitchen Bench.",
+    "weight": 500,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 75
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Fruit",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kiwifruit_Sorbet": {
+    "itemId": "Kiwifruit_Sorbet",
+    "displayName": "Kiwifruit Sorbet",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Kiwifruit_Sorbet.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kiwifruit_Sorbet",
+        "requiredMillijoules": 17500,
+        "stationIds": [
+          "Advanced_Kitchen_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Kiwi_Fruit",
+            "itemName": "Kiwifruit",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Ice",
+            "itemName": "Ice",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Honey",
+            "itemName": "Honey",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kiwifruit_Sorbet",
+            "itemName": "Kiwifruit Sorbet",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Honeycomb",
+              "count": 4
+            },
+            {
+              "itemId": "Ice",
+              "count": 10
+            },
+            {
+              "itemId": "Kiwi_Fruit",
+              "count": 5
+            }
+          ],
+          "nodes": [
+            "Kiwifruit_Sorbet",
+            "Kiwi_Fruit",
+            "Ice",
+            "Honey",
+            "Honeycomb"
+          ],
+          "edges": [
+            {
+              "from": "Honey",
+              "to": "Kiwifruit_Sorbet",
+              "count": 2,
+              "recipeId": "Honey"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A delicious frozen dessert made from local ingredients.",
+    "flavorText": "Can\\'t go wrong with Sorbet.",
+    "weight": 750,
+    "maxStack": 5,
+    "stats": {
+      "Food Recovery": 100,
+      "Water Recovery": 100
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Fruit",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}

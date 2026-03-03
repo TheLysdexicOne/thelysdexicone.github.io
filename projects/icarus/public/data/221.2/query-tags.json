@@ -1,0 +1,158 @@
+[
+  {
+    "id": "Any_Raw_Meat",
+    "displayName": "Raw Meat",
+    "queryId": "Any_Raw_Meat",
+    "queryTags": [
+      "Item.query.raw_meat"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Raw_Meat.T_QUERY_Raw_Meat",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Raw_Meat.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Spoiled_Item",
+    "displayName": "Spoiled",
+    "queryId": "Any_Spoiled_Item",
+    "queryTags": [
+      "Item.Consumable.Food.Spoiled"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Spoiled.T_QUERY_Spoiled",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Spoiled.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Raw_Fish",
+    "displayName": "Raw Fish",
+    "queryId": "Any_Fish",
+    "queryTags": [
+      "NPC.Fish"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Raw.T_QUERY_Fish_Raw",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Raw.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Saltwater_Fish",
+    "displayName": "Saltwater Fish",
+    "queryId": "Any_Saltwater_Fish",
+    "queryTags": [
+      "NPC.Fish.Saltwater"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Salt2.T_QUERY_Fish_Salt2",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Salt2.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Freshwater_Fish",
+    "displayName": "Freshwater Fish",
+    "queryId": "Any_Freshwater_Fish",
+    "queryTags": [
+      "NPC.Fish.Freshwater"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Fresh2.T_QUERY_Fish_Fresh2",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Fresh2.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Chicken_Vestige",
+    "displayName": "Chicken Vestige",
+    "queryId": "Any_Chicken_Vestige",
+    "queryTags": [
+      "Item.Vestige.Type.Chicken"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Chicken_Head.T_ITEM_Chicken_Head",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Chicken_Head.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Fruit",
+    "displayName": "Fruit",
+    "queryId": "Any_Fruit",
+    "queryTags": [
+      "Item.Plant.Fruit"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Fruit.T_QUERY_Crop_Fruit",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Fruit.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Vegetable",
+    "displayName": "Vegetable",
+    "queryId": "Any_Vegetable",
+    "queryTags": [
+      "Item.Plant.Vegetable"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Vegetable.T_QUERY_Crop_Vegetable",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Vegetable.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Herb",
+    "displayName": "Herb",
+    "queryId": "Any_Herb",
+    "queryTags": [
+      "Item.Plant.Herb"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Herb.T_QUERY_Crop_Herb",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Herb.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Grain",
+    "displayName": "Grain",
+    "queryId": "Any_Grain",
+    "queryTags": [
+      "Item.Plant.Grain"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Grain.T_QUERY_Crop_Grain",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Grain.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Speciality",
+    "displayName": "Delicacy",
+    "queryId": "Any_Speciality",
+    "queryTags": [
+      "Item.Plant.Speciality"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Speciality.T_QUERY_Crop_Speciality",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Speciality.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Any_Enzyme",
+    "displayName": "Terraforming Enzyme",
+    "queryId": "Any_Enzyme",
+    "queryTags": [
+      "Item.Enzyme"
+    ],
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Enzyme.T_QUERY_Enzyme",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Enzyme.webp",
+      "exists": true
+    }
+  }
+]

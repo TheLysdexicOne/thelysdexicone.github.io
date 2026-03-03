@@ -1,0 +1,5440 @@
+{
+  "Oxygen_Bladder": {
+    "itemId": "Oxygen_Bladder",
+    "displayName": "Oxygen Bladder",
+    "category": "Medicine",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Oxygen_Bladder.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Oxygen_Bladder",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Oxygen_Bladder",
+            "itemName": "Oxygen Bladder",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 38
+            },
+            {
+              "itemId": "Fiber",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Oxygen_Bladder",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Bone"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Oxygen_Bladder",
+              "count": 30,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Bone",
+              "to": "Oxygen_Bladder",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple airtight vessel for storing extra oxygen.",
+    "flavorText": "\\'The Icarus nang.\\' - Prospector joke",
+    "weight": 250,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Consumable.Oxygen",
+      "Item.Equip.Quickbar",
+      "Item.Fillable.Oxygen",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Organic_Resin": {
+    "itemId": "Organic_Resin",
+    "displayName": "Organic Resin",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Organic_Resin.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Organic_Resin",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Mortar_And_Pestle",
+          "Material_Processor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Oxite",
+            "itemName": "Oxite",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Organic_Resin",
+            "itemName": "Organic Resin",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A natural and highly flexible bonding agent.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Resource",
+      "Proxy.Liquid.Orange",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Oxite": {
+    "itemId": "Oxite",
+    "displayName": "Oxite",
+    "category": "Ores",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Oxite.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pyritic_Crust_Oxite",
+        "requiredMillijoules": 12500,
+        "stationIds": [
+          "Exotic_Processor",
+          "Cleaning_Device"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Pyritic_Crust_Oxite",
+            "itemName": "Noxious Crust (Oxite)",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Oxite",
+            "itemName": "Oxite",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Oxite",
+            "Pyritic_Crust_Oxite"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Rock_Golem_Armor_Fragment_Oxite",
+        "requiredMillijoules": 150000,
+        "stationIds": [
+          "Exotic_Processor",
+          "Cleaning_Device"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Juvenile_Armor_Oxite",
+            "itemName": "Quarrite Armor Fragment (Oxite)",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Oxite",
+            "itemName": "Oxite",
+            "count": 50
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Oxite",
+            "Rock_Golem_Juvenile_Armor_Oxite"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be refined into breathable oxygen.",
+    "flavorText": "A stable water-oxygen matrix, oxite slowly decomposes when exposed to the atmosphere of Icarus.",
+    "weight": 400,
+    "maxStack": 50,
+    "stats": {
+      "Oxygen Recovery": 9
+    },
+    "tags": [
+      "FieldGuide.Recipe.Stove.Hide",
+      "Item.Consumable.Oxygen.OxygenFillResource",
+      "Item.Resource.Ore.Oxite",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Oxygen_Tank": {
+    "itemId": "Oxygen_Tank",
+    "displayName": "Oxygen Tank",
+    "category": "Medicine",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Oxygen_Tank.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Oxygen_Tank",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Oxygen_Tank",
+            "itemName": "Oxygen Tank",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 64
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 120
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Oxygen_Tank",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Oxygen_Tank",
+              "count": 20,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Oxygen_Tank",
+              "count": 4,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A small tank for storing and consuming oxygen.",
+    "flavorText": "While plants and animals were genetically adjusted to deal with the impurities in Icarus\\'s air, humans need to bring their own.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Consumable.Oxygen.OxygenTank",
+      "Item.Equip.Quickbar",
+      "Item.Fillable.Oxygen",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Oxite_Dissolver": {
+    "itemId": "Kit_Oxite_Dissolver",
+    "displayName": "Oxite Dissolver",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Oxite_Dissolver.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Oxite_Dissolver",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 18
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Oxite_Dissolver",
+            "itemName": "Oxite Dissolver",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 32
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 18
+            }
+          ],
+          "nodes": [
+            "Kit_Oxite_Dissolver",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Bone"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Kit_Oxite_Dissolver",
+              "count": 18,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Kit_Oxite_Dissolver",
+              "count": 24,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Bone",
+              "to": "Kit_Oxite_Dissolver",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A more efficient oxidizer for processing oxite into oxygen.",
+    "flavorText": "Place oxite and an appropriate container into the dissolver to start filling it. Requires sulfur for fuel.",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Oxygen_Bladder_Full": {
+    "itemId": "Oxygen_Bladder_Full",
+    "displayName": "Oxygen Bladder",
+    "category": "Medicine",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Oxygen_Bladder.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple airtight vessel for storing extra oxygen.",
+    "flavorText": "\\'The Icarus nang.\\' - Prospector joke",
+    "weight": 250,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Consumable.Oxygen",
+      "Item.Equip.Quickbar",
+      "Item.Fillable.Oxygen",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Oxygen_Tank_Full": {
+    "itemId": "Oxygen_Tank_Full",
+    "displayName": "Oxygen Tank",
+    "category": "Medicine",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Oxygen_Tank.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A small tank for storing and consuming oxygen.",
+    "flavorText": "While plants and animals were genetically adjusted to deal with the impurities in Icarus\\'s air, humans need to bring their own.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Consumable.Oxygen.OxygenTank",
+      "Item.Equip.Quickbar",
+      "Item.Fillable.Oxygen",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Pistol_Handgun": {
+    "itemId": "Pistol_Handgun",
+    "displayName": "One-Shot Pistol",
+    "category": "Ranged",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/ITEM_Pistol_Handgun.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Handgun",
+        "requiredMillijoules": 7500,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Tree_Sap",
+            "itemName": "Tree Sap",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Pistol_Handgun",
+            "itemName": "One-Shot Pistol",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 15
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 22
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Pistol_Handgun",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Pistol_Handgun",
+              "count": 6,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Pistol_Handgun",
+              "count": 15,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Pistol_Handgun",
+              "count": 20,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Pistol_Handgun",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Pistol_Handgun",
+              "count": 10,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A serviceable handgun.",
+    "flavorText": "Icarus is open carry.",
+    "weight": 800,
+    "maxStack": null,
+    "stats": {
+      "Durability": 3000,
+      "Fire Rate (RPM)": 80
+    },
+    "tags": [
+      "Item.Weapon.Firearm.Pistol",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Basic_Oxite_Dissolver": {
+    "itemId": "Basic_Oxite_Dissolver",
+    "displayName": "Oxidizer",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Oxidizer.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Basic_Oxite_Dissolver",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Stick",
+            "itemName": "Stick",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Basic_Oxite_Dissolver",
+            "itemName": "Oxidizer",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 30
+            },
+            {
+              "itemId": "Fiber",
+              "count": 24
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Basic_Oxite_Dissolver",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Bone"
+          ],
+          "edges": [
+            {
+              "from": "Stick",
+              "to": "Basic_Oxite_Dissolver",
+              "count": 8,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Basic_Oxite_Dissolver",
+              "count": 20,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Bone",
+              "to": "Basic_Oxite_Dissolver",
+              "count": 10,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple device for processing oxite into oxygen.",
+    "flavorText": "The oxidizer is a slow, unpowered device that uses mechanical pressure to crush oxite, then store the resulting oxygen. Once the balloon begins to fill, consume oxygen from it directly.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Fillable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Paste_Oxygen_Buff": {
+    "itemId": "Paste_Oxygen_Buff",
+    "displayName": "Oxygen Buff Paste",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Paste_02_buff.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A natural concoction that increases available oxygen.",
+    "flavorText": "Your parents are a long way from here. What you do with your body is your business.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Consumable.Food",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Paste_Oxygen_Consumption": {
+    "itemId": "Paste_Oxygen_Consumption",
+    "displayName": "Oxygen Consumption Paste",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Paste_02_consumption.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A natural beta blocker.",
+    "flavorText": "This preparation reduces the heart rate, dropping oxygen consumption temporarily.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Consumable.Food",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Paste_Oxygen_Restore": {
+    "itemId": "Paste_Oxygen_Restore",
+    "displayName": "Oxygen Restoration Paste",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Paste_02_resto.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An organic co-factor that rapidly restores oxygen.",
+    "flavorText": "\\'Helper molecule\\'",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Oxygen Recovery": 100
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Consumable.Food",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Oxygen_Gel": {
+    "itemId": "Meta_Oxygen_Gel",
+    "displayName": "Oxygel",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_MetaRation_7.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Agrizero\\'s patented gel supplement lowers the heart rate, reducing oxygen consumption.",
+    "flavorText": "Largely illegal on Earth, indispensible among the stars.",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Oxygen Recovery": 150
+    },
+    "tags": [
+      "FieldGuide.Equipment",
+      "Item.Consumable.Food",
+      "Item.Meta.Consumable",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 25
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "Mission_Analyzer_Egg": {
+    "itemId": "Mission_Analyzer_Egg",
+    "displayName": "Organic Matter Analyzer",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_Analyzer_Egg.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Scans and locates nearby organic matter of the same type.",
+    "flavorText": "Another machine designed by a scientist who has never stepped foot on Icarus.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FactionMission.Item",
+      "Item.Utility",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian": {
+    "itemId": "Obsidian",
+    "displayName": "Obsidian",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Obsidian.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pyritic_Crust_Obsidian",
+        "requiredMillijoules": 12500,
+        "stationIds": [
+          "Exotic_Processor",
+          "Cleaning_Device"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Pyritic_Crust_Obsidian",
+            "itemName": "Noxious Crust (Obsidian)",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian",
+            "itemName": "Obsidian",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Frozen_Ore",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Campfire",
+          "Firepit",
+          "Stone_Furnace",
+          "Concrete_Furnace",
+          "Electric_Furnace",
+          "PotBellyStove",
+          "Kitchen_Stove",
+          "Electric_Stove"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Frozen_Ore",
+            "itemName": "Frozen Ore",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Metal_Ore",
+            "itemName": "Iron Ore",
+            "count": 5
+          },
+          {
+            "itemId": "Copper_Ore",
+            "itemName": "Copper Ore",
+            "count": 5
+          },
+          {
+            "itemId": "Gold_Ore",
+            "itemName": "Gold Ore",
+            "count": 5
+          },
+          {
+            "itemId": "Silica",
+            "itemName": "Silica Ore",
+            "count": 5
+          },
+          {
+            "itemId": "Coal_Ore",
+            "itemName": "Coal Ore",
+            "count": 5
+          },
+          {
+            "itemId": "Sulfur",
+            "itemName": "Sulfur",
+            "count": 5
+          },
+          {
+            "itemId": "Super_Cooled_Ice",
+            "itemName": "Super Cooled Ice",
+            "count": 5
+          },
+          {
+            "itemId": "Obsidian",
+            "itemName": "Obsidian",
+            "count": 5
+          },
+          {
+            "itemId": "Bauxite",
+            "itemName": "Aluminium Ore",
+            "count": 5
+          },
+          {
+            "itemId": "Scoria",
+            "itemName": "Scoria",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Metal_Ore",
+            "Frozen_Ore"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "Glass formed from the belly of the earth, as chunks of solid lava.",
+    "flavorText": "Very popular for use in both weapons and jewellery.",
+    "weight": 300,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Resource.Ore",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Exotic_Processor": {
+    "itemId": "Exotic_Processor",
+    "displayName": "Organic Residue Cleanser",
+    "category": "Benches",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Exotic_Processor.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Exotic_Processor",
+        "requiredMillijoules": 150000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Titanium_Ingot",
+            "itemName": "Titanium Ingot",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Shealth",
+            "itemName": "Platinum_Shealth",
+            "count": 30
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Exotic_Processor",
+            "itemName": "Organic Residue Cleanser",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 185
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 150
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 65
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 25
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 15
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Titanium",
+              "count": 50
+            }
+          ],
+          "nodes": [
+            "Exotic_Processor",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Titanium_Ingot",
+            "Titanium_Ore",
+            "Pyritic_Crust_Titanium",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Composites",
+              "to": "Exotic_Processor",
+              "count": 15,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Electronics",
+              "to": "Exotic_Processor",
+              "count": 5,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Titanium_Ingot",
+              "to": "Exotic_Processor",
+              "count": 10,
+              "recipeId": "Titanium_Ingot"
+            },
+            {
+              "from": "Titanium_Ore",
+              "to": "Titanium_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Titanium"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Exotic_Processor",
+              "count": 5,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A machine that can process Volatile Exotics into usable materials.",
+    "flavorText": "You probably should still keep a good distance from this thing.",
+    "weight": 2500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 2000
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Exotic_Delivery_Interface": {
+    "itemId": "Exotic_Delivery_Interface",
+    "displayName": "Orbital Exchange Interface",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Exotic_Delivery_Interface.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Exotic_Delivery_Interface",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 7
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Copper",
+            "itemName": "Copper Ingot",
+            "count": 7
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Exotic_Delivery_Interface",
+            "itemName": "Orbital Exchange Interface",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 96
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 14
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 14
+            }
+          ],
+          "nodes": [
+            "Exotic_Delivery_Interface",
+            "Wood",
+            "Frozen_Wood",
+            "Rope",
+            "Fiber",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Exotic_Delivery_Interface",
+              "count": 10,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Rope",
+              "to": "Exotic_Delivery_Interface",
+              "count": 8,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Exotic_Delivery_Interface",
+              "count": 7,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Exotic_Delivery_Interface",
+              "count": 7,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Allows you to order a Delivery Pod for Exotic Retrieval",
+    "flavorText": "Part of the Icarus Orbital Exchange System developed by Sinotai.",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Fish_03": {
+    "itemId": "Fish_03",
+    "displayName": "Oceanic Piranha",
+    "category": "Fish",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_03.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A common saltwater fish. Can be filleted at a Fishing Bench.",
+    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
+    "weight": null,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "NPC.Fish.Saltwater",
+      "Traits.Actionable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Fish_04_Var3": {
+    "itemId": "Fish_04_Var3",
+    "displayName": "Opal Ripjaw",
+    "category": "Fish",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_04_Var3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A common saltwater fish. Can be filleted at a Fishing Bench.",
+    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
+    "weight": null,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "NPC.Fish.Saltwater",
+      "Traits.Actionable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Fish_09_Var2": {
+    "itemId": "Fish_09_Var2",
+    "displayName": "Opal Trout",
+    "category": "Fish",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_09_Var2.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "An uncommon freshwater fish. Can be filleted at a Fishing Bench.",
+    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
+    "weight": null,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "NPC.Fish.Freshwater",
+      "Traits.Actionable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Fish_14_Var2": {
+    "itemId": "Fish_14_Var2",
+    "displayName": "Opal Discus",
+    "category": "Fish",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_14_Var2.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A rare freshwater fish. Can be filleted at a Fishing Bench.",
+    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
+    "weight": null,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "NPC.Fish.Freshwater",
+      "Traits.Actionable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Geode_Lamp_Cut_Oxite": {
+    "itemId": "Geode_Lamp_Cut_Oxite",
+    "displayName": "Oxite Geode Lamp",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Geode_Lamp_Cut_Oxite_1.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Geode_Lamp_Cut_Oxite",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Masonry_Bench",
+          "Masonry_Bench_T3",
+          "Masonry_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Oxite",
+            "itemName": "Oxite",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [
+          {
+            "kind": "resource",
+            "resource": "",
+            "count": 0
+          }
+        ],
+        "outputs": [
+          {
+            "itemId": "Geode_Lamp_Cut_Oxite",
+            "itemName": "Oxite Geode Lamp",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Geode_Lamp_Cut_Oxite",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Stone",
+            "Pyritic_Crust_Stone"
+          ],
+          "edges": [
+            {
+              "from": "Oxite",
+              "to": "Geode_Lamp_Cut_Oxite",
+              "count": 10,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Stone",
+              "to": "Geode_Lamp_Cut_Oxite",
+              "count": 10,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Interior",
+    "description": "A gorgeous raw geode lamp for your home.",
+    "flavorText": "Bringing light, and style to your home on Icarus.",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.Geode",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Geode_Lamp_Burst_Oxite": {
+    "itemId": "Geode_Lamp_Burst_Oxite",
+    "displayName": "Oxite Cluster Lamp",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Geode_Lamp_Burst_Oxite.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Geode_Lamp_Burst_Oxite",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Masonry_Bench",
+          "Masonry_Bench_T3",
+          "Masonry_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Oxite",
+            "itemName": "Oxite",
+            "count": 35
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [
+          {
+            "kind": "resource",
+            "resource": "",
+            "count": 0
+          }
+        ],
+        "outputs": [
+          {
+            "itemId": "Geode_Lamp_Burst_Oxite",
+            "itemName": "Oxite Cluster Lamp",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 35
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Geode_Lamp_Burst_Oxite",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Stone",
+            "Pyritic_Crust_Stone"
+          ],
+          "edges": [
+            {
+              "from": "Oxite",
+              "to": "Geode_Lamp_Burst_Oxite",
+              "count": 35,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Stone",
+              "to": "Geode_Lamp_Burst_Oxite",
+              "count": 10,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Interior",
+    "description": "A gorgeous cluster geode lamp for your home.",
+    "flavorText": "Bringing light, and style to your home on Icarus.",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.Geode",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Geode_Lamp_Monolith_Oxite": {
+    "itemId": "Geode_Lamp_Monolith_Oxite",
+    "displayName": "Oxite Monolith Lamp",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Geode_Lamp_Monolith_Oxite.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Geode_Lamp_Monolith_Oxite",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Masonry_Bench",
+          "Masonry_Bench_T3",
+          "Masonry_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Oxite",
+            "itemName": "Oxite",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [
+          {
+            "kind": "resource",
+            "resource": "",
+            "count": 0
+          }
+        ],
+        "outputs": [
+          {
+            "itemId": "Geode_Lamp_Monolith_Oxite",
+            "itemName": "Oxite Monolith Lamp",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Geode_Lamp_Monolith_Oxite",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Stone",
+            "Pyritic_Crust_Stone"
+          ],
+          "edges": [
+            {
+              "from": "Oxite",
+              "to": "Geode_Lamp_Monolith_Oxite",
+              "count": 40,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Stone",
+              "to": "Geode_Lamp_Monolith_Oxite",
+              "count": 10,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Interior",
+    "description": "A gorgeous monolith geode lamp for your home.",
+    "flavorText": "Bringing light, and style to your home on Icarus.",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration.Geode",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Axe": {
+    "itemId": "Obsidian_Axe",
+    "displayName": "Obsidian Axe",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Obsidian_Axe.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Axe",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Axe",
+            "itemName": "Obsidian Axe",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 4
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Obsidian_Axe",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Axe",
+              "count": 10,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Axe",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Axe",
+              "count": 6,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            },
+            {
+              "from": "Iron_Nail",
+              "to": "Obsidian_Axe",
+              "count": 2,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight Axe created with a sharpened head of Obsidian. Gives a chance to collect coal from trees.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 20,
+      "Felling Damage": 55,
+      "Felling Efficiency": 1.2999999523162842,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Tool.Axe",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Pickaxe": {
+    "itemId": "Obsidian_Pickaxe",
+    "displayName": "Obsidian Pickaxe",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Obsidian_Pickaxe.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Pickaxe",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 6
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Pickaxe",
+            "itemName": "Obsidian Pickaxe",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 4
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Obsidian_Pickaxe",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Pickaxe",
+              "count": 10,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Pickaxe",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Pickaxe",
+              "count": 6,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight Pickaxe created with a sharpened point of Obsidian. Gives a chance to instantly smelt ore when mining.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 22,
+      "Mining Efficiency": 1.2999999523162842,
+      "Mining Radius": 60,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Tool.Pickaxe.T1",
+      "Item.Tool.Pickaxe.T2",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Knife": {
+    "itemId": "Obsidian_Knife",
+    "displayName": "Obsidian Knife",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Obsidian_Knife.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Knife",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Knife",
+            "itemName": "Obsidian Knife",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 4
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Obsidian_Knife",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Knife",
+              "count": 5,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Knife",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Knife",
+              "count": 6,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            },
+            {
+              "from": "Iron_Nail",
+              "to": "Obsidian_Knife",
+              "count": 2,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight knife created with a sharpened blade of Obsidian. Gives a chance for food to be instantly cooked when skinning.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 30,
+      "Skinning Efficiency": 2.1500000953674316,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Tool.Knife.T1",
+      "Item.Tool.Knife.T2",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Spear": {
+    "itemId": "Obsidian_Spear",
+    "displayName": "Obsidian Spear",
+    "category": "Ranged",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/Spears/T_ITEM_Obsidian_Spear.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Spear",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 15
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Spear",
+            "itemName": "Obsidian Spear",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 6
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Obsidian_Spear",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Spear",
+              "count": 20,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Spear",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Spear",
+              "count": 15,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight spear created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 30,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Weapon.Spear.Melee",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Sickle": {
+    "itemId": "Obsidian_Sickle",
+    "displayName": "Obsidian Sickle",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Obsidian_Sickle.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Sickle",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Sickle",
+            "itemName": "Obsidian Sickle",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 4
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Obsidian_Sickle",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Sickle",
+              "count": 5,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Sickle",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Sickle",
+              "count": 10,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight sickle created with a sharpened blade of Obsidian. Gives a chance to cook veges when harvesting but may also produce spoiled plants.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 25,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Tool.Sickle",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Sledgehammer": {
+    "itemId": "Obsidian_Sledgehammer",
+    "displayName": "Obsidian Sledgehammer",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Obsidian_Sledgehammer.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Sledgehammer",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Sledgehammer",
+            "itemName": "Obsidian Sledgehammer",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 5
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Obsidian_Sledgehammer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Sledgehammer",
+              "count": 15,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Sledgehammer",
+              "count": 20,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Iron_Nail",
+              "to": "Obsidian_Sledgehammer",
+              "count": 10,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Sledgehammer",
+              "count": 5,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight hammer created with a blunted block of Obsidian. Gives a chance to instantly smelt ore when mining.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 32,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Tool.Sledgehammer",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Bolt": {
+    "itemId": "Obsidian_Bolt",
+    "displayName": "Obsidian Bolt",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Obsidian_Bolt.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Bolt",
+        "requiredMillijoules": 250,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Bolt",
+            "itemName": "Obsidian Bolt",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Obsidian_Bolt",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Bolt",
+              "count": 5,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Bolt",
+              "count": 1,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight bolt created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 15,
+    "maxStack": 100,
+    "stats": {
+      "Projectile Damage": 50,
+      "Break Chance": 0.20000000298023224
+    },
+    "tags": [
+      "Item.Ammo.Bolt",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Arrow": {
+    "itemId": "Obsidian_Arrow",
+    "displayName": "Obsidian Arrow",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Obsidian_Arrow.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Arrow",
+        "requiredMillijoules": 250,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Arrow",
+            "itemName": "Obsidian Arrow",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 5
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Obsidian_Arrow",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Obsidian_Arrow",
+              "count": 5,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Arrow",
+              "count": 5,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Arrow",
+              "count": 1,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight arrow created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 30,
+    "maxStack": 100,
+    "stats": {
+      "Projectile Damage": 20,
+      "Break Chance": 0.15000000596046448
+    },
+    "tags": [
+      "Item.Ammo.Arrow",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Throwing_Knife": {
+    "itemId": "Obsidian_Throwing_Knife",
+    "displayName": "Obsidian Throwing Knife",
+    "category": "Ranged",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/ThrowingWeapons/T_ITEM_Obsidian_Throwing_Knife.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Throwing_Knife",
+        "requiredMillijoules": 1250,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Throwing_Knife",
+            "itemName": "Obsidian Throwing Knife",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 4
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Obsidian_Throwing_Knife",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Throwing_Knife",
+              "count": 5,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Throwing_Knife",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Throwing_Knife",
+              "count": 5,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            },
+            {
+              "from": "Iron_Nail",
+              "to": "Obsidian_Throwing_Knife",
+              "count": 4,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight throwing knife created with a sharpened blade of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 250,
+    "maxStack": 50,
+    "stats": {
+      "Projectile Damage": 33,
+      "Break Chance": 0.20000000298023224
+    },
+    "tags": [
+      "Item.Tool.Knife.Thrown",
+      "Item.Tool.Thrown",
+      "Traits.Actionable",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Throwing_Spear": {
+    "itemId": "Obsidian_Throwing_Spear",
+    "displayName": "Obsidian Javelin",
+    "category": "Ranged",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/ThrowingWeapons/T_ITEM_Obsidian_Throwing_Spear.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Throwing_Spear",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Throwing_Spear",
+            "itemName": "Obsidian Javelin",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 5
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Obsidian_Throwing_Spear",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Obsidian_Throwing_Spear",
+              "count": 20,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Obsidian_Throwing_Spear",
+              "count": 5,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Throwing_Spear",
+              "count": 20,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "An aerodynamic spear created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 500,
+    "maxStack": 20,
+    "stats": {
+      "Projectile Damage": 170,
+      "Break Chance": 0.20000000298023224
+    },
+    "tags": [
+      "Item.Tool.Thrown",
+      "Item.Weapon.Spear.Thrown",
+      "Traits.Actionable",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Head": {
+    "itemId": "Obsidian_Head",
+    "displayName": "Obsidian Head Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Obsidian_Head.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Head_Armor",
+        "requiredMillijoules": 4000,
+        "stationIds": [
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Head",
+            "itemName": "Obsidian Head Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 300
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 5
+            }
+          ],
+          "nodes": [
+            "Obsidian_Head",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Weave",
+              "to": "Obsidian_Head",
+              "count": 10,
+              "recipeId": "Platinum_Wave"
+            },
+            {
+              "from": "Composites",
+              "to": "Obsidian_Head",
+              "count": 5,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Obsidian_Head",
+              "count": 5,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Head",
+              "count": 5,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A durable piece of armor that provides a fair level of resistance against fire and heat.",
+    "flavorText": "Proof that anything can be salvaged for use on Icarus.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 6000,
+      "Damage Resistance %": 8
+    },
+    "tags": [
+      "Item.Armor.Helmet",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Arms": {
+    "itemId": "Obsidian_Arms",
+    "displayName": "Obsidian Arm Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Obsidian_Arms.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Arms_Armor",
+        "requiredMillijoules": 4000,
+        "stationIds": [
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 3
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Arms",
+            "itemName": "Obsidian Arm Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 150
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 3
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 3
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 18
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 3
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Obsidian_Arms",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Weave",
+              "to": "Obsidian_Arms",
+              "count": 5,
+              "recipeId": "Platinum_Wave"
+            },
+            {
+              "from": "Composites",
+              "to": "Obsidian_Arms",
+              "count": 3,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Obsidian_Arms",
+              "count": 2,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Arms",
+              "count": 5,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A durable piece of armor that provides a fair level of resistance against fire and heat.",
+    "flavorText": "Proof that anything can be salvaged for use on Icarus.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 6000,
+      "Damage Resistance %": 8
+    },
+    "tags": [
+      "Item.Armor.Gloves",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Chest": {
+    "itemId": "Obsidian_Chest",
+    "displayName": "Obsidian Chest Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Obsidian_Chest.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Chest_Armor",
+        "requiredMillijoules": 4000,
+        "stationIds": [
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 15
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Chest",
+            "itemName": "Obsidian Chest Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 450
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 8
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 52
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Obsidian_Chest",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Weave",
+              "to": "Obsidian_Chest",
+              "count": 15,
+              "recipeId": "Platinum_Wave"
+            },
+            {
+              "from": "Composites",
+              "to": "Obsidian_Chest",
+              "count": 8,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Obsidian_Chest",
+              "count": 6,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Chest",
+              "count": 15,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A durable piece of armor that provides a fair level of resistance against fire and heat.",
+    "flavorText": "Proof that anything can be salvaged for use on Icarus.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 6000,
+      "Damage Resistance %": 18
+    },
+    "tags": [
+      "Item.Armor.Chest",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Legs": {
+    "itemId": "Obsidian_Legs",
+    "displayName": "Obsidian Leg Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Obsidian_Legs.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Legs_Armor",
+        "requiredMillijoules": 4000,
+        "stationIds": [
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 3
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Legs",
+            "itemName": "Obsidian Leg Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 360
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 2
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 3
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 22
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Obsidian_Legs",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Weave",
+              "to": "Obsidian_Legs",
+              "count": 12,
+              "recipeId": "Platinum_Wave"
+            },
+            {
+              "from": "Composites",
+              "to": "Obsidian_Legs",
+              "count": 2,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Obsidian_Legs",
+              "count": 3,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Legs",
+              "count": 12,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A durable piece of armor that provides a fair level of resistance against fire and heat.",
+    "flavorText": "Proof that anything can be salvaged for use on Icarus.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 6000,
+      "Damage Resistance %": 15
+    },
+    "tags": [
+      "Item.Armor.Pants",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Feet": {
+    "itemId": "Obsidian_Feet",
+    "displayName": "Obsidian Feet Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Obsidian_Feet.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Obsidian_Feet_Armor",
+        "requiredMillijoules": 4000,
+        "stationIds": [
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 3
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 3
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Obsidian_Feet",
+            "itemName": "Obsidian Feet Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 90
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 2
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 3
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 22
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Obsidian_Feet",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Weave",
+              "to": "Obsidian_Feet",
+              "count": 3,
+              "recipeId": "Platinum_Wave"
+            },
+            {
+              "from": "Composites",
+              "to": "Obsidian_Feet",
+              "count": 2,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Obsidian_Feet",
+              "count": 3,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Obsidian_Feet",
+              "count": 5,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A durable piece of armor that provides a fair level of resistance against fire and heat.",
+    "flavorText": "Proof that anything can be salvaged for use on Icarus.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 6000,
+      "Damage Resistance %": 6
+    },
+    "tags": [
+      "Item.Armor.Boots",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Oxite_Ore_Stack_100": {
+    "itemId": "Oxite_Ore_Stack_100",
+    "displayName": "Oxite",
+    "category": "Ores",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Oxite.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be refined into breathable oxygen.",
+    "flavorText": "A stable water-oxygen matrix, oxite slowly decomposes when exposed to the atmosphere of Icarus.",
+    "weight": 400,
+    "maxStack": 50,
+    "stats": {
+      "Oxygen Recovery": 9
+    },
+    "tags": [
+      "FieldGuide.Recipe.Stove.Hide",
+      "Item.Consumable.Oxygen.OxygenFillResource",
+      "Item.Resource.Ore.Oxite",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Water_Trough_Fountain": {
+    "itemId": "Water_Trough_Fountain",
+    "displayName": "Ornate Water Trough",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Fountain.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Water_Trough_Fountain",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Concrete_Mix",
+            "itemName": "Concrete Mix",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Tree_Sap",
+            "itemName": "Tree Sap",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 25
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Water_Trough_Fountain",
+            "itemName": "Ornate Water Trough",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 120
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 265
+            }
+          ],
+          "nodes": [
+            "Water_Trough_Fountain",
+            "Concrete_Mix",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Silica",
+            "Pyritic_Crust_Silicon"
+          ],
+          "edges": [
+            {
+              "from": "Concrete_Mix",
+              "to": "Water_Trough_Fountain",
+              "count": 30,
+              "recipeId": "Concrete_Mix"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Concrete_Mix",
+              "count": 1,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Stone",
+              "to": "Concrete_Mix",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Silica",
+              "to": "Concrete_Mix",
+              "count": 4,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Water_Trough_Fountain",
+              "count": 30,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stone",
+              "to": "Water_Trough_Fountain",
+              "count": 25,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "Allows multiple creatures to drink from at once and can be connected to a water network.",
+    "flavorText": "Who says creatures can\\'t drink with style?",
+    "weight": 3000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Item.Deployable.Tame.Water",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Animal_Feed_High_Quality": {
+    "itemId": "Animal_Feed_High_Quality",
+    "displayName": "Omni Animal Feed",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_Animal_Feed_High_Quality.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Animal_Feed_Omni",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Honey",
+            "itemName": "Honey",
+            "count": 1
+          }
+        ],
+        "queryInputs": [
+          {
+            "kind": "query",
+            "tagId": "",
+            "displayName": "",
+            "count": 3,
+            "queryTags": [],
+            "candidateItemIds": []
+          },
+          {
+            "kind": "query",
+            "tagId": "",
+            "displayName": "",
+            "count": 3,
+            "queryTags": [],
+            "candidateItemIds": []
+          }
+        ],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Animal_Feed_High_Quality",
+            "itemName": "Omni Animal Feed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Honeycomb",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Animal_Feed_High_Quality",
+            "Honey",
+            "Honeycomb"
+          ],
+          "edges": [
+            {
+              "from": "Honey",
+              "to": "Animal_Feed_High_Quality",
+              "count": 1,
+              "recipeId": "Honey"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "Created in the Ranching Station. When fed to animals, increases food effectiveness and provides all-round bonuses.",
+    "flavorText": "Looks good enough to eat.",
+    "weight": 50,
+    "maxStack": 25,
+    "stats": {
+      "Food Recovery": 200
+    },
+    "tags": [
+      "Item.AnimalFeed",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Cat_Head_A2": {
+    "itemId": "Cat_Head_A2",
+    "displayName": "Orange Tabby Cat Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Cat_Head_A3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once loyal companion.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Cat_Trophy_A2": {
+    "itemId": "Cat_Trophy_A2",
+    "displayName": "Orange Tabby Cat Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Cat_Trophy_C.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Cat_Trophy_A2",
+        "requiredMillijoules": 1500,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Cat_Head_A2",
+            "itemName": "Orange Tabby Cat Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Cat_Trophy_A2",
+            "itemName": "Orange Tabby Cat Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Cat_Head_A2",
+              "count": 1
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Cat_Trophy_A2",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Cat_Head_A2"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Cat_Trophy_A2",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "A preserved memory of your feline friend.",
+    "flavorText": "Once a loyal companion.",
+    "weight": 2500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Obsidian_Stack_100": {
+    "itemId": "Obsidian_Stack_100",
+    "displayName": "Obsidian",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Obsidian.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "Glass formed from the belly of the earth, as chunks of solid lava.",
+    "flavorText": "Very popular for use in both weapons and jewellery.",
+    "weight": 300,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Resource.Ore",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Mission_Organic_Analyzer": {
+    "itemId": "Mission_Organic_Analyzer",
+    "displayName": "Organic Analyzer",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_Analyzer_Egg.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Organic_Analyzer",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Glass",
+            "itemName": "Glass",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 16
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Mission_Organic_Analyzer",
+            "itemName": "Organic Analyzer",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 136
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 152
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 15
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 16
+            }
+          ],
+          "nodes": [
+            "Mission_Organic_Analyzer",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Mission_Organic_Analyzer",
+              "count": 10,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Electronics",
+              "to": "Mission_Organic_Analyzer",
+              "count": 4,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Glass",
+              "to": "Mission_Organic_Analyzer",
+              "count": 15,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Mission_Organic_Analyzer",
+              "count": 16,
+              "recipeId": "Copper_Wire"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A device which will Analyze Organic Samples.",
+    "flavorText": "Bleeding Edge",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "FactionMission.Item",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}

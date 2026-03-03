@@ -1,0 +1,1846 @@
+{
+  "Queen_Bee": {
+    "itemId": "Queen_Bee",
+    "displayName": "Queen Bee",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Queen Bee that can be used for making Honeycomb or for breeding more bees.",
+    "flavorText": "The Bees of Icarus are known for their long, needle-like stingers which are capable of piercing even the toughest of envirosuits. Proceed with caution.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Bee.Queen",
+      "Item.Fuel.Combustible",
+      "Item.Resource.Fiber",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Fragment": {
+    "itemId": "Rock_Golem_Fragment",
+    "displayName": "Quarrite Fragment",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Rock_Golem_Fragment.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A piece of matter taken from the body of a great beast.",
+    "flavorText": "Evidence of a hard-won fight.",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Creature.Loot",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Core": {
+    "itemId": "Rock_Golem_Core",
+    "displayName": "Quarrite Core",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Rock_Golem_Core.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A piece of matter taken from the body of a great beast.",
+    "flavorText": "Evidence of a hard-won fight.",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Creature.Loot",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Sledgehammer": {
+    "itemId": "Rock_Golem_Sledgehammer",
+    "displayName": "Quarrite Sledgehammer",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Rock_Golem_Sledgehammer.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Sledgehammer",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Titanium_Ingot",
+            "itemName": "Titanium Ingot",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Fragment",
+            "itemName": "Quarrite Fragment",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Sledgehammer",
+            "itemName": "Quarrite Sledgehammer",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 236
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Titanium",
+              "count": 40
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 10
+            },
+            {
+              "itemId": "Rock_Golem_Fragment",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Sledgehammer",
+            "Titanium_Ingot",
+            "Titanium_Ore",
+            "Pyritic_Crust_Titanium",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Rock_Golem_Core",
+            "Rock_Golem_Fragment",
+            "Wood_Refined"
+          ],
+          "edges": [
+            {
+              "from": "Titanium_Ingot",
+              "to": "Rock_Golem_Sledgehammer",
+              "count": 8,
+              "recipeId": "Titanium_Ingot"
+            },
+            {
+              "from": "Titanium_Ore",
+              "to": "Titanium_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Titanium"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Rock_Golem_Sledgehammer",
+              "count": 6,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Rock_Golem_Sledgehammer",
+              "count": 20,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Sledgehammer crafted from the spoils of victory against a Quarrite.",
+    "flavorText": "An item that was truly hard-won.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 70,
+      "Durability": 120000
+    },
+    "tags": [
+      "Item.Tool.Sledgehammer",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Gun": {
+    "itemId": "Rock_Golem_Gun",
+    "displayName": "Quarrite Gun",
+    "category": "Ranged",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Rock_Golem_Gun.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Gun",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Copper",
+            "itemName": "Copper Ingot",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 16
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Gun",
+            "itemName": "Quarrite Gun",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 64
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 46
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 276
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Gun",
+            "Rock_Golem_Core",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Steel_Screw"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Copper",
+              "to": "Rock_Golem_Gun",
+              "count": 15,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Rock_Golem_Gun",
+              "count": 30,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Rock_Golem_Gun",
+              "count": 4,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Rock_Golem_Gun",
+              "count": 16,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Pneumatic Gun crafted from Quarrite materials. Launches stones which shatter on impact.",
+    "flavorText": "You\\'ve heard of fighting fire with fire...",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 25000,
+      "Fire Rate (RPM)": 115,
+      "Mag Size": 20,
+      "Reload Time (s)": 2.6500000953674316
+    },
+    "tags": [
+      "Item.Weapon.Firearm.RockGolemGun",
+      "Item.Weapon.Firearm.Shotgun",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Attachment": {
+    "itemId": "Rock_Golem_Attachment",
+    "displayName": "Quarrite Armor Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttArmor_RockGolem.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Attachment",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Fragment",
+            "itemName": "Quarrite Fragment",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Attachment",
+            "itemName": "Quarrite Armor Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 72
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 2
+            },
+            {
+              "itemId": "Rock_Golem_Fragment",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Attachment",
+            "Rock_Golem_Core",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Rock_Golem_Fragment"
+          ],
+          "edges": [
+            {
+              "from": "Carbon_Fiber",
+              "to": "Rock_Golem_Attachment",
+              "count": 2,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "An attachment that grants damage reduction and health regen.",
+    "flavorText": "Can be equipped to a valid armor at an Alteration Bench.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Armor.Body",
+      "Item.Attachment.Rank.RockGolem",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Module": {
+    "itemId": "Rock_Golem_Module",
+    "displayName": "Quarrite Mining Module",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_RockGolem.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Module",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Fragment",
+            "itemName": "Quarrite Fragment",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Module",
+            "itemName": "Quarrite Mining Module",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 32
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 4
+            },
+            {
+              "itemId": "Rock_Golem_Fragment",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Module",
+            "Rock_Golem_Fragment",
+            "Rock_Golem_Core",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Rock_Golem_Module",
+              "count": 4,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Rock_Golem_Module",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Provides Bonuses to Mining.",
+    "flavorText": "A module which can grant envirosuits characteristics of the Quarrite Creature.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Upgrade.Passive",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Trophy": {
+    "itemId": "Rock_Golem_Trophy",
+    "displayName": "Quarrite Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rock_Golem_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Head",
+            "itemName": "Unstable Quarrite Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 100
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Fragment",
+            "itemName": "Quarrite Fragment",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Trophy",
+            "itemName": "Quarrite Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 100
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 5
+            },
+            {
+              "itemId": "Rock_Golem_Fragment",
+              "count": 2
+            },
+            {
+              "itemId": "Rock_Golem_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Trophy",
+            "Rock_Golem_Head",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Rock_Golem_Core",
+            "Rock_Golem_Fragment"
+          ],
+          "edges": [
+            {
+              "from": "Stone",
+              "to": "Rock_Golem_Trophy",
+              "count": 100,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved specimen from a Quarrite that once lived on Icarus.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Trophy_Lamp": {
+    "itemId": "Rock_Golem_Trophy_Lamp",
+    "displayName": "Quarrite Lamp",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rock_Golem_Trophy_Lamp_2.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Trophy_Lamp",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Head",
+            "itemName": "Unstable Quarrite Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Salt",
+            "itemName": "Salt",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Fragment",
+            "itemName": "Quarrite Fragment",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Trophy_Lamp",
+            "itemName": "Quarrite Lamp",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Salt",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 20
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 2
+            },
+            {
+              "itemId": "Rock_Golem_Fragment",
+              "count": 6
+            },
+            {
+              "itemId": "Rock_Golem_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Trophy_Lamp",
+            "Rock_Golem_Head",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Salt",
+            "Pyritic_Crust_Salt",
+            "Rock_Golem_Fragment",
+            "Rock_Golem_Core"
+          ],
+          "edges": [
+            {
+              "from": "Stone",
+              "to": "Rock_Golem_Trophy_Lamp",
+              "count": 20,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Salt",
+              "to": "Rock_Golem_Trophy_Lamp",
+              "count": 12,
+              "recipeId": "Pyritic_Crust_Salt"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A monument to a great creature, which emits a small red light. Has 3 variations.",
+    "flavorText": "What a great use for the core of a ferocious beast.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Chair": {
+    "itemId": "Rock_Golem_Chair",
+    "displayName": "Quarrite Throne",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rock_Golem_Chair.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Chair",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Head",
+            "itemName": "Unstable Quarrite Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 80
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Fragment",
+            "itemName": "Quarrite Fragment",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Chair",
+            "itemName": "Quarrite Throne",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 80
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 5
+            },
+            {
+              "itemId": "Rock_Golem_Fragment",
+              "count": 5
+            },
+            {
+              "itemId": "Rock_Golem_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Chair",
+            "Rock_Golem_Head",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Rock_Golem_Core",
+            "Rock_Golem_Fragment"
+          ],
+          "edges": [
+            {
+              "from": "Stone",
+              "to": "Rock_Golem_Chair",
+              "count": 80,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Evidence that a Quarrite was bested.",
+    "flavorText": "An item that was truly hard-won.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Grenade": {
+    "itemId": "Rock_Golem_Grenade",
+    "displayName": "Quarrite Grenade",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Rock_Golem_Grenade.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rock_Golem_Grenade",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Core",
+            "itemName": "Quarrite Core",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 14
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rock_Golem_Grenade",
+            "itemName": "Quarrite Grenade",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            },
+            {
+              "itemId": "Rock_Golem_Core",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 12
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Rock_Golem_Grenade",
+            "Rock_Golem_Core",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Volatile_Substance",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Iron_Nail",
+              "to": "Rock_Golem_Grenade",
+              "count": 14,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Rock_Golem_Grenade",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Rock_Golem_Grenade",
+              "count": 2,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Explodes into many sharp objects that damage and slow.",
+    "flavorText": "Like those little colored toy building blocks, but much much older.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Weapon.Grenade.RockGolem",
+      "Traits.Actionable",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Grenade_Caltrops": {
+    "itemId": "Rock_Golem_Grenade_Caltrops",
+    "displayName": "Quarrite Caltrops",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Rock_Golem_Grenade.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "The sharp remains of a Quarrite Grenade. Will slow and cause damage when stepped on.",
+    "flavorText": "Like those little colored toy building blocks, but much much older.",
+    "weight": 50,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Traits.Ballistic",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Head": {
+    "itemId": "Rock_Golem_Juvenile_Head",
+    "displayName": "Quarrite Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RockGolem_Juvie_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a great beast.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Rare",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Head_Gold": {
+    "itemId": "Rock_Golem_Juvenile_Head_Gold",
+    "displayName": "Quarrite Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RockGolem_Juvie_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a great beast.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Rare",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Head_Exotic": {
+    "itemId": "Rock_Golem_Juvenile_Head_Exotic",
+    "displayName": "Quarrite Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RockGolem_Juvie_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a great beast.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Rare",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Head_Copper": {
+    "itemId": "Rock_Golem_Juvenile_Head_Copper",
+    "displayName": "Quarrite Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RockGolem_Juvie_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a great beast.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Rare",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Head_Oxite": {
+    "itemId": "Rock_Golem_Juvenile_Head_Oxite",
+    "displayName": "Quarrite Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RockGolem_Juvie_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a great beast.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Rare",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Juvenile_Rock_Golem_Trophy": {
+    "itemId": "Juvenile_Rock_Golem_Trophy",
+    "displayName": "Quarrite Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Juvenile_Rock_Golem_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Juvenile_Rock_Golem_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Juvenile_Head",
+            "itemName": "Quarrite Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Juvenile_Rock_Golem_Trophy",
+            "itemName": "Quarrite Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Rock_Golem_Juvenile_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Juvenile_Rock_Golem_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Rock_Golem_Juvenile_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Juvenile_Rock_Golem_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A mounted Young Quarrite head.",
+    "flavorText": "How did you stuff a creature made of rock?",
+    "weight": 4000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Armor_Exotic": {
+    "itemId": "Rock_Golem_Juvenile_Armor_Exotic",
+    "displayName": "Quarrite Armor Fragment (Exotic)",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Rock_Golem_Juvenile_Armor_Exotic.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A large chunk of Quarrite Armor. Can be Converted into Raw Ore in a Bio-Cleaner or Organic Residue Cleanser.",
+    "flavorText": "How did the Quarrite Even Grow This?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Armor_Copper": {
+    "itemId": "Rock_Golem_Juvenile_Armor_Copper",
+    "displayName": "Quarrite Armor Fragment (Copper)",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Rock_Golem_Juvenile_Armor_Copper.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A large chunk of Quarrite Armor. Can be Converted into Raw Ore in a Bio-Cleaner or Organic Residue Cleanser.",
+    "flavorText": "How did the Quarrite Even Grow This?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Armor_Iron": {
+    "itemId": "Rock_Golem_Juvenile_Armor_Iron",
+    "displayName": "Quarrite Armor Fragment (Iron)",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Rock_Golem_Juvenile_Armor_Iron.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A large chunk of Quarrite Armor. Can be Converted into Raw Ore in a Bio-Cleaner or Organic Residue Cleanser.",
+    "flavorText": "How did the Quarrite Even Grow This?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Armor_Gold": {
+    "itemId": "Rock_Golem_Juvenile_Armor_Gold",
+    "displayName": "Quarrite Armor Fragment (Gold)",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Rock_Golem_Juvenile_Armor_Gold.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A large chunk of Quarrite Armor. Can be Converted into Raw Ore in a Bio-Cleaner or Organic Residue Cleanser.",
+    "flavorText": "How did the Quarrite Even Grow This?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Armor_Oxite": {
+    "itemId": "Rock_Golem_Juvenile_Armor_Oxite",
+    "displayName": "Quarrite Armor Fragment (Oxite)",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Rock_Golem_Juvenile_Armor_Oxite.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A large chunk of Quarrite Armor. Can be Converted into Raw Ore in a Bio-Cleaner or Organic Residue Cleanser.",
+    "flavorText": "How did the Quarrite Even Grow This?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Rock_Golem_Juvenile_Armor_Coal": {
+    "itemId": "Rock_Golem_Juvenile_Armor_Coal",
+    "displayName": "Quarrite Armor Fragment (Coal)",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Rock_Golem_Juvenile_Armor_Coal.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A large chunk of Quarrite Armor. Can be Converted into Raw Ore in a Bio-Cleaner or Organic Residue Cleanser.",
+    "flavorText": "How did the Quarrite Even Grow This?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Queen_Bee_Stack": {
+    "itemId": "Queen_Bee_Stack",
+    "displayName": "Queen Bee",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Queen Bee that can be used for making Honeycomb or for breeding more bees.",
+    "flavorText": "The Bees of Icarus are known for their long, needle-like stingers which are capable of piercing even the toughest of envirosuits. Proceed with caution.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Bee.Queen",
+      "Item.Fuel.Combustible",
+      "Item.Resource.Fiber",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  }
+}

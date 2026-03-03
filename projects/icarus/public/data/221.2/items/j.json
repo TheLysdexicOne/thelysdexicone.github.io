@@ -1,0 +1,586 @@
+{
+  "Rug_Jaguar": {
+    "itemId": "Rug_Jaguar",
+    "displayName": "Jaguar Rug",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rug_Jaguar.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rug_Jaguar",
+        "requiredMillijoules": 3000,
+        "stationIds": [
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Jaguar_Head",
+            "itemName": "Jaguar Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Advanced_Leather",
+            "itemName": "Cured Leather",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Weave",
+            "itemName": "Platinum Weave",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Rug_Jaguar",
+            "itemName": "Jaguar Rug",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 90
+            },
+            {
+              "itemId": "Fiber",
+              "count": 150
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 80
+            },
+            {
+              "itemId": "Jaguar_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Rug_Jaguar",
+            "Jaguar_Head",
+            "Fur",
+            "AnimalCarcass_Deer",
+            "Advanced_Leather",
+            "Leather",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Platinum_Weave",
+            "Fiber",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Fur",
+              "to": "Rug_Jaguar",
+              "count": 30,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Advanced_Leather",
+              "to": "Rug_Jaguar",
+              "count": 10,
+              "recipeId": "Cured_Leather"
+            },
+            {
+              "from": "Leather",
+              "to": "Advanced_Leather",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Advanced_Leather",
+              "count": 2,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Platinum_Weave",
+              "to": "Rug_Jaguar",
+              "count": 5,
+              "recipeId": "Platinum_Wave"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A decorative jaguar skin.",
+    "flavorText": "Instantly transforms your shelter or cabin into an 18th century hunting lodge.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Rug",
+      "Item.Rug",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Trophy": {
+    "itemId": "Jaguar_Trophy",
+    "displayName": "Jaguar Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Jaguar_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Jaguar_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Jaguar_Head",
+            "itemName": "Jaguar Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Jaguar_Trophy",
+            "itemName": "Jaguar Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Jaguar_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Jaguar_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Jaguar_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Jaguar_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted jaguar head.",
+    "flavorText": "This animal challenged, and lost.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Head": {
+    "itemId": "Jaguar_Head",
+    "displayName": "Jaguar Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_Jaguar_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Jaguar.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Uncommon",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Sandworm_Crossbow": {
+    "itemId": "LegendaryWeapon_Sandworm_Crossbow",
+    "displayName": "Javelin Launcher",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Sandworm_Crossbow.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Javelin Launcher created via studying of the Sandworm.",
+    "flavorText": "Norex knows we need to carry these things, right?",
+    "weight": 15000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 20000,
+      "Reload Time (s)": 4.5
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Bow",
+      "Item.Weapon.Crossbow",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Glass_Jar_Honey": {
+    "itemId": "Glass_Jar_Honey",
+    "displayName": "Jarred Honey",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Honey_Jar.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Glass_Jar_Honey",
+        "requiredMillijoules": 25000,
+        "stationIds": [
+          "Kitchen_Bench",
+          "Advanced_Kitchen_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Glass_Jar",
+            "itemName": "Glass Jar",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Honey",
+            "itemName": "Honey",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Glass_Jar_Honey",
+            "itemName": "Jarred Honey",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Honeycomb",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Glass_Jar_Honey",
+            "Glass_Jar",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Honey",
+            "Honeycomb"
+          ],
+          "edges": [
+            {
+              "from": "Glass_Jar",
+              "to": "Glass_Jar_Honey",
+              "count": 1,
+              "recipeId": "Glass_Jar"
+            },
+            {
+              "from": "Glass",
+              "to": "Glass_Jar",
+              "count": 1,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Glass_Jar",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Honey",
+              "to": "Glass_Jar_Honey",
+              "count": 5,
+              "recipeId": "Honey"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A handy way to store your honey.",
+    "flavorText": "Just like \\'ma used to make.",
+    "weight": 500,
+    "maxStack": 20,
+    "stats": {
+      "Food Recovery": 40
+    },
+    "tags": [
+      "Item.Consumable.Food.Cooked.Honey",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Animal_Bed_Leopard": {
+    "itemId": "Animal_Bed_Leopard",
+    "displayName": "Jaguar Buffalo Animal Bed",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Bed_Leopard.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Animal_Bed_Leopard",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Advanced_Leather",
+            "itemName": "Cured Leather",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 35
+          },
+          {
+            "kind": "item",
+            "itemId": "Jaguar_Head",
+            "itemName": "Jaguar Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Buffalo_Head",
+            "itemName": "Buffalo Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Animal_Bed_Leopard",
+            "itemName": "Jaguar Buffalo Animal Bed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 95
+            },
+            {
+              "itemId": "Buffalo_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 80
+            },
+            {
+              "itemId": "Jaguar_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Animal_Bed_Leopard",
+            "Advanced_Leather",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Fur",
+            "Jaguar_Head",
+            "Buffalo_Head"
+          ],
+          "edges": [
+            {
+              "from": "Advanced_Leather",
+              "to": "Animal_Bed_Leopard",
+              "count": 10,
+              "recipeId": "Cured_Leather"
+            },
+            {
+              "from": "Leather",
+              "to": "Advanced_Leather",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Advanced_Leather",
+              "count": 2,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Fur",
+              "to": "Animal_Bed_Leopard",
+              "count": 35,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Laika",
+    "cosmeticPack": "",
+    "description": "Juvenile animals can use this as a designated sleeping spot",
+    "flavorText": "The spots make them run faster in their dreams.",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Deployable.TameBed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "Yeast": {
+    "itemId": "Yeast",
+    "displayName": "Yeast",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Yeast.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A sugary herb, rich in natural yeasts. Add to a cooking ",
+    "flavorText": "Technically a fungus, yeast is a unicellular microbe of the genus Saccharomyces, seemingly unaffected by Icarus\\'s toxic atmosphere. Add to mortar and pestle with flour and water from a container to make dough.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Plant.Grain",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Coconut_young": {
+    "itemId": "Coconut_young",
+    "displayName": "Young Coconut",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Coconut_Young.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Mostly water, young coconuts will quench thirst but won\\'t do much for hunger.",
+    "flavorText": "Like sharks, coconuts often fail to live up to their lethal reputation.",
+    "weight": 800,
+    "maxStack": 10,
+    "stats": {
+      "Food Recovery": 2,
+      "Water Recovery": 10
+    },
+    "tags": [
+      "Item.Consumable.Food.Raw",
+      "Item.Resource",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Yeast_Lure": {
+    "itemId": "Yeast_Lure",
+    "displayName": "Yeast Lure",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fishing/ITEM_Yeast_Lure.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Yeast_Lure",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Fishing_Bench_Rods"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Yeast",
+            "itemName": "Yeast",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Yeast_Lure",
+            "itemName": "Yeast Lure",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Yeast",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Yeast_Lure",
+            "Yeast",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Rope",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Iron_Nail",
+              "to": "Yeast_Lure",
+              "count": 2,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Rope",
+              "to": "Yeast_Lure",
+              "count": 2,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A basic lure carefully crafted from yeast, to attract more fish.",
+    "flavorText": "Surely you\\'ll catch a big one with this in your kit.",
+    "weight": 250,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.FishingRod",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Yeast_Seed": {
+    "itemId": "Meta_Yeast_Seed",
+    "displayName": "Yeast Farming Packet",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_FarmingPacket_Yeast.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Right click to open a packet of Yeast Seeds that have been stabilised for off-world farming",
+    "flavorText": "Right click to open",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 20
+        }
+      ]
+    }
+  }
+}
