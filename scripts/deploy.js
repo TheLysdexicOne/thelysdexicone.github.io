@@ -73,11 +73,38 @@ console.log("\n📝 Creating .nojekyll file...");
 fs.writeFileSync(path.join(distDir, ".nojekyll"), "");
 
 // Step 5: Publish dist/ to gh-pages branch
+// Use a fresh git repo in a temp dir to avoid ENAMETOOLONG on Windows
+// (gh-pages passes all file paths as CLI args to `git rm`, which exceeds limits)
 console.log("\n🚢 Publishing dist/ to gh-pages branch...");
+const ghPagesDir = path.join(rootDir, ".gh-pages-tmp");
 try {
   process.chdir(rootDir);
-  execSync("npx gh-pages -d dist --dotfiles", { stdio: "inherit" });
+
+  // Clean temp dir
+  if (fs.existsSync(ghPagesDir)) {
+    fs.rmSync(ghPagesDir, { recursive: true, force: true });
+  }
+  fs.mkdirSync(ghPagesDir);
+
+  // Get remote URL from the main repo
+  const remoteUrl = execSync("git remote get-url origin", { cwd: rootDir }).toString().trim();
+
+  // Init a fresh git repo, commit dist contents, and force-push to gh-pages
+  execSync("git init", { cwd: ghPagesDir, stdio: "inherit" });
+  execSync("git checkout -b gh-pages", { cwd: ghPagesDir, stdio: "inherit" });
+  copyDir(distDir, ghPagesDir);
+  execSync("git add -A", { cwd: ghPagesDir, stdio: "inherit" });
+  execSync('git commit -m "Deploy to GitHub Pages"', { cwd: ghPagesDir, stdio: "inherit" });
+  execSync(`git remote add origin ${remoteUrl}`, { cwd: ghPagesDir, stdio: "inherit" });
+  execSync("git push origin gh-pages --force", { cwd: ghPagesDir, stdio: "inherit" });
+
+  // Cleanup temp dir
+  fs.rmSync(ghPagesDir, { recursive: true, force: true });
 } catch (error) {
+  // Cleanup temp dir on failure too
+  if (fs.existsSync(ghPagesDir)) {
+    fs.rmSync(ghPagesDir, { recursive: true, force: true });
+  }
   console.error("❌ gh-pages publish failed:", error.message);
   process.exit(1);
 }
