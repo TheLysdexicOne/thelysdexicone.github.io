@@ -87,16 +87,27 @@ try {
   fs.mkdirSync(ghPagesDir);
 
   // Get remote URL from the main repo
-  const remoteUrl = execSync("git remote get-url origin", { cwd: rootDir }).toString().trim();
+  const remoteUrl = execSync("git remote get-url origin", { cwd: rootDir })
+    .toString()
+    .trim();
 
   // Init a fresh git repo, commit dist contents, and force-push to gh-pages
   execSync("git init", { cwd: ghPagesDir, stdio: "inherit" });
   execSync("git checkout -b gh-pages", { cwd: ghPagesDir, stdio: "inherit" });
   copyDir(distDir, ghPagesDir);
   execSync("git add -A", { cwd: ghPagesDir, stdio: "inherit" });
-  execSync('git commit -m "Deploy to GitHub Pages"', { cwd: ghPagesDir, stdio: "inherit" });
-  execSync(`git remote add origin ${remoteUrl}`, { cwd: ghPagesDir, stdio: "inherit" });
-  execSync("git push origin gh-pages --force", { cwd: ghPagesDir, stdio: "inherit" });
+  execSync('git commit -m "Deploy to GitHub Pages"', {
+    cwd: ghPagesDir,
+    stdio: "inherit",
+  });
+  execSync(`git remote add origin ${remoteUrl}`, {
+    cwd: ghPagesDir,
+    stdio: "inherit",
+  });
+  execSync("git push origin gh-pages --force", {
+    cwd: ghPagesDir,
+    stdio: "inherit",
+  });
 
   // Cleanup temp dir
   fs.rmSync(ghPagesDir, { recursive: true, force: true });
