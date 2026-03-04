@@ -28,7 +28,8 @@ type IngredientDef = {
 type PrerequisiteDef = {
   itemId: string;
   displayName: string;
-  reason: string;
+  /** Station key matching ingredient.stationId — used to group this bench's ingredients. */
+  stationId: string;
 };
 
 type StepDef = {
@@ -43,7 +44,6 @@ type StepDef = {
   };
   ingredients: IngredientDef[];
   prerequisites: PrerequisiteDef[];
-  note: string | null;
 };
 
 // ── Static progression data ──────────────────────────────────────────────────
@@ -65,7 +65,6 @@ const PROGRESSION_STEPS: StepDef[] = [
       { itemId: "Leather", displayName: "Leather", count: 20 },
     ],
     prerequisites: [],
-    note: "Besides a shelter, nothing else is needed.",
   },
   {
     from: "Tier 2",
@@ -108,20 +107,19 @@ const PROGRESSION_STEPS: StepDef[] = [
       {
         itemId: "Anvil_Bench",
         displayName: "Anvil Bench",
-        reason: "Crafts Iron Nails",
+        stationId: "Anvil_Bench",
       },
       {
         itemId: "Stone_Furnace",
         displayName: "Stone Furnace",
-        reason: "Smelts Iron Ingots",
+        stationId: "Stone_Furnace",
       },
       {
         itemId: "Kit_Mortar_And_Pestle",
         displayName: "Mortar & Pestle",
-        reason: "Crafts Epoxy",
+        stationId: "Mortar_And_Pestle",
       },
     ],
-    note: null,
   },
   {
     from: "Tier 3",
@@ -168,15 +166,14 @@ const PROGRESSION_STEPS: StepDef[] = [
       {
         itemId: "Electric_Furnace",
         displayName: "Electric Furnace",
-        reason: "Smelts Aluminium Ingots & Carbon Fiber",
+        stationId: "Electric_Furnace",
       },
       {
         itemId: "Cement_Mixer",
         displayName: "Cement Mixer",
-        reason: "Mixes Concrete",
+        stationId: "Cement_Mixer",
       },
     ],
-    note: null,
   },
 ];
 
@@ -197,6 +194,14 @@ type ChipProps = {
   itemLookup: IcarusItemLookupMap;
   onClick: (itemId: string, rect: DOMRect) => void;
   large?: boolean;
+  /** Even larger — used for the gateway bench hero display. */
+  xlarge?: boolean;
+  /** Extra className applied to the outer button element. */
+  className?: string;
+  /** Truncate the name text — useful when the chip has a fixed width from a grid parent. */
+  truncateName?: boolean;
+  /** Icon-grid mode: shows icon + count badge, name/station revealed on hover. */
+  iconMode?: boolean;
   /** Explicit icon override — used when the item isn't in itemLookup (e.g. stations). */
   iconAssetPath?: string;
 };
@@ -210,6 +215,10 @@ function IngredientChip({
   itemLookup,
   onClick,
   large = false,
+  xlarge = false,
+  className,
+  truncateName = false,
+  iconMode = false,
   iconAssetPath: iconOverride,
 }: ChipProps) {
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -223,11 +232,80 @@ function IngredientChip({
     }
   }
 
+  if (xlarge) {
+    return (
+      <button
+        ref={btnRef}
+        onClick={handleClick}
+        className={`group relative flex items-center gap-3 rounded border border-primary bg-card px-4 py-3 text-left transition-colors hover:border-highlight hover:bg-nav${className ? ` ${className}` : ""}`}
+        title={`View details: ${displayName}`}
+      >
+        {resolvedIconPath ? (
+          <img
+            src={toAssetUrl(resolvedIconPath)}
+            alt={displayName}
+            className="h-16 w-16 sm:h-20 sm:w-20 shrink-0 rounded bg-main object-contain"
+            loading="lazy"
+          />
+        ) : (
+          <span className="inline-block h-16 w-16 sm:h-20 sm:w-20 shrink-0 rounded bg-main" />
+        )}
+        <span className="flex flex-col leading-tight">
+          <span className="text-base sm:text-lg font-semibold text-primary">
+            {displayName}
+          </span>
+          {station && (
+            <span className="mt-1 flex items-center gap-1 text-xs sm:text-sm text-secondary opacity-70">
+              {station.icon.assetPath ? (
+                <img
+                  src={toAssetUrl(station.icon.assetPath)}
+                  alt={station.name}
+                  className="h-4 w-4 sm:h-5 sm:w-5 rounded bg-main object-contain"
+                  loading="lazy"
+                />
+              ) : null}
+              {station.name}
+            </span>
+          )}
+        </span>
+      </button>
+    );
+  }
+
+  if (iconMode) {
+    return (
+      <button
+        ref={btnRef}
+        onClick={handleClick}
+        className={`group relative rounded border border-primary bg-card p-2 transition-colors hover:border-highlight hover:bg-nav${className ? ` ${className}` : ""}`}
+        title={`${displayName}${count != null ? ` ×${count}` : ""}${station ? ` — ${station.name}` : ""}`}
+      >
+        <div className="relative">
+          {resolvedIconPath ? (
+            <img
+              src={toAssetUrl(resolvedIconPath)}
+              alt={displayName}
+              className="block h-10 w-10 sm:h-14 sm:w-14 rounded bg-main object-contain"
+              loading="lazy"
+            />
+          ) : (
+            <span className="block h-10 w-10 sm:h-14 sm:w-14 rounded bg-main" />
+          )}
+          {count != null && (
+            <span className="absolute -bottom-1.5 -right-1.5 flex min-w-[1.25rem] items-center justify-center rounded bg-highlight px-1 py-0.5 text-[10px] font-bold leading-none text-main">
+              ×{count}
+            </span>
+          )}
+        </div>
+      </button>
+    );
+  }
+
   return (
     <button
       ref={btnRef}
       onClick={handleClick}
-      className={`group relative flex items-center gap-2 rounded border border-primary bg-card px-2 py-1.5 text-left transition-colors hover:border-highlight hover:bg-nav${large ? " px-3 py-2" : ""}`}
+      className={`group relative flex items-center gap-2 sm:gap-3 rounded border border-primary bg-card px-2 py-1.5 text-left transition-colors hover:border-highlight hover:bg-nav${className ? ` ${className}` : ""}`}
       title={`View details: ${displayName}`}
     >
       {/* Item icon */}
@@ -235,18 +313,20 @@ function IngredientChip({
         <img
           src={toAssetUrl(resolvedIconPath)}
           alt={displayName}
-          className={`shrink-0 rounded bg-main object-contain${large ? " h-10 w-10" : " h-7 w-7"}`}
+          className={`shrink-0 rounded bg-main object-contain${large ? " h-7 w-7 sm:h-12 sm:w-12" : " h-6 w-6"}`}
           loading="lazy"
         />
       ) : (
         <span
-          className={`inline-block shrink-0 rounded bg-main${large ? " h-10 w-10" : " h-7 w-7"}`}
+          className={`inline-block shrink-0 rounded bg-main${large ? " h-7 w-7 sm:h-12 sm:w-12" : " h-6 w-6"}`}
         />
       )}
 
-      <span className="flex flex-col leading-tight">
+      <span
+        className={`flex min-w-0 flex-col leading-tight${truncateName ? " overflow-hidden" : ""}`}
+      >
         <span
-          className={`font-semibold text-primary${large ? " text-sm" : " text-xs"}`}
+          className={`font-semibold text-primary${large ? " text-xs sm:text-base" : " text-[11px]"}${truncateName ? " truncate" : ""}`}
         >
           {count != null && (
             <span className="mr-1 text-highlight">×{count}</span>
@@ -256,12 +336,12 @@ function IngredientChip({
 
         {/* Station badge */}
         {station && (
-          <span className="mt-0.5 flex items-center gap-1 text-[10px] text-secondary opacity-70">
+          <span className="mt-0.5 flex items-center gap-1 text-[9px] sm:text-xs text-secondary opacity-70">
             {station.icon.assetPath ? (
               <img
                 src={toAssetUrl(station.icon.assetPath)}
                 alt={station.name}
-                className="h-3.5 w-3.5 rounded bg-main object-contain"
+                className="h-3 w-3 sm:h-4 sm:w-4 rounded bg-main object-contain"
                 loading="lazy"
               />
             ) : null}
@@ -394,104 +474,110 @@ function ProgressionStep({
     ? tierSection.entries.filter((e) => stationById.has(e.id))
     : [];
 
-  return (
-    <article className="rounded-lg border-2 border-primary bg-nav p-4 sm:p-6">
-      {/* Step header */}
-      <h3 className="font-pixel text-lg tracking-wide text-primary sm:text-xl">
-        {step.from} → {step.to}
-      </h3>
-
+  const content = (
+    <>
       {/* Gateway bench */}
       <div className="mt-4 rounded-lg border border-highlight bg-card p-4">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-secondary opacity-70">
-          Gateway — craft this to unlock {step.to}
-        </p>
-        <div className="flex flex-wrap items-center gap-3">
-          <IngredientChip
-            itemId={step.gateway.itemId}
-            displayName={step.gateway.displayName}
-            stationId={step.gateway.stationId ?? undefined}
-            stationById={stationById}
-            itemLookup={itemLookup}
-            onClick={onSelect}
-            large
-          />
-          {step.gateway.stationId ? (
-            <span className="text-xs text-secondary opacity-60">
-              crafted at{" "}
-              <span className="font-semibold text-secondary">
-                {stationById.get(step.gateway.stationId)?.name ??
-                  step.gateway.stationId}
-              </span>
-            </span>
-          ) : (
-            <span className="text-xs text-secondary opacity-60">
-              hand-crafted
-            </span>
-          )}
-        </div>
-      </div>
-
-      {/* Ingredients */}
-      <div className="mt-4">
-        <h4 className="text-xs font-semibold uppercase tracking-wider text-secondary opacity-70">
-          Ingredients
-        </h4>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {step.ingredients.map((ing) => (
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
+          {/* Left: label + bench hero */}
+          <div className="shrink-0">
+            <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-secondary opacity-70">
+              {step.to} Crafting Bench
+            </p>
             <IngredientChip
-              key={ing.itemId}
-              itemId={ing.itemId}
-              displayName={ing.displayName}
-              count={ing.count}
-              stationId={ing.stationId}
+              itemId={step.gateway.itemId}
+              displayName={step.gateway.displayName}
+              stationId={step.gateway.stationId ?? undefined}
               stationById={stationById}
               itemLookup={itemLookup}
               onClick={onSelect}
+              xlarge
             />
-          ))}
+          </div>
+          {/* Right: label + recipe chips */}
+          <div className="flex-1">
+            <h4 className="mb-2 text-sm font-semibold uppercase tracking-wider text-secondary opacity-70">
+              Recipe
+            </h4>
+            <div className="flex flex-wrap gap-2 sm:gap-3">
+              {step.ingredients.map((ing) => (
+                <IngredientChip
+                  key={ing.itemId}
+                  itemId={ing.itemId}
+                  displayName={ing.displayName}
+                  count={ing.count}
+                  stationId={ing.stationId}
+                  stationById={stationById}
+                  itemLookup={itemLookup}
+                  onClick={onSelect}
+                  iconMode
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Prerequisites */}
       {step.prerequisites.length > 0 && (
         <div className="mt-4">
-          <h4 className="text-xs font-semibold uppercase tracking-wider text-secondary opacity-70">
+          <h4 className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary opacity-70">
             You&rsquo;ll also need
           </h4>
-          <div className="mt-2 space-y-2">
-            {step.prerequisites.map((prereq) => (
-              <div key={prereq.itemId} className="flex flex-wrap items-center gap-2">
-                <IngredientChip
-                  itemId={prereq.itemId}
-                  displayName={prereq.displayName}
-                  stationById={stationById}
-                  itemLookup={itemLookup}
-                  onClick={onSelect}
-                />
-                <span className="text-xs text-secondary opacity-60">
-                  — {prereq.reason}
-                </span>
-              </div>
-            ))}
+          {/* Mobile: each prereq is a horizontal row [bench] = [items]
+               Desktop: prereqs spread justified with ingredients centered below */}
+          <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            {step.prerequisites.map((prereq) => {
+              const prereqIngredients = step.ingredients.filter(
+                (ing) => ing.stationId === prereq.stationId,
+              );
+              return (
+                <div
+                  key={prereq.itemId}
+                  className="flex flex-row items-center gap-2 rounded border border-primary bg-card p-2 sm:flex-1 sm:flex-col sm:items-center sm:gap-3 sm:p-3"
+                >
+                  {/* Bench chip */}
+                  <IngredientChip
+                    itemId={prereq.itemId}
+                    displayName={prereq.displayName}
+                    stationById={stationById}
+                    itemLookup={itemLookup}
+                    onClick={onSelect}
+                    large
+                  />
+                  {/* “=” separator — mobile only */}
+                  <span className="shrink-0 text-sm text-secondary opacity-50 sm:hidden">
+                    =
+                  </span>
+                  {/* Ingredient icon chips */}
+                  <div className="flex flex-wrap justify-center gap-1.5">
+                    {prereqIngredients.map((ing) => (
+                      <IngredientChip
+                        key={ing.itemId}
+                        itemId={ing.itemId}
+                        displayName={ing.displayName}
+                        count={ing.count}
+                        stationById={stationById}
+                        itemLookup={itemLookup}
+                        onClick={onSelect}
+                        iconMode
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-      )}
-
-      {/* Note */}
-      {step.note && (
-        <p className="mt-3 rounded border border-primary bg-card px-3 py-2 text-xs text-secondary">
-          {step.note}
-        </p>
       )}
 
       {/* Benches unlocked in this tier */}
       {benchesUnlocked.length > 0 && (
         <div className="mt-4">
-          <h4 className="text-xs font-semibold uppercase tracking-wider text-secondary opacity-70">
+          <h4 className="text-sm font-semibold uppercase tracking-wider text-secondary opacity-70">
             Benches Unlocked in {step.to}
           </h4>
-          <div className="mt-2 flex flex-wrap gap-2">
+          <div className="mt-2 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3">
             {benchesUnlocked.map((entry) => (
               <IngredientChip
                 key={entry.id}
@@ -501,6 +587,9 @@ function ProgressionStep({
                 stationById={stationById}
                 itemLookup={itemLookup}
                 onClick={onSelect}
+                large
+                className="w-full sm:w-auto"
+                truncateName
               />
             ))}
           </div>
@@ -513,6 +602,16 @@ function ProgressionStep({
           Key items — Coming Soon
         </p>
       </div>
+    </>
+  );
+
+  return (
+    <article className="rounded-lg border-2 border-primary bg-nav p-4 sm:p-6">
+      {/* Step header */}
+      <h3 className="font-pixel text-lg tracking-wide text-primary sm:text-2xl">
+        {step.from} → {step.to}
+      </h3>
+      {content}
     </article>
   );
 }
@@ -523,10 +622,10 @@ export default function TierCheatsheet() {
   const [tiers, setTiers] = useState<IcarusTierSection[]>([]);
   const [itemLookup, setItemLookup] = useState<IcarusItemLookupMap>({});
   const [stationById, setStationById] = useState<Map<string, IcarusStation>>(
-    new Map()
+    new Map(),
   );
   const [queryTagById, setQueryTagById] = useState<Map<string, IcarusQueryTag>>(
-    new Map()
+    new Map(),
   );
   const [workshopCurrencies, setWorkshopCurrencies] = useState<
     Record<string, WorkshopCurrencyDef>

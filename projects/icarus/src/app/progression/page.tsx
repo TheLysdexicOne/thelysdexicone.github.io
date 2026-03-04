@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import TierCheatsheet from "../components/tier-cheatsheet";
 
@@ -11,7 +12,9 @@ export default function ProgressionPage() {
   return (
     <main className="app-shell">
       <div className="app-container max-w-6xl">
-        <TierCheatsheet />
+        <Suspense>
+          <TierCheatsheet />
+        </Suspense>
       </div>
     </main>
   );
