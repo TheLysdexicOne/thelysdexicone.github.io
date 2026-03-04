@@ -136,95 +136,6 @@
     ],
     "workshopCosts": null
   },
-  "Faction_Mission_Laser": {
-    "itemId": "Faction_Mission_Laser",
-    "displayName": "Vapor Laser",
-    "category": "Other",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Faction_Mission_Laser.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Mission_Laser",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Machining_Bench",
-          "Fabricator"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Mission_Laser_Part_1",
-            "itemName": "Heating Device Base",
-            "count": 1
-          },
-          {
-            "kind": "item",
-            "itemId": "Mission_Laser_Part_2",
-            "itemName": "Heating Device Arm",
-            "count": 1
-          },
-          {
-            "kind": "item",
-            "itemId": "Mission_Laser_Part_3",
-            "itemName": "Heating Device Laser",
-            "count": 1
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Faction_Mission_Laser",
-            "itemName": "Vapor Laser",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Mission_Laser_Part_1",
-              "count": 1
-            },
-            {
-              "itemId": "Mission_Laser_Part_2",
-              "count": 1
-            },
-            {
-              "itemId": "Mission_Laser_Part_3",
-              "count": 1
-            }
-          ],
-          "nodes": [
-            "Faction_Mission_Laser",
-            "Mission_Laser_Part_1",
-            "Mission_Laser_Part_2",
-            "Mission_Laser_Part_3"
-          ],
-          "edges": []
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A high intensity strontium vapor laser prototype. ",
-    "flavorText": "Exactly why Group 15 had experimental weapons grade laser equipment lying around is anyone\\'s guess.",
-    "weight": 2000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "FactionMission.Item",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
   "Vapour_Condenser": {
     "itemId": "Vapour_Condenser",
     "displayName": "Vapor Condenser",
@@ -545,152 +456,6 @@
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Inventory",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Exotic_Red_Raw": {
-    "itemId": "Exotic_Red_Raw",
-    "displayName": "Volatile Raw Exotic",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Exotic_Red_Raw.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Pyritic_Crust_Red_Exotic",
-        "requiredMillijoules": 12500,
-        "stationIds": [
-          "Exotic_Processor",
-          "Cleaning_Device"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Pyritic_Crust_Red_Exotic",
-            "itemName": "Noxious Crust (Volatile Raw Exotic)",
-            "count": 1
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Exotic_Red_Raw",
-            "itemName": "Volatile Raw Exotic",
-            "count": 5
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Pyritic_Crust_Red_Exotic",
-              "count": 1
-            }
-          ],
-          "nodes": [
-            "Exotic_Red_Raw",
-            "Pyritic_Crust_Red_Exotic"
-          ],
-          "edges": []
-        }
-      }
-    ],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "Requires heavy processing with the Organic Residue Cleanser to be of any use.",
-    "flavorText": "This one doesn\\'t look safe.",
-    "weight": 2500,
-    "maxStack": 10,
-    "stats": null,
-    "tags": [
-      "Item.Plant",
-      "Item.Resource",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_06_Var4": {
-    "itemId": "Fish_06_Var4",
-    "displayName": "Void Triggerfish",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_06_Var4.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "An uncommon saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_09_Var4": {
-    "itemId": "Fish_09_Var4",
-    "displayName": "Void Trout",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_09_Var4.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "An uncommon freshwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Freshwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_19_Var4": {
-    "itemId": "Fish_19_Var4",
-    "displayName": "Void Springfield",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/T_ITEM_Fish_19_Var4.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A common, freshwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Freshwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
@@ -1024,165 +789,70 @@
     ],
     "workshopCosts": null
   },
-  "Seed_Oil": {
-    "itemId": "Seed_Oil",
-    "displayName": "Vegetable Oil",
-    "category": "Plants",
+  "Volatile_Substance_Inert": {
+    "itemId": "Volatile_Substance_Inert",
+    "displayName": "Inert Volatile Substance",
+    "category": "Resources",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Oil.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Volatile_Substance_Inert.webp",
       "exists": true
     },
     "recipes": [
       {
-        "recipeId": "Seed_Oil",
+        "recipeId": "Volatile_Substance_Inert",
         "requiredMillijoules": 0,
         "stationIds": [
-          "Mortar_And_Pestle",
-          "Material_Processor"
+          "RefundOnly"
         ],
         "inputs": [
           {
             "kind": "item",
-            "itemId": "Seed",
-            "itemName": "Seed",
-            "count": 15
+            "itemId": "Salt",
+            "itemName": "Salt",
+            "count": 2
           }
         ],
         "queryInputs": [],
         "resourceInputs": [],
         "outputs": [
           {
-            "itemId": "Seed_Oil",
-            "itemName": "Vegetable Oil",
+            "itemId": "Volatile_Substance_Inert",
+            "itemName": "Inert Volatile Substance",
             "count": 1
           }
         ],
         "workflow": {
           "rawMaterials": [
             {
-              "itemId": "Seed",
-              "count": 15
+              "itemId": "Pyritic_Crust_Salt",
+              "count": 2
             }
           ],
           "nodes": [
-            "Seed_Oil",
-            "Seed"
+            "Volatile_Substance_Inert",
+            "Salt",
+            "Pyritic_Crust_Salt"
           ],
-          "edges": []
-        }
-      },
-      {
-        "recipeId": "Seed_Oil_Soy",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Mortar_And_Pestle",
-          "Material_Processor"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Bean",
-            "itemName": "Soy Bean",
-            "count": 25
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Seed_Oil",
-            "itemName": "Vegetable Oil",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
+          "edges": [
             {
-              "itemId": "Seed",
-              "count": 15
+              "from": "Salt",
+              "to": "Volatile_Substance_Inert",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Salt"
             }
-          ],
-          "nodes": [
-            "Seed_Oil",
-            "Bean"
-          ],
-          "edges": []
-        }
-      },
-      {
-        "recipeId": "Seed_Oil_Avocado",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Mortar_And_Pestle",
-          "Material_Processor"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Avocado",
-            "itemName": "Avocado",
-            "count": 15
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Seed_Oil",
-            "itemName": "Vegetable Oil",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Seed",
-              "count": 15
-            }
-          ],
-          "nodes": [
-            "Seed_Oil",
-            "Avocado"
-          ],
-          "edges": []
+          ]
         }
       }
     ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "Thick oil, made from plant extract.",
-    "flavorText": "An oil with many uses.",
-    "weight": 50,
-    "maxStack": 100,
+    "description": "Formally highly explosive substance made from locally found materials native to Icarus.",
+    "flavorText": "This is rather useless",
+    "weight": 250,
+    "maxStack": 25,
     "stats": null,
     "tags": [
       "Item.Resource",
-      "Proxy.Liquid.Orange",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Swamp_Viscid_Head": {
-    "itemId": "Swamp_Viscid_Head",
-    "displayName": "Viscid Vestige",
-    "category": "Carcasses",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_SwampVicid.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A preserved memory of a once-great Viscid.",
-    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
-    "weight": 1000,
-    "maxStack": 5,
-    "stats": null,
-    "tags": [
-      "Item.Vestige.Uncommon",
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Itemable",
@@ -1304,84 +974,6 @@
     "tags": [
       "Item.Creature.Loot",
       "Item.Resource",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Food_Animal_Feed_Potato": {
-    "itemId": "Food_Animal_Feed_Potato",
-    "displayName": "Volcanic Animal Feed",
-    "category": "Food",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Potato.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Animal_Feed_Potato",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Animal_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Seed",
-            "itemName": "Seed",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Potato",
-            "itemName": "Potato",
-            "count": 5
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Food_Animal_Feed_Potato",
-            "itemName": "Volcanic Animal Feed",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Potato",
-              "count": 5
-            },
-            {
-              "itemId": "Seed",
-              "count": 10
-            }
-          ],
-          "nodes": [
-            "Food_Animal_Feed_Potato",
-            "Seed",
-            "Potato"
-          ],
-          "edges": []
-        }
-      }
-    ],
-    "requiredFeatureLevel": "Laika",
-    "cosmeticPack": "",
-    "description": "A feed that will help animals survive volcanic environments.",
-    "flavorText": "Feeding time at the zoo.",
-    "weight": 500,
-    "maxStack": 100,
-    "stats": {
-      "Food Recovery": 125
-    },
-    "tags": [
-      "Item.AnimalFeed",
-      "Traits.Actionable",
-      "Traits.Consumable",
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Itemable",
@@ -1537,280 +1129,6 @@
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Landmine_Shock": {
-    "itemId": "Landmine_Shock",
-    "displayName": "Volt Landmine",
-    "category": "Defenses",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "Place to Trigger and Arm.",
-    "flavorText": "Dangerous... Very Dangerous....",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "FieldGuide.Defense",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Mission_Vesper_Cage": {
-    "itemId": "Mission_Vesper_Cage",
-    "displayName": "Vesper Cage",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Trap_Small_T4.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Mission_Vesper_Cage",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Fabricator"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Refined_Metal",
-            "itemName": "Iron Ingot",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Steel_Screw",
-            "itemName": "Steel Screw",
-            "count": 8
-          },
-          {
-            "kind": "item",
-            "itemId": "Carbon_Paste",
-            "itemName": "Carbon Paste",
-            "count": 2
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Mission_Vesper_Cage",
-            "itemName": "Vesper Cage",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Frozen_Wood",
-              "count": 72
-            },
-            {
-              "itemId": "Pyritic_Crust_Bauxite",
-              "count": 2
-            },
-            {
-              "itemId": "Pyritic_Crust_Coal",
-              "count": 8
-            },
-            {
-              "itemId": "Pyritic_Crust_Iron",
-              "count": 68
-            },
-            {
-              "itemId": "Pyritic_Crust_Oxite",
-              "count": 8
-            },
-            {
-              "itemId": "Pyritic_Crust_Silicon",
-              "count": 2
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 8
-            }
-          ],
-          "nodes": [
-            "Mission_Vesper_Cage",
-            "Refined_Metal",
-            "Metal_Ore",
-            "Pyritic_Crust_Iron",
-            "Steel_Screw",
-            "Steel_Ingot",
-            "Steel_Bloom",
-            "Coal_Ore",
-            "Pyritic_Crust_Coal",
-            "Carbon_Paste",
-            "Silica",
-            "Pyritic_Crust_Silicon",
-            "Aluminium",
-            "Bauxite",
-            "Pyritic_Crust_Bauxite",
-            "Organic_Resin",
-            "Wood",
-            "Frozen_Wood",
-            "Oxite",
-            "Pyritic_Crust_Oxite",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick"
-          ],
-          "edges": [
-            {
-              "from": "Refined_Metal",
-              "to": "Mission_Vesper_Cage",
-              "count": 10,
-              "recipeId": "Refined_Metal"
-            },
-            {
-              "from": "Metal_Ore",
-              "to": "Refined_Metal",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Iron"
-            },
-            {
-              "from": "Steel_Screw",
-              "to": "Mission_Vesper_Cage",
-              "count": 8,
-              "recipeId": "Steel_Screw"
-            },
-            {
-              "from": "Steel_Ingot",
-              "to": "Steel_Screw",
-              "count": 1,
-              "recipeId": "Steel_Ingot"
-            },
-            {
-              "from": "Steel_Bloom",
-              "to": "Steel_Ingot",
-              "count": 1,
-              "recipeId": "Steel_Bloom"
-            },
-            {
-              "from": "Metal_Ore",
-              "to": "Steel_Bloom",
-              "count": 6,
-              "recipeId": "Pyritic_Crust_Iron"
-            },
-            {
-              "from": "Coal_Ore",
-              "to": "Steel_Bloom",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Coal"
-            },
-            {
-              "from": "Carbon_Paste",
-              "to": "Mission_Vesper_Cage",
-              "count": 2,
-              "recipeId": "Carbon_Paste"
-            },
-            {
-              "from": "Silica",
-              "to": "Carbon_Paste",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Silicon"
-            },
-            {
-              "from": "Aluminium",
-              "to": "Carbon_Paste",
-              "count": 1,
-              "recipeId": "Aluminum"
-            },
-            {
-              "from": "Bauxite",
-              "to": "Aluminium",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Bauxite"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Carbon_Paste",
-              "count": 4,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Wood",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Oxite",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Oxite"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Carbon_Paste",
-              "count": 2,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "Can trap small creatures such as Vespers.",
-    "flavorText": "Gotcha!",
-    "weight": 5000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 1500
-    },
-    "tags": [
-      "FieldGuide.ForceShowQuestItem",
-      "IgnoreValidation",
-      "Item.Utility",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Flammable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
     ],
     "workshopCosts": null
   }

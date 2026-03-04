@@ -26,8 +26,8 @@ function toDataUrl(p: string) {
   return `${ICARUS_BASE_PATH}/data/${DATA_VERSION}/${p}`;
 }
 
-function getLetterBucket(displayName: string): string {
-  const first = displayName[0]?.toLowerCase() ?? "0";
+function getLetterBucket(itemId: string): string {
+  const first = itemId[0]?.toLowerCase() ?? "0";
   return /[a-z]/.test(first) ? first : "0";
 }
 
@@ -58,24 +58,39 @@ export default function FieldGuideItems() {
     async function loadCore() {
       setIsLoading(true);
       try {
-        const [indexRes, catsRes, stationsRes, lookupRes, queryRes, workshopRes] =
-          await Promise.all([
-            fetch(toDataUrl("item-index.json")),
-            fetch(toDataUrl("categories.json")),
-            fetch(toDataUrl("stations.json")),
-            fetch(toDataUrl("item-lookup.json")),
-            fetch(toDataUrl("query-tags.json")),
-            fetch(toDataUrl("workshop-items.json")),
-          ]);
-        const [indexData, catsData, stationsData, lookupData, queryData, workshopData] =
-          await Promise.all([
-            indexRes.json() as Promise<IcarusItemIndexEntry[]>,
-            catsRes.json() as Promise<IcarusCategory[]>,
-            stationsRes.json() as Promise<IcarusStation[]>,
-            lookupRes.json() as Promise<IcarusItemLookupMap>,
-            queryRes.json() as Promise<IcarusQueryTag[]>,
-            workshopRes.json() as Promise<{ currencies: Record<string, WorkshopCurrencyDef>; items: unknown[] }>,
-          ]);
+        const [
+          indexRes,
+          catsRes,
+          stationsRes,
+          lookupRes,
+          queryRes,
+          workshopRes,
+        ] = await Promise.all([
+          fetch(toDataUrl("item-index.json")),
+          fetch(toDataUrl("categories.json")),
+          fetch(toDataUrl("stations.json")),
+          fetch(toDataUrl("item-lookup.json")),
+          fetch(toDataUrl("query-tags.json")),
+          fetch(toDataUrl("workshop-items.json")),
+        ]);
+        const [
+          indexData,
+          catsData,
+          stationsData,
+          lookupData,
+          queryData,
+          workshopData,
+        ] = await Promise.all([
+          indexRes.json() as Promise<IcarusItemIndexEntry[]>,
+          catsRes.json() as Promise<IcarusCategory[]>,
+          stationsRes.json() as Promise<IcarusStation[]>,
+          lookupRes.json() as Promise<IcarusItemLookupMap>,
+          queryRes.json() as Promise<IcarusQueryTag[]>,
+          workshopRes.json() as Promise<{
+            currencies: Record<string, WorkshopCurrencyDef>;
+            items: unknown[];
+          }>,
+        ]);
         setItems(indexData);
         setCategories(catsData);
         setStations(stationsData);
@@ -100,7 +115,7 @@ export default function FieldGuideItems() {
     const selectedItem = items.find((i) => i.itemId === selectedItemId);
     if (!selectedItem) return;
 
-    const bucket = getLetterBucket(selectedItem.displayName);
+    const bucket = getLetterBucket(selectedItem.itemId);
     if (fetchedBucketsRef.current.has(bucket)) return;
     fetchedBucketsRef.current.add(bucket);
 

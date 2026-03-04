@@ -1,1345 +1,4 @@
 {
-  "Carbon_Chest": {
-    "itemId": "Carbon_Chest",
-    "displayName": "Naneo Chest Armor",
-    "category": "Armor",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Carbon_Chest.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "High strength, lightweight graphene nano-lattice armor from Norex.",
-    "flavorText": "Two hundred times stronger than steel and extraordinarily conductive, the IO suit\\'s graphene weave allows it to dissipate energy with near-perfect efficiency.",
-    "weight": 1500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 7500,
-      "Damage Resistance %": 12
-    },
-    "tags": [
-      "Item.Armor.Chest",
-      "Item.Meta",
-      "Traits.Armour",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 250
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ]
-    }
-  },
-  "Carbon_Arms": {
-    "itemId": "Carbon_Arms",
-    "displayName": "Naneo Arms Armor",
-    "category": "Armor",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Carbon_Arms.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "High strength, lightweight graphene nano-lattice armor from Norex.",
-    "flavorText": "Focused on energy absorbance rather than outright hardness, the material\\'s graphene multi-layered construction bleeds impact energy away almost instantly.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 7500,
-      "Damage Resistance %": 3
-    },
-    "tags": [
-      "Item.Armor.Gloves",
-      "Item.Meta",
-      "Traits.Armour",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 250
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ]
-    }
-  },
-  "Carbon_Legs": {
-    "itemId": "Carbon_Legs",
-    "displayName": "Naneo Legs Armor",
-    "category": "Armor",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Carbon_Legs.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "High strength, lightweight graphene nano-lattice armor from Norex.",
-    "flavorText": "A product of zero-g manufacturing techniques, this semi-rigid mid-weight graphene protextile is renowned for protecting against micro-meteorites travelling at upward of 10km/sec.",
-    "weight": 1500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 7500,
-      "Damage Resistance %": 9
-    },
-    "tags": [
-      "Item.Armor.Pants",
-      "Item.Meta",
-      "Traits.Armour",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 250
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ]
-    }
-  },
-  "Carbon_Feet": {
-    "itemId": "Carbon_Feet",
-    "displayName": "Naneo Feet Armor",
-    "category": "Armor",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Carbon_Feet.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "High strength, lightweight graphene nano-lattice armor from Norex.",
-    "flavorText": "Norex is a \\'grey\\' research venture between \\'old world\\' ACS companies Norsec and mining giant ExMin.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 7500,
-      "Damage Resistance %": 3
-    },
-    "tags": [
-      "Item.Armor.Boots",
-      "Item.Meta",
-      "Traits.Armour",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 250
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ]
-    }
-  },
-  "Carbon_Head": {
-    "itemId": "Carbon_Head",
-    "displayName": "Naneo Head Armor",
-    "category": "Armor",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Carbon_Head.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "High strength, lightweight graphene nano-lattice armor from Norex.",
-    "flavorText": "A high-tech balance of physical protection, lightweight nano-construction, energy absorbance and protection against extremes of temperature.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 7500,
-      "Damage Resistance %": 6
-    },
-    "tags": [
-      "Item.Armor.Helmet",
-      "Item.Meta",
-      "Traits.Armour",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 250
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ]
-    }
-  },
-  "Feet_Body_Legs_Attachment_Stealth_Movement_1": {
-    "itemId": "Feet_Body_Legs_Attachment_Stealth_Movement_1",
-    "displayName": "Noise Suppression Attachment",
-    "category": "Attachments",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachThreatWhileStealth.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Attachment_Stealth_Movement_1",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Alteration_Bench",
-          "Advanced_Alteration_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Steel_Ingot",
-            "itemName": "Steel Ingot",
-            "count": 4
-          },
-          {
-            "kind": "item",
-            "itemId": "Leather",
-            "itemName": "Leather",
-            "count": 8
-          },
-          {
-            "kind": "item",
-            "itemId": "Fur",
-            "itemName": "Fur",
-            "count": 6
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Feet_Body_Legs_Attachment_Stealth_Movement_1",
-            "itemName": "Noise Suppression Attachment",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 14
-            },
-            {
-              "itemId": "Pyritic_Crust_Coal",
-              "count": 4
-            },
-            {
-              "itemId": "Pyritic_Crust_Iron",
-              "count": 24
-            }
-          ],
-          "nodes": [
-            "Feet_Body_Legs_Attachment_Stealth_Movement_1",
-            "Steel_Ingot",
-            "Steel_Bloom",
-            "Metal_Ore",
-            "Pyritic_Crust_Iron",
-            "Coal_Ore",
-            "Pyritic_Crust_Coal",
-            "Leather",
-            "AnimalCarcass_Deer",
-            "Fur"
-          ],
-          "edges": [
-            {
-              "from": "Steel_Ingot",
-              "to": "Feet_Body_Legs_Attachment_Stealth_Movement_1",
-              "count": 4,
-              "recipeId": "Steel_Ingot"
-            },
-            {
-              "from": "Steel_Bloom",
-              "to": "Steel_Ingot",
-              "count": 1,
-              "recipeId": "Steel_Bloom"
-            },
-            {
-              "from": "Metal_Ore",
-              "to": "Steel_Bloom",
-              "count": 6,
-              "recipeId": "Pyritic_Crust_Iron"
-            },
-            {
-              "from": "Coal_Ore",
-              "to": "Steel_Bloom",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Coal"
-            },
-            {
-              "from": "Leather",
-              "to": "Feet_Body_Legs_Attachment_Stealth_Movement_1",
-              "count": 8,
-              "recipeId": "Carcass_Deer"
-            },
-            {
-              "from": "Fur",
-              "to": "Feet_Body_Legs_Attachment_Stealth_Movement_1",
-              "count": 6,
-              "recipeId": "Carcass_Deer"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that reduces the threat while stealth and improves crouched movement speed.",
-    "flavorText": "Can be equipped to feet, chest or legs armor at an Alteration Bench.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Armor.Body",
-      "Item.Attachment.Armor.Feet",
-      "Item.Attachment.Armor.Legs",
-      "Item.Attachment.Rank.1",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Body_Attachment_Stomach_Capacity": {
-    "itemId": "Body_Attachment_Stomach_Capacity",
-    "displayName": "Nutrition Attachment",
-    "category": "Attachments",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachStomachCap.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Attachment_Stomach_Capacity",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Alteration_Bench",
-          "Advanced_Alteration_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Composites",
-            "itemName": "Composites",
-            "count": 4
-          },
-          {
-            "kind": "item",
-            "itemId": "Electronics",
-            "itemName": "Electronics",
-            "count": 4
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Body_Attachment_Stomach_Capacity",
-            "itemName": "Nutrition Attachment",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Frozen_Wood",
-              "count": 140
-            },
-            {
-              "itemId": "Pyritic_Crust_Copper",
-              "count": 120
-            },
-            {
-              "itemId": "Pyritic_Crust_Gold",
-              "count": 44
-            },
-            {
-              "itemId": "Pyritic_Crust_Iron",
-              "count": 8
-            },
-            {
-              "itemId": "Pyritic_Crust_Oxite",
-              "count": 12
-            },
-            {
-              "itemId": "Pyritic_Crust_Silicon",
-              "count": 4
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 16
-            }
-          ],
-          "nodes": [
-            "Body_Attachment_Stomach_Capacity",
-            "Composites",
-            "Composite_Paste",
-            "Metal_Ore",
-            "Pyritic_Crust_Iron",
-            "Silica",
-            "Pyritic_Crust_Silicon",
-            "Organic_Resin",
-            "Wood",
-            "Frozen_Wood",
-            "Oxite",
-            "Pyritic_Crust_Oxite",
-            "Gold_Ore",
-            "Pyritic_Crust_Gold",
-            "Electronics",
-            "Gold_Wire",
-            "Refined_Gold",
-            "Copper_Wire",
-            "Refined_Copper",
-            "Copper_Ore",
-            "Pyritic_Crust_Copper",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick"
-          ],
-          "edges": [
-            {
-              "from": "Composites",
-              "to": "Body_Attachment_Stomach_Capacity",
-              "count": 4,
-              "recipeId": "Composites"
-            },
-            {
-              "from": "Composite_Paste",
-              "to": "Composites",
-              "count": 1,
-              "recipeId": "Composite_Paste"
-            },
-            {
-              "from": "Metal_Ore",
-              "to": "Composite_Paste",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Iron"
-            },
-            {
-              "from": "Silica",
-              "to": "Composite_Paste",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Silicon"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Composite_Paste",
-              "count": 1,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Wood",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Oxite",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Oxite"
-            },
-            {
-              "from": "Gold_Ore",
-              "to": "Composite_Paste",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Gold"
-            },
-            {
-              "from": "Electronics",
-              "to": "Body_Attachment_Stomach_Capacity",
-              "count": 4,
-              "recipeId": "Electronics"
-            },
-            {
-              "from": "Gold_Wire",
-              "to": "Electronics",
-              "count": 5,
-              "recipeId": "Gold_Wire"
-            },
-            {
-              "from": "Refined_Gold",
-              "to": "Gold_Wire",
-              "count": 1,
-              "recipeId": "Refined_Gold"
-            },
-            {
-              "from": "Gold_Ore",
-              "to": "Refined_Gold",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Gold"
-            },
-            {
-              "from": "Copper_Wire",
-              "to": "Electronics",
-              "count": 15,
-              "recipeId": "Copper_Wire"
-            },
-            {
-              "from": "Refined_Copper",
-              "to": "Copper_Wire",
-              "count": 1,
-              "recipeId": "Refined_Copper"
-            },
-            {
-              "from": "Copper_Ore",
-              "to": "Refined_Copper",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Copper"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Electronics",
-              "count": 2,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Electronics",
-              "count": 2,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that allows an extra active food buff and increases the duration of food buffs.",
-    "flavorText": "Can be equipped to Chest armor at an Alteration Bench.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Armor.Body",
-      "Item.Attachment.Rank.1",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Ranged_Weapon_Attachment_Decreased_Spread_1": {
-    "itemId": "Ranged_Weapon_Attachment_Decreased_Spread_1",
-    "displayName": "Narrow Barrel Attachment",
-    "category": "Attachments",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_SpreadReductionModule.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Attachment_Ranged_Weapon_Decreased_Spread_1",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Alteration_Bench",
-          "Advanced_Alteration_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Platinum_Ingot",
-            "itemName": "Platinum Ingot",
-            "count": 2
-          },
-          {
-            "kind": "item",
-            "itemId": "Epoxy",
-            "itemName": "Epoxy",
-            "count": 4
-          },
-          {
-            "kind": "item",
-            "itemId": "Leather",
-            "itemName": "Leather",
-            "count": 4
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Ranged_Weapon_Attachment_Decreased_Spread_1",
-            "itemName": "Narrow Barrel Attachment",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 4
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 64
-            },
-            {
-              "itemId": "Pyritic_Crust_Platinum",
-              "count": 10
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 8
-            }
-          ],
-          "nodes": [
-            "Ranged_Weapon_Attachment_Decreased_Spread_1",
-            "Platinum_Ingot",
-            "Platinum_Ore",
-            "Pyritic_Crust_Platinum",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick",
-            "Wood",
-            "Frozen_Wood",
-            "Leather",
-            "AnimalCarcass_Deer"
-          ],
-          "edges": [
-            {
-              "from": "Platinum_Ingot",
-              "to": "Ranged_Weapon_Attachment_Decreased_Spread_1",
-              "count": 2,
-              "recipeId": "Platinum_Ingot"
-            },
-            {
-              "from": "Platinum_Ore",
-              "to": "Platinum_Ingot",
-              "count": 5,
-              "recipeId": "Pyritic_Crust_Platinum"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Ranged_Weapon_Attachment_Decreased_Spread_1",
-              "count": 4,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Leather",
-              "to": "Ranged_Weapon_Attachment_Decreased_Spread_1",
-              "count": 4,
-              "recipeId": "Carcass_Deer"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that reduces the spread of your shots.",
-    "flavorText": "Can be attached to a valid shotgun.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Rank.1",
-      "Item.Attachment.Shotgun",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_08": {
-    "itemId": "Fish_08",
-    "displayName": "Neon Tetra",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_08.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "An uncommon freshwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Freshwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_11_Var2": {
-    "itemId": "Fish_11_Var2",
-    "displayName": "Neon Dory",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_11_Var2.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "A rare saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_13_Var3": {
-    "itemId": "Fish_13_Var3",
-    "displayName": "Neon Dorado",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_13_Var3.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "A rare saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_18_Var2": {
-    "itemId": "Fish_18_Var2",
-    "displayName": "Neon Puffer",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/T_ITEM_Fish_18_Var2.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "An uncommon, saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Iron": {
-    "itemId": "Pyritic_Crust_Iron",
-    "displayName": "Noxious Crust (Iron)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Iron Ore. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Gold": {
-    "itemId": "Pyritic_Crust_Gold",
-    "displayName": "Noxious Crust (Gold)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Gold Ore. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Copper": {
-    "itemId": "Pyritic_Crust_Copper",
-    "displayName": "Noxious Crust (Copper)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Copper Ore. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Silicon": {
-    "itemId": "Pyritic_Crust_Silicon",
-    "displayName": "Noxious Crust (Silica)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Silica. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Coal": {
-    "itemId": "Pyritic_Crust_Coal",
-    "displayName": "Noxious Crust (Coal)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Coal. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Sulfur": {
-    "itemId": "Pyritic_Crust_Sulfur",
-    "displayName": "Noxious Crust (Sulfur)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Sulfur. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Bauxite": {
-    "itemId": "Pyritic_Crust_Bauxite",
-    "displayName": "Noxious Crust (Aluminium)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Aluminium Ore. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Oxite": {
-    "itemId": "Pyritic_Crust_Oxite",
-    "displayName": "Noxious Crust (Oxite)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Oxite. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Titanium": {
-    "itemId": "Pyritic_Crust_Titanium",
-    "displayName": "Noxious Crust (Titanium)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Titanium Ore. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Platinium": {
-    "itemId": "Pyritic_Crust_Platinium",
-    "displayName": "Noxious Crust (Platinum)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Platinum Ore. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Obsidian": {
-    "itemId": "Pyritic_Crust_Obsidian",
-    "displayName": "Noxious Crust (Obsidian)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Obsidian. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Scoria": {
-    "itemId": "Pyritic_Crust_Scoria",
-    "displayName": "Noxious Crust (Scoria)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Scoria. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Clay": {
-    "itemId": "Pyritic_Crust_Clay",
-    "displayName": "Noxious Crust (Clay)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Clay. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Purple_Exotic": {
-    "itemId": "Pyritic_Crust_Purple_Exotic",
-    "displayName": "Noxious Crust (Exotic)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Exotics. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Red_Exotic": {
-    "itemId": "Pyritic_Crust_Red_Exotic",
-    "displayName": "Noxious Crust (Volatile Raw Exotic)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Volatile Raw Exotics. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Raw_Wood_Sign_Trunk_A": {
-    "itemId": "Raw_Wood_Sign_Trunk_A",
-    "displayName": "Natural Rustic Sign",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Raw_Wood_Sign_Trunk_A_Ground.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Raw_Wood_Sign_Trunk_A",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Character"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Wood",
-            "itemName": "Wood",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Stick",
-            "itemName": "Stick",
-            "count": 5
-          },
-          {
-            "kind": "item",
-            "itemId": "Fiber",
-            "itemName": "Fiber",
-            "count": 15
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Raw_Wood_Sign_Trunk_A",
-            "itemName": "Natural Rustic Sign",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Fiber",
-              "count": 15
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 15
-            }
-          ],
-          "nodes": [
-            "Raw_Wood_Sign_Trunk_A",
-            "Wood",
-            "Frozen_Wood",
-            "Stick",
-            "Fiber"
-          ],
-          "edges": [
-            {
-              "from": "Wood",
-              "to": "Raw_Wood_Sign_Trunk_A",
-              "count": 10,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Stick",
-              "to": "Raw_Wood_Sign_Trunk_A",
-              "count": 5,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A charming sign to display information on.",
-    "flavorText": "Made with love.",
-    "weight": 500,
-    "maxStack": 20,
-    "stats": null,
-    "tags": [
-      "Audio.Shelter.Check",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Flammable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
   "Needler_Head": {
     "itemId": "Needler_Head",
     "displayName": "Needler Vestige",
@@ -1459,524 +118,6 @@
       "Traits.Usable"
     ],
     "workshopCosts": null
-  },
-  "Pyritic_Crust_Stone": {
-    "itemId": "Pyritic_Crust_Stone",
-    "displayName": "Noxious Crust (Stone)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Stone. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Salt": {
-    "itemId": "Pyritic_Crust_Salt",
-    "displayName": "Noxious Crust (Salt)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Salt. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Pyritic_Crust_Limestone": {
-    "itemId": "Pyritic_Crust_Limestone",
-    "displayName": "Noxious Crust (Limestone)",
-    "category": "Resources",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "",
-    "description": "A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Limestone. Toxic to humans, this will damage you when carried.",
-    "flavorText": "The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.",
-    "weight": 250,
-    "maxStack": 50,
-    "stats": null,
-    "tags": [
-      "Item.Resource.Miasmic.Crust",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Great_Hunt_Device": {
-    "itemId": "Great_Hunt_Device",
-    "displayName": "NOREX Boss Tracker Upgrade",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Great_Hunt_Device.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Great_Hunts_Boss_Upgrade",
-        "requiredMillijoules": 200000,
-        "stationIds": [
-          "Fabricator"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Glass",
-            "itemName": "Glass",
-            "count": 30
-          },
-          {
-            "kind": "item",
-            "itemId": "Carbon_Fiber",
-            "itemName": "Carbon Fiber",
-            "count": 30
-          },
-          {
-            "kind": "item",
-            "itemId": "Copper_Wire",
-            "itemName": "Copper Wire",
-            "count": 50
-          },
-          {
-            "kind": "item",
-            "itemId": "Aluminium",
-            "itemName": "Aluminium Ingot",
-            "count": 40
-          },
-          {
-            "kind": "item",
-            "itemId": "Titanium_Plate",
-            "itemName": "Titanium Plate",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Electronics",
-            "itemName": "Electronics",
-            "count": 20
-          },
-          {
-            "kind": "item",
-            "itemId": "Epoxy",
-            "itemName": "Epoxy",
-            "count": 25
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Great_Hunt_Device",
-            "itemName": "NOREX Boss Tracker Upgrade",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Frozen_Wood",
-              "count": 2160
-            },
-            {
-              "itemId": "Pyritic_Crust_Bauxite",
-              "count": 70
-            },
-            {
-              "itemId": "Pyritic_Crust_Copper",
-              "count": 700
-            },
-            {
-              "itemId": "Pyritic_Crust_Gold",
-              "count": 200
-            },
-            {
-              "itemId": "Pyritic_Crust_Oxite",
-              "count": 160
-            },
-            {
-              "itemId": "Pyritic_Crust_Silicon",
-              "count": 60
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 250
-            },
-            {
-              "itemId": "Pyritic_Crust_Titanium",
-              "count": 150
-            }
-          ],
-          "nodes": [
-            "Great_Hunt_Device",
-            "Glass",
-            "Silica",
-            "Pyritic_Crust_Silicon",
-            "Carbon_Fiber",
-            "Carbon_Paste",
-            "Aluminium",
-            "Bauxite",
-            "Pyritic_Crust_Bauxite",
-            "Organic_Resin",
-            "Wood",
-            "Frozen_Wood",
-            "Oxite",
-            "Pyritic_Crust_Oxite",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick",
-            "Copper_Wire",
-            "Refined_Copper",
-            "Copper_Ore",
-            "Pyritic_Crust_Copper",
-            "Titanium_Plate",
-            "Titanium_Ingot",
-            "Titanium_Ore",
-            "Pyritic_Crust_Titanium",
-            "Electronics",
-            "Gold_Wire",
-            "Refined_Gold",
-            "Gold_Ore",
-            "Pyritic_Crust_Gold"
-          ],
-          "edges": [
-            {
-              "from": "Glass",
-              "to": "Great_Hunt_Device",
-              "count": 30,
-              "recipeId": "Glass"
-            },
-            {
-              "from": "Silica",
-              "to": "Glass",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Silicon"
-            },
-            {
-              "from": "Carbon_Fiber",
-              "to": "Great_Hunt_Device",
-              "count": 30,
-              "recipeId": "Carbon_Fiber"
-            },
-            {
-              "from": "Carbon_Paste",
-              "to": "Carbon_Fiber",
-              "count": 1,
-              "recipeId": "Carbon_Paste"
-            },
-            {
-              "from": "Silica",
-              "to": "Carbon_Paste",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Silicon"
-            },
-            {
-              "from": "Aluminium",
-              "to": "Carbon_Paste",
-              "count": 1,
-              "recipeId": "Aluminum"
-            },
-            {
-              "from": "Bauxite",
-              "to": "Aluminium",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Bauxite"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Carbon_Paste",
-              "count": 4,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Wood",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Oxite",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Oxite"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Carbon_Paste",
-              "count": 2,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Copper_Wire",
-              "to": "Great_Hunt_Device",
-              "count": 50,
-              "recipeId": "Copper_Wire"
-            },
-            {
-              "from": "Refined_Copper",
-              "to": "Copper_Wire",
-              "count": 1,
-              "recipeId": "Refined_Copper"
-            },
-            {
-              "from": "Copper_Ore",
-              "to": "Refined_Copper",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Copper"
-            },
-            {
-              "from": "Aluminium",
-              "to": "Great_Hunt_Device",
-              "count": 40,
-              "recipeId": "Aluminum"
-            },
-            {
-              "from": "Titanium_Plate",
-              "to": "Great_Hunt_Device",
-              "count": 10,
-              "recipeId": "Titanium_Plate"
-            },
-            {
-              "from": "Titanium_Ingot",
-              "to": "Titanium_Plate",
-              "count": 3,
-              "recipeId": "Titanium_Ingot"
-            },
-            {
-              "from": "Titanium_Ore",
-              "to": "Titanium_Ingot",
-              "count": 5,
-              "recipeId": "Pyritic_Crust_Titanium"
-            },
-            {
-              "from": "Electronics",
-              "to": "Great_Hunt_Device",
-              "count": 20,
-              "recipeId": "Electronics"
-            },
-            {
-              "from": "Gold_Wire",
-              "to": "Electronics",
-              "count": 5,
-              "recipeId": "Gold_Wire"
-            },
-            {
-              "from": "Refined_Gold",
-              "to": "Gold_Wire",
-              "count": 1,
-              "recipeId": "Refined_Gold"
-            },
-            {
-              "from": "Gold_Ore",
-              "to": "Refined_Gold",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Gold"
-            },
-            {
-              "from": "Copper_Wire",
-              "to": "Electronics",
-              "count": 15,
-              "recipeId": "Copper_Wire"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Electronics",
-              "count": 2,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Electronics",
-              "count": 2,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Great_Hunt_Device",
-              "count": 25,
-              "recipeId": "Epoxy"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "A Communications Device Provided by Norex to Track down Apex Creatures in the World.",
-    "flavorText": "The Norex Operations Verification Assembly - Your one stop shop for everything black market.",
-    "weight": 10000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 2500
-    },
-    "tags": [
-      "Item.Communicator.GreatHunt",
-      "Prebuilt.DoNotPickup",
-      "Traits.Actionable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Meta_Biolab_Inhaler_Hammerhead": {
-    "itemId": "Meta_Biolab_Inhaler_Hammerhead",
-    "displayName": "Noxious Mining Inhaler",
-    "category": "Food",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Hammerhead.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "Workshop",
-    "description": "An inhaler that delivers a concentrated dose of UDA-approved chemicals, assists with gathering ore.",
-    "flavorText": "Ah, the wonders of modern medicine.",
-    "weight": 100,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Medicine.Meta",
-      "Item.Meta.Consumable",
-      "Traits.Actionable",
-      "Traits.Consumable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Biomass",
-          "amount": 10
-        },
-        {
-          "currencyId": "Exotic_Red",
-          "amount": 100
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Biomass",
-          "amount": 10
-        },
-        {
-          "currencyId": "Credits",
-          "amount": 100
-        }
-      ]
-    }
-  },
-  "Meta_Biolab_Inhaler_SwampApe": {
-    "itemId": "Meta_Biolab_Inhaler_SwampApe",
-    "displayName": "Noxious Logging Inhaler",
-    "category": "Food",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_ApeBoss.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "Workshop",
-    "description": "An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist gathering infected bark.",
-    "flavorText": "Ah, the wonders of modern medicine.",
-    "weight": 100,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Medicine.Meta",
-      "Item.Meta.Consumable",
-      "Traits.Actionable",
-      "Traits.Consumable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Biomass",
-          "amount": 10
-        },
-        {
-          "currencyId": "Exotic1",
-          "amount": 100
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Biomass",
-          "amount": 10
-        },
-        {
-          "currencyId": "Credits",
-          "amount": 100
-        }
-      ]
-    }
   },
   "Note_Ashlands_Bunker_Note_1": {
     "itemId": "Note_Ashlands_Bunker_Note_1",
@@ -2330,12 +471,12 @@
     ],
     "workshopCosts": null
   },
-  "GH_Ape_LaboratoryNote_1": {
-    "itemId": "GH_Ape_LaboratoryNote_1",
-    "displayName": "Note",
+  "Note_GH_RG_MiningCamp_3": {
+    "itemId": "Note_GH_RG_MiningCamp_3",
+    "displayName": "Log Book",
     "category": "Deployables",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Logbook.webp",
       "exists": true
     },
     "recipes": [],
@@ -2362,12 +503,44 @@
     ],
     "workshopCosts": null
   },
-  "GH_Ape_LaboratoryNote_2": {
-    "itemId": "GH_Ape_LaboratoryNote_2",
-    "displayName": "Note",
+  "Note_GH_RG_MiningCamp_4": {
+    "itemId": "Note_GH_RG_MiningCamp_4",
+    "displayName": "Laptop",
     "category": "Deployables",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Laptop.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Laptop containing sensitive information.",
+    "flavorText": "Who forgets to put a password on their laptop?",
+    "weight": 2500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Note",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Note_GH_RG_MiningOutpost_1": {
+    "itemId": "Note_GH_RG_MiningOutpost_1",
+    "displayName": "Log Book",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Logbook.webp",
       "exists": true
     },
     "recipes": [],
@@ -2394,716 +567,117 @@
     ],
     "workshopCosts": null
   },
-  "GH_Ape_LaboratoryNote_3": {
-    "itemId": "GH_Ape_LaboratoryNote_3",
-    "displayName": "Note",
-    "category": "Deployables",
+  "NationalFlag_NewZealand": {
+    "itemId": "NationalFlag_NewZealand",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_LaboratoryNote_4": {
-    "itemId": "GH_Ape_LaboratoryNote_4",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_LaboratoryNote_5": {
-    "itemId": "GH_Ape_LaboratoryNote_5",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Mission_EDSCanister": {
-    "itemId": "Mission_EDSCanister",
-    "displayName": "Neurotoxic Aerosol",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_EDS_Canister.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "A small canister of an aerosol which will tranquilize any creature in the surrounding area, primed for manual delivery.",
-    "flavorText": "Can be deadly in the wrong hands.",
-    "weight": 1500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 2000
-    },
-    "tags": [
-      "Audio.Shelter.Check",
-      "Item.Quest",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Flammable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Item_GH_IM_B_Note": {
-    "itemId": "Item_GH_IM_B_Note",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Item_GH_IM_O1_Note": {
-    "itemId": "Item_GH_IM_O1_Note",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Item_GH_IM_O1_Notice": {
-    "itemId": "Item_GH_IM_O1_Notice",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Item_GH_IM_O1_StorageNote": {
-    "itemId": "Item_GH_IM_O1_StorageNote",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_OutpostNote_1": {
-    "itemId": "GH_Ape_OutpostNote_1",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_OutpostNote_2": {
-    "itemId": "GH_Ape_OutpostNote_2",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_OutpostNote_3": {
-    "itemId": "GH_Ape_OutpostNote_3",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_OutpostNote_4": {
-    "itemId": "GH_Ape_OutpostNote_4",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_OutpostNote_5": {
-    "itemId": "GH_Ape_OutpostNote_5",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Mission_Neurotoxic_Aerosol": {
-    "itemId": "Mission_Neurotoxic_Aerosol",
-    "displayName": "Neurotoxic Aerosol",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_EDS_Canister.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
       "exists": true
     },
     "recipes": [
       {
-        "recipeId": "Mission_Neurotoxic_Aerosol",
-        "requiredMillijoules": 0,
+        "recipeId": "National_Flag_NewZealand",
+        "requiredMillijoules": 15000,
         "stationIds": [
-          "Fabricator"
+          "Rustic_Decorations_Bench"
         ],
         "inputs": [
           {
             "kind": "item",
-            "itemId": "Refined_Metal",
-            "itemName": "Iron Ingot",
-            "count": 6
-          },
-          {
-            "kind": "item",
-            "itemId": "Synthetic_Enzymes",
-            "itemName": "Synthetic Enzymes",
-            "count": 8
-          },
-          {
-            "kind": "item",
-            "itemId": "Volatile_Substance",
-            "itemName": "Volatile Substance",
+            "itemId": "Rope",
+            "itemName": "Rope",
             "count": 5
           },
           {
             "kind": "item",
-            "itemId": "Gold_Wire",
-            "itemName": "Gold Wire",
-            "count": 8
-          },
-          {
-            "kind": "item",
-            "itemId": "Health_Elixir",
-            "itemName": "Health Recovery Elixir",
-            "count": 4
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
           }
         ],
         "queryInputs": [],
         "resourceInputs": [],
         "outputs": [
           {
-            "itemId": "Mission_Neurotoxic_Aerosol",
-            "itemName": "Neurotoxic Aerosol",
+            "itemId": "NationalFlag_NewZealand",
+            "itemName": "Flag Pole",
             "count": 1
           }
         ],
         "workflow": {
           "rawMaterials": [
             {
-              "itemId": "Frozen_Wood",
-              "count": 32
+              "itemId": "Fiber",
+              "count": 60
             },
             {
-              "itemId": "Pyritic_Crust_Gold",
-              "count": 16
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
             },
             {
               "itemId": "Pyritic_Crust_Iron",
-              "count": 12
-            },
-            {
-              "itemId": "Pyritic_Crust_Oxite",
-              "count": 42
-            },
-            {
-              "itemId": "Pyritic_Crust_Salt",
-              "count": 12
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 10
-            },
-            {
-              "itemId": "Spoiled_Meat",
-              "count": 82
-            },
-            {
-              "itemId": "Spoiled_Plants",
-              "count": 10
-            },
-            {
-              "itemId": "Wheat",
-              "count": 80
+              "count": 30
             }
           ],
           "nodes": [
-            "Mission_Neurotoxic_Aerosol",
-            "Refined_Metal",
+            "NationalFlag_NewZealand",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
             "Metal_Ore",
             "Pyritic_Crust_Iron",
-            "Synthetic_Enzymes",
-            "Organic_Resin",
-            "Wood",
-            "Frozen_Wood",
-            "Oxite",
-            "Pyritic_Crust_Oxite",
-            "Spoiled_Meat",
-            "Charcoal",
-            "Volatile_Substance",
-            "Gunpowder",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Spoiled_Plants",
-            "Gold_Wire",
-            "Refined_Gold",
-            "Gold_Ore",
-            "Pyritic_Crust_Gold",
-            "Health_Elixir",
-            "Flour",
-            "Wheat",
-            "Salt",
-            "Pyritic_Crust_Salt"
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
           ],
           "edges": [
             {
-              "from": "Refined_Metal",
-              "to": "Mission_Neurotoxic_Aerosol",
-              "count": 6,
-              "recipeId": "Refined_Metal"
+              "from": "Rope",
+              "to": "NationalFlag_NewZealand",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_NewZealand",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
             },
             {
               "from": "Metal_Ore",
-              "to": "Refined_Metal",
-              "count": 2,
+              "to": "Steel_Bloom",
+              "count": 6,
               "recipeId": "Pyritic_Crust_Iron"
             },
             {
-              "from": "Synthetic_Enzymes",
-              "to": "Mission_Neurotoxic_Aerosol",
-              "count": 8,
-              "recipeId": "Synthetic_Enzymes"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Synthetic_Enzymes",
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
               "count": 1,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Wood",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Oxite",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Oxite"
-            },
-            {
-              "from": "Charcoal",
-              "to": "Synthetic_Enzymes",
-              "count": 2,
-              "recipeId": "Charcoal"
-            },
-            {
-              "from": "Volatile_Substance",
-              "to": "Mission_Neurotoxic_Aerosol",
-              "count": 5,
-              "recipeId": "Volatile_Substance"
-            },
-            {
-              "from": "Gunpowder",
-              "to": "Volatile_Substance",
-              "count": 2,
-              "recipeId": "Gunpowder"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Gunpowder",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Charcoal",
-              "to": "Gunpowder",
-              "count": 3,
-              "recipeId": "Charcoal"
-            },
-            {
-              "from": "Oxite",
-              "to": "Volatile_Substance",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Oxite"
-            },
-            {
-              "from": "Gold_Wire",
-              "to": "Mission_Neurotoxic_Aerosol",
-              "count": 8,
-              "recipeId": "Gold_Wire"
-            },
-            {
-              "from": "Refined_Gold",
-              "to": "Gold_Wire",
-              "count": 1,
-              "recipeId": "Refined_Gold"
-            },
-            {
-              "from": "Gold_Ore",
-              "to": "Refined_Gold",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Gold"
-            },
-            {
-              "from": "Health_Elixir",
-              "to": "Mission_Neurotoxic_Aerosol",
-              "count": 4,
-              "recipeId": "Health_Elixir"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Health_Elixir",
-              "count": 6,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Charcoal",
-              "to": "Health_Elixir",
-              "count": 5,
-              "recipeId": "Charcoal"
-            },
-            {
-              "from": "Flour",
-              "to": "Health_Elixir",
-              "count": 2,
-              "recipeId": "Flour"
-            },
-            {
-              "from": "Salt",
-              "to": "Health_Elixir",
-              "count": 3,
-              "recipeId": "Pyritic_Crust_Salt"
+              "recipeId": "Pyritic_Crust_Coal"
             }
           ]
         }
       }
     ],
-    "requiredFeatureLevel": "GreatHunts",
+    "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A small canister of an aerosol which will tranquilize any creature in the surrounding area, primed for manual delivery.",
-    "flavorText": "Can be deadly in the wrong hands.",
-    "weight": 1500,
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
     "maxStack": null,
     "stats": {
-      "Durability": 2000
+      "Durability": 1500
     },
     "tags": [
       "Audio.Shelter.Check",
-      "Item.Quest",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Flammable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "GH_Ape_O1_Note": {
-    "itemId": "GH_Ape_O1_Note",
-    "displayName": "Note",
-    "category": "Deployables",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
+      "Item.NationalFlag",
       "Traits.Actionable",
       "Traits.Deployable",
       "Traits.Durable",
@@ -3115,27 +689,117 @@
     ],
     "workshopCosts": null
   },
-  "GH_Ape_C_Note_A": {
-    "itemId": "GH_Ape_C_Note_A",
-    "displayName": "Note",
-    "category": "Deployables",
+  "NationalFlag_Australia": {
+    "itemId": "NationalFlag_Australia",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
       "exists": true
     },
-    "recipes": [],
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Australia",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Australia",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Australia",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Australia",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Australia",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
     "maxStack": null,
     "stats": {
-      "Durability": 250
+      "Durability": 1500
     },
     "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
       "Traits.Actionable",
       "Traits.Deployable",
       "Traits.Durable",
@@ -3147,27 +811,117 @@
     ],
     "workshopCosts": null
   },
-  "GH_Ape_C_Note_B": {
-    "itemId": "GH_Ape_C_Note_B",
-    "displayName": "Note",
-    "category": "Deployables",
+  "NationalFlag_Belgium": {
+    "itemId": "NationalFlag_Belgium",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
       "exists": true
     },
-    "recipes": [],
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Belgium",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Belgium",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Belgium",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Belgium",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Belgium",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
     "maxStack": null,
     "stats": {
-      "Durability": 250
+      "Durability": 1500
     },
     "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
       "Traits.Actionable",
       "Traits.Deployable",
       "Traits.Durable",
@@ -3179,31 +933,3266 @@
     ],
     "workshopCosts": null
   },
-  "GH_Ape_C_Note_C": {
-    "itemId": "GH_Ape_C_Note_C",
-    "displayName": "Note",
-    "category": "Deployables",
+  "NationalFlag_Brazil": {
+    "itemId": "NationalFlag_Brazil",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
       "exists": true
     },
-    "recipes": [],
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Brazil",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Brazil",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Brazil",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Brazil",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Brazil",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A note written by someone. Right click to read.",
-    "flavorText": "Someone really needs to improve their handwriting.",
-    "weight": 500,
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
     "maxStack": null,
     "stats": {
-      "Durability": 250
+      "Durability": 1500
     },
     "tags": [
-      "FieldGuide.BlackList",
-      "Item.Note",
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
       "Traits.Actionable",
       "Traits.Deployable",
       "Traits.Durable",
       "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Canada": {
+    "itemId": "NationalFlag_Canada",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Canada",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Canada",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Canada",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Canada",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Canada",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_China": {
+    "itemId": "NationalFlag_China",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_China",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_China",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_China",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_China",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_China",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Czech": {
+    "itemId": "NationalFlag_Czech",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Czech",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Czech",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Czech",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Czech",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Czech",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Denmark": {
+    "itemId": "NationalFlag_Denmark",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Denmark",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Denmark",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Denmark",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Denmark",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Denmark",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_EuropeanUnion": {
+    "itemId": "NationalFlag_EuropeanUnion",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_EuropeanUnion",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_EuropeanUnion",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_EuropeanUnion",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_EuropeanUnion",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_EuropeanUnion",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Finland": {
+    "itemId": "NationalFlag_Finland",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Finland",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Finland",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Finland",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Finland",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Finland",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_France": {
+    "itemId": "NationalFlag_France",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_France",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_France",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_France",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_France",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_France",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Germany": {
+    "itemId": "NationalFlag_Germany",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Germany",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Germany",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Germany",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Germany",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Germany",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Hungry": {
+    "itemId": "NationalFlag_Hungry",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Hungry",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Hungry",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Hungry",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Hungry",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Hungry",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Italy": {
+    "itemId": "NationalFlag_Italy",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Italy",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Italy",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Italy",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Italy",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Italy",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Japan": {
+    "itemId": "NationalFlag_Japan",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Japan",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Japan",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Japan",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Japan",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Japan",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Netherlands": {
+    "itemId": "NationalFlag_Netherlands",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Netherlands",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Netherlands",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Netherlands",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Netherlands",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Netherlands",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Norway": {
+    "itemId": "NationalFlag_Norway",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Norway",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Norway",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Norway",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Norway",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Norway",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Romania": {
+    "itemId": "NationalFlag_Romania",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Romania",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Romania",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Romania",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Romania",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Romania",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Russia": {
+    "itemId": "NationalFlag_Russia",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Russia",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Russia",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Russia",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Russia",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Russia",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_SouthAfrica": {
+    "itemId": "NationalFlag_SouthAfrica",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_SouthAfrica",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_SouthAfrica",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_SouthAfrica",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_SouthAfrica",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_SouthAfrica",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_SouthKorea": {
+    "itemId": "NationalFlag_SouthKorea",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_SouthKorea",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_SouthKorea",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_SouthKorea",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_SouthKorea",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_SouthKorea",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Spain": {
+    "itemId": "NationalFlag_Spain",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Spain",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Spain",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Spain",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Spain",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Spain",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Sweden": {
+    "itemId": "NationalFlag_Sweden",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Sweden",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Sweden",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Sweden",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Sweden",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Sweden",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Switzerland": {
+    "itemId": "NationalFlag_Switzerland",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Switzerland",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Switzerland",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Switzerland",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Switzerland",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Switzerland",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Taiwan": {
+    "itemId": "NationalFlag_Taiwan",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Taiwan",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Taiwan",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Taiwan",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Taiwan",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Taiwan",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Turkey": {
+    "itemId": "NationalFlag_Turkey",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Turkey",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Turkey",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Turkey",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Turkey",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Turkey",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_Ukarine": {
+    "itemId": "NationalFlag_Ukarine",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_Ukraine",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_Ukarine",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_Ukarine",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_Ukarine",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_Ukarine",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_UnitedKingdom": {
+    "itemId": "NationalFlag_UnitedKingdom",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_UnitedKingdom",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_UnitedKingdom",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_UnitedKingdom",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_UnitedKingdom",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_UnitedKingdom",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "NationalFlag_UnitedStates": {
+    "itemId": "NationalFlag_UnitedStates",
+    "displayName": "Flag Pole",
+    "category": "Decorations",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "National_Flag_UnitedStates",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "NationalFlag_UnitedStates",
+            "itemName": "Flag Pole",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "NationalFlag_UnitedStates",
+            "Rope",
+            "Fiber",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Rope",
+              "to": "NationalFlag_UnitedStates",
+              "count": 5,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "NationalFlag_UnitedStates",
+              "count": 5,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Flag Pole with flag, made to withstand harsh conditions.",
+    "flavorText": "A little piece of home",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.NationalFlag",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Nesting_Box": {
+    "itemId": "Nesting_Box",
+    "displayName": "Chicken Nesting Box",
+    "category": "Other",
+    "icon": {
+      "assetPath": "",
+      "exists": false
+    },
+    "recipes": [
+      {
+        "recipeId": "Nesting_Box",
+        "requiredMillijoules": 4000,
+        "stationIds": [
+          "Animal_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 40
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Nesting_Box",
+            "itemName": "Chicken Nesting Box",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 40
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Nesting_Box",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Nesting_Box",
+              "count": 10,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Homestead",
+    "cosmeticPack": "",
+    "description": "Place an egg into this nest to hatch a chicken egg. Hatching speed will increase if a chicken sits on the egg.",
+    "flavorText": "What came first?",
+    "weight": 1500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Deployable.TameBed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",

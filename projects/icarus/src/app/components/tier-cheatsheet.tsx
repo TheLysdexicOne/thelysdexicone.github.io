@@ -72,7 +72,7 @@ const PROGRESSION_STEPS: StepDef[] = [
     tierId: "T3",
     gateway: {
       itemId: "Kit_Machining_Bench",
-      displayName: "Machine Bench",
+      displayName: "Machining Bench",
       stationId: "Crafting_Bench",
     },
     ingredients: [
@@ -85,7 +85,7 @@ const PROGRESSION_STEPS: StepDef[] = [
         stationId: "Anvil_Bench",
       },
       {
-        itemId: "Iron_Ingot",
+        itemId: "Refined_Metal",
         displayName: "Iron Ingot",
         count: 40,
         stationId: "Stone_Furnace",
@@ -180,7 +180,8 @@ const PROGRESSION_STEPS: StepDef[] = [
 // ── Helper ───────────────────────────────────────────────────────────────────
 
 function letterBucket(itemId: string): string {
-  return itemId[0]?.toLowerCase() ?? "a";
+  const first = itemId[0]?.toLowerCase() ?? "0";
+  return /[a-z]/.test(first) ? first : "0";
 }
 
 // ── IngredientChip ───────────────────────────────────────────────────────────

@@ -1,6 +1,6 @@
 {
   "version": "221.2",
-  "generatedAtUtc": "2026-03-03T02:08:35.393224+00:00",
+  "generatedAtUtc": "2026-03-04T01:27:53.278207+00:00",
   "counts": {
     "items": 2606,
     "craftableItems": 2560,
@@ -9,6 +9,6 @@
     "stations": 60,
     "queryTags": 12,
     "tiers": 565,
-    "letterChunks": 27
+    "letterChunks": 25
   }
 }

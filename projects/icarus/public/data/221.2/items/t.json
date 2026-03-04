@@ -1607,137 +1607,6 @@
     ],
     "workshopCosts": null
   },
-  "Armor_Bench": {
-    "itemId": "Armor_Bench",
-    "displayName": "Textiles Bench",
-    "category": "Benches",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Bench.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Armor_Bench",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Crafting_Bench",
-          "Machining_Bench",
-          "Fabricator"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Fiber",
-            "itemName": "Fiber",
-            "count": 60
-          },
-          {
-            "kind": "item",
-            "itemId": "Stick",
-            "itemName": "Stick",
-            "count": 20
-          },
-          {
-            "kind": "item",
-            "itemId": "Wood",
-            "itemName": "Wood",
-            "count": 50
-          },
-          {
-            "kind": "item",
-            "itemId": "Stone",
-            "itemName": "Stone",
-            "count": 12
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Armor_Bench",
-            "itemName": "Textiles Bench",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Fiber",
-              "count": 60
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 70
-            },
-            {
-              "itemId": "Pyritic_Crust_Stone",
-              "count": 12
-            }
-          ],
-          "nodes": [
-            "Armor_Bench",
-            "Fiber",
-            "Stick",
-            "Wood",
-            "Frozen_Wood",
-            "Stone",
-            "Pyritic_Crust_Stone"
-          ],
-          "edges": [
-            {
-              "from": "Stick",
-              "to": "Armor_Bench",
-              "count": 20,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Wood",
-              "to": "Armor_Bench",
-              "count": 50,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Stone",
-              "to": "Armor_Bench",
-              "count": 12,
-              "recipeId": "Pyritic_Crust_Stone"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "Craft and assemble various protective items and garments.",
-    "flavorText": "Basic fabric, leatherwork and armorer\\'s tools allow you to fashion a range of clothing and protective wear from natural materials and fibers.",
-    "weight": 20000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 500
-    },
-    "tags": [
-      "Audio.Shelter.Check",
-      "Item.Bench",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Flammable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Inventory",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Processing",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
   "Titanium_Pickaxe": {
     "itemId": "Titanium_Pickaxe",
     "displayName": "Titanium Pickaxe",
@@ -2272,236 +2141,6 @@
       "Traits.Actionable",
       "Traits.Durable",
       "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Rug_Weave_Thin": {
-    "itemId": "Rug_Weave_Thin",
-    "displayName": "Thin Woven Rug",
-    "category": "Decorations",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rug_Weave_Thin.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Rug_Weave_Thin",
-        "requiredMillijoules": 3000,
-        "stationIds": [
-          "Advanced_Armor_Bench",
-          "Electric_Armor_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Advanced_Leather",
-            "itemName": "Cured Leather",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Platinum_Weave",
-            "itemName": "Platinum Weave",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Fiber",
-            "itemName": "Fiber",
-            "count": 60
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Rug_Weave_Thin",
-            "itemName": "Thin Woven Rug",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 60
-            },
-            {
-              "itemId": "Fiber",
-              "count": 360
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 80
-            },
-            {
-              "itemId": "Platinum_Shealth",
-              "count": 20
-            }
-          ],
-          "nodes": [
-            "Rug_Weave_Thin",
-            "Advanced_Leather",
-            "Leather",
-            "AnimalCarcass_Deer",
-            "Tree_Sap",
-            "Stick",
-            "Wood",
-            "Frozen_Wood",
-            "Platinum_Weave",
-            "Fiber",
-            "Platinum_Shealth"
-          ],
-          "edges": [
-            {
-              "from": "Advanced_Leather",
-              "to": "Rug_Weave_Thin",
-              "count": 10,
-              "recipeId": "Cured_Leather"
-            },
-            {
-              "from": "Leather",
-              "to": "Advanced_Leather",
-              "count": 6,
-              "recipeId": "Carcass_Deer"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Advanced_Leather",
-              "count": 2,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Platinum_Weave",
-              "to": "Rug_Weave_Thin",
-              "count": 10,
-              "recipeId": "Platinum_Wave"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A plainly woven fiber mat.",
-    "flavorText": "Four trillion kilometers from home, these details can make all the difference.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "Item.Decoration.Rug",
-      "Item.Rug",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Rug_Weave_Thick": {
-    "itemId": "Rug_Weave_Thick",
-    "displayName": "Thick Woven Rug",
-    "category": "Decorations",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rug_Weave_Thick.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Rug_Weave_Thick",
-        "requiredMillijoules": 3000,
-        "stationIds": [
-          "Armor_Bench",
-          "Advanced_Armor_Bench",
-          "Electric_Armor_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Leather",
-            "itemName": "Leather",
-            "count": 10
-          },
-          {
-            "kind": "item",
-            "itemId": "Fiber",
-            "itemName": "Fiber",
-            "count": 100
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Rug_Weave_Thick",
-            "itemName": "Thick Woven Rug",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 10
-            },
-            {
-              "itemId": "Fiber",
-              "count": 100
-            }
-          ],
-          "nodes": [
-            "Rug_Weave_Thick",
-            "Leather",
-            "AnimalCarcass_Deer",
-            "Fiber"
-          ],
-          "edges": [
-            {
-              "from": "Leather",
-              "to": "Rug_Weave_Thick",
-              "count": 10,
-              "recipeId": "Carcass_Deer"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "A plainly woven, thick pile fiber mat.",
-    "flavorText": null,
-    "weight": 1000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "Item.Decoration.Rug",
-      "Item.Rug",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",
@@ -4109,52 +3748,29 @@
     ],
     "workshopCosts": null
   },
-  "GreenTea": {
-    "itemId": "GreenTea",
-    "displayName": "Tea",
-    "category": "Food",
+  "Thermos_GreenTea": {
+    "itemId": "Thermos_GreenTea",
+    "displayName": "Hot Tea",
+    "category": "Equipment",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_GreenTea.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.webp",
       "exists": true
     },
     "recipes": [],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "Unprocessed leaves from a variant of the common tea tree.",
-    "flavorText": "Empires were built on less.",
-    "weight": 50,
-    "maxStack": 100,
-    "stats": null,
-    "tags": [
-      "Item.Plant.Herb",
-      "Item.Resource",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Faction_Mission_WallDrill": {
-    "itemId": "Faction_Mission_WallDrill",
-    "displayName": "Tunnelling Drill",
-    "category": "Other",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Faction_Mission_WallDrill.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An industrial-grade, portable electric mining rig designed for horizontal aperture drilling.",
-    "flavorText": "This micro-derrick rig was adapted from Inaris-designed asteroid mining equipment used in the early 22nd century.",
-    "weight": 3000,
+    "description": "A nourishing, warming drink that soothes the spirit.",
+    "flavorText": "Arguably humanity\\'s single greatest contribution to the galaxy.",
+    "weight": 1000,
     "maxStack": null,
-    "stats": null,
+    "stats": {
+      "Water Recovery": 300
+    },
     "tags": [
-      "FactionMission.Item",
+      "FieldGuide.BlackList",
+      "Item.Equip.Quickbar",
       "Traits.Actionable",
-      "Traits.Deployable",
+      "Traits.Consumable",
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Itemable",
@@ -4163,27 +3779,127 @@
     ],
     "workshopCosts": null
   },
-  "Delivery_Object": {
-    "itemId": "Delivery_Object",
-    "displayName": "Terraforming Flechette",
-    "category": "Other",
+  "Thermos_WildTea": {
+    "itemId": "Thermos_WildTea",
+    "displayName": "Gorse Tea",
+    "category": "Equipment",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Bio_Needle.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.webp",
       "exists": true
     },
     "recipes": [],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A fragile flechette flask containing temperature-sensitive terraforming enzyme payload.",
-    "flavorText": "Following the ban on terraforming, Inaris continued to secretly pursue the technology under the protection of their owner-directors, Uniao.",
-    "weight": 250,
-    "maxStack": 100,
-    "stats": null,
+    "description": "A slightly bitter, warming beverage that reduces thirst.",
+    "flavorText": "Smells a little like coconut.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Water Recovery": 300
+    },
     "tags": [
+      "FieldGuide.BlackList",
+      "Item.Equip.Quickbar",
+      "Traits.Actionable",
+      "Traits.Consumable",
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Itemable",
-      "Traits.Meshable"
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Thermos_Cocoa": {
+    "itemId": "Thermos_Cocoa",
+    "displayName": "Hot Cocoa",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A savory chocolate drink that slows hunger, and warms.",
+    "flavorText": "In the absence of sugar, Icarus\\'s cocoa drinks return to a classical, savory \\'Spanish\\' style.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Water Recovery": 300
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Equip.Quickbar",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Thermos_Coffee": {
+    "itemId": "Thermos_Coffee",
+    "displayName": "Hot Coffee",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Do more.",
+    "flavorText": "If it didn\\'t shield you from the leaden weight of fatigue, it wouldn\\'t be coffee.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Water Recovery": 300
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Equip.Quickbar",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Thermos_IceWater": {
+    "itemId": "Thermos_IceWater",
+    "displayName": "Ice Water",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Like a Canteen, but with better thermal protection",
+    "flavorText": "The perfect temperature, every time.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Water Recovery": 100
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Equip.Quickbar",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
     ],
     "workshopCosts": null
   },
@@ -4455,6 +4171,1427 @@
     ],
     "workshopCosts": null
   },
+  "Tool_Attachment_Melee_Damage_1": {
+    "itemId": "Tool_Attachment_Melee_Damage_1",
+    "displayName": "Melee Damage Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachMeleeDmg.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Damage_1",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Alteration_Bench",
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 6
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Melee_Damage_1",
+            "itemName": "Melee Damage Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 6
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Melee_Damage_1",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Tool_Attachment_Melee_Damage_1",
+              "count": 4,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Leather",
+              "to": "Tool_Attachment_Melee_Damage_1",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Tool_Attachment_Melee_Damage_1",
+              "count": 6,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that increases your melee damage.",
+    "flavorText": "Can be equipped to a valid melee weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Tool_Attachment_Melee_Damage_2": {
+    "itemId": "Tool_Attachment_Melee_Damage_2",
+    "displayName": "Advanced Melee Damage Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachMeleeDmg.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Damage_2",
+        "requiredMillijoules": 20000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Tool_Attachment_Melee_Damage_1",
+            "itemName": "Melee Damage Attachment",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Melee_Damage_2",
+            "itemName": "Advanced Melee Damage Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 6
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 38
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Melee_Damage_2",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Tool_Attachment_Melee_Damage_1",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Wood_Refined"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Ingot",
+              "to": "Tool_Attachment_Melee_Damage_2",
+              "count": 4,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Tool_Attachment_Melee_Damage_2",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Tool_Attachment_Melee_Damage_2",
+              "count": 4,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Tool_Attachment_Melee_Damage_1",
+              "to": "Tool_Attachment_Melee_Damage_2",
+              "count": 1,
+              "recipeId": "Attachment_Melee_Damage_1"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Tool_Attachment_Melee_Damage_1",
+              "count": 4,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Leather",
+              "to": "Tool_Attachment_Melee_Damage_1",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Tool_Attachment_Melee_Damage_1",
+              "count": 6,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that greatly increases your melee damage.",
+    "flavorText": "Can be equipped to a valid melee weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.2",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Tool_Attachment_Attack_Speed_1": {
+    "itemId": "Tool_Attachment_Attack_Speed_1",
+    "displayName": "Attack Speed Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachMeleeSpd.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Attack_Speed_1",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Alteration_Bench",
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Attack_Speed_1",
+            "itemName": "Attack Speed Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 64
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Attack_Speed_1",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Tool_Attachment_Attack_Speed_1",
+              "count": 4,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Tool_Attachment_Attack_Speed_1",
+              "count": 4,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that increases your attack speed.",
+    "flavorText": "Can be equipped to a valid melee weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Tool_Attachment_Attack_Speed_2": {
+    "itemId": "Tool_Attachment_Attack_Speed_2",
+    "displayName": "Advanced Attack Speed Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachMeleeSpd.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Attack_Speed_2",
+        "requiredMillijoules": 20000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Tool_Attachment_Attack_Speed_1",
+            "itemName": "Attack Speed Attachment",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Attack_Speed_2",
+            "itemName": "Advanced Attack Speed Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 101
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 26
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Attack_Speed_2",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Tool_Attachment_Attack_Speed_1",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Carbon_Fiber",
+              "to": "Tool_Attachment_Attack_Speed_2",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Composites",
+              "to": "Tool_Attachment_Attack_Speed_2",
+              "count": 1,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Tool_Attachment_Attack_Speed_1",
+              "to": "Tool_Attachment_Attack_Speed_2",
+              "count": 1,
+              "recipeId": "Attachment_Melee_Attack_Speed_1"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Tool_Attachment_Attack_Speed_1",
+              "count": 4,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Tool_Attachment_Attack_Speed_1",
+              "count": 4,
+              "recipeId": "Epoxy"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that greatly increases your attack speed.",
+    "flavorText": "Can be equipped to a valid melee weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.2",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Tool_Attachment_Electroshock": {
+    "itemId": "Tool_Attachment_Electroshock",
+    "displayName": "Electroshock Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachTazer.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Electroshock_Attacks",
+        "requiredMillijoules": 25000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gold_Ore",
+            "itemName": "Gold Ore",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Electroshock",
+            "itemName": "Electroshock Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 36
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Electroshock",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Ingot",
+              "to": "Tool_Attachment_Electroshock",
+              "count": 1,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Tool_Attachment_Electroshock",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Tool_Attachment_Electroshock",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that has a chance to inflict Electroshock on hit creatures.",
+    "flavorText": "Can be equipped to a valid weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Tool_Attachment_Bleed": {
+    "itemId": "Tool_Attachment_Bleed",
+    "displayName": "Bleed Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachBleed.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Bleed_Attacks",
+        "requiredMillijoules": 25000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Bleed",
+            "itemName": "Bleed Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 2
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 36
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Bleed",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Raw_Meat",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Ingot",
+              "to": "Tool_Attachment_Bleed",
+              "count": 1,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Tool_Attachment_Bleed",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Raw_Meat",
+              "to": "Tool_Attachment_Bleed",
+              "count": 2,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that has a chance to inflict Bleed on hit creatures.",
+    "flavorText": "Can be equipped to a valid weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Tool_Attachment_Poison": {
+    "itemId": "Tool_Attachment_Poison",
+    "displayName": "Poison Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachPoison.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Melee_Poison_Attacks",
+        "requiredMillijoules": 25000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Poison_Sack",
+            "itemName": "Poison Sac",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tool_Attachment_Poison",
+            "itemName": "Poison Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 36
+            },
+            {
+              "itemId": "Poison_Sack",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Tool_Attachment_Poison",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Poison_Sack"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Ingot",
+              "to": "Tool_Attachment_Poison",
+              "count": 1,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Tool_Attachment_Poison",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that has a chance to inflict Poison on hit creatures.",
+    "flavorText": "Can be equipped to a valid weapon at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
   "Target_Dummy": {
     "itemId": "Target_Dummy",
     "displayName": "Target Dummy",
@@ -4623,476 +5760,6 @@
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Pickaxe_Attachment_Titanium_1": {
-    "itemId": "Pickaxe_Attachment_Titanium_1",
-    "displayName": "Titanium Attachment",
-    "category": "Attachments",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachTitan.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Attachment_Titanium_Yeild_1",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Alteration_Bench",
-          "Advanced_Alteration_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Refined_Copper",
-            "itemName": "Copper Ingot",
-            "count": 4
-          },
-          {
-            "kind": "item",
-            "itemId": "Steel_Screw",
-            "itemName": "Steel Screw",
-            "count": 8
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Pickaxe_Attachment_Titanium_1",
-            "itemName": "Titanium Attachment",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Pyritic_Crust_Coal",
-              "count": 8
-            },
-            {
-              "itemId": "Pyritic_Crust_Copper",
-              "count": 8
-            },
-            {
-              "itemId": "Pyritic_Crust_Iron",
-              "count": 48
-            }
-          ],
-          "nodes": [
-            "Pickaxe_Attachment_Titanium_1",
-            "Refined_Copper",
-            "Copper_Ore",
-            "Pyritic_Crust_Copper",
-            "Steel_Screw",
-            "Steel_Ingot",
-            "Steel_Bloom",
-            "Metal_Ore",
-            "Pyritic_Crust_Iron",
-            "Coal_Ore",
-            "Pyritic_Crust_Coal"
-          ],
-          "edges": [
-            {
-              "from": "Refined_Copper",
-              "to": "Pickaxe_Attachment_Titanium_1",
-              "count": 4,
-              "recipeId": "Refined_Copper"
-            },
-            {
-              "from": "Copper_Ore",
-              "to": "Refined_Copper",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Copper"
-            },
-            {
-              "from": "Steel_Screw",
-              "to": "Pickaxe_Attachment_Titanium_1",
-              "count": 8,
-              "recipeId": "Steel_Screw"
-            },
-            {
-              "from": "Steel_Ingot",
-              "to": "Steel_Screw",
-              "count": 1,
-              "recipeId": "Steel_Ingot"
-            },
-            {
-              "from": "Steel_Bloom",
-              "to": "Steel_Ingot",
-              "count": 1,
-              "recipeId": "Steel_Bloom"
-            },
-            {
-              "from": "Metal_Ore",
-              "to": "Steel_Bloom",
-              "count": 6,
-              "recipeId": "Pyritic_Crust_Iron"
-            },
-            {
-              "from": "Coal_Ore",
-              "to": "Steel_Bloom",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Coal"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that increases the yield of Titanium from ore nodes.",
-    "flavorText": "Can be equipped to a valid pickaxe at an Alteration Bench.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Pickaxe",
-      "Item.Attachment.Rank.1",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Head_Attachment_Boss_Tracker": {
-    "itemId": "Head_Attachment_Boss_Tracker",
-    "displayName": "Tracking Attachment",
-    "category": "Attachments",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachBossTracker.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Attachment_Boss_Tracker",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Advanced_Alteration_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Titanium_Ingot",
-            "itemName": "Titanium Ingot",
-            "count": 2
-          },
-          {
-            "kind": "item",
-            "itemId": "Electronics",
-            "itemName": "Electronics",
-            "count": 4
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Head_Attachment_Boss_Tracker",
-            "itemName": "Tracking Attachment",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Frozen_Wood",
-              "count": 136
-            },
-            {
-              "itemId": "Pyritic_Crust_Copper",
-              "count": 120
-            },
-            {
-              "itemId": "Pyritic_Crust_Gold",
-              "count": 40
-            },
-            {
-              "itemId": "Pyritic_Crust_Oxite",
-              "count": 8
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 16
-            },
-            {
-              "itemId": "Pyritic_Crust_Titanium",
-              "count": 10
-            }
-          ],
-          "nodes": [
-            "Head_Attachment_Boss_Tracker",
-            "Titanium_Ingot",
-            "Titanium_Ore",
-            "Pyritic_Crust_Titanium",
-            "Electronics",
-            "Gold_Wire",
-            "Refined_Gold",
-            "Gold_Ore",
-            "Pyritic_Crust_Gold",
-            "Copper_Wire",
-            "Refined_Copper",
-            "Copper_Ore",
-            "Pyritic_Crust_Copper",
-            "Organic_Resin",
-            "Wood",
-            "Frozen_Wood",
-            "Oxite",
-            "Pyritic_Crust_Oxite",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick"
-          ],
-          "edges": [
-            {
-              "from": "Titanium_Ingot",
-              "to": "Head_Attachment_Boss_Tracker",
-              "count": 2,
-              "recipeId": "Titanium_Ingot"
-            },
-            {
-              "from": "Titanium_Ore",
-              "to": "Titanium_Ingot",
-              "count": 5,
-              "recipeId": "Pyritic_Crust_Titanium"
-            },
-            {
-              "from": "Electronics",
-              "to": "Head_Attachment_Boss_Tracker",
-              "count": 4,
-              "recipeId": "Electronics"
-            },
-            {
-              "from": "Gold_Wire",
-              "to": "Electronics",
-              "count": 5,
-              "recipeId": "Gold_Wire"
-            },
-            {
-              "from": "Refined_Gold",
-              "to": "Gold_Wire",
-              "count": 1,
-              "recipeId": "Refined_Gold"
-            },
-            {
-              "from": "Gold_Ore",
-              "to": "Refined_Gold",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Gold"
-            },
-            {
-              "from": "Copper_Wire",
-              "to": "Electronics",
-              "count": 15,
-              "recipeId": "Copper_Wire"
-            },
-            {
-              "from": "Refined_Copper",
-              "to": "Copper_Wire",
-              "count": 1,
-              "recipeId": "Refined_Copper"
-            },
-            {
-              "from": "Copper_Ore",
-              "to": "Refined_Copper",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Copper"
-            },
-            {
-              "from": "Organic_Resin",
-              "to": "Electronics",
-              "count": 2,
-              "recipeId": "Organic_Resin"
-            },
-            {
-              "from": "Wood",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Oxite",
-              "to": "Organic_Resin",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Oxite"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Electronics",
-              "count": 2,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that allows the tracking of world bosses and improves damage to enemy weak points.",
-    "flavorText": "Can be equipped to head armor at an Alteration Bench.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Armor.Head",
-      "Item.Attachment.Rank.1",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Ranged_Weapon_Attachment_Ammo_Highlight_1": {
-    "itemId": "Ranged_Weapon_Attachment_Ammo_Highlight_1",
-    "displayName": "Trajectory Module Attachment",
-    "category": "Attachments",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_TrajectoryModule.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Attachment_Ammo_Highlight_1",
-        "requiredMillijoules": 10000,
-        "stationIds": [
-          "Alteration_Bench",
-          "Advanced_Alteration_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Wood_Refined",
-            "itemName": "Refined Wood",
-            "count": 6
-          },
-          {
-            "kind": "item",
-            "itemId": "Steel_Ingot",
-            "itemName": "Steel Ingot",
-            "count": 2
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Ranged_Weapon_Attachment_Ammo_Highlight_1",
-            "itemName": "Trajectory Module Attachment",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Frozen_Wood",
-              "count": 6
-            },
-            {
-              "itemId": "Pyritic_Crust_Coal",
-              "count": 2
-            },
-            {
-              "itemId": "Pyritic_Crust_Iron",
-              "count": 12
-            }
-          ],
-          "nodes": [
-            "Ranged_Weapon_Attachment_Ammo_Highlight_1",
-            "Wood_Refined",
-            "Wood",
-            "Frozen_Wood",
-            "Steel_Ingot",
-            "Steel_Bloom",
-            "Metal_Ore",
-            "Pyritic_Crust_Iron",
-            "Coal_Ore",
-            "Pyritic_Crust_Coal"
-          ],
-          "edges": [
-            {
-              "from": "Wood_Refined",
-              "to": "Ranged_Weapon_Attachment_Ammo_Highlight_1",
-              "count": 6,
-              "recipeId": "Refined_Wood"
-            },
-            {
-              "from": "Wood",
-              "to": "Wood_Refined",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Steel_Ingot",
-              "to": "Ranged_Weapon_Attachment_Ammo_Highlight_1",
-              "count": 2,
-              "recipeId": "Steel_Ingot"
-            },
-            {
-              "from": "Steel_Bloom",
-              "to": "Steel_Ingot",
-              "count": 1,
-              "recipeId": "Steel_Bloom"
-            },
-            {
-              "from": "Metal_Ore",
-              "to": "Steel_Bloom",
-              "count": 6,
-              "recipeId": "Pyritic_Crust_Iron"
-            },
-            {
-              "from": "Coal_Ore",
-              "to": "Steel_Bloom",
-              "count": 1,
-              "recipeId": "Pyritic_Crust_Coal"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that increases the speed of projectiles.",
-    "flavorText": "Can be attached to a valid bow, or crossbow.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Bow",
-      "Item.Attachment.Crossbow",
-      "Item.Attachment.Rank.1",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
     ],
     "workshopCosts": null
   },
@@ -5869,232 +6536,155 @@
     ],
     "workshopCosts": null
   },
-  "Fish_03_Var4": {
-    "itemId": "Fish_03_Var4",
-    "displayName": "Titan Piranha",
-    "category": "Fish",
+  "Thumper": {
+    "itemId": "Thumper",
+    "displayName": "Prototype Thumper",
+    "category": "Deployables",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_03_Var4.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "A common saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_04_Var2": {
-    "itemId": "Fish_04_Var2",
-    "displayName": "Titan Ripjaw",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_04_Var2.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "A common saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_06": {
-    "itemId": "Fish_06",
-    "displayName": "Titan Triggerfish",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_06.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "An uncommon saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Fish_11_Var4": {
-    "itemId": "Fish_11_Var4",
-    "displayName": "Titan Dory",
-    "category": "Fish",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fish/ITEM_Fish_11_Var4.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Galileo",
-    "cosmeticPack": "",
-    "description": "A rare saltwater fish. Can be filleted at a Fishing Bench.",
-    "flavorText": "You caught this, with a rod or a trap. Right Click to convert this to Fish Chunks.",
-    "weight": null,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "NPC.Fish.Saltwater",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Shield_Titanium": {
-    "itemId": "Shield_Titanium",
-    "displayName": "Titanium Tower Shield",
-    "category": "Shields",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/Shields/ITEM_Shield_Titanium.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Thumper.webp",
       "exists": true
     },
     "recipes": [
       {
-        "recipeId": "Shield_Titanium",
+        "recipeId": "Thumper",
         "requiredMillijoules": 0,
         "stationIds": [
-          "Anvil_Bench_T4"
+          "Fabricator"
         ],
         "inputs": [
           {
             "kind": "item",
-            "itemId": "Titanium_Plate",
-            "itemName": "Titanium Plate",
-            "count": 4
+            "itemId": "Titanium_Ingot",
+            "itemName": "Titanium Ingot",
+            "count": 8
           },
           {
             "kind": "item",
-            "itemId": "Advanced_Leather",
-            "itemName": "Cured Leather",
-            "count": 3
-          },
-          {
-            "kind": "item",
-            "itemId": "Epoxy",
-            "itemName": "Epoxy",
-            "count": 5
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 6
           },
           {
             "kind": "item",
             "itemId": "Steel_Screw",
             "itemName": "Steel Screw",
-            "count": 10
+            "count": 18
           },
           {
             "kind": "item",
-            "itemId": "Titanium_Ingot",
-            "itemName": "Titanium Ingot",
-            "count": 2
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Concrete_Mix",
+            "itemName": "Concrete Mix",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 14
           }
         ],
         "queryInputs": [],
         "resourceInputs": [],
         "outputs": [
           {
-            "itemId": "Shield_Titanium",
-            "itemName": "Titanium Tower Shield",
+            "itemId": "Thumper",
+            "itemName": "Prototype Thumper",
             "count": 1
           }
         ],
         "workflow": {
           "rawMaterials": [
             {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 18
-            },
-            {
               "itemId": "Frozen_Wood",
-              "count": 104
+              "count": 472
             },
             {
               "itemId": "Pyritic_Crust_Coal",
-              "count": 10
+              "count": 18
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 180
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 72
             },
             {
               "itemId": "Pyritic_Crust_Iron",
-              "count": 60
+              "count": 132
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 44
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 64
             },
             {
               "itemId": "Pyritic_Crust_Sulfur",
-              "count": 10
+              "count": 52
             },
             {
               "itemId": "Pyritic_Crust_Titanium",
-              "count": 70
+              "count": 40
             }
           ],
           "nodes": [
-            "Shield_Titanium",
-            "Titanium_Plate",
+            "Thumper",
             "Titanium_Ingot",
             "Titanium_Ore",
             "Pyritic_Crust_Titanium",
-            "Advanced_Leather",
-            "Leather",
-            "AnimalCarcass_Deer",
-            "Tree_Sap",
-            "Stick",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
             "Wood",
             "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
             "Epoxy",
             "Sulfur",
             "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
             "Steel_Screw",
             "Steel_Ingot",
             "Steel_Bloom",
             "Metal_Ore",
             "Pyritic_Crust_Iron",
             "Coal_Ore",
-            "Pyritic_Crust_Coal"
+            "Pyritic_Crust_Coal",
+            "Composites",
+            "Composite_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Concrete_Mix",
+            "Stone",
+            "Pyritic_Crust_Stone"
           ],
           "edges": [
             {
-              "from": "Titanium_Plate",
-              "to": "Shield_Titanium",
-              "count": 4,
-              "recipeId": "Titanium_Plate"
-            },
-            {
               "from": "Titanium_Ingot",
-              "to": "Titanium_Plate",
-              "count": 3,
+              "to": "Thumper",
+              "count": 8,
               "recipeId": "Titanium_Ingot"
             },
             {
@@ -6104,39 +6694,69 @@
               "recipeId": "Pyritic_Crust_Titanium"
             },
             {
-              "from": "Advanced_Leather",
-              "to": "Shield_Titanium",
-              "count": 3,
-              "recipeId": "Cured_Leather"
-            },
-            {
-              "from": "Leather",
-              "to": "Advanced_Leather",
+              "from": "Electronics",
+              "to": "Thumper",
               "count": 6,
-              "recipeId": "Carcass_Deer"
+              "recipeId": "Electronics"
             },
             {
-              "from": "Tree_Sap",
-              "to": "Advanced_Leather",
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
               "count": 2,
-              "recipeId": "Tree_Sap"
+              "recipeId": "Pyritic_Crust_Gold"
             },
             {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
             },
             {
               "from": "Wood",
-              "to": "Stick",
+              "to": "Organic_Resin",
               "count": 1,
               "recipeId": "Frozen_Wood"
             },
             {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
               "from": "Epoxy",
-              "to": "Shield_Titanium",
-              "count": 5,
+              "to": "Electronics",
+              "count": 2,
               "recipeId": "Epoxy"
             },
             {
@@ -6152,9 +6772,21 @@
               "recipeId": "Tree_Sap"
             },
             {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
               "from": "Steel_Screw",
-              "to": "Shield_Titanium",
-              "count": 10,
+              "to": "Thumper",
+              "count": 18,
               "recipeId": "Steel_Screw"
             },
             {
@@ -6182,10 +6814,70 @@
               "recipeId": "Pyritic_Crust_Coal"
             },
             {
-              "from": "Titanium_Ingot",
-              "to": "Shield_Titanium",
+              "from": "Composites",
+              "to": "Thumper",
+              "count": 12,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
               "count": 2,
-              "recipeId": "Titanium_Ingot"
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Concrete_Mix",
+              "to": "Thumper",
+              "count": 8,
+              "recipeId": "Concrete_Mix"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Concrete_Mix",
+              "count": 1,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stone",
+              "to": "Concrete_Mix",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Silica",
+              "to": "Concrete_Mix",
+              "count": 4,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Thumper",
+              "count": 14,
+              "recipeId": "Epoxy"
             }
           ]
         }
@@ -6193,18 +6885,18 @@
     ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A heavy-duty shield made from ultra-strong titanium, providing excellent protection against threats.",
-    "flavorText": "With this in hand, you\\'re ready for anything.",
-    "weight": 2000,
+    "description": "Deploy and activate to unearth mineable ore. Replenishes mineable ore in the surrounding area. ",
+    "flavorText": "Sure hope this doesn\\'t attract anything big...",
+    "weight": 90000,
     "maxStack": null,
     "stats": {
-      "Durability": 7500
+      "Durability": 5000
     },
     "tags": [
-      "Item.CosmeticShield",
-      "Item.Equip.Quickbar",
-      "Item.Shield",
+      "Audio.Shelter.Check",
+      "Item.Utility",
       "Traits.Actionable",
+      "Traits.Deployable",
       "Traits.Durable",
       "Traits.Highlightable",
       "Traits.Interactable",
@@ -6427,113 +7119,103 @@
     ],
     "workshopCosts": null
   },
-  "Mission_Tomato": {
-    "itemId": "Mission_Tomato",
-    "displayName": "Transgenic Tomato",
-    "category": "Food",
+  "Tomato_Seed": {
+    "itemId": "Tomato_Seed",
+    "displayName": "Seed",
+    "category": "Plants",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Tomato.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
       "exists": true
     },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
+    "recipes": [
+      {
+        "recipeId": "Tomato_Seeds",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Seed_Extractor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Tomato",
+            "itemName": "Tomato",
+            "count": 3
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Tomato_Seed",
+            "itemName": "Seed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Tomato",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Tomato_Seed",
+            "Tomato"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A tomato spliced with the genes of a goat for surviving harsh climates.",
-    "flavorText": "Classed as a fruit, not a vegetable.",
-    "weight": 300,
-    "maxStack": 100,
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
     "stats": null,
     "tags": [
-      "Item.Consumable.Food.Raw",
-      "Item.Resource",
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
       "Traits.Highlightable",
+      "Traits.Hitable",
       "Traits.Interactable",
       "Traits.Itemable",
-      "Traits.Meshable"
+      "Traits.Meshable",
+      "Traits.Usable"
     ],
     "workshopCosts": null
   },
-  "Meta_GreenTea_Seed": {
-    "itemId": "Meta_GreenTea_Seed",
-    "displayName": "Tea Farming Packet",
+  "Tomato_Seed_Pack": {
+    "itemId": "Tomato_Seed_Pack",
+    "displayName": "Seed",
     "category": "Plants",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_FarmingPacket_GreenTea.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
       "exists": true
     },
     "recipes": [],
     "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "Right click to open a packet of Tea Seeds that have been stabilised for off-world farming",
-    "flavorText": "Right click to open",
-    "weight": 100,
-    "maxStack": null,
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
     "stats": null,
     "tags": [
-      "Item.Meta.Consumable",
-      "Item.Meta.Package",
-      "Traits.Consumable",
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
       "Traits.Highlightable",
+      "Traits.Hitable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
     ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 20
-        }
-      ]
-    }
-  },
-  "Meta_Tomato_Seed": {
-    "itemId": "Meta_Tomato_Seed",
-    "displayName": "Tomato Farming Packet",
-    "category": "Plants",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_FarmingPacket_Tomato.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "NewFrontiers",
-    "cosmeticPack": "Workshop",
-    "description": "Right click to open a packet of Tomato Seeds that have been stabilised for off-world farming",
-    "flavorText": "Right click to open",
-    "weight": 100,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Meta.Consumable",
-      "Item.Meta.Package",
-      "Traits.Consumable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 20
-        }
-      ]
-    }
+    "workshopCosts": null
   },
   "Titanium_Ore_Stack_100": {
     "itemId": "Titanium_Ore_Stack_100",
@@ -6560,6 +7242,58 @@
       "Traits.Meshable"
     ],
     "workshopCosts": null
+  },
+  "Tech_Backpack": {
+    "itemId": "Tech_Backpack",
+    "displayName": "Ion Backpack",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Tech_Backpack.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A handy backpack to assist your creative endeavours.",
+    "flavorText": "Just think of the possibilities...",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 5500
+    },
+    "tags": [
+      "Item.Backpack",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 500
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 250
+        }
+      ]
+    }
   },
   "Teenage_Caveworm_Head": {
     "itemId": "Teenage_Caveworm_Head",
@@ -6921,67 +7655,704 @@
     ],
     "workshopCosts": null
   },
-  "Smoked_Freshwater_Fillet": {
-    "itemId": "Smoked_Freshwater_Fillet",
-    "displayName": "Tea Smoked Freshwater Fillet",
-    "category": "Food",
+  "T3_Cleaning_Device": {
+    "itemId": "T3_Cleaning_Device",
+    "displayName": "Biofuel Bio-Cleaner",
+    "category": "Deployables",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Freshwater_Fillet_Smoked.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_T3_Cleaning_Device.webp",
       "exists": true
     },
     "recipes": [
       {
-        "recipeId": "Smoked_Freshwater_Fillet",
-        "requiredMillijoules": 25000,
+        "recipeId": "T3_Cleaning_Device",
+        "requiredMillijoules": 5000,
         "stationIds": [
-          "T3_Smoker",
-          "T4_Smoker"
+          "Machining_Bench",
+          "Fabricator"
         ],
         "inputs": [
           {
             "kind": "item",
-            "itemId": "Freshwater_Fish_Fillet",
-            "itemName": "Freshwater Fish Fillet",
-            "count": 1
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 25
           },
           {
             "kind": "item",
-            "itemId": "GreenTea",
-            "itemName": "Tea",
-            "count": 5
+            "itemId": "Glass",
+            "itemName": "Glass",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 40
           }
         ],
         "queryInputs": [],
         "resourceInputs": [],
         "outputs": [
           {
-            "itemId": "Smoked_Freshwater_Fillet",
-            "itemName": "Tea Smoked Freshwater Fillet",
+            "itemId": "T3_Cleaning_Device",
+            "itemName": "Biofuel Bio-Cleaner",
             "count": 1
           }
         ],
         "workflow": {
           "rawMaterials": [
             {
-              "itemId": "Freshwater_Fish_Fillet",
-              "count": 1
+              "itemId": "Frozen_Wood",
+              "count": 702
             },
             {
-              "itemId": "GreenTea",
-              "count": 5
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 25
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 530
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 150
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 150
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 84
             }
           ],
           "nodes": [
-            "Smoked_Freshwater_Fillet",
-            "Freshwater_Fish_Fillet",
-            "GreenTea"
+            "T3_Cleaning_Device",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Oxite",
+            "Pyritic_Crust_Oxite"
           ],
           "edges": [
             {
-              "from": "Freshwater_Fish_Fillet",
-              "to": "Smoked_Freshwater_Fillet",
+              "from": "Steel_Ingot",
+              "to": "T3_Cleaning_Device",
+              "count": 25,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
               "count": 1,
-              "recipeId": "Butcher_Fish_Freshwater"
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Glass",
+              "to": "T3_Cleaning_Device",
+              "count": 10,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Epoxy",
+              "to": "T3_Cleaning_Device",
+              "count": 12,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Electronics",
+              "to": "T3_Cleaning_Device",
+              "count": 15,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "T3_Cleaning_Device",
+              "count": 40,
+              "recipeId": "Copper_Wire"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Cleans Volatile Exotics and processes select boss material into biomass for use in the orbital Biolab.",
+    "flavorText": "Keep all hands and feet clear when in use.",
+    "weight": 2500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 2000
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Turret_Pistol": {
+    "itemId": "Turret_Pistol",
+    "displayName": "Automated Defense System: Pistol",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Pistol.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Turret_Pistol",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Titanium_Plate",
+            "itemName": "Titanium Plate",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Aluminium",
+            "itemName": "Aluminium Ingot",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Pistol_Handgun",
+            "itemName": "One-Shot Pistol",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Turret_Pistol",
+            "itemName": "Automated Defense System: Pistol",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 15
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 442
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 404
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 132
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 184
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 36
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 48
+            },
+            {
+              "itemId": "Pyritic_Crust_Titanium",
+              "count": 120
+            }
+          ],
+          "nodes": [
+            "Turret_Pistol",
+            "Titanium_Plate",
+            "Titanium_Ingot",
+            "Titanium_Ore",
+            "Pyritic_Crust_Titanium",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Pistol_Handgun",
+            "Wood_Refined",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Refined_Metal",
+            "Copper_Nail",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Titanium_Plate",
+              "to": "Turret_Pistol",
+              "count": 8,
+              "recipeId": "Titanium_Plate"
+            },
+            {
+              "from": "Titanium_Ingot",
+              "to": "Titanium_Plate",
+              "count": 3,
+              "recipeId": "Titanium_Ingot"
+            },
+            {
+              "from": "Titanium_Ore",
+              "to": "Titanium_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Titanium"
+            },
+            {
+              "from": "Electronics",
+              "to": "Turret_Pistol",
+              "count": 12,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Composites",
+              "to": "Turret_Pistol",
+              "count": 12,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Turret_Pistol",
+              "count": 12,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Pistol_Handgun",
+              "to": "Turret_Pistol",
+              "count": 1,
+              "recipeId": "Pistol_Handgun"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Pistol_Handgun",
+              "count": 6,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Pistol_Handgun",
+              "count": 15,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Pistol_Handgun",
+              "count": 20,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Pistol_Handgun",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Pistol_Handgun",
+              "count": 10,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Turret_Pistol",
+              "count": 20,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Turret_Pistol",
+              "count": 12,
+              "recipeId": "Copper_Wire"
             }
           ]
         }
@@ -6989,20 +8360,21 @@
     ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "A savory snack made by smoking and preserving tender fillets of freshwater fish.",
-    "flavorText": "UDA reports have mixed results on the flavor.",
-    "weight": 250,
-    "maxStack": 10,
+    "description": "A turret that uses pistol ammunition to defend its surroundings. Fires a steady shots at a medium range. Power consumption reduced when idle.",
+    "flavorText": "This design is marked as \"experimental\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.",
+    "weight": 20000,
+    "maxStack": null,
     "stats": {
-      "Food Recovery": 200,
-      "Health Recovery": 30
+      "Durability": 10000
     },
     "tags": [
-      "Item.Consumable.Food.Cooked.Fish",
+      "FieldGuide.Defense",
       "Traits.Actionable",
-      "Traits.Consumable",
+      "Traits.Deployable",
+      "Traits.Durable",
       "Traits.Highlightable",
       "Traits.Interactable",
+      "Traits.Inventory",
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
@@ -7213,240 +8585,148 @@
     ],
     "workshopCosts": null
   },
-  "Workshop_Shovel": {
-    "itemId": "Workshop_Shovel",
-    "displayName": "The Excavator",
-    "category": "Tools",
+  "Trail_Beacon": {
+    "itemId": "Trail_Beacon",
+    "displayName": "Prototype Trail Beacon",
+    "category": "Deployables",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Workshop_Shovel.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "Can be used to dig dirt mounds on dirt or grass, or shovel snow off your roof. Provides heavy storm resistance to your crops and causes them not to wither after they are fully grown.",
-    "flavorText": "Shift snow, or bury a friend.",
-    "weight": 500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 50000
-    },
-    "tags": [
-      "FieldGuide.Equipment",
-      "Item.Meta",
-      "Item.Tool.Shovel",
-      "Traits.Actionable",
-      "Traits.Durable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Exotic1",
-          "amount": 500
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Exotic1",
-          "amount": 250
-        }
-      ]
-    }
-  },
-  "Shotgun_T4": {
-    "itemId": "Shotgun_T4",
-    "displayName": "Trench Shotgun",
-    "category": "Ranged",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Shotgun_T4.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Trail_Beacon.webp",
       "exists": true
     },
     "recipes": [
       {
-        "recipeId": "Shotgun_T4",
-        "requiredMillijoules": 5000,
+        "recipeId": "Trail_Beacon",
+        "requiredMillijoules": 0,
         "stationIds": [
+          "Machining_Bench",
           "Fabricator"
         ],
         "inputs": [
           {
             "kind": "item",
-            "itemId": "Wood_Refined",
-            "itemName": "Refined Wood",
-            "count": 20
+            "itemId": "Gold_Wire",
+            "itemName": "Gold Wire",
+            "count": 10
           },
           {
             "kind": "item",
-            "itemId": "Advanced_Leather",
-            "itemName": "Cured Leather",
-            "count": 1
-          },
-          {
-            "kind": "item",
-            "itemId": "Titanium_Ingot",
-            "itemName": "Titanium Ingot",
-            "count": 20
-          },
-          {
-            "kind": "item",
-            "itemId": "Epoxy",
-            "itemName": "Epoxy",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
             "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 4
           },
           {
             "kind": "item",
             "itemId": "Steel_Screw",
             "itemName": "Steel Screw",
-            "count": 25
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Glass",
+            "itemName": "Glass",
+            "count": 2
           }
         ],
         "queryInputs": [],
         "resourceInputs": [],
         "outputs": [
           {
-            "itemId": "Shotgun_T4",
-            "itemName": "Trench Shotgun",
-            "count": 1
+            "itemId": "Trail_Beacon",
+            "itemName": "Prototype Trail Beacon",
+            "count": 5
           }
         ],
         "workflow": {
           "rawMaterials": [
             {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 6
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 108
-            },
-            {
               "itemId": "Pyritic_Crust_Coal",
-              "count": 25
+              "count": 8
             },
             {
-              "itemId": "Pyritic_Crust_Iron",
-              "count": 150
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
+              "itemId": "Pyritic_Crust_Copper",
               "count": 10
             },
             {
-              "itemId": "Pyritic_Crust_Titanium",
-              "count": 100
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 48
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
             }
           ],
           "nodes": [
-            "Shotgun_T4",
-            "Wood_Refined",
-            "Wood",
-            "Frozen_Wood",
-            "Advanced_Leather",
-            "Leather",
-            "AnimalCarcass_Deer",
-            "Tree_Sap",
-            "Stick",
-            "Titanium_Ingot",
-            "Titanium_Ore",
-            "Pyritic_Crust_Titanium",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Steel_Screw",
+            "Trail_Beacon",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
             "Steel_Ingot",
             "Steel_Bloom",
             "Metal_Ore",
             "Pyritic_Crust_Iron",
             "Coal_Ore",
-            "Pyritic_Crust_Coal"
+            "Pyritic_Crust_Coal",
+            "Steel_Screw",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon"
           ],
           "edges": [
             {
-              "from": "Wood_Refined",
-              "to": "Shotgun_T4",
-              "count": 20,
-              "recipeId": "Refined_Wood"
+              "from": "Gold_Wire",
+              "to": "Trail_Beacon",
+              "count": 10,
+              "recipeId": "Gold_Wire"
             },
             {
-              "from": "Wood",
-              "to": "Wood_Refined",
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
               "count": 1,
-              "recipeId": "Frozen_Wood"
+              "recipeId": "Refined_Gold"
             },
             {
-              "from": "Advanced_Leather",
-              "to": "Shotgun_T4",
-              "count": 1,
-              "recipeId": "Cured_Leather"
-            },
-            {
-              "from": "Leather",
-              "to": "Advanced_Leather",
-              "count": 6,
-              "recipeId": "Carcass_Deer"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Advanced_Leather",
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
               "count": 2,
-              "recipeId": "Tree_Sap"
+              "recipeId": "Pyritic_Crust_Gold"
             },
             {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
+              "from": "Copper_Wire",
+              "to": "Trail_Beacon",
+              "count": 5,
+              "recipeId": "Copper_Wire"
             },
             {
-              "from": "Wood",
-              "to": "Stick",
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
               "count": 1,
-              "recipeId": "Frozen_Wood"
+              "recipeId": "Refined_Copper"
             },
             {
-              "from": "Titanium_Ingot",
-              "to": "Shotgun_T4",
-              "count": 20,
-              "recipeId": "Titanium_Ingot"
-            },
-            {
-              "from": "Titanium_Ore",
-              "to": "Titanium_Ingot",
-              "count": 5,
-              "recipeId": "Pyritic_Crust_Titanium"
-            },
-            {
-              "from": "Epoxy",
-              "to": "Shotgun_T4",
-              "count": 5,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
               "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Steel_Screw",
-              "to": "Shotgun_T4",
-              "count": 25,
-              "recipeId": "Steel_Screw"
+              "recipeId": "Pyritic_Crust_Copper"
             },
             {
               "from": "Steel_Ingot",
-              "to": "Steel_Screw",
-              "count": 1,
+              "to": "Trail_Beacon",
+              "count": 4,
               "recipeId": "Steel_Ingot"
             },
             {
@@ -7466,6 +8746,30 @@
               "to": "Steel_Bloom",
               "count": 1,
               "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Trail_Beacon",
+              "count": 4,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Glass",
+              "to": "Trail_Beacon",
+              "count": 2,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
             }
           ]
         }
@@ -7473,359 +8777,14 @@
     ],
     "requiredFeatureLevel": "",
     "cosmeticPack": "",
-    "description": "An advanced weapon that packs a real punch.",
-    "flavorText": "Get off my lawn.",
-    "weight": 4500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 15000,
-      "Fire Rate (RPM)": 80,
-      "Mag Size": 8,
-      "Reload Time (s)": 0.6499999761581421
-    },
-    "tags": [
-      "Item.Weapon.Firearm.Shotgun",
-      "Traits.Actionable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Egg_Salad": {
-    "itemId": "Egg_Salad",
-    "displayName": "Tomato & Egg Bowl",
-    "category": "Food",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Tomato_Eggs.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Food_Egg_Salad",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "PotBellyStove",
-          "Kitchen_Stove",
-          "Electric_Stove"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Egg",
-            "itemName": "Egg",
-            "count": 1
-          },
-          {
-            "kind": "item",
-            "itemId": "Tomato",
-            "itemName": "Tomato",
-            "count": 1
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Egg_Salad",
-            "itemName": "Tomato & Egg Bowl",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "AnimalCarcass_Chicken",
-              "count": 1
-            },
-            {
-              "itemId": "Tomato",
-              "count": 1
-            }
-          ],
-          "nodes": [
-            "Egg_Salad",
-            "Egg",
-            "AnimalCarcass_Chicken",
-            "Tomato"
-          ],
-          "edges": [
-            {
-              "from": "Egg",
-              "to": "Egg_Salad",
-              "count": 1,
-              "recipeId": "Carcass_Chicken"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "Laika",
-    "cosmeticPack": "",
-    "description": "Considered a delicacy back on earth.",
-    "flavorText": "An interesting mix of protein and fruit.",
+    "description": "A beacon to assist you in creating a breadcrumb trail to find your way back out of uncharted territory.",
+    "flavorText": "Light your way home.",
     "weight": 500,
-    "maxStack": 10,
+    "maxStack": 100,
     "stats": {
-      "Food Recovery": 100
+      "Durability": 1500
     },
     "tags": [
-      "Item.Consumable.Food.Cooked.Egg",
-      "Traits.Actionable",
-      "Traits.Consumable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Dog_Head_D1": {
-    "itemId": "Dog_Head_D1",
-    "displayName": "Tan Laika Vestige",
-    "category": "Carcasses",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Dog_Head_D1.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "Laika",
-    "cosmeticPack": "",
-    "description": "A preserved memory of a once loyal companion.",
-    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
-    "weight": 500,
-    "maxStack": 5,
-    "stats": null,
-    "tags": [
-      "Item.Vestige.Common",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Dog_Trophy_D1_1": {
-    "itemId": "Dog_Trophy_D1_1",
-    "displayName": "Tan Laika Trophy",
-    "category": "Trophies",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Trophy_D1_1.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Dog_Trophy_D1_1",
-        "requiredMillijoules": 1500,
-        "stationIds": [
-          "Trophy_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Wood_Refined",
-            "itemName": "Refined Wood",
-            "count": 30
-          },
-          {
-            "kind": "item",
-            "itemId": "Dog_Head_D1",
-            "itemName": "Tan Laika Vestige",
-            "count": 1
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Dog_Trophy_D1_1",
-            "itemName": "Tan Laika Trophy",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Dog_Head_D1",
-              "count": 1
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 30
-            }
-          ],
-          "nodes": [
-            "Dog_Trophy_D1_1",
-            "Wood_Refined",
-            "Wood",
-            "Frozen_Wood",
-            "Dog_Head_D1"
-          ],
-          "edges": [
-            {
-              "from": "Wood_Refined",
-              "to": "Dog_Trophy_D1_1",
-              "count": 30,
-              "recipeId": "Refined_Wood"
-            },
-            {
-              "from": "Wood",
-              "to": "Wood_Refined",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "Laika",
-    "cosmeticPack": "",
-    "description": "A preserved memory of your Good Dog.",
-    "flavorText": "Once a loyal companion.",
-    "weight": 2500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "Item.Decoration.Trophy",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Dog_Trophy_D1_2": {
-    "itemId": "Dog_Trophy_D1_2",
-    "displayName": "Tan Laika Jumpsuit Trophy",
-    "category": "Trophies",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Trophy_D1_2.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Dog_Trophy_D1_2",
-        "requiredMillijoules": 1500,
-        "stationIds": [
-          "Trophy_Bench"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Wood_Refined",
-            "itemName": "Refined Wood",
-            "count": 30
-          },
-          {
-            "kind": "item",
-            "itemId": "Dog_Head_D1",
-            "itemName": "Tan Laika Vestige",
-            "count": 1
-          },
-          {
-            "kind": "item",
-            "itemId": "Dog_Accessory_D",
-            "itemName": "Laika\\'s Jumpsuit",
-            "count": 1
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [],
-        "outputs": [
-          {
-            "itemId": "Dog_Trophy_D1_2",
-            "itemName": "Tan Laika Jumpsuit Trophy",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "AnimalCarcass_Deer",
-              "count": 25
-            },
-            {
-              "itemId": "Dog_Head_D1",
-              "count": 1
-            },
-            {
-              "itemId": "Fiber",
-              "count": 180
-            },
-            {
-              "itemId": "Frozen_Wood",
-              "count": 30
-            }
-          ],
-          "nodes": [
-            "Dog_Trophy_D1_2",
-            "Wood_Refined",
-            "Wood",
-            "Frozen_Wood",
-            "Dog_Head_D1",
-            "Dog_Accessory_D",
-            "Leather",
-            "AnimalCarcass_Deer",
-            "Rope",
-            "Fiber"
-          ],
-          "edges": [
-            {
-              "from": "Wood_Refined",
-              "to": "Dog_Trophy_D1_2",
-              "count": 30,
-              "recipeId": "Refined_Wood"
-            },
-            {
-              "from": "Wood",
-              "to": "Wood_Refined",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Dog_Accessory_D",
-              "to": "Dog_Trophy_D1_2",
-              "count": 1,
-              "recipeId": "Dog_D_Accessory"
-            },
-            {
-              "from": "Leather",
-              "to": "Dog_Accessory_D",
-              "count": 25,
-              "recipeId": "Carcass_Deer"
-            },
-            {
-              "from": "Rope",
-              "to": "Dog_Accessory_D",
-              "count": 15,
-              "recipeId": "Rope"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "Laika",
-    "cosmeticPack": "",
-    "description": "A preserved memory of your Good Dog.",
-    "flavorText": "Once a loyal companion.",
-    "weight": 2500,
-    "maxStack": null,
-    "stats": {
-      "Durability": 250
-    },
-    "tags": [
-      "Item.Decoration.Trophy",
-      "Traits.Actionable",
       "Traits.Deployable",
       "Traits.Durable",
       "Traits.Highlightable",
@@ -7930,33 +8889,6 @@
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Dev_Transform_Tool": {
-    "itemId": "Dev_Transform_Tool",
-    "displayName": "Transform Tool",
-    "category": "Other",
-    "icon": {
-      "assetPath": "Developers/francisliardet/UI/Icons/FontAwesome/arrows-up-down-left-right-solid.webp",
-      "exists": false
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "Left click to select in-world actor to transform. Use the popup to fine-tune location, rotation, and scale",
-    "flavorText": null,
-    "weight": 10,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "FieldGuide.BlackList",
-      "Item.Tool",
-      "Traits.Actionable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
     ],
     "workshopCosts": null
   },
@@ -8236,48 +9168,71 @@
     ],
     "workshopCosts": null
   },
-  "Sickle_Attachment_Harvest_Seeds": {
-    "itemId": "Sickle_Attachment_Harvest_Seeds",
-    "displayName": "Threshing Attachment",
-    "category": "Attachments",
+  "Thumper_Mini": {
+    "itemId": "Thumper_Mini",
+    "displayName": "Prototype Mini Thumper",
+    "category": "Deployables",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttTool_Threshing.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Thumper_Mini.webp",
       "exists": true
     },
     "recipes": [
       {
-        "recipeId": "Sickle_Attachment_Harvest_Seeds",
-        "requiredMillijoules": 10000,
+        "recipeId": "Thumper_Mini",
+        "requiredMillijoules": 0,
         "stationIds": [
-          "Alteration_Bench",
-          "Advanced_Alteration_Bench"
+          "Fabricator"
         ],
         "inputs": [
           {
             "kind": "item",
-            "itemId": "Steel_Ingot",
-            "itemName": "Steel Ingot",
-            "count": 3
+            "itemId": "Titanium_Ingot",
+            "itemName": "Titanium Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Concrete_Mix",
+            "itemName": "Concrete Mix",
+            "count": 4
           },
           {
             "kind": "item",
             "itemId": "Epoxy",
             "itemName": "Epoxy",
-            "count": 3
+            "count": 10
           },
           {
             "kind": "item",
-            "itemId": "Coal_Ore",
-            "itemName": "Coal Ore",
-            "count": 2
+            "itemId": "Battery_Shelf_T3",
+            "itemName": "Basic Battery Rack",
+            "count": 1
           }
         ],
         "queryInputs": [],
         "resourceInputs": [],
         "outputs": [
           {
-            "itemId": "Sickle_Attachment_Harvest_Seeds",
-            "itemName": "Threshing Attachment",
+            "itemId": "Thumper_Mini",
+            "itemName": "Prototype Mini Thumper",
             "count": 1
           }
         ],
@@ -8285,42 +9240,205 @@
           "rawMaterials": [
             {
               "itemId": "Frozen_Wood",
-              "count": 48
+              "count": 498
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 6
             },
             {
               "itemId": "Pyritic_Crust_Coal",
-              "count": 5
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 302
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 96
             },
             {
               "itemId": "Pyritic_Crust_Iron",
-              "count": 18
+              "count": 72
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 22
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 32
             },
             {
               "itemId": "Pyritic_Crust_Sulfur",
-              "count": 6
+              "count": 56
+            },
+            {
+              "itemId": "Pyritic_Crust_Titanium",
+              "count": 50
             }
           ],
           "nodes": [
-            "Sickle_Attachment_Harvest_Seeds",
+            "Thumper_Mini",
+            "Titanium_Ingot",
+            "Titanium_Ore",
+            "Pyritic_Crust_Titanium",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Steel_Screw",
             "Steel_Ingot",
             "Steel_Bloom",
             "Metal_Ore",
             "Pyritic_Crust_Iron",
             "Coal_Ore",
             "Pyritic_Crust_Coal",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick",
-            "Wood",
-            "Frozen_Wood"
+            "Composites",
+            "Composite_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Concrete_Mix",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Battery_Shelf_T3",
+            "Wood_Refined",
+            "Platinum_Shealth",
+            "Titanium_Plate"
           ],
           "edges": [
             {
+              "from": "Titanium_Ingot",
+              "to": "Thumper_Mini",
+              "count": 4,
+              "recipeId": "Titanium_Ingot"
+            },
+            {
+              "from": "Titanium_Ore",
+              "to": "Titanium_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Titanium"
+            },
+            {
+              "from": "Electronics",
+              "to": "Thumper_Mini",
+              "count": 5,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Thumper_Mini",
+              "count": 10,
+              "recipeId": "Steel_Screw"
+            },
+            {
               "from": "Steel_Ingot",
-              "to": "Sickle_Attachment_Harvest_Seeds",
-              "count": 3,
+              "to": "Steel_Screw",
+              "count": 1,
               "recipeId": "Steel_Ingot"
             },
             {
@@ -8342,192 +9460,112 @@
               "recipeId": "Pyritic_Crust_Coal"
             },
             {
+              "from": "Composites",
+              "to": "Thumper_Mini",
+              "count": 6,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Concrete_Mix",
+              "to": "Thumper_Mini",
+              "count": 4,
+              "recipeId": "Concrete_Mix"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Concrete_Mix",
+              "count": 1,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stone",
+              "to": "Concrete_Mix",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Silica",
+              "to": "Concrete_Mix",
+              "count": 4,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
               "from": "Epoxy",
-              "to": "Sickle_Attachment_Harvest_Seeds",
+              "to": "Thumper_Mini",
+              "count": 10,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Battery_Shelf_T3",
+              "to": "Thumper_Mini",
+              "count": 1,
+              "recipeId": "Battery_T3_Shelf"
+            },
+            {
+              "from": "Electronics",
+              "to": "Battery_Shelf_T3",
+              "count": 4,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Battery_Shelf_T3",
+              "count": 16,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Battery_Shelf_T3",
+              "count": 10,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Titanium_Plate",
+              "to": "Battery_Shelf_T3",
+              "count": 2,
+              "recipeId": "Titanium_Plate"
+            },
+            {
+              "from": "Titanium_Ingot",
+              "to": "Titanium_Plate",
               "count": 3,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
-            },
-            {
-              "from": "Coal_Ore",
-              "to": "Sickle_Attachment_Harvest_Seeds",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Coal"
-            }
-          ]
-        }
-      }
-    ],
-    "requiredFeatureLevel": "",
-    "cosmeticPack": "",
-    "description": "An attachment that allows the collection of Seeds directly from plants when harvesting.",
-    "flavorText": "Can be equipped to a valid sickle at an Alteration Bench.",
-    "weight": 1000,
-    "maxStack": null,
-    "stats": null,
-    "tags": [
-      "Item.Attachment.Rank.1",
-      "Item.Attachment.Sickle",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable"
-    ],
-    "workshopCosts": null
-  },
-  "Prop_Test_Tube_Rack": {
-    "itemId": "Prop_Test_Tube_Rack",
-    "displayName": "Test Tubes",
-    "category": "Decorations",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Test_Tube_Rack.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "A handy device for holding and storing test tubes.",
-    "flavorText": "Science!",
-    "weight": 500,
-    "maxStack": 20,
-    "stats": null,
-    "tags": [
-      "Audio.Shelter.Check",
-      "Item.Decoration.Lab",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "Mission_Buffer": {
-    "itemId": "Mission_Buffer",
-    "displayName": "Tris-EDTA Buffer ",
-    "category": "Decorations",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Chemicals_B.webp",
-      "exists": true
-    },
-    "recipes": [
-      {
-        "recipeId": "Mission_Buffer",
-        "requiredMillijoules": 0,
-        "stationIds": [
-          "Fabricator"
-        ],
-        "inputs": [
-          {
-            "kind": "item",
-            "itemId": "Reed_Flower",
-            "itemName": "Reed Flower",
-            "count": 2
-          },
-          {
-            "kind": "item",
-            "itemId": "Epoxy",
-            "itemName": "Epoxy",
-            "count": 5
-          }
-        ],
-        "queryInputs": [],
-        "resourceInputs": [
-          {
-            "kind": "resource",
-            "resource": "",
-            "count": 0
-          }
-        ],
-        "outputs": [
-          {
-            "itemId": "Mission_Buffer",
-            "itemName": "Tris-EDTA Buffer ",
-            "count": 1
-          }
-        ],
-        "workflow": {
-          "rawMaterials": [
-            {
-              "itemId": "Frozen_Wood",
-              "count": 80
-            },
-            {
-              "itemId": "Pyritic_Crust_Sulfur",
-              "count": 10
-            },
-            {
-              "itemId": "Reed_Flower",
-              "count": 2
-            }
-          ],
-          "nodes": [
-            "Mission_Buffer",
-            "Reed_Flower",
-            "Epoxy",
-            "Sulfur",
-            "Pyritic_Crust_Sulfur",
-            "Tree_Sap",
-            "Stick",
-            "Wood",
-            "Frozen_Wood"
-          ],
-          "edges": [
-            {
-              "from": "Epoxy",
-              "to": "Mission_Buffer",
-              "count": 5,
-              "recipeId": "Epoxy"
-            },
-            {
-              "from": "Sulfur",
-              "to": "Epoxy",
-              "count": 2,
-              "recipeId": "Pyritic_Crust_Sulfur"
-            },
-            {
-              "from": "Tree_Sap",
-              "to": "Epoxy",
-              "count": 4,
-              "recipeId": "Tree_Sap"
-            },
-            {
-              "from": "Stick",
-              "to": "Tree_Sap",
-              "count": 4,
-              "recipeId": "Stick"
-            },
-            {
-              "from": "Wood",
-              "to": "Stick",
-              "count": 1,
-              "recipeId": "Frozen_Wood"
+              "recipeId": "Titanium_Ingot"
             }
           ]
         }
@@ -8535,50 +9573,17 @@
     ],
     "requiredFeatureLevel": "GreatHunts",
     "cosmeticPack": "",
-    "description": "Industrial Chemicals for Experimentation.",
-    "flavorText": "These look dangerous.",
-    "weight": 1000,
-    "maxStack": 30,
-    "stats": null,
-    "tags": [
-      "Audio.Shelter.Check",
-      "Traits.Actionable",
-      "Traits.Deployable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
-  "LegendaryWeapon_Bow": {
-    "itemId": "LegendaryWeapon_Bow",
-    "displayName": "Tactical Bow",
-    "category": "Other",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Bow.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "A Prototype Upgradeable Bow created via studying of the Rimetusk mutated mammoth.",
-    "flavorText": "A Masterwork Bow - Created by our Friends at Norex.",
-    "weight": 3000,
+    "description": "A compact version of the Thumper designed to draw out creatures living underground.",
+    "flavorText": "Designed for finding underground caves, turns out it also disturbs everything living in them.",
+    "weight": 50000,
     "maxStack": null,
     "stats": {
-      "Durability": 30000,
-      "Fire Rate (RPM)": 300,
-      "Reload Time (s)": 0.699999988079071
+      "Durability": 2500
     },
     "tags": [
-      "Item.HasBlocking",
-      "Item.LivingWeapon",
-      "Item.Meta",
-      "Item.Weapon.Bow",
+      "Audio.Shelter.Check",
       "Traits.Actionable",
+      "Traits.Deployable",
       "Traits.Durable",
       "Traits.Highlightable",
       "Traits.Interactable",
@@ -8613,6 +9618,74 @@
       "Traits.Actionable",
       "Traits.Consumable",
       "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Truffle_Seed": {
+    "itemId": "Truffle_Seed",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Truffle_Seeds",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Seed_Extractor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Truffle",
+            "itemName": "Truffle",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Truffle_Seed",
+            "itemName": "Seed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Truffle",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Truffle_Seed",
+            "Truffle"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",

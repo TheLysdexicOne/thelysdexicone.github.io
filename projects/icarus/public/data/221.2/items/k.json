@@ -1,4 +1,1619 @@
 {
+  "Kit_Mortar_And_Pestle": {
+    "itemId": "Kit_Mortar_And_Pestle",
+    "displayName": "Mortar and Pestle",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Mortar_And_Pestle",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Silica",
+            "itemName": "Silica Ore",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Mortar_And_Pestle",
+            "itemName": "Mortar and Pestle",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Kit_Mortar_And_Pestle",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Stone",
+            "Pyritic_Crust_Stone"
+          ],
+          "edges": [
+            {
+              "from": "Silica",
+              "to": "Kit_Mortar_And_Pestle",
+              "count": 4,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Stone",
+              "to": "Kit_Mortar_And_Pestle",
+              "count": 12,
+              "recipeId": "Pyritic_Crust_Stone"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A simple tool for crafting resins, pastes, medicines and more.",
+    "flavorText": "The tool of chefs, herbalists, apothecaries and alchemists.",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Oxite_Dissolver": {
+    "itemId": "Kit_Oxite_Dissolver",
+    "displayName": "Oxite Dissolver",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Oxite_Dissolver.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Oxite_Dissolver",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 18
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Oxite_Dissolver",
+            "itemName": "Oxite Dissolver",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 32
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 18
+            }
+          ],
+          "nodes": [
+            "Kit_Oxite_Dissolver",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Bone"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Kit_Oxite_Dissolver",
+              "count": 18,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Kit_Oxite_Dissolver",
+              "count": 24,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Bone",
+              "to": "Kit_Oxite_Dissolver",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A more efficient oxidizer for processing oxite into oxygen.",
+    "flavorText": "Place oxite and an appropriate container into the dissolver to start filling it. Requires sulfur for fuel.",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Generator": {
+    "itemId": "Kit_Generator",
+    "displayName": "Biofuel Generator",
+    "category": "Resource Networks",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kit_Generator.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Biofuel_Generator",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Glass",
+            "itemName": "Glass",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Generator",
+            "itemName": "Biofuel Generator",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 408
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 440
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 120
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 48
+            }
+          ],
+          "nodes": [
+            "Kit_Generator",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Steel_Screw",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Kit_Generator",
+              "count": 20,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Kit_Generator",
+              "count": 40,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Electronics",
+              "to": "Kit_Generator",
+              "count": 12,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Kit_Generator",
+              "count": 20,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Glass",
+              "to": "Kit_Generator",
+              "count": 2,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An efficient, if basic biofuel-driven electric generator.",
+    "flavorText": "Literally or figuratively, we\\'ve come a long way from the Faraday Disc.",
+    "weight": 40000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Item.ResourceGenerator.Energy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Machining_Bench": {
+    "itemId": "Kit_Machining_Bench",
+    "displayName": "Machining Bench",
+    "category": "Benches",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Machining_Bench.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Machining_Bench",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 120
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 24
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Machining_Bench",
+            "itemName": "Machining Bench",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 288
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 180
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 320
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Kit_Machining_Bench",
+            "Wood",
+            "Frozen_Wood",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Rope",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Kit_Machining_Bench",
+              "count": 20,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Stone",
+              "to": "Kit_Machining_Bench",
+              "count": 12,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Iron_Nail",
+              "to": "Kit_Machining_Bench",
+              "count": 120,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Kit_Machining_Bench",
+              "count": 40,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kit_Machining_Bench",
+              "count": 10,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Rope",
+              "to": "Kit_Machining_Bench",
+              "count": 24,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Upgrades your manufacturing abilities with basic machine tools.",
+    "flavorText": null,
+    "weight": 25000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Road": {
+    "itemId": "Kit_Road",
+    "displayName": "Road Kit",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Icons/Icon_ShipVehicles.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Used to place roads.",
+    "flavorText": "To do.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "Traits.Actionable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Metal_Cupboard": {
+    "itemId": "Kit_Metal_Cupboard",
+    "displayName": "Iron Cupboard",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Metal_Cupboard.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Metal_Cupboard",
+        "requiredMillijoules": 8000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Metal_Cupboard",
+            "itemName": "Iron Cupboard",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 48
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 192
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 80
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 24
+            }
+          ],
+          "nodes": [
+            "Kit_Metal_Cupboard",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Rope",
+            "Fiber",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Kit_Metal_Cupboard",
+              "count": 40,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Rope",
+              "to": "Kit_Metal_Cupboard",
+              "count": 4,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kit_Metal_Cupboard",
+              "count": 12,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A robust storage solution.",
+    "flavorText": "Has 50 storage slots.",
+    "weight": 12000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1500
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Deployable.Storage",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Wood_Cupboard": {
+    "itemId": "Kit_Wood_Cupboard",
+    "displayName": "Wood Cupboard",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Wood_Cupboard.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Wood_Cupboard",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Crafting_Bench",
+          "Carpentry_Bench",
+          "Carpentry_Bench_T4",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Wood_Cupboard",
+            "itemName": "Wood Cupboard",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 8
+            },
+            {
+              "itemId": "Fiber",
+              "count": 96
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Kit_Wood_Cupboard",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Rope",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Kit_Wood_Cupboard",
+              "count": 40,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Kit_Wood_Cupboard",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Kit_Wood_Cupboard",
+              "count": 4,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Rope",
+              "to": "Kit_Wood_Cupboard",
+              "count": 8,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A place to put necessities ... and the rest.",
+    "flavorText": "Has 40 storage slots.",
+    "weight": 8000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Deployable.Storage",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Water_Pump": {
+    "itemId": "Kit_Water_Pump",
+    "displayName": "Electric Water Pump",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Water_Pump.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Water_Pump",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Concrete_Mix",
+            "itemName": "Concrete Mix",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 16
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Water_Pump",
+            "itemName": "Electric Water Pump",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 216
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 120
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 80
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 160
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 16
+            }
+          ],
+          "nodes": [
+            "Kit_Water_Pump",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Concrete_Mix",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Steel_Screw"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Kit_Water_Pump",
+              "count": 24,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Electronics",
+              "to": "Kit_Water_Pump",
+              "count": 4,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Concrete_Mix",
+              "to": "Kit_Water_Pump",
+              "count": 20,
+              "recipeId": "Concrete_Mix"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Concrete_Mix",
+              "count": 1,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stone",
+              "to": "Concrete_Mix",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Silica",
+              "to": "Concrete_Mix",
+              "count": 4,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Kit_Water_Pump",
+              "count": 16,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A small, but powerful axial-flow pump useful for creating water networks.",
+    "flavorText": null,
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 2000
+    },
+    "tags": [
+      "FieldGuide.ResourceNetwork",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable",
+      "item.ResourceGenerator.Water"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Wall_Torch": {
+    "itemId": "Kit_Wall_Torch",
+    "displayName": "Wall Torch",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Wall_Torch.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Wall_Torch",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Carpentry_Bench",
+          "Carpentry_Bench_T4",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Sulfur",
+            "itemName": "Sulfur",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Wall_Torch",
+            "itemName": "Wall Torch",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 8
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Kit_Wall_Torch",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Kit_Wall_Torch",
+              "count": 4,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Kit_Wall_Torch",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Kit_Wall_Torch",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Kit_Wall_Torch",
+              "count": 8,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted flame for adorning shelter walls.",
+    "flavorText": "Lower oxygen levels produce a dirty, but workable flame.",
+    "weight": 500,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Thermal",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kit_Floor_Torch": {
+    "itemId": "Kit_Floor_Torch",
+    "displayName": "Floor Torch",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Floor_Torch.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Floor_Torch",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Stick",
+            "itemName": "Stick",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Sulfur",
+            "itemName": "Sulfur",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kit_Floor_Torch",
+            "itemName": "Floor Torch",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 20
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Kit_Floor_Torch",
+            "Fiber",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur"
+          ],
+          "edges": [
+            {
+              "from": "Stick",
+              "to": "Kit_Floor_Torch",
+              "count": 8,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Kit_Floor_Torch",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A free-standing torch requiring sticks for fuel.",
+    "flavorText": "Oxygen levels may be a little lower, but fire provides light well enough.",
+    "weight": 500,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Thermal",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
   "Kitchen_Bench": {
     "itemId": "Kitchen_Bench",
     "displayName": "Kitchen Bench",
@@ -186,6 +1801,236 @@
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Processing",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kitchen_Stove": {
+    "itemId": "Kitchen_Stove",
+    "displayName": "Biofuel Stove",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kitchen_Stove.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kitchen_Stove",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kitchen_Stove",
+            "itemName": "Biofuel Stove",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 350
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 32
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 192
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Kitchen_Stove",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Steel_Screw"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kitchen_Stove",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kitchen_Stove",
+              "count": 20,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Kitchen_Stove",
+              "count": 4,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Kitchen_Stove",
+              "count": 24,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Kitchen_Stove",
+              "count": 8,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An efficient, biofuel-powered cooking unit.",
+    "flavorText": "A well-crafted, solidly insulated stove for discerning off-world chefs.",
+    "weight": 20000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "FieldGuide.Stove",
+      "Item.Bench",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Processing",
+      "Traits.Thermal",
       "Traits.Usable"
     ],
     "workshopCosts": null
@@ -380,53 +2225,1172 @@
     ],
     "workshopCosts": null
   },
-  "Meta_Module_Fall_Damage": {
-    "itemId": "Meta_Module_Fall_Damage",
-    "displayName": "KickFall Module",
-    "category": "Suits & Modules",
+  "Knife_Attachment_Prime_Meat_Chance_1": {
+    "itemId": "Knife_Attachment_Prime_Meat_Chance_1",
+    "displayName": "Prime Meat Attachment",
+    "category": "Attachments",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_UTILITY_FallDamage.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachPrimeSteak.webp",
       "exists": true
     },
-    "recipes": [],
+    "recipes": [
+      {
+        "recipeId": "Attachment_Prime_Meat_Chance_1",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Alteration_Bench",
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Knife_Attachment_Prime_Meat_Chance_1",
+            "itemName": "Prime Meat Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 8
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 64
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Knife_Attachment_Prime_Meat_Chance_1",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Fur",
+            "AnimalCarcass_Deer",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Knife_Attachment_Prime_Meat_Chance_1",
+              "count": 4,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Fur",
+              "to": "Knife_Attachment_Prime_Meat_Chance_1",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Knife_Attachment_Prime_Meat_Chance_1",
+              "count": 4,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
     "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "Drastic movement causes a piezoelectric sensor to deliver an electric charge to a small fragment of exotics, briefly reducing mass and diminishing fall damage.",
-    "flavorText": "TL;DR: Dark magic",
-    "weight": 100,
+    "cosmeticPack": "",
+    "description": "An attachment that increases your chance of gathering Prime Meat from creatures.",
+    "flavorText": "Can be equipped to a valid knife at an Alteration Bench.",
+    "weight": 1000,
     "maxStack": null,
     "stats": null,
     "tags": [
-      "Item.Meta",
-      "Item.Upgrade.Passive",
-      "Traits.Equippable",
+      "Item.Attachment.Knife",
+      "Item.Attachment.Rank.1",
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable"
     ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 75
-        },
-        {
-          "currencyId": "Exotic1",
-          "amount": 25
+    "workshopCosts": null
+  },
+  "Knife_Attachment_Prime_Meat_Chance_2": {
+    "itemId": "Knife_Attachment_Prime_Meat_Chance_2",
+    "displayName": "Advanced Prime Meat Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachPrimeSteak.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Prime_Meat_Chance_2",
+        "requiredMillijoules": 20000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Knife_Attachment_Prime_Meat_Chance_1",
+            "itemName": "Prime Meat Attachment",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Knife_Attachment_Prime_Meat_Chance_2",
+            "itemName": "Advanced Prime Meat Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 8
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 108
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 72
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Knife_Attachment_Prime_Meat_Chance_2",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Wood_Refined",
+            "Knife_Attachment_Prime_Meat_Chance_1",
+            "Fur",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Carbon_Fiber",
+              "to": "Knife_Attachment_Prime_Meat_Chance_2",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Knife_Attachment_Prime_Meat_Chance_2",
+              "count": 8,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Wood_Refined",
+              "to": "Knife_Attachment_Prime_Meat_Chance_2",
+              "count": 8,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Knife_Attachment_Prime_Meat_Chance_1",
+              "to": "Knife_Attachment_Prime_Meat_Chance_2",
+              "count": 1,
+              "recipeId": "Attachment_Prime_Meat_Chance_1"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Knife_Attachment_Prime_Meat_Chance_1",
+              "count": 4,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Fur",
+              "to": "Knife_Attachment_Prime_Meat_Chance_1",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Knife_Attachment_Prime_Meat_Chance_1",
+              "count": 4,
+              "recipeId": "Epoxy"
+            }
+          ]
         }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        },
-        {
-          "currencyId": "Exotic1",
-          "amount": 10
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that greatly increases your chance of gathering Prime Meat from creatures.",
+    "flavorText": "Can be equipped to a valid knife at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Knife",
+      "Item.Attachment.Rank.2",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Knife_Attachment_Leather_Yield_1": {
+    "itemId": "Knife_Attachment_Leather_Yield_1",
+    "displayName": "Leather Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachLeather.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Leather_Yield_1",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Alteration_Bench",
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Knife_Attachment_Leather_Yield_1",
+            "itemName": "Leather Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Knife_Attachment_Leather_Yield_1",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Fur",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Knife_Attachment_Leather_Yield_1",
+              "count": 4,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Fur",
+              "to": "Knife_Attachment_Leather_Yield_1",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
         }
-      ]
-    }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that increases your chance of gathering leather from creatures.",
+    "flavorText": "Can be equipped to a valid knife at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Knife",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Knife_Attachment_Leather_Yield_2": {
+    "itemId": "Knife_Attachment_Leather_Yield_2",
+    "displayName": "Advanced Leather Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachLeather.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Leather_Yield_2",
+        "requiredMillijoules": 20000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Knife_Attachment_Leather_Yield_1",
+            "itemName": "Leather Attachment",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Knife_Attachment_Leather_Yield_2",
+            "itemName": "Advanced Leather Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 16
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 36
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 44
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Knife_Attachment_Leather_Yield_2",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Knife_Attachment_Leather_Yield_1",
+            "Refined_Metal",
+            "Fur"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Knife_Attachment_Leather_Yield_2",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Knife_Attachment_Leather_Yield_2",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Knife_Attachment_Leather_Yield_2",
+              "count": 6,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Knife_Attachment_Leather_Yield_1",
+              "to": "Knife_Attachment_Leather_Yield_2",
+              "count": 1,
+              "recipeId": "Attachment_Leather_Yield_1"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Knife_Attachment_Leather_Yield_1",
+              "count": 4,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Fur",
+              "to": "Knife_Attachment_Leather_Yield_1",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that greatly increases your chance of gathering leather from creatures.",
+    "flavorText": "Can be equipped to a valid knife at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Knife",
+      "Item.Attachment.Rank.2",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Knife_Attachment_Bone_Yield_1": {
+    "itemId": "Knife_Attachment_Bone_Yield_1",
+    "displayName": "Carcass Harvesting Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachBone.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Bone_Yield_1",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Alteration_Bench",
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Knife_Attachment_Bone_Yield_1",
+            "itemName": "Carcass Harvesting Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Knife_Attachment_Bone_Yield_1",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Fur",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Knife_Attachment_Bone_Yield_1",
+              "count": 6,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Fur",
+              "to": "Knife_Attachment_Bone_Yield_1",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that increases the yield of bone from creatures.",
+    "flavorText": "Can be equipped to a valid knife at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Knife",
+      "Item.Attachment.Rank.1",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Knife_Attachment_Bone_Yield_2": {
+    "itemId": "Knife_Attachment_Bone_Yield_2",
+    "displayName": "Advanced Carcass Harvesting Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachBone.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Attachment_Bone_Yield_2",
+        "requiredMillijoules": 20000,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Knife_Attachment_Bone_Yield_1",
+            "itemName": "Carcass Harvesting Attachment",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Knife_Attachment_Bone_Yield_2",
+            "itemName": "Advanced Carcass Harvesting Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 12
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 100
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 12
+            }
+          ],
+          "nodes": [
+            "Knife_Attachment_Bone_Yield_2",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Bone",
+            "AnimalCarcass_Deer",
+            "Knife_Attachment_Bone_Yield_1",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Fur"
+          ],
+          "edges": [
+            {
+              "from": "Epoxy",
+              "to": "Knife_Attachment_Bone_Yield_2",
+              "count": 4,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Knife_Attachment_Bone_Yield_2",
+              "count": 1,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Bone",
+              "to": "Knife_Attachment_Bone_Yield_2",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Knife_Attachment_Bone_Yield_1",
+              "to": "Knife_Attachment_Bone_Yield_2",
+              "count": 1,
+              "recipeId": "Attachment_Bone_Yield_1"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Knife_Attachment_Bone_Yield_1",
+              "count": 6,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Fur",
+              "to": "Knife_Attachment_Bone_Yield_1",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An attachment that greatly increases the yield of bone from creatures.",
+    "flavorText": "Can be equipped to a valid knife at an Alteration Bench.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Knife",
+      "Item.Attachment.Rank.2",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
   },
   "Kumara": {
     "itemId": "Kumara",
@@ -461,46 +3425,200 @@
     ],
     "workshopCosts": null
   },
-  "Meta_Kumara_Seed": {
-    "itemId": "Meta_Kumara_Seed",
-    "displayName": "Kumara Farming Packet",
-    "category": "Plants",
+  "Komodo_Statue_Stone": {
+    "itemId": "Komodo_Statue_Stone",
+    "displayName": "Stone Komodo Statue",
+    "category": "Trophies",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_FarmingPacket_Kumara.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Komodo_Statue_Stone.webp",
       "exists": true
     },
-    "recipes": [],
+    "recipes": [
+      {
+        "recipeId": "Komodo_Statue_Stone",
+        "requiredMillijoules": 50000,
+        "stationIds": [
+          "Masonry_Bench",
+          "Masonry_Bench_T3",
+          "Masonry_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Stone",
+            "itemName": "Stone",
+            "count": 100
+          },
+          {
+            "kind": "item",
+            "itemId": "Condensed_Enzymes",
+            "itemName": "Condensed Enzymes",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Komodo_Statue_Stone",
+            "itemName": "Stone Komodo Statue",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Condensed_Exotic",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 100
+            }
+          ],
+          "nodes": [
+            "Komodo_Statue_Stone",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Condensed_Enzymes",
+            "Condensed_Exotic"
+          ],
+          "edges": [
+            {
+              "from": "Stone",
+              "to": "Komodo_Statue_Stone",
+              "count": 100,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Condensed_Enzymes",
+              "to": "Komodo_Statue_Stone",
+              "count": 1,
+              "recipeId": "Process_Condensed_Exotic"
+            }
+          ]
+        }
+      }
+    ],
     "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "Right click to open a packet of Kumara Seeds that have been stabilised for off-world farming",
-    "flavorText": "Right click to open",
-    "weight": 100,
+    "cosmeticPack": "",
+    "description": "A fearsome foe made of stone.",
+    "flavorText": "They are cute when they aren\\'t charging you.",
+    "weight": 1000,
     "maxStack": null,
-    "stats": null,
+    "stats": {
+      "Durability": 1500
+    },
     "tags": [
-      "Item.Meta.Consumable",
-      "Item.Meta.Package",
-      "Traits.Consumable",
+      "Item.Decoration.Statue",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
       "Traits.Highlightable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
     ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
+    "workshopCosts": null
+  },
+  "Kumara_Pack": {
+    "itemId": "Kumara_Pack",
+    "displayName": "Seed",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kumara_Seed": {
+    "itemId": "Kumara_Seed",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kumara_Seeds",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Seed_Extractor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Kumara",
+            "itemName": "Kumara",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kumara_Seed",
+            "itemName": "Seed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Kumara",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Kumara_Seed",
+            "Kumara"
+          ],
+          "edges": []
         }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 20
-        }
-      ]
-    }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
   },
   "Kea_Head": {
     "itemId": "Kea_Head",
@@ -742,41 +3860,6 @@
     ],
     "workshopCosts": null
   },
-  "LegendaryWeapon_Scorpion_Rifle": {
-    "itemId": "LegendaryWeapon_Scorpion_Rifle",
-    "displayName": "Kinetic Rifle",
-    "category": "Other",
-    "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Scorpion_Rifle.webp",
-      "exists": true
-    },
-    "recipes": [],
-    "requiredFeatureLevel": "GreatHunts",
-    "cosmeticPack": "",
-    "description": "A Prototype Upgradeable Rifle created via studying of the Giant Scorpion.",
-    "flavorText": "How did Norex turn a Scorpion into a Rifle? You know what, I don\\'t wanna know.",
-    "weight": 5000,
-    "maxStack": null,
-    "stats": {
-      "Durability": 35000,
-      "Fire Rate (RPM)": 85,
-      "Mag Size": 6,
-      "Reload Time (s)": 3
-    },
-    "tags": [
-      "Item.LivingWeapon",
-      "Item.Meta",
-      "Item.Weapon.Firearm.Rifle",
-      "Traits.Actionable",
-      "Traits.Durable",
-      "Traits.Highlightable",
-      "Traits.Interactable",
-      "Traits.Itemable",
-      "Traits.Meshable",
-      "Traits.Usable"
-    ],
-    "workshopCosts": null
-  },
   "Kiwi_Head": {
     "itemId": "Kiwi_Head",
     "displayName": "Kiwi Vestige",
@@ -992,6 +4075,132 @@
     ],
     "workshopCosts": null
   },
+  "Kiwi_Nest": {
+    "itemId": "Kiwi_Nest",
+    "displayName": "Makeshift Kiwi Nest",
+    "category": "Husbandry",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kiwi_Nest.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kiwi_Nest",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Character"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 50
+          },
+          {
+            "kind": "item",
+            "itemId": "Stick",
+            "itemName": "Stick",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Tree_Sap",
+            "itemName": "Tree Sap",
+            "count": 25
+          },
+          {
+            "kind": "item",
+            "itemId": "Dirt",
+            "itemName": "Dirt",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kiwi_Nest",
+            "itemName": "Makeshift Kiwi Nest",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Dirt",
+              "count": 5
+            },
+            {
+              "itemId": "Fiber",
+              "count": 50
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 130
+            }
+          ],
+          "nodes": [
+            "Kiwi_Nest",
+            "Fiber",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Tree_Sap",
+            "Dirt"
+          ],
+          "edges": [
+            {
+              "from": "Stick",
+              "to": "Kiwi_Nest",
+              "count": 30,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Kiwi_Nest",
+              "count": 25,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A hastily built kiwi nest for establishing a new colony on Icarus.",
+    "flavorText": "Pretty good, even if it only took 5 minutes.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Quest",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
   "Kiwi_Fruit": {
     "itemId": "Kiwi_Fruit",
     "displayName": "Kiwifruit",
@@ -1024,46 +4233,103 @@
     ],
     "workshopCosts": null
   },
-  "Meta_Kiwi_Fruit_Seed": {
-    "itemId": "Meta_Kiwi_Fruit_Seed",
-    "displayName": "Kiwi Fruit Farming Packet",
+  "Kiwi_Fruit_Seed": {
+    "itemId": "Kiwi_Fruit_Seed",
+    "displayName": "Seed",
     "category": "Plants",
     "icon": {
-      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_FarmingPacket_Kiwi_Fruit.webp",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
       "exists": true
     },
-    "recipes": [],
+    "recipes": [
+      {
+        "recipeId": "Kiwi_Fruit_Seeds",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Seed_Extractor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Kiwi_Fruit",
+            "itemName": "Kiwifruit",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kiwi_Fruit_Seed",
+            "itemName": "Seed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Kiwi_Fruit",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Kiwi_Fruit_Seed",
+            "Kiwi_Fruit"
+          ],
+          "edges": []
+        }
+      }
+    ],
     "requiredFeatureLevel": "",
-    "cosmeticPack": "Workshop",
-    "description": "Right click to open a packet of Kiwi Fruit Seeds that have been stabilised for off-world farming",
-    "flavorText": "Right click to open",
-    "weight": 100,
-    "maxStack": null,
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
     "stats": null,
     "tags": [
-      "Item.Meta.Consumable",
-      "Item.Meta.Package",
-      "Traits.Consumable",
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
       "Traits.Highlightable",
+      "Traits.Hitable",
       "Traits.Interactable",
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
     ],
-    "workshopCosts": {
-      "researchCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 50
-        }
-      ],
-      "replicationCost": [
-        {
-          "currencyId": "Credits",
-          "amount": 20
-        }
-      ]
-    }
+    "workshopCosts": null
+  },
+  "Kiwi_Fruit_Seed_Pack": {
+    "itemId": "Kiwi_Fruit_Seed_Pack",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
   },
   "Kiwi_Trophy": {
     "itemId": "Kiwi_Trophy",
@@ -1374,6 +4640,195 @@
       "Traits.Consumable",
       "Traits.Highlightable",
       "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Kitchen_Sink": {
+    "itemId": "Kitchen_Sink",
+    "displayName": "Plumbed Sink",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kitchen_Sink.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Kitchen_Sink",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Kitchen_Sink",
+            "itemName": "Plumbed Sink",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 350
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Kitchen_Sink",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Kitchen_Sink",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Kitchen_Sink",
+              "count": 10,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Kitchen_Sink",
+              "count": 20,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Kitchen_Sink",
+              "count": 12,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Homestead",
+    "cosmeticPack": "",
+    "description": "Fully plumbed basin and running water, a luxury of sorts.",
+    "flavorText": "Just like home.",
+    "weight": 20000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Deployable.Storage",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
       "Traits.Itemable",
       "Traits.Meshable",
       "Traits.Usable"
