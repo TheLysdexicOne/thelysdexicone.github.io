@@ -1,3 +1,4 @@
+# Last updated: 2026-03-06
 # Root of all versioned icarus-data extractions (e.g. .../icarus-data/versions/)
 # The latest subfolder (by mtime) is selected automatically at runtime.
 ICARUS_DATA_VERSIONS_DIR = "/home/lysdexic/git/icarus-data/versions"
