@@ -132,3 +132,8 @@ logs
 
 # Game data (extraction only)
 .gamedata/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
