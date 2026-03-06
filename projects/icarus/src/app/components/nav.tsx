@@ -1,5 +1,6 @@
 "use client";
 
+import { DATA_VERSION } from "@/lib/data-version";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
@@ -146,7 +147,7 @@ export default function Nav() {
 
           <div className="border-t border-highlight pt-4">
             <p className="px-2 text-xs text-secondary opacity-50">
-              v221.2 · Game data
+              v{DATA_VERSION} · Game data
             </p>
           </div>
         </div>

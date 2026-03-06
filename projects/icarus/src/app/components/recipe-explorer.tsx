@@ -16,8 +16,9 @@ import type {
 // Loaded only on client — react-flow requires browser APIs
 const WorkflowGraph = dynamic(() => import("./workflow-graph"), { ssr: false });
 
+import { DATA_VERSION } from "@/lib/data-version";
+
 const ICARUS_BASE_PATH = "/icarus";
-const DATA_VERSION = "221.2";
 
 function toDataUrl(path: string): string {
   return `${ICARUS_BASE_PATH}/data/${DATA_VERSION}/${path}`;

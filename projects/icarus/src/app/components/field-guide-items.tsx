@@ -19,8 +19,9 @@ import CategoryGrid from "./category-grid";
 import ItemGrid from "./item-grid";
 import ItemDetailPanel from "./item-detail-panel";
 
+import { DATA_VERSION } from "@/lib/data-version";
+
 const ICARUS_BASE_PATH = "/icarus";
-const DATA_VERSION = "221.2";
 
 function toDataUrl(p: string) {
   return `${ICARUS_BASE_PATH}/data/${DATA_VERSION}/${p}`;

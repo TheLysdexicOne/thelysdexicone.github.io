@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DATA_VERSION } from "@/lib/data-version";
 
 const TOOLS = [
   {
@@ -32,7 +33,7 @@ export default function Home() {
             path through the tech tiers.
           </p>
           <p className="mt-2 text-xs text-secondary opacity-60">
-            Data version 221.2 · 1,636 craftable items
+            Data version {DATA_VERSION} · 1,845 craftable items
           </p>
         </section>
 

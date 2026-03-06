@@ -12,8 +12,9 @@ import type {
   WorkshopCurrencyDef,
 } from "@/types/icarus";
 
+import { DATA_VERSION } from "@/lib/data-version";
+
 const ICARUS_BASE_PATH = "/icarus";
-const DATA_VERSION = "221.2";
 
 // ── Local types ──────────────────────────────────────────────────────────────
 
