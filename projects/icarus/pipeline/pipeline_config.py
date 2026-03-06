@@ -1,5 +1,9 @@
-DATA_DIR        = r"E:\_assets_ripped\Icarus_Ripped\Data"
-ICONS_SRC_DIR   = r"E:\_assets_ripped\Icarus_Ripped\staging\ui-pngs"
-OUT_DIR         = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\data\221.2"
-ASSETS_DEST_DIR = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\game-assets"
-VERSION         = "221.2"
+# Root of all versioned icarus-data extractions (e.g. .../icarus-data/versions/)
+# The latest subfolder (by mtime) is selected automatically at runtime.
+ICARUS_DATA_VERSIONS_DIR = "/home/lysdexic/git/icarus-data/versions"
+
+# Base output directory — the resolved version name is appended as a subfolder.
+OUT_DIR_BASE    = "/home/lysdexic/git/thelysdexicone.github.io/projects/icarus/public/data"
+
+# WebP icon output — not version-specific.
+ASSETS_DEST_DIR = "/home/lysdexic/git/thelysdexicone.github.io/projects/icarus/public/game-assets"

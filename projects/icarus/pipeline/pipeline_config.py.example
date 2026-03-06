@@ -4,14 +4,18 @@
 # repo for backup and portability. Update pipeline_config.py for your machine.
 #
 # PATH GUIDE
-#   DATA_DIR        — root of extracted game data tables (contains Items/, Crafting/, Traits/, etc.)
-#   ICONS_SRC_DIR   — root of extracted UI PNGs (contains Items/Item_Icons/, FieldGuide/, Icons/, etc.)
-#   OUT_DIR         — where staged JSON files are written (should be the Next.js public/data/<version>/ folder)
-#   ASSETS_DEST_DIR — where mirrored WebP icons are written (should be the Next.js public/game-assets/ folder)
-#   VERSION         — game version string; becomes a path segment in OUT_DIR
+#   ICARUS_DATA_VERSIONS_DIR — root directory containing one subfolder per game version
+#                              (e.g. .../icarus-data/versions/). The latest subfolder
+#                              (by mtime) is selected automatically at runtime.
+#   OUT_DIR_BASE             — base output directory; the resolved version name is
+#                              appended as a subfolder automatically.
+#   ASSETS_DEST_DIR          — where mirrored WebP icons are written (not version-specific).
 
-DATA_DIR        = r"E:\_assets_ripped\Icarus_Ripped\Data"
-ICONS_SRC_DIR   = r"E:\_assets_ripped\Icarus_Ripped\staging\ui-pngs"
-OUT_DIR         = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\data\221.2"
+# Root of all versioned icarus-data extractions.
+ICARUS_DATA_VERSIONS_DIR = r"C:\path\to\icarus-data\versions"
+
+# Base output directory — version subfolder appended automatically.
+OUT_DIR_BASE    = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\data"
+
+# WebP icon output — not version-specific.
 ASSETS_DEST_DIR = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\game-assets"
-VERSION         = "221.2"

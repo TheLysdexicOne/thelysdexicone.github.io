@@ -19,15 +19,27 @@ from pathlib import Path
 from typing import Any
 
 # ---------------------------------------------------------------------------
-# Config — load from pipeline_config.py
+# Config — load from pipeline_config.py and resolve latest version
 # ---------------------------------------------------------------------------
+def _find_latest_version(versions_root: Path) -> Path:
+    """Return the version subfolder with the most recent mtime."""
+    candidates = [p for p in versions_root.iterdir() if p.is_dir()]
+    if not candidates:
+        print(f"ERROR: No version folders found in {versions_root}", file=sys.stderr)
+        sys.exit(1)
+    return max(candidates, key=lambda p: p.stat().st_mtime)
+
+
 try:
     import pipeline_config as _cfg  # type: ignore
-    DATA_DIR        = Path(_cfg.DATA_DIR)
-    ICONS_SRC_DIR   = Path(_cfg.ICONS_SRC_DIR)
-    OUT_DIR         = Path(_cfg.OUT_DIR)
+    _versions_root  = Path(_cfg.ICARUS_DATA_VERSIONS_DIR)
+    _latest         = _find_latest_version(_versions_root)
+    VERSION: str    = _latest.name
+    DATA_DIR        = _latest / "Content" / "Data"
+    ICONS_SRC_DIR   = _latest / "Content" / "Assets" / "2DArt" / "UI"
+    OUT_DIR         = Path(_cfg.OUT_DIR_BASE) / VERSION
     ASSETS_DEST_DIR = Path(_cfg.ASSETS_DEST_DIR)
-    VERSION: str    = _cfg.VERSION
+    print(f"[pipeline] Resolved version: {VERSION}")
 except ModuleNotFoundError:
     print(
         "ERROR: pipeline_config.py not found.\n"
