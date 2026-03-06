@@ -54,9 +54,10 @@ _KNOWN_FEATURE_LEVELS = {"", "Galileo", "GreatHunts", "Homestead", "Laika", "New
 
 # Talent trees that correspond to Tier 2 / 3 / 4
 _TIER_TREE_MAP: dict[str, str] = {
-    "Blueprint_T2_Player": "T2",
-    "Blueprint_T3_Player": "T3",
-    "Blueprint_T4_Player": "T4",
+    "Blueprint_T2_Crafting":    "T2",
+    "Blueprint_T3_Machine":     "T3",
+    "Blueprint_T4_Fabricator":  "T4",
+    "Blueprint_T5_Manufacturer": "T5",
 }
 
 # Query tag IDs we care about (ingredient wildcards used in recipes)
@@ -890,7 +891,7 @@ def build_tier_sections(
     itemable_lookup: dict[str, dict[str, Any]],
 ) -> list[dict[str, Any]]:
     # Group by tier
-    tiers: dict[str, list[dict[str, Any]]] = {"T2": [], "T3": [], "T4": []}
+    tiers: dict[str, list[dict[str, Any]]] = {"T2": [], "T3": [], "T4": [], "T5": []}
 
     for name, row in talent_rows.items():
         tree_ref = row.get("TalentTree", {}).get("RowName", "None")
