@@ -1,0 +1,5 @@
+DATA_DIR        = r"E:\_assets_ripped\Icarus_Ripped\Data"
+ICONS_SRC_DIR   = r"E:\_assets_ripped\Icarus_Ripped\staging\ui-pngs"
+OUT_DIR         = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\data\221.2"
+ASSETS_DEST_DIR = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\game-assets"
+VERSION         = "221.2"

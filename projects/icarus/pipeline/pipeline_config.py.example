@@ -1,7 +1,7 @@
 # Icarus Data Pipeline — Machine-Specific Configuration
 #
-# Copy this file to pipeline_config.py and fill in the paths for your machine.
-# pipeline_config.py is gitignored — it will NEVER be committed.
+# This file is the template. The actual pipeline_config.py is committed to the
+# repo for backup and portability. Update pipeline_config.py for your machine.
 #
 # PATH GUIDE
 #   DATA_DIR        — root of extracted game data tables (contains Items/, Crafting/, Traits/, etc.)

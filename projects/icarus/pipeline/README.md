@@ -34,8 +34,8 @@ copy pipeline_config.py.example pipeline_config.py
 # Then edit pipeline_config.py in your editor — set DATA_DIR, ICONS_SRC_DIR, OUT_DIR, ASSETS_DEST_DIR, VERSION
 ```
 
-`pipeline_config.py` is **gitignored** — it contains local machine paths and will never be committed.
-`pipeline_config.py.example` is tracked and always reflects the expected structure.
+`pipeline_config.py` is committed to the repo so it's always backed up and cloneable.
+Update it for your machine before running the pipeline.
 
 ## Running
 
