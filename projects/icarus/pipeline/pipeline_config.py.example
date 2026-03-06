@@ -1,0 +1,17 @@
+# Icarus Data Pipeline — Machine-Specific Configuration
+#
+# Copy this file to pipeline_config.py and fill in the paths for your machine.
+# pipeline_config.py is gitignored — it will NEVER be committed.
+#
+# PATH GUIDE
+#   DATA_DIR        — root of extracted game data tables (contains Items/, Crafting/, Traits/, etc.)
+#   ICONS_SRC_DIR   — root of extracted UI PNGs (contains Items/Item_Icons/, FieldGuide/, Icons/, etc.)
+#   OUT_DIR         — where staged JSON files are written (should be the Next.js public/data/<version>/ folder)
+#   ASSETS_DEST_DIR — where mirrored WebP icons are written (should be the Next.js public/game-assets/ folder)
+#   VERSION         — game version string; becomes a path segment in OUT_DIR
+
+DATA_DIR        = r"E:\_assets_ripped\Icarus_Ripped\Data"
+ICONS_SRC_DIR   = r"E:\_assets_ripped\Icarus_Ripped\staging\ui-pngs"
+OUT_DIR         = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\data\221.2"
+ASSETS_DEST_DIR = r"C:\Projects\thelysdexicone.github.io\projects\icarus\public\game-assets"
+VERSION         = "221.2"
