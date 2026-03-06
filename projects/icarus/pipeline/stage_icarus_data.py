@@ -814,10 +814,10 @@ def gather_workshop_data(
 
     for ws_id, row in workshop_rows.items():
         item_elem    = row.get("Item", {})
-        template_key = item_elem.get("RowName", "None")
+        template_key = str(item_elem.get("RowName") or "None")
         if template_key in ("None", ""):
             continue
-        static_key = item_template.get(template_key, template_key)
+        static_key = str(item_template.get(template_key, template_key) or template_key)
         static_row = static_rows.get(static_key, {})
 
         # Resolve display info from itemable trait
