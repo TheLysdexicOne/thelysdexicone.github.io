@@ -42,3 +42,8 @@
 - AI-generated docs go only in `.github/documentation/`.
 - `.github/documentation/` is ignored by git.
 - Do not add new docs outside that folder unless explicitly requested.
+
+## Git / Workflow Rules
+
+- **Do not `git commit` or `git push` unless the user explicitly asks you to.**
+- File edits, pipeline runs, and other changes may be staged or left unstaged — committing is always the user's decision unless stated otherwise.

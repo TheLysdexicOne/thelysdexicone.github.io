@@ -139,6 +139,7 @@ Expected summary line: `Items: 2154 | Craftable: 1845 | Categories: 21 | Letter 
 ### Migrating to a New Machine
 
 Update the 4 path constants in `projects/icarus/pipeline/pipeline_config.py`:
+
 ```python
 DATA_DIR        = r"<new_data_path>"
 ICONS_SRC_DIR   = r"<new_icons_path>"
@@ -174,17 +175,17 @@ All game icons are stored in `public/game-assets/` as **WebP** (converted from t
 
 ### Staged Data Files (`public/data/221.2/`)
 
-| File | Purpose |
-|------|---------|
-| `meta.json` | Version, item count, timestamp |
-| `categories.json` | 21 category definitions (array of `{id, displayName, icon, itemCount}`) |
-| `item-index.json` | Lightweight list of all ~1845 craftable items (itemId, displayName, category, icon, recipeCount, stationIds, requiredFeatureLevel, cosmeticPack) |
-| `item-lookup.json` | Map of `itemId → {id, displayName, icon}` for ingredient resolution |
-| `stations.json` | **Array** of crafting station objects `{id, name, description, icon, experienceMultiplier}` |
-| `tier-sections.json` | **Array** of tier progression data — T2, T3, T4, T5 (see Tier Trees below) |
-| `query-tags.json` | Tag query definitions (wildcard ingredient groups) |
-| `workshop-items.json` | Workshop catalog: `{currencies, items[]}` |
-| `items/{letter}.json` | Per-first-letter item detail chunks (25 files: a–z, with 0 for non-alpha). Each chunk is `Record<itemId, IcarusItemDetail>` |
+| File                  | Purpose                                                                                                                                          |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `meta.json`           | Version, item count, timestamp                                                                                                                   |
+| `categories.json`     | 21 category definitions (array of `{id, displayName, icon, itemCount}`)                                                                          |
+| `item-index.json`     | Lightweight list of all ~1845 craftable items (itemId, displayName, category, icon, recipeCount, stationIds, requiredFeatureLevel, cosmeticPack) |
+| `item-lookup.json`    | Map of `itemId → {id, displayName, icon}` for ingredient resolution                                                                              |
+| `stations.json`       | **Array** of crafting station objects `{id, name, description, icon, experienceMultiplier}`                                                      |
+| `tier-sections.json`  | **Array** of tier progression data — T2, T3, T4, T5 (see Tier Trees below)                                                                       |
+| `query-tags.json`     | Tag query definitions (wildcard ingredient groups)                                                                                               |
+| `workshop-items.json` | Workshop catalog: `{currencies, items[]}`                                                                                                        |
+| `items/{letter}.json` | Per-first-letter item detail chunks (25 files: a–z, with 0 for non-alpha). Each chunk is `Record<itemId, IcarusItemDetail>`                      |
 
 **Note:** `stations.json` is an **array**, not a dict — iterate with `.find(s => s.id === stationId)` or build a `Map` from it.
 
@@ -192,12 +193,12 @@ All game icons are stored in `public/game-assets/` as **WebP** (converted from t
 
 The `D_Talents.json` `TalentTree.RowName` values that map to progression tiers:
 
-| RowName | Tier |
-|---|---|
-| `Blueprint_T2_Crafting` | T2 |
-| `Blueprint_T3_Machine` | T3 |
-| `Blueprint_T4_Fabricator` | T4 |
-| `Blueprint_T5_Manufacturer` | T5 |
+| RowName                     | Tier |
+| --------------------------- | ---- |
+| `Blueprint_T2_Crafting`     | T2   |
+| `Blueprint_T3_Machine`      | T3   |
+| `Blueprint_T4_Fabricator`   | T4   |
+| `Blueprint_T5_Manufacturer` | T5   |
 
 Tier entry counts (v221.2): T2: 241, T3: 206, T4: 161, T5: 65.
 
@@ -207,22 +208,22 @@ Other talent trees (`Blueprint_T1_Player`, combat trees, construction trees, etc
 
 Each item entry in a letter chunk contains:
 
-| Field | Type | Source |
-|-------|------|--------|
-| `itemId` | `string` | D_ItemTemplate row name |
-| `displayName` | `string` | D_Itemable.DisplayName (parsed NSLOCTEXT) |
-| `category` | `string` | `classify_category()` result |
-| `icon` | `{assetPath, exists}` | D_Itemable.Icon |
-| `recipes` | `IcarusItemRecipe[]` | D_ProcessorRecipes |
-| `requiredFeatureLevel` | `string` | D_ItemsStatic.Metadata.RequiredFeatureLevel |
-| `cosmeticPack` | `string` | Manual_Tags or Workshop set |
-| `description` | `string \| null` | D_Itemable.Description |
-| `flavorText` | `string \| null` | D_Itemable.FlavorText |
-| `weight` | `number \| null` | D_Itemable.Weight (grams) |
-| `maxStack` | `number \| null` | D_Itemable.MaxStack |
-| `stats` | `Record<string, number\|string> \| null` | Joined from stat trait tables (display-ready labels) |
-| `tags` | `string[]` | D_ItemsStatic.Generated_Tags |
-| `workshopCosts` | `{researchCost, replicationCost} \| null` | D_WorkshopItems (embedded; no extra fetch needed) |
+| Field                  | Type                                      | Source                                               |
+| ---------------------- | ----------------------------------------- | ---------------------------------------------------- |
+| `itemId`               | `string`                                  | D_ItemTemplate row name                              |
+| `displayName`          | `string`                                  | D_Itemable.DisplayName (parsed NSLOCTEXT)            |
+| `category`             | `string`                                  | `classify_category()` result                         |
+| `icon`                 | `{assetPath, exists}`                     | D_Itemable.Icon                                      |
+| `recipes`              | `IcarusItemRecipe[]`                      | D_ProcessorRecipes                                   |
+| `requiredFeatureLevel` | `string`                                  | D_ItemsStatic.Metadata.RequiredFeatureLevel          |
+| `cosmeticPack`         | `string`                                  | Manual_Tags or Workshop set                          |
+| `description`          | `string \| null`                          | D_Itemable.Description                               |
+| `flavorText`           | `string \| null`                          | D_Itemable.FlavorText                                |
+| `weight`               | `number \| null`                          | D_Itemable.Weight (grams)                            |
+| `maxStack`             | `number \| null`                          | D_Itemable.MaxStack                                  |
+| `stats`                | `Record<string, number\|string> \| null`  | Joined from stat trait tables (display-ready labels) |
+| `tags`                 | `string[]`                                | D_ItemsStatic.Generated_Tags                         |
+| `workshopCosts`        | `{researchCost, replicationCost} \| null` | D_WorkshopItems (embedded; no extra fetch needed)    |
 
 ### Recipe Schema (`IcarusItemRecipe`)
 
@@ -243,14 +244,14 @@ Each item entry in a letter chunk contains:
 
 Six stat tables are loaded by `gather_item_stats()` and joined per-item via pointer fields in `D_ItemsStatic`:
 
-| D_ItemsStatic field | Trait table path | Stat labels emitted |
-|---|---|---|
-| `ToolDamage` | `Tools/D_ToolDamage.json` | Melee Damage, Felling Damage, Felling Efficiency, Mining Efficiency |
-| `Durable` | `Traits/D_Durable.json` | Durability (`Max_Durability`) |
-| `Armour` | `Traits/D_Armour.json` | Damage Resistance %, Upgrade Slots, Oxygen/Water/Food Slots (`ArmourStats` sub-dict) |
-| `Consumable` | `Traits/D_Consumable.json` | Food/Health/Water/Oxygen/Stamina Recovery (`Stats` sub-dict) |
-| `Ballistic` | `Traits/D_Ballistic.json` | Projectile Damage, Break Chance |
-| `FirearmData` | `Tools/D_FirearmData.json` | Fire Rate (RPM), Mag Size, Reload Time (s) |
+| D_ItemsStatic field | Trait table path           | Stat labels emitted                                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------------------------------ |
+| `ToolDamage`        | `Tools/D_ToolDamage.json`  | Melee Damage, Felling Damage, Felling Efficiency, Mining Efficiency                  |
+| `Durable`           | `Traits/D_Durable.json`    | Durability (`Max_Durability`)                                                        |
+| `Armour`            | `Traits/D_Armour.json`     | Damage Resistance %, Upgrade Slots, Oxygen/Water/Food Slots (`ArmourStats` sub-dict) |
+| `Consumable`        | `Traits/D_Consumable.json` | Food/Health/Water/Oxygen/Stamina Recovery (`Stats` sub-dict)                         |
+| `Ballistic`         | `Traits/D_Ballistic.json`  | Projectile Damage, Break Chance                                                      |
+| `FirearmData`       | `Tools/D_FirearmData.json` | Fire Rate (RPM), Mag Size, Reload Time (s)                                           |
 
 The `ArmourStats` and `Stats` sub-dicts use Unreal UPROPERTYMAP keys like `(Value="BaseFoodRecovery_+")` — parsed by `_parse_unreal_stat_dict()`. Zero-valued stats are suppressed.
 
@@ -262,18 +263,18 @@ In `stage()`, a `workshop_costs_by_item_id` lookup is built from `gather_worksho
 
 Items are classified by their icon's folder path (`Item_Icons/<folder>/`). Key mappings:
 
-| Icon folder | Category |
-|-------------|----------|
-| `Fish/` | Fish (species: Fish_01 – Fish_17 variants) |
-| `Fishing/` | Attachments (fishing lures — they are rod attachments, NOT fish) |
-| `Carcasses/` | Carcasses by default; `*Trophy*` → Trophies; `*Serum*` → Husbandry |
-| `Voxels/` | Ores |
-| `Resources/` | Resources |
-| `Projectiles/` | Ammo |
-| `Modules/` | Suits & Modules |
-| `Weapons/` | Ranged (or Shields if `Shield` in item_id) |
-| `Buildables/` | Buildings |
-| `Armour/` | Armor (or Suits & Modules if `Module`/`Suit` in item_id) |
+| Icon folder    | Category                                                           |
+| -------------- | ------------------------------------------------------------------ |
+| `Fish/`        | Fish (species: Fish_01 – Fish_17 variants)                         |
+| `Fishing/`     | Attachments (fishing lures — they are rod attachments, NOT fish)   |
+| `Carcasses/`   | Carcasses by default; `*Trophy*` → Trophies; `*Serum*` → Husbandry |
+| `Voxels/`      | Ores                                                               |
+| `Resources/`   | Resources                                                          |
+| `Projectiles/` | Ammo                                                               |
+| `Modules/`     | Suits & Modules                                                    |
+| `Weapons/`     | Ranged (or Shields if `Shield` in item_id)                         |
+| `Buildables/`  | Buildings                                                          |
+| `Armour/`      | Armor (or Suits & Modules if `Module`/`Suit` in item_id)           |
 
 ### Feature Level Gating
 
@@ -283,18 +284,18 @@ All currently known `RequiredFeatureLevel` values (`Galileo`, `GreatHunts`, `Hom
 
 Each item in `item-index.json` (and the per-letter chunks) carries two optional fields:
 
-| Field | Source | Values |
-|---|---|---|
-| `requiredFeatureLevel` | `D_Itemable.Metadata.RequiredFeatureLevel.RowName` | `""`, `Galileo`, `GreatHunts`, `Homestead`, `Laika`, `NewFrontiers` |
-| `cosmeticPack` | `D_ItemsStatic.Manual_Tags.GameplayTags[].TagName` → `_TAG_TO_COSMETIC_PACK`, or Workshop item set | `""`, `ArtDeco`, `Industrial`, `Interior`, `Workshop` |
+| Field                  | Source                                                                                             | Values                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `requiredFeatureLevel` | `D_Itemable.Metadata.RequiredFeatureLevel.RowName`                                                 | `""`, `Galileo`, `GreatHunts`, `Homestead`, `Laika`, `NewFrontiers` |
+| `cosmeticPack`         | `D_ItemsStatic.Manual_Tags.GameplayTags[].TagName` → `_TAG_TO_COSMETIC_PACK`, or Workshop item set | `""`, `ArtDeco`, `Industrial`, `Interior`, `Workshop`               |
 
 **Badge rendering in `item-grid.tsx`:**
 
 Two badge lookup tables (`FL_BADGE`, `CP_BADGE`) map these values to PNG paths under `public/game-assets/`:
 
-| Badge type | Position | Style | Scope |
-|---|---|---|---|
-| `FL_BADGE` (top-left) | absolute top-0 left-0 | `brightness-0 invert` (white, no bg) | `GreatHunts`, `NewFrontiers` |
+| Badge type               | Position                 | Style                                              | Scope                                                     |
+| ------------------------ | ------------------------ | -------------------------------------------------- | --------------------------------------------------------- |
+| `FL_BADGE` (top-left)    | absolute top-0 left-0    | `brightness-0 invert` (white, no bg)               | `GreatHunts`, `NewFrontiers`                              |
 | `CP_BADGE` (bottom-left) | absolute bottom-0 left-0 | gold img, dark bg `#191919`, gold border `#f1ad1c` | `Homestead`, `Laika`, `ArtDeco`, `Industrial`, `Interior` |
 
 `CP_BADGE` is also keyed by `requiredFeatureLevel` for `Homestead` and `Laika`. Priority: `cosmeticPack` first, then fallback to `requiredFeatureLevel`.
@@ -366,7 +367,7 @@ export type IcarusItemDetail = {
   cosmeticPack?: string;
   description?: string;
   flavorText?: string;
-  weight?: number;              // grams
+  weight?: number; // grams
   maxStack?: number;
   stats?: Record<string, number | string>;
   tags?: string[];
@@ -389,7 +390,7 @@ export type WorkshopCostEntry = { currencyId: string; amount: number };
 export type WorkshopCurrencyDef = {
   displayName: string;
   iconPath: string;
-  color: string;      // CSS hex e.g. "#f8c944"
+  color: string; // CSS hex e.g. "#f8c944"
 };
 ```
 
@@ -443,11 +444,11 @@ Narrative T1→T2→T3→T4 walkthrough with interactive item chips and detail m
 
 **Static data — `PROGRESSION_STEPS: StepDef[]`** (3 entries):
 
-| Step | Gateway | `tierId` | Notes |
-|---|---|---|---|
-| T1→T2 | Crafting Bench (hand-crafted) | `"T2"` | Hardcoded ingredients |
-| T2→T3 | **Machining Bench** at Crafting_Bench | `"T3"` | `itemId: "Machining_Bench"` |
-| T3→T4 | Fabricator at Machining_Bench | `"T4"` | From `items/f.json` recipe |
+| Step  | Gateway                               | `tierId` | Notes                       |
+| ----- | ------------------------------------- | -------- | --------------------------- |
+| T1→T2 | Crafting Bench (hand-crafted)         | `"T2"`   | Hardcoded ingredients       |
+| T2→T3 | **Machining Bench** at Crafting_Bench | `"T3"`   | `itemId: "Machining_Bench"` |
+| T3→T4 | Fabricator at Machining_Bench         | `"T4"`   | From `items/f.json` recipe  |
 
 **Important `itemId` rules:**
 
@@ -487,3 +488,9 @@ Narrative T1→T2→T3→T4 walkthrough with interactive item chips and detail m
 npm run dev        # port 3002 (npm run dev:icarus from repo root)
 npm run build      # static export to out/
 ```
+
+## Workflow Rules
+
+- **After any code change to the icarus project, run `npm run build:icarus` and fix all errors before considering the task complete.**
+- The build command is run from the repo root: `npm run build:icarus`
+- Fix all TypeScript and webpack errors that appear — do not leave a broken build.
