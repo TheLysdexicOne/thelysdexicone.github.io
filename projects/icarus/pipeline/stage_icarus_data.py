@@ -62,7 +62,17 @@ _TAG_TO_COSMETIC_PACK: dict[str, str] = {
 }
 
 # DLC feature levels that are currently live (not filtered out)
-_KNOWN_FEATURE_LEVELS = {"", "Galileo", "GreatHunts", "Homestead", "Laika", "NewFrontiers"}
+_KNOWN_FEATURE_LEVELS = {"", "Galileo", "GreatHunts", "Homestead", "Laika", "NewFrontiers", "DangerousHorizons"}
+
+# Gateway item for each tier transition — minimal justified hardcode.
+# The gateway identity is game-design knowledge not extractable from data alone.
+# Format: tierId → (gateway_item_id, from_tier_label, to_tier_label)
+_TIER_GATEWAYS: dict[str, tuple[str, str, str]] = {
+    "T2": ("Crafting_Bench",      "Tier 1", "Tier 2"),
+    "T3": ("Kit_Machining_Bench", "Tier 2", "Tier 3"),
+    "T4": ("Fabricator",          "Tier 3", "Tier 4"),
+    "T5": ("Manufacturer",        "Tier 4", "Tier 5"),
+}
 
 # Talent trees that correspond to Tier 2 / 3 / 4
 _TIER_TREE_MAP: dict[str, str] = {
@@ -619,7 +629,90 @@ def gather_recipes(
 
 
 # ---------------------------------------------------------------------------
-# Stage 5: Workflow graph builder
+# Stage 5a: Natural (non-crafting) raw resource set
+# ---------------------------------------------------------------------------
+
+def build_raw_item_set(data_dir: Path) -> set[str]:
+    """
+    Build a set of item row names that can be obtained directly from the game
+    world without crafting (mining, harvesting, creature drops, fishing, etc.).
+
+    These items should be treated as terminal leaf nodes in workflow graphs even
+    when a crafting recipe that produces them also exists (e.g. Wood via
+    Frozen_Wood thaw should still be a raw material because trees give Wood).
+    """
+    def _load_rows(path: Path) -> dict[str, dict[str, Any]]:
+        with path.open("r", encoding="utf-8") as fh:
+            return {row["Name"]: row for row in json.load(fh).get("Rows", [])}
+
+    def _reward_item_names(reward_rows: dict[str, dict[str, Any]], row_name: str) -> list[str]:
+        if not row_name or row_name == "None":
+            return []
+        row = reward_rows.get(row_name)
+        if not row:
+            return []
+        return [
+            r["Item"]["RowName"]
+            for r in row.get("Rewards", [])
+            if r.get("Item", {}).get("RowName", "None") != "None"
+        ]
+
+    reward_rows = _load_rows(data_dir / "Items" / "D_ItemRewards.json")
+    raw: set[str] = set()
+
+    # 1) Mining voxels
+    for row in json.load((data_dir / "World" / "D_VoxelSetupData.json").open(encoding="utf-8")).get("Rows", []):
+        for field in ("ResourceType", "SecondaryResourceType", "PyriticCrustResourceType"):
+            name = row.get(field, {}).get("RowName", "None")
+            if name and name != "None":
+                raw.add(name)
+
+    # 2) Breakable rocks / deposits
+    for row in json.load((data_dir / "World" / "D_BreakableRockData.json").open(encoding="utf-8")).get("Rows", []):
+        raw.update(_reward_item_names(reward_rows, row.get("ItemReward", {}).get("RowName", "None")))
+        pc = row.get("PyriticCrustItemType", {}).get("RowName", "None")
+        if pc and pc != "None":
+            raw.add(pc)
+
+    # 2b) Drillable ore deposits / special deposits (e.g. Frozen_Wood)
+    for row in json.load((data_dir / "World" / "D_OreDeposit.json").open(encoding="utf-8")).get("Rows", []):
+        name = row.get("ResourceType", {}).get("RowName", "None")
+        if name and name != "None":
+            raw.add(name)
+
+    # 3) Foliage / harvestables (FLOD)
+    for row in json.load((data_dir / "FLOD" / "D_FLODDescriptions.json").open(encoding="utf-8")).get("Rows", []):
+        raw.update(_reward_item_names(reward_rows, row.get("ViewTraceActorItemRewards", {}).get("RowName", "None")))
+        direct = row.get("ViewTraceActorItemTemplate", {}).get("RowName", "None")
+        if direct and direct != "None":
+            raw.add(direct)
+
+    # 4) Farming crop harvest
+    for row in json.load((data_dir / "Farming" / "D_FarmingSeeds.json").open(encoding="utf-8")).get("Rows", []):
+        raw.update(_reward_item_names(reward_rows, row.get("CropRewards", {}).get("RowName", "None")))
+
+    # 5) Fish pickup
+    for row in json.load((data_dir / "World" / "D_FishSetup.json").open(encoding="utf-8")).get("Rows", []):
+        raw.update(_reward_item_names(reward_rows, row.get("ItemReward", {}).get("RowName", "None")))
+
+    # 6) Creature loot / skinning / trophies
+    for row in json.load((data_dir / "AI" / "D_AISetup.json").open(encoding="utf-8")).get("Rows", []):
+        for field in ("Loot", "Trophy", "Hitable"):
+            raw.update(_reward_item_names(reward_rows, row.get(field, {}).get("RowName", "None")))
+
+    # 7) Generic tree reward rows (hardcoded — game blueprint links not in exported data)
+    for tree_row in (
+        "Generic_Tree_Root", "Generic_Tree_Trunk", "Generic_Tree_Trunk_Dense",
+        "Generic_Tree_Stick", "Generic_Tree_Burnt", "TreePrimitive",
+    ):
+        raw.update(_reward_item_names(reward_rows, tree_row))
+
+    raw.discard("None")
+    return raw
+
+
+# ---------------------------------------------------------------------------
+# Stage 5b: Workflow graph builder
 # ---------------------------------------------------------------------------
 
 def build_workflow_graph(
@@ -627,6 +720,7 @@ def build_workflow_graph(
     recipe: dict[str, Any],
     all_recipes: dict[str, list[dict[str, Any]]],
     output_count: int = 1,
+    raw_item_set: set[str] | None = None,
 ) -> dict[str, Any]:
     """
     Build a DAG showing the full crafting dependency tree for one recipe.
@@ -683,8 +777,10 @@ def build_workflow_graph(
         visited.add(item_id)
 
         child_recipes = all_recipes.get(item_id, [])
-        if not child_recipes:
-            # Leaf / raw material
+        is_natural_raw = raw_item_set is not None and item_id in raw_item_set
+        if not child_recipes or is_natural_raw:
+            # Leaf / raw material — either has no recipe or is directly
+            # obtainable from the world (mining, harvesting, creature drops…)
             raw_mats[item_id] = raw_mats.get(item_id, 0) + count_needed
         else:
             # Use first recipe
@@ -806,10 +902,13 @@ def gather_workshop_data(
         r = color_obj.get("R", 0)
         g = color_obj.get("G", 0)
         b = color_obj.get("B", 0)
+        raw_name = parse_nsloctext(row.get("DisplayName", "")) or cur_id
+        colored_ap = ap.replace(".webp", "_tinted.webp") if ap else ""
         currencies[cur_id] = {
-            "displayName": parse_nsloctext(row.get("DisplayName", "")) or cur_id,
-            "iconPath":    ap,
-            "color":       f"#{r:02x}{g:02x}{b:02x}",
+            "displayName":    re.sub(r"^\[DNT\]\s*", "", raw_name),
+            "iconPath":       ap,
+            "coloredIconPath": colored_ap,
+            "color":          f"#{r:02x}{g:02x}{b:02x}",
         }
 
     # Build items list
@@ -958,6 +1057,87 @@ def build_tier_sections(
 
 
 # ---------------------------------------------------------------------------
+# Stage 9b: Build tier progression
+# ---------------------------------------------------------------------------
+
+def build_tier_progression(
+    chunks: dict[str, dict[str, Any]],
+    stations: list[dict[str, Any]],
+    raw_item_set: set[str] | None = None,
+) -> list[dict[str, Any]]:
+    """Build data-driven tier-progression steps from _TIER_GATEWAYS."""
+    # Flatten all letter-chunks into a single item lookup
+    all_items: dict[str, Any] = {}
+    for chunk in chunks.values():
+        all_items.update(chunk)
+
+    station_map: dict[str, dict[str, Any]] = {s["id"]: s for s in stations}
+
+    result: list[dict[str, Any]] = []
+    for tier_id, (gateway_item_id, from_tier, to_tier) in _TIER_GATEWAYS.items():
+        gateway_detail = all_items.get(gateway_item_id)
+        if not gateway_detail or not gateway_detail.get("recipes"):
+            continue
+
+        gateway_recipe = gateway_detail["recipes"][0]
+        raw_station_ids: list[str] = gateway_recipe.get("stationIds", [])
+        gateway_station_id: str | None = (
+            None
+            if not raw_station_ids or raw_station_ids[0] == "Character"
+            else raw_station_ids[0]
+        )
+
+        ingredients: list[dict[str, Any]] = []
+        prereq_station_ids: list[str] = []
+
+        for inp in gateway_recipe.get("inputs", []):
+            if inp.get("kind") != "item":
+                continue
+            ing_id = inp["itemId"]
+            ing_detail = all_items.get(ing_id)
+            ing_name = (ing_detail or {}).get("displayName") or ing_id
+            ing_station_id: str | None = None
+            is_raw_ingredient = raw_item_set is not None and ing_id in raw_item_set
+            if ing_detail and ing_detail.get("recipes") and not is_raw_ingredient:
+                ing_sids: list[str] = ing_detail["recipes"][0].get("stationIds", [])
+                if ing_sids and ing_sids[0] != "Character":
+                    ing_station_id = ing_sids[0]
+                    if ing_station_id not in prereq_station_ids:
+                        prereq_station_ids.append(ing_station_id)
+            ingredients.append({
+                "itemId":      ing_id,
+                "displayName": ing_name,
+                "count":       inp["count"],
+                "stationId":   ing_station_id,
+            })
+
+        prerequisites: list[dict[str, Any]] = []
+        for sid in prereq_station_ids:
+            st = station_map.get(sid)
+            if st:
+                prerequisites.append({
+                    "stationId":    sid,
+                    "displayName":  st["name"],
+                    "iconAssetPath": st["icon"]["assetPath"],
+                })
+
+        result.append({
+            "tierId":   tier_id,
+            "fromTier": from_tier,
+            "toTier":   to_tier,
+            "gateway": {
+                "itemId":      gateway_item_id,
+                "displayName": gateway_detail["displayName"],
+                "stationId":   gateway_station_id,
+            },
+            "ingredients":   ingredients,
+            "prerequisites": prerequisites,
+        })
+
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Stage 10: Build outputs
 # ---------------------------------------------------------------------------
 
@@ -1096,6 +1276,7 @@ def build_item_chunks(
     stat_tables: dict[str, tuple[str, dict[str, Any]]],
     workshop_costs_by_item: dict[str, dict[str, Any] | None],
     workshop_ids: set[str],
+    raw_item_set: set[str] | None = None,
 ) -> dict[str, dict[str, Any]]:
     """
     Returns {letter: {item_id: IcarusItemDetail}} for writing as items/{letter}.json.
@@ -1117,7 +1298,7 @@ def build_item_chunks(
         item_recipes = recipes.get(item_id, [])
         built_recipes: list[dict[str, Any]] = []
         for rec in item_recipes:
-            wf = build_workflow_graph(item_id, rec, recipes, rec["outputs"][0]["count"] if rec["outputs"] else 1)
+            wf = build_workflow_graph(item_id, rec, recipes, rec["outputs"][0]["count"] if rec["outputs"] else 1, raw_item_set)
             built_rec = dict(rec)
             built_rec["workflow"] = wf
             built_recipes.append(built_rec)
@@ -1163,6 +1344,47 @@ def build_item_chunks(
 # ---------------------------------------------------------------------------
 # Stage 11: Asset mirroring
 # ---------------------------------------------------------------------------
+
+def mirror_colored_currency_icons(currencies: dict[str, dict[str, Any]]) -> None:
+    """
+    For each currency with a color and an iconPath, produce a pre-tinted WebP
+    saved at coloredIconPath.  The source PNG white icon is multiplied by the
+    currency color so the icon inherits that hue without any runtime CSS magic.
+    """
+    from PIL import Image  # type: ignore
+
+    for cur in currencies.values():
+        tinted_path = cur.get("coloredIconPath", "")
+        color_hex   = cur.get("color", "")
+        src_path    = cur.get("iconPath", "")
+        if not tinted_path or not src_path or not color_hex or len(color_hex) < 7:
+            continue
+
+        dest = ASSETS_DEST_DIR / tinted_path
+        src  = unreal_to_png_src(f"/Game/{src_path.replace('.webp', '.png')}")
+        if src is None or not src.is_file():
+            continue
+
+        # Regenerate if source is newer than the tinted output
+        if dest.is_file() and dest.stat().st_mtime >= src.stat().st_mtime:
+            continue
+
+        tr = int(color_hex[1:3], 16)
+        tg = int(color_hex[3:5], 16)
+        tb = int(color_hex[5:7], 16)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            with Image.open(src) as img:
+                img = img.convert("RGBA")
+                r_c, g_c, b_c, a_c = img.split()
+                r_out = r_c.point(lambda x, c=tr: x * c // 255)
+                g_out = g_c.point(lambda x, c=tg: x * c // 255)
+                b_out = b_c.point(lambda x, c=tb: x * c // 255)
+                tinted = Image.merge("RGBA", (r_out, g_out, b_out, a_c))
+                tinted.save(dest, "WEBP", quality=90, method=4)
+        except Exception as exc:
+            print(f"  WARNING: failed to tint {src}: {exc}", file=sys.stderr)
+
 
 def mirror_assets(all_asset_paths: set[str]) -> dict[str, Any]:
     """
@@ -1300,11 +1522,18 @@ def stage() -> None:
     print("Building query tags...")
     query_tags = build_query_tags(tag_query_rows)
 
+    print("Building raw item set...")
+    raw_item_set = build_raw_item_set(DATA_DIR)
+    print(f"  {len(raw_item_set)} naturally-obtainable items identified.")
+
     print("Building item chunks...")
     chunks = build_item_chunks(
         static_rows, itemable_lookup, recipes, stat_tables,
-        workshop_costs_by_item, workshop_ids
+        workshop_costs_by_item, workshop_ids, raw_item_set
     )
+
+    print("Building tier progression...")
+    tier_progression = build_tier_progression(chunks, stations, raw_item_set)
 
     # Collect all asset paths for mirroring
     all_asset_paths: set[str] = set()
@@ -1322,6 +1551,11 @@ def stage() -> None:
 
     _collect(stations)
     _collect(workshop_payload)
+    # Currency icon paths use "iconPath" not "assetPath" — collect explicitly
+    for cur in workshop_payload.get("currencies", {}).values():
+        ip = cur.get("iconPath", "")
+        if ip and ip.endswith(".webp"):
+            all_asset_paths.add(ip)
     _collect(item_lookup)
     _collect(item_index)
     _collect(categories)
@@ -1329,6 +1563,14 @@ def stage() -> None:
     _collect(query_tags)
     for chunk in chunks.values():
         _collect(chunk)
+
+    # Always mirror feature-level badge icons even if not referenced by an item
+    _PINNED_WEBP_PATHS = [
+        "Assets/2DArt/UI/Icons/T_FeatureLevelIcon_NewFrontiers3.webp",
+        "Assets/2DArt/UI/Icons/FeatureLevel/T_FeatureLevel_GH.webp",
+        "Assets/2DArt/UI/Icons/FeatureLevel/T_FeatureLevel_DH.webp",
+    ]
+    all_asset_paths.update(_PINNED_WEBP_PATHS)
 
     # Write outputs
     print("Writing JSON outputs...")
@@ -1342,8 +1584,10 @@ def stage() -> None:
     _write("item-lookup.json",    item_lookup)
     _write("item-index.json",     item_index)
     _write("categories.json",     categories)
-    _write("tier-sections.json",  tier_sections)
-    _write("query-tags.json",     query_tags)
+    _write("tier-sections.json",    tier_sections)
+    _write("tier-progression.json", tier_progression)
+    _write("query-tags.json",       query_tags)
+    _write("raw-resources.json",    sorted(raw_item_set))
 
     items_dir = OUT_DIR / "items"
     items_dir.mkdir(exist_ok=True)
@@ -1384,6 +1628,7 @@ def stage() -> None:
 
     print("Mirroring assets (PNG → WebP)...")
     report = mirror_assets(all_asset_paths)
+    mirror_colored_currency_icons(workshop_payload.get("currencies", {}))
 
     print(
         f"\nItems: {len(item_index)} | "

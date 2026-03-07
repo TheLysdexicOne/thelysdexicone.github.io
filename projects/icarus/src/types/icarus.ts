@@ -167,7 +167,7 @@ export type IcarusTierEntry = {
 };
 
 export type IcarusTierSection = {
-  id: 'T2' | 'T3' | 'T4';
+  id: 'T2' | 'T3' | 'T4' | 'T5';
   name: string;
   entryCount: number;
   entries: IcarusTierEntry[];
@@ -180,6 +180,8 @@ export type WorkshopCurrencyDef = {
   displayName: string;
   /** Asset path relative to game-assets root (empty if no icon). */
   iconPath: string;
+  /** Pre-tinted copy of iconPath colored to match the currency color. */
+  coloredIconPath?: string;
   /** Game-native color as a CSS hex string, e.g. "#f8c944". */
   color: string;
 };
@@ -214,3 +216,53 @@ export type WorkshopData = {
   currencies: Record<string, WorkshopCurrencyDef>;
   items: WorkshopItem[];
 };
+
+// ── Tier progression types ────────────────────────────────────────────────────
+
+/** One ingredient required to craft the gateway bench for a tier. */
+export type TierProgressionIngredient = {
+  itemId: string;
+  displayName: string;
+  count: number;
+  /** Station where this ingredient is crafted, or null if hand-gathered. */
+  stationId: string | null;
+};
+
+/** A prerequisite station that must exist to gather gateway ingredients. */
+export type TierProgressionPrerequisite = {
+  stationId: string;
+  displayName: string;
+  iconAssetPath: string;
+};
+
+/** The gateway bench (item) that unlocks a new tier. */
+export type TierProgressionGateway = {
+  itemId: string;
+  displayName: string;
+  /** Station where the gateway is crafted, or null if hand-crafted. */
+  stationId: string | null;
+};
+
+/**
+ * One step in the tier progression ladder (e.g. Tier 1 → Tier 2).
+ * Sourced from public/data/<version>/tier-progression.json.
+ */
+export type TierProgressionStep = {
+  tierId: string;
+  fromTier: string;
+  toTier: string;
+  gateway: TierProgressionGateway;
+  ingredients: TierProgressionIngredient[];
+  prerequisites: TierProgressionPrerequisite[];
+};
+
+/**
+ * Contents of raw-resources.json — a sorted list of item row names that can be
+ * obtained directly from the game world (mining, harvesting, creature drops,
+ * fishing, farm crops, tree chopping) without any crafting station.
+ *
+ * These are the terminal leaf nodes in any crafting dependency graph: an item
+ * on this list is treated as "raw" even when a crafting recipe that produces it
+ * also exists.
+ */
+export type RawResourcesData = string[];

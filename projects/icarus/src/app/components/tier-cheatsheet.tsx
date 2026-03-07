@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import ItemDetailPanel, { toAssetUrl } from "./item-detail-panel";
+import ItemModal from "./item-modal";
 import type {
   IcarusItemDetail,
   IcarusItemLookupMap,
@@ -9,174 +10,13 @@ import type {
   IcarusQueryTag,
   IcarusStation,
   IcarusTierSection,
+  TierProgressionStep,
   WorkshopCurrencyDef,
 } from "@/types/icarus";
 
 import { DATA_VERSION } from "@/lib/data-version";
 
 const ICARUS_BASE_PATH = "/icarus";
-
-// ── Local types ──────────────────────────────────────────────────────────────
-
-type IngredientDef = {
-  itemId: string;
-  displayName: string;
-  count: number;
-  /** Station that crafts this ingredient (for the badge). */
-  stationId?: string;
-};
-
-type PrerequisiteDef = {
-  itemId: string;
-  displayName: string;
-  /** Station key matching ingredient.stationId — used to group this bench's ingredients. */
-  stationId: string;
-};
-
-type StepDef = {
-  from: string;
-  to: string;
-  tierId: "T2" | "T3" | "T4";
-  gateway: {
-    itemId: string;
-    displayName: string;
-    /** Station where the gateway bench is crafted (null = hand-crafted). */
-    stationId: string | null;
-  };
-  ingredients: IngredientDef[];
-  prerequisites: PrerequisiteDef[];
-};
-
-// ── Static progression data ──────────────────────────────────────────────────
-
-const PROGRESSION_STEPS: StepDef[] = [
-  {
-    from: "Tier 1",
-    to: "Tier 2",
-    tierId: "T2",
-    gateway: {
-      itemId: "Crafting_Bench",
-      displayName: "Crafting Bench",
-      stationId: null,
-    },
-    ingredients: [
-      { itemId: "Fiber", displayName: "Fiber", count: 60 },
-      { itemId: "Wood", displayName: "Wood", count: 50 },
-      { itemId: "Stone", displayName: "Stone", count: 12 },
-      { itemId: "Leather", displayName: "Leather", count: 20 },
-    ],
-    prerequisites: [],
-  },
-  {
-    from: "Tier 2",
-    to: "Tier 3",
-    tierId: "T3",
-    gateway: {
-      itemId: "Kit_Machining_Bench",
-      displayName: "Machining Bench",
-      stationId: "Crafting_Bench",
-    },
-    ingredients: [
-      { itemId: "Wood", displayName: "Wood", count: 20 },
-      { itemId: "Stone", displayName: "Stone", count: 12 },
-      {
-        itemId: "Iron_Nail",
-        displayName: "Iron Nail",
-        count: 120,
-        stationId: "Anvil_Bench",
-      },
-      {
-        itemId: "Refined_Metal",
-        displayName: "Iron Ingot",
-        count: 40,
-        stationId: "Stone_Furnace",
-      },
-      {
-        itemId: "Epoxy",
-        displayName: "Epoxy",
-        count: 10,
-        stationId: "Mortar_And_Pestle",
-      },
-      {
-        itemId: "Rope",
-        displayName: "Rope",
-        count: 24,
-        stationId: "Crafting_Bench",
-      },
-    ],
-    prerequisites: [
-      {
-        itemId: "Anvil_Bench",
-        displayName: "Anvil Bench",
-        stationId: "Anvil_Bench",
-      },
-      {
-        itemId: "Stone_Furnace",
-        displayName: "Stone Furnace",
-        stationId: "Stone_Furnace",
-      },
-      {
-        itemId: "Kit_Mortar_And_Pestle",
-        displayName: "Mortar & Pestle",
-        stationId: "Mortar_And_Pestle",
-      },
-    ],
-  },
-  {
-    from: "Tier 3",
-    to: "Tier 4",
-    tierId: "T4",
-    gateway: {
-      itemId: "Fabricator",
-      displayName: "Fabricator",
-      stationId: "Machining_Bench",
-    },
-    ingredients: [
-      {
-        itemId: "Aluminium",
-        displayName: "Aluminium Ingot",
-        count: 40,
-        stationId: "Electric_Furnace",
-      },
-      {
-        itemId: "Electronics",
-        displayName: "Electronics",
-        count: 30,
-        stationId: "Machining_Bench",
-      },
-      {
-        itemId: "Concrete_Mix",
-        displayName: "Concrete Mix",
-        count: 30,
-        stationId: "Cement_Mixer",
-      },
-      {
-        itemId: "Carbon_Fiber",
-        displayName: "Carbon Fiber",
-        count: 8,
-        stationId: "Electric_Furnace",
-      },
-      {
-        itemId: "Steel_Screw",
-        displayName: "Steel Screw",
-        count: 30,
-        stationId: "Machining_Bench",
-      },
-    ],
-    prerequisites: [
-      {
-        itemId: "Electric_Furnace",
-        displayName: "Electric Furnace",
-        stationId: "Electric_Furnace",
-      },
-      {
-        itemId: "Cement_Mixer",
-        displayName: "Cement Mixer",
-        stationId: "Cement_Mixer",
-      },
-    ],
-  },
-];
 
 // ── Helper ───────────────────────────────────────────────────────────────────
 
@@ -355,109 +195,10 @@ function IngredientChip({
   );
 }
 
-// ── ItemModal ────────────────────────────────────────────────────────────────
-
-type ModalProps = {
-  itemId: string;
-  detail: IcarusItemDetail | null;
-  anchorRect: DOMRect;
-  stationById: Map<string, IcarusStation>;
-  queryTagById: Map<string, IcarusQueryTag>;
-  itemLookup: IcarusItemLookupMap;
-  workshopCurrencies: Record<string, WorkshopCurrencyDef>;
-  onClose: () => void;
-};
-
-function ItemModal({
-  detail,
-  anchorRect,
-  stationById,
-  queryTagById,
-  itemLookup,
-  workshopCurrencies,
-  onClose,
-}: ModalProps) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-  const [recipeIndex, setRecipeIndex] = useState(0);
-
-  // Zoom-from-icon: compute transformOrigin then reveal
-  useEffect(() => {
-    const card = cardRef.current;
-    if (card) {
-      const cardRect = card.getBoundingClientRect();
-      const ox = anchorRect.left + anchorRect.width / 2 - cardRect.left;
-      const oy = anchorRect.top + anchorRect.height / 2 - cardRect.top;
-      card.style.transformOrigin = `${ox}px ${oy}px`;
-    }
-    const id = requestAnimationFrame(() => setVisible(true));
-    return () => cancelAnimationFrame(id);
-  }, [anchorRect]);
-
-  // Escape to close
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") onClose();
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
-
-  return (
-    <div
-      className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-200${visible ? " opacity-100" : " opacity-0"}`}
-      onClick={onClose}
-    >
-      {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-
-      {/* Modal card */}
-      <div
-        ref={cardRef}
-        onClick={(e) => e.stopPropagation()}
-        className={`relative z-10 w-full max-w-2xl overflow-y-auto rounded-xl border-2 border-highlight bg-nav shadow-2xl transition-all duration-200${visible ? " scale-100 opacity-100" : " scale-75 opacity-0"}`}
-        style={{ maxHeight: "90vh" }}
-      >
-        {/* Header bar */}
-        <div className="flex items-center justify-between border-b border-primary px-4 py-3">
-          <span className="font-pixel text-sm tracking-wide text-primary">
-            Item Detail
-          </span>
-          <button
-            onClick={onClose}
-            className="rounded p-1 text-secondary transition-colors hover:text-primary"
-            aria-label="Close"
-          >
-            ✕
-          </button>
-        </div>
-
-        <div className="p-4">
-          {detail == null ? (
-            <p className="py-8 text-center text-sm text-secondary opacity-60">
-              Loading…
-            </p>
-          ) : (
-            <ItemDetailPanel
-              detail={detail}
-              selectedRecipeIndex={recipeIndex}
-              onRecipeSelect={setRecipeIndex}
-              stationById={stationById}
-              queryTagById={queryTagById}
-              itemLookup={itemLookup}
-              workshopCurrencies={workshopCurrencies}
-            />
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 // ── ProgressionStep ──────────────────────────────────────────────────────────
 
 type ProgressionStepProps = {
-  step: StepDef;
+  step: TierProgressionStep;
   tierSection: IcarusTierSection | undefined;
   stationById: Map<string, IcarusStation>;
   itemLookup: IcarusItemLookupMap;
@@ -484,7 +225,7 @@ function ProgressionStep({
           {/* Left: label + bench hero */}
           <div className="shrink-0">
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-secondary opacity-70">
-              {step.to} Crafting Bench
+              {step.toTier} Crafting Bench
             </p>
             <IngredientChip
               itemId={step.gateway.itemId}
@@ -508,7 +249,7 @@ function ProgressionStep({
                   itemId={ing.itemId}
                   displayName={ing.displayName}
                   count={ing.count}
-                  stationId={ing.stationId}
+                  stationId={ing.stationId ?? undefined}
                   stationById={stationById}
                   itemLookup={itemLookup}
                   onClick={onSelect}
@@ -535,13 +276,14 @@ function ProgressionStep({
               );
               return (
                 <div
-                  key={prereq.itemId}
+                  key={prereq.stationId}
                   className="flex flex-row items-center gap-2 rounded border border-primary bg-card p-2 sm:flex-1 sm:flex-col sm:items-center sm:gap-3 sm:p-3"
                 >
                   {/* Bench chip */}
                   <IngredientChip
-                    itemId={prereq.itemId}
+                    itemId={prereq.stationId}
                     displayName={prereq.displayName}
+                    iconAssetPath={prereq.iconAssetPath}
                     stationById={stationById}
                     itemLookup={itemLookup}
                     onClick={onSelect}
@@ -559,6 +301,7 @@ function ProgressionStep({
                         itemId={ing.itemId}
                         displayName={ing.displayName}
                         count={ing.count}
+                        stationId={ing.stationId ?? undefined}
                         stationById={stationById}
                         itemLookup={itemLookup}
                         onClick={onSelect}
@@ -577,13 +320,13 @@ function ProgressionStep({
       {benchesUnlocked.length > 0 && (
         <div className="mt-4">
           <h4 className="text-sm font-semibold uppercase tracking-wider text-secondary opacity-70">
-            Benches Unlocked in {step.to}
+            Benches Unlocked in {step.toTier}
           </h4>
           <div className="mt-2 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3">
             {benchesUnlocked.map((entry) => (
               <IngredientChip
                 key={entry.id}
-                itemId={entry.itemableRef}
+                itemId={entry.itemableRef.replace(/^Item_/, "")}
                 displayName={stationById.get(entry.id)?.name ?? entry.name}
                 iconAssetPath={stationById.get(entry.id)?.icon.assetPath}
                 stationById={stationById}
@@ -611,7 +354,7 @@ function ProgressionStep({
     <article className="rounded-lg border-2 border-primary bg-nav p-4 sm:p-6">
       {/* Step header */}
       <h3 className="font-pixel text-lg tracking-wide text-primary sm:text-2xl">
-        {step.from} → {step.to}
+        {step.fromTier} → {step.toTier}
       </h3>
       {content}
     </article>
@@ -622,6 +365,7 @@ function ProgressionStep({
 
 export default function TierCheatsheet() {
   const [tiers, setTiers] = useState<IcarusTierSection[]>([]);
+  const [progression, setProgression] = useState<TierProgressionStep[]>([]);
   const [itemLookup, setItemLookup] = useState<IcarusItemLookupMap>({});
   const [stationById, setStationById] = useState<Map<string, IcarusStation>>(
     new Map(),
@@ -653,32 +397,43 @@ export default function TierCheatsheet() {
 
     Promise.all([
       fetch(`${base}/tier-sections.json`).then((r) => r.json()),
+      fetch(`${base}/tier-progression.json`).then((r) => r.json()),
       fetch(`${base}/item-lookup.json`).then((r) => r.json()),
       fetch(`${base}/stations.json`).then((r) => r.json()),
       fetch(`${base}/query-tags.json`).then((r) => r.json()),
       fetch(`${base}/workshop-items.json`).then((r) => r.json()),
     ])
-      .then(([tiersData, lookupData, stationsData, tagsData, workshopData]) => {
-        setTiers(tiersData as IcarusTierSection[]);
-        setItemLookup(lookupData as IcarusItemLookupMap);
+      .then(
+        ([
+          tiersData,
+          progressionData,
+          lookupData,
+          stationsData,
+          tagsData,
+          workshopData,
+        ]) => {
+          setTiers(tiersData as IcarusTierSection[]);
+          setProgression(progressionData as TierProgressionStep[]);
+          setItemLookup(lookupData as IcarusItemLookupMap);
 
-        const stationMap = new Map<string, IcarusStation>();
-        for (const s of stationsData as IcarusStation[]) {
-          stationMap.set(s.id, s);
-        }
-        setStationById(stationMap);
+          const stationMap = new Map<string, IcarusStation>();
+          for (const s of stationsData as IcarusStation[]) {
+            stationMap.set(s.id, s);
+          }
+          setStationById(stationMap);
 
-        const tagMap = new Map<string, IcarusQueryTag>();
-        for (const t of tagsData as IcarusQueryTag[]) {
-          tagMap.set(t.id, t);
-        }
-        setQueryTagById(tagMap);
+          const tagMap = new Map<string, IcarusQueryTag>();
+          for (const t of tagsData as IcarusQueryTag[]) {
+            tagMap.set(t.id, t);
+          }
+          setQueryTagById(tagMap);
 
-        const currencies = (
-          workshopData as { currencies: Record<string, WorkshopCurrencyDef> }
-        ).currencies;
-        setWorkshopCurrencies(currencies ?? {});
-      })
+          const currencies = (
+            workshopData as { currencies: Record<string, WorkshopCurrencyDef> }
+          ).currencies;
+          setWorkshopCurrencies(currencies ?? {});
+        },
+      )
       .finally(() => setIsLoading(false));
   }, []);
 
@@ -724,13 +479,13 @@ export default function TierCheatsheet() {
             Tier Progression Guide
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-secondary">
-            The fastest path from T1 to T4 &mdash; which benches to build first
+            The fastest path from T1 to T5 &mdash; which benches to build first
             and exactly what you need to craft them. Click any item to see its
             full details.
           </p>
 
           <div className="mt-6 space-y-6">
-            {PROGRESSION_STEPS.map((step) => (
+            {progression.map((step) => (
               <ProgressionStep
                 key={step.tierId}
                 step={step}

@@ -47,8 +47,7 @@ export default function ItemDetailPanel({
     detail.weight != null ||
     detail.maxStack != null;
 
-  const hasStats =
-    detail.stats != null && Object.keys(detail.stats).length > 0;
+  const hasStats = detail.stats != null && Object.keys(detail.stats).length > 0;
 
   const hasWorkshopCosts =
     detail.workshopCosts != null &&
@@ -113,7 +112,10 @@ export default function ItemDetailPanel({
           <h4 className="mb-2 text-sm font-bold text-primary">Stats</h4>
           <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
             {Object.entries(detail.stats!).map(([label, val]) => (
-              <div key={label} className="flex items-center justify-between gap-2">
+              <div
+                key={label}
+                className="flex items-center justify-between gap-2"
+              >
                 <span className="text-secondary opacity-80">{label}</span>
                 <span className="font-medium text-primary">
                   {typeof val === "number"
@@ -144,21 +146,19 @@ export default function ItemDetailPanel({
                   return (
                     <span
                       key={entry.currencyId}
+                      title={cur?.displayName ?? entry.currencyId}
                       className="inline-flex items-center gap-1 rounded border border-primary bg-main px-2 py-1 text-xs text-secondary"
                     >
                       {cur?.iconPath && (
                         <img
-                          src={toAssetUrl(cur.iconPath)}
-                          alt={cur.displayName}
+                          src={toAssetUrl(cur.coloredIconPath || cur.iconPath)}
+                          alt={cur.displayName ?? entry.currencyId}
                           className="h-4 w-4 object-contain"
                           loading="lazy"
                         />
                       )}
                       <span className="font-medium text-primary">
                         {entry.amount.toLocaleString()}
-                      </span>
-                      <span className="opacity-70">
-                        {cur?.displayName ?? entry.currencyId}
                       </span>
                     </span>
                   );
@@ -178,21 +178,19 @@ export default function ItemDetailPanel({
                   return (
                     <span
                       key={entry.currencyId}
+                      title={cur?.displayName ?? entry.currencyId}
                       className="inline-flex items-center gap-1 rounded border border-primary bg-main px-2 py-1 text-xs text-secondary"
                     >
                       {cur?.iconPath && (
                         <img
-                          src={toAssetUrl(cur.iconPath)}
-                          alt={cur.displayName}
+                          src={toAssetUrl(cur.coloredIconPath || cur.iconPath)}
+                          alt={cur.displayName ?? entry.currencyId}
                           className="h-4 w-4 object-contain"
                           loading="lazy"
                         />
                       )}
                       <span className="font-medium text-primary">
                         {entry.amount.toLocaleString()}
-                      </span>
-                      <span className="opacity-70">
-                        {cur?.displayName ?? entry.currencyId}
                       </span>
                     </span>
                   );
@@ -229,7 +227,9 @@ export default function ItemDetailPanel({
           {/* Station + power badges */}
           <div className="flex flex-wrap items-center gap-2">
             {recipe.stationIds.length === 0 ? (
-              <span className="text-xs text-secondary">No station required</span>
+              <span className="text-xs text-secondary">
+                No station required
+              </span>
             ) : (
               recipe.stationIds.map((sid) => {
                 const station = stationById.get(sid);

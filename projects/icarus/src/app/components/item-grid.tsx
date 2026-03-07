@@ -17,6 +17,9 @@ const FL_BADGE: Record<string, string> = {
   GreatHunts: toAssetUrl(
     "Assets/2DArt/UI/Icons/FeatureLevel/T_FeatureLevel_GH.webp",
   ),
+  DangerousHorizons: toAssetUrl(
+    "Assets/2DArt/UI/Icons/FeatureLevel/T_FeatureLevel_DH.webp",
+  ),
 };
 
 /**
