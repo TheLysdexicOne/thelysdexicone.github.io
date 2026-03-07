@@ -1,0 +1,786 @@
+{
+  "Jerrycan": {
+    "itemId": "Jerrycan",
+    "displayName": "Biofuel Can",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_JerryCan.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Jerrycan",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 25
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Jerrycan",
+            "itemName": "Biofuel Can",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 50
+            }
+          ],
+          "nodes": [
+            "Jerrycan",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Jerrycan",
+              "count": 25,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Canister for biofuel storage, which can be filled at a composter.",
+    "flavorText": null,
+    "weight": 3000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.ResourceNetwork",
+      "Item.Deployable.ResourceStorage.Biofuel",
+      "Item.Fillable.Biofuel",
+      "Item.Fuel.Biofuel",
+      "Traits.Actionable",
+      "Traits.Combustible",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Jerrycan_Full": {
+    "itemId": "Jerrycan_Full",
+    "displayName": "Biofuel Can",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_JerryCan.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Canister for biofuel storage, which can be filled at a composter.",
+    "flavorText": null,
+    "weight": 3000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.ResourceNetwork",
+      "Item.Deployable.ResourceStorage.Biofuel",
+      "Item.Fillable.Biofuel",
+      "Item.Fuel.Biofuel",
+      "Traits.Actionable",
+      "Traits.Combustible",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Trophy": {
+    "itemId": "Jaguar_Trophy",
+    "displayName": "Jaguar Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Jaguar_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Jaguar_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Jaguar_Head",
+            "itemName": "Jaguar Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Jaguar_Trophy",
+            "itemName": "Jaguar Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Jaguar_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Jaguar_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Jaguar_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Jaguar_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted jaguar head.",
+    "flavorText": "This animal challenged, and lost.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Black_Trophy": {
+    "itemId": "Jaguar_Black_Trophy",
+    "displayName": "Black Jaguar Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Jaguar_Black_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Jaguar_Black_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Jaguar_Black_Head",
+            "itemName": "Black Jaguar Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Jaguar_Black_Trophy",
+            "itemName": "Black Jaguar Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Jaguar_Black_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Jaguar_Black_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Jaguar_Black_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Jaguar_Black_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted jaguar head.",
+    "flavorText": "This animal challenged, and lost.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Head": {
+    "itemId": "Jaguar_Head",
+    "displayName": "Jaguar Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_Jaguar_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Jaguar.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Uncommon",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Black_Head": {
+    "itemId": "Jaguar_Black_Head",
+    "displayName": "Black Jaguar Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_Jaguar_Black_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Black Jaguar.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Uncommon",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Jaguar_Statue_Bronze": {
+    "itemId": "Jaguar_Statue_Bronze",
+    "displayName": "Bronze Jaguar Statue",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Jaguar_Statue_Bronze.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Jaguar_Statue_Bronze",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Rustic_Decorations_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Copper",
+            "itemName": "Copper Ingot",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Condensed_Enzymes",
+            "itemName": "Condensed Enzymes",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Jaguar_Statue_Bronze",
+            "itemName": "Bronze Jaguar Statue",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Condensed_Exotic",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Jaguar_Statue_Bronze",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Condensed_Enzymes",
+            "Condensed_Exotic"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Copper",
+              "to": "Jaguar_Statue_Bronze",
+              "count": 5,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Condensed_Enzymes",
+              "to": "Jaguar_Statue_Bronze",
+              "count": 1,
+              "recipeId": "Process_Condensed_Exotic"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A trophy worthy of celebration.",
+    "flavorText": null,
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Item.Decoration.Statue",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Jerry_Can_Water": {
+    "itemId": "Jerry_Can_Water",
+    "displayName": "Water Can",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Jerry_Can_Water.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Jerry_Can_Water",
+        "requiredMillijoules": 7500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 50
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Jerry_Can_Water",
+            "itemName": "Water Can",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 800
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 100
+            }
+          ],
+          "nodes": [
+            "Jerry_Can_Water",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Epoxy",
+              "to": "Jerry_Can_Water",
+              "count": 50,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Large bulky water can, useful for travelling.",
+    "flavorText": "Can also be used as weights in Defence Force Training.",
+    "weight": 3000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Equipment",
+      "Item.Fillable.Water.NoShow",
+      "Item.Utility",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Juvenile_Rock_Golem_Trophy": {
+    "itemId": "Juvenile_Rock_Golem_Trophy",
+    "displayName": "Quarrite Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Juvenile_Rock_Golem_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Juvenile_Rock_Golem_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Rock_Golem_Juvenile_Head",
+            "itemName": "Quarrite Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Juvenile_Rock_Golem_Trophy",
+            "itemName": "Quarrite Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Rock_Golem_Juvenile_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Juvenile_Rock_Golem_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Rock_Golem_Juvenile_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Juvenile_Rock_Golem_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A mounted Young Quarrite head.",
+    "flavorText": "How did you stuff a creature made of rock?",
+    "weight": 4000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Juvenile_Ape_Trophy": {
+    "itemId": "Juvenile_Ape_Trophy",
+    "displayName": "Garganutan Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Juvenile_Ape_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Juvenile_Ape_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Juvenile_Ape_Head",
+            "itemName": "Garganutan Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Juvenile_Ape_Trophy",
+            "itemName": "Garganutan Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Juvenile_Ape_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Juvenile_Ape_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Juvenile_Ape_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Juvenile_Ape_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A mounted Garganutan Jr head.",
+    "flavorText": "Not the greatest ape, but a menacing decoration.",
+    "weight": 4000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Juvenile_Ape_Head": {
+    "itemId": "Juvenile_Ape_Head",
+    "displayName": "Garganutan Vestige",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AnimalCarcass_Ape_Juvenile.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a beast.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Rare",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  }
+}

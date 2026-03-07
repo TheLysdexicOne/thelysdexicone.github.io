@@ -1,0 +1,5952 @@
+{
+  "Ammo_Rifle_Round": {
+    "itemId": "Ammo_Rifle_Round",
+    "displayName": "7.62mm Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Round",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Casing",
+            "itemName": "Ammo Casing",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 2
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 6
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      },
+      {
+        "recipeId": "Bulk_Rifle_Round",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Casing",
+            "itemName": "Ammo Casing",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 2
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 6
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 5,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 10,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard NATO 7.62mm ammunition.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Buckshot": {
+    "itemId": "Ammo_Shell_Buckshot",
+    "displayName": "12-Gauge Buckshot Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Buckshot.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Shell_Buckshot",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Shotgun_Casing",
+            "itemName": "12-Gauge Casing",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Buckshot",
+            "itemName": "12-Gauge Buckshot Shell",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 48
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 7
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Buckshot",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 2,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Epoxy"
+            }
+          ]
+        }
+      },
+      {
+        "recipeId": "Bulk_Shotgun_Shell_Buckshot",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Shotgun_Casing",
+            "itemName": "12-Gauge Casing",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Buckshot",
+            "itemName": "12-Gauge Buckshot Shell",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 48
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 7
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Buckshot",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 5,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 10,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 5,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 5,
+              "recipeId": "Epoxy"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard 12 gauge \"00\" buckshot.",
+    "flavorText": null,
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Explosive": {
+    "itemId": "Ammo_Shell_Explosive",
+    "displayName": "12-Gauge Explosive Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Explosive.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Shell_Explosive",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Shell_Buckshot",
+            "itemName": "12-Gauge Buckshot Shell",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Explosive",
+            "itemName": "12-Gauge Explosive Shell",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 37
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 21
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Explosive",
+            "Ammo_Shell_Buckshot",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Volatile_Substance",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Shell_Buckshot",
+              "to": "Ammo_Shell_Explosive",
+              "count": 5,
+              "recipeId": "Shotgun_Shell_Buckshot"
+            },
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 2,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Ammo_Shell_Explosive",
+              "count": 1,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Explosive 12 gauge shotgun round.",
+    "flavorText": "BOOM",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Slug": {
+    "itemId": "Ammo_Shell_Slug",
+    "displayName": "12-Gauge Slug",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Slug.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Shell_Armor_Piercing",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Shotgun_Casing",
+            "itemName": "12-Gauge Casing",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Shealth",
+            "itemName": "Platinum_Shealth",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Slug",
+            "itemName": "12-Gauge Slug",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 32
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 5
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Slug",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Slug",
+              "count": 1,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Slug",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      },
+      {
+        "recipeId": "Bulk_Shotgun_Shell_Slug",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Shotgun_Casing",
+            "itemName": "12-Gauge Casing",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Shealth",
+            "itemName": "Platinum_Shealth",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Slug",
+            "itemName": "12-Gauge Slug",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 32
+            },
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 5
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Slug",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Slug",
+              "count": 5,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Slug",
+              "count": 5,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard 12 gauge slug round.",
+    "flavorText": "Now this thing can do some damage.",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round": {
+    "itemId": "Ammo_Pistol_Round",
+    "displayName": "9mm Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Round",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Casing",
+            "itemName": "Ammo Casing",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      },
+      {
+        "recipeId": "Bulk_Pistol_Round",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Casing",
+            "itemName": "Ammo Casing",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 5,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 5,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Reliable 9mm ammunition.",
+    "flavorText": null,
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Explosive": {
+    "itemId": "Ammo_Pistol_Round_Explosive",
+    "displayName": "9mm Explosive Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round_Explosive.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Explosive_Round",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round_Explosive",
+            "itemName": "9mm Explosive Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 7
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 21
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round_Explosive",
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Volatile_Substance",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Pistol_Round",
+              "to": "Ammo_Pistol_Round_Explosive",
+              "count": 5,
+              "recipeId": "Pistol_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Ammo_Pistol_Round_Explosive",
+              "count": 1,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Explosive 9mm ammunition.",
+    "flavorText": null,
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Incendiary": {
+    "itemId": "Ammo_Pistol_Round_Incendiary",
+    "displayName": "9mm Incendiary Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round_Incendiary.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Incendiary_Round",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round_Incendiary",
+            "itemName": "9mm Incendiary Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 6
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 18
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round_Incendiary",
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Pistol_Round",
+              "to": "Ammo_Pistol_Round_Incendiary",
+              "count": 1,
+              "recipeId": "Pistol_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round_Incendiary",
+              "count": 5,
+              "recipeId": "Gunpowder"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "9mm ammunition which can ignite flammable targets.",
+    "flavorText": null,
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Armor_Piercing": {
+    "itemId": "Ammo_Pistol_Round_Armor_Piercing",
+    "displayName": "9mm Armor Piercing Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Pistol_Round_Armor_Piercing.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Armor_Piercing_Round",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Shealth",
+            "itemName": "Platinum_Shealth",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round_Armor_Piercing",
+            "itemName": "9mm Armor Piercing Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 3
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round_Armor_Piercing",
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Pistol_Round",
+              "to": "Ammo_Pistol_Round_Armor_Piercing",
+              "count": 1,
+              "recipeId": "Pistol_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "9mm ammunition which can pierce the toughest surfaces.",
+    "flavorText": null,
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Incendiary": {
+    "itemId": "Ammo_Rifle_Round_Incendiary",
+    "displayName": "7.62mm Incendiary Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round_Incendiary.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Round_Incendiary",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round_Incendiary",
+            "itemName": "7.62mm Incendiary Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 7
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 21
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round_Incendiary",
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Rifle_Round",
+              "to": "Ammo_Rifle_Round_Incendiary",
+              "count": 1,
+              "recipeId": "Rifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round_Incendiary",
+              "count": 5,
+              "recipeId": "Gunpowder"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "7.62mm ammunition which can ignite flammable targets.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Explosive": {
+    "itemId": "Ammo_Rifle_Round_Explosive",
+    "displayName": "7.62mm Explosive Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round_Explosive.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Round_Explosive",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round_Explosive",
+            "itemName": "7.62mm Explosive Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 12
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 36
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round_Explosive",
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Volatile_Substance",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Rifle_Round",
+              "to": "Ammo_Rifle_Round_Explosive",
+              "count": 5,
+              "recipeId": "Rifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Ammo_Rifle_Round_Explosive",
+              "count": 1,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Explosive 7.62mm ammunition.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Armor_Piercing": {
+    "itemId": "Ammo_Rifle_Round_Armor_Piercing",
+    "displayName": "7.62mm Armor Piercing Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Rifle_Round_Armor_Piercing.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Armor_Piercing_Round",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Shealth",
+            "itemName": "Platinum_Shealth",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round_Armor_Piercing",
+            "itemName": "7.62mm Armor Piercing Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 2
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 6
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round_Armor_Piercing",
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Rifle_Round",
+              "to": "Ammo_Rifle_Round_Armor_Piercing",
+              "count": 1,
+              "recipeId": "Rifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "7.62mm ammunition which can pierce the toughest surfaces",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Obsidian": {
+    "itemId": "Ammo_Pistol_Round_Obsidian",
+    "displayName": "9mm Obsidian Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Obsidian.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Round_Obsidian",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round_Obsidian",
+            "itemName": "9mm Obsidian Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 5
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 15
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round_Obsidian",
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Pistol_Round",
+              "to": "Ammo_Pistol_Round_Obsidian",
+              "count": 5,
+              "recipeId": "Pistol_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Ammo_Pistol_Round_Obsidian",
+              "count": 1,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight round created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Obsidian": {
+    "itemId": "Ammo_Rifle_Round_Obsidian",
+    "displayName": "7.62mm Obsidian Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Rifle_Round_Obsidian.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Round_Obsidian",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round_Obsidian",
+            "itemName": "7.62mm Obsidian Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 10
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round_Obsidian",
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Rifle_Round",
+              "to": "Ammo_Rifle_Round_Obsidian",
+              "count": 5,
+              "recipeId": "Rifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Ammo_Rifle_Round_Obsidian",
+              "count": 1,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A lightweight round created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Cold_Steel": {
+    "itemId": "Ammo_Pistol_Round_Cold_Steel",
+    "displayName": "9mm Cold Steel Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Cold_Steel.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Round_Cold_Steel",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Cold_Steel_Ingot",
+            "itemName": "Cold Steel Ingot",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round_Cold_Steel",
+            "itemName": "9mm Cold Steel Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Ore",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 5
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 15
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round_Cold_Steel",
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Cold_Steel_Ingot",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Super_Cooled_Ice",
+            "Frozen_Ore"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Pistol_Round",
+              "to": "Ammo_Pistol_Round_Cold_Steel",
+              "count": 5,
+              "recipeId": "Pistol_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Cold_Steel_Ingot",
+              "to": "Ammo_Pistol_Round_Cold_Steel",
+              "count": 1,
+              "recipeId": "Cold_Steel_Ingot"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Super_Cooled_Ice",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Frozen_Ore"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A sturdy round crafted using Cold Steel, unique to Icarus.",
+    "flavorText": "One of the few items that are only available on Icarus, due to the nature of the materials required.",
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Cold_Steel": {
+    "itemId": "Ammo_Rifle_Round_Cold_Steel",
+    "displayName": "7.62mm Cold Steel Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Rifle_Round_Cold_Steel.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Round_Cold_Steel",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Cold_Steel_Ingot",
+            "itemName": "Cold Steel Ingot",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round_Cold_Steel",
+            "itemName": "7.62mm Cold Steel Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Ore",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 10
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round_Cold_Steel",
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Cold_Steel_Ingot",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Super_Cooled_Ice",
+            "Frozen_Ore"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Rifle_Round",
+              "to": "Ammo_Rifle_Round_Cold_Steel",
+              "count": 5,
+              "recipeId": "Rifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Cold_Steel_Ingot",
+              "to": "Ammo_Rifle_Round_Cold_Steel",
+              "count": 1,
+              "recipeId": "Cold_Steel_Ingot"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Super_Cooled_Ice",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Frozen_Ore"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A sturdy round crafted using Cold Steel, unique to Icarus.",
+    "flavorText": "One of the few items that are only available on Icarus, due to the nature of the materials required.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Iron_Wood": {
+    "itemId": "Ammo_Pistol_Round_Iron_Wood",
+    "displayName": "9mm Miasmic Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Ironwood.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Pistol_Round_Iron_Wood",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Pistol_Round",
+            "itemName": "9mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Iron_Wood",
+            "itemName": "Distilled Miasmic Coating",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Pistol_Round_Iron_Wood",
+            "itemName": "9mm Miasmic Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 5
+            },
+            {
+              "itemId": "Raw_Iron_Wood",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 15
+            }
+          ],
+          "nodes": [
+            "Ammo_Pistol_Round_Iron_Wood",
+            "Ammo_Pistol_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Refined_Iron_Wood",
+            "Raw_Iron_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Pistol_Round",
+              "to": "Ammo_Pistol_Round_Iron_Wood",
+              "count": 5,
+              "recipeId": "Pistol_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Pistol_Round",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Refined_Iron_Wood",
+              "to": "Ammo_Pistol_Round_Iron_Wood",
+              "count": 1,
+              "recipeId": "Refined_Iron_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A toxin-coated round, carefully crafted using Miasma harvested from Icarus wildlife.",
+    "flavorText": "The miasma coating this tool emits an almost unbearable stench.",
+    "weight": 8,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Iron_Wood": {
+    "itemId": "Ammo_Rifle_Round_Iron_Wood",
+    "displayName": "7.62mm Miasmic Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Rifle_Round_Ironwood.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Rifle_Round_Iron_Wood",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Rifle_Round",
+            "itemName": "7.62mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Iron_Wood",
+            "itemName": "Distilled Miasmic Coating",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Rifle_Round_Iron_Wood",
+            "itemName": "7.62mm Miasmic Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 10
+            },
+            {
+              "itemId": "Raw_Iron_Wood",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 30
+            }
+          ],
+          "nodes": [
+            "Ammo_Rifle_Round_Iron_Wood",
+            "Ammo_Rifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Refined_Iron_Wood",
+            "Raw_Iron_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Rifle_Round",
+              "to": "Ammo_Rifle_Round_Iron_Wood",
+              "count": 5,
+              "recipeId": "Rifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_Rifle_Round",
+              "count": 1,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Rifle_Round",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Refined_Iron_Wood",
+              "to": "Ammo_Rifle_Round_Iron_Wood",
+              "count": 1,
+              "recipeId": "Refined_Iron_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A toxin-coated round, carefully crafted using Miasma harvested from Icarus wildlife.",
+    "flavorText": "The miasma coating this tool emits an almost unbearable stench.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Unknown_Ore": {
+    "itemId": "Unknown_Ore",
+    "displayName": "\"Unknown Ore\"",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Icon_FrozenOreOutputHiRes.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": null,
+    "flavorText": null,
+    "weight": 1,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Obsidian": {
+    "itemId": "Ammo_Shell_Obsidian",
+    "displayName": "12-Gauge Obsidian Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Shell_Obsidian.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Shell_Obsidian",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Shell_Buckshot",
+            "itemName": "12-Gauge Buckshot Shell",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Obsidian",
+            "itemName": "12-Gauge Obsidian Shell",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 35
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 15
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Obsidian",
+            "Ammo_Shell_Buckshot",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Shell_Buckshot",
+              "to": "Ammo_Shell_Obsidian",
+              "count": 5,
+              "recipeId": "Shotgun_Shell_Buckshot"
+            },
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 2,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Ammo_Shell_Obsidian",
+              "count": 1,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "This deadly shotgun ammunition is crafted from Obsidian, giving you an edge in the wilderness of Icarus.",
+    "flavorText": "On Icarus, you need every advantage you can get.",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_ColdSteel": {
+    "itemId": "Ammo_Shell_ColdSteel",
+    "displayName": "12-Gauge Cold Steel Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Shell_Coldsteel.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Shell_Cold_Steel",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Shell_Buckshot",
+            "itemName": "12-Gauge Buckshot Shell",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Cold_Steel_Ingot",
+            "itemName": "Cold Steel Ingot",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_ColdSteel",
+            "itemName": "12-Gauge Cold Steel Shell",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Ore",
+              "count": 1
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 35
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 15
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_ColdSteel",
+            "Ammo_Shell_Buckshot",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Cold_Steel_Ingot",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Super_Cooled_Ice",
+            "Frozen_Ore"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Shell_Buckshot",
+              "to": "Ammo_Shell_ColdSteel",
+              "count": 5,
+              "recipeId": "Shotgun_Shell_Buckshot"
+            },
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 2,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Cold_Steel_Ingot",
+              "to": "Ammo_Shell_ColdSteel",
+              "count": 1,
+              "recipeId": "Cold_Steel_Ingot"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Super_Cooled_Ice",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Frozen_Ore"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "This deadly shotgun ammunition is cast in Cold Steel, giving you an edge in the wilderness of Icarus.",
+    "flavorText": "On Icarus, you need every advantage you can get.",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Ironwood": {
+    "itemId": "Ammo_Shell_Ironwood",
+    "displayName": "12-Gauge Miasmic Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Shell_Miasma.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Shell_Ironwood",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Shell_Buckshot",
+            "itemName": "12-Gauge Buckshot Shell",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Iron_Wood",
+            "itemName": "Distilled Miasmic Coating",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_Shell_Ironwood",
+            "itemName": "12-Gauge Miasmic Shell",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 240
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 35
+            },
+            {
+              "itemId": "Raw_Iron_Wood",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 15
+            }
+          ],
+          "nodes": [
+            "Ammo_Shell_Ironwood",
+            "Ammo_Shell_Buckshot",
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Refined_Iron_Wood",
+            "Raw_Iron_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Shell_Buckshot",
+              "to": "Ammo_Shell_Ironwood",
+              "count": 5,
+              "recipeId": "Shotgun_Shell_Buckshot"
+            },
+            {
+              "from": "Shotgun_Casing",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Shotgun_Casing"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 2,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Ammo_Shell_Buckshot",
+              "count": 1,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Refined_Iron_Wood",
+              "to": "Ammo_Shell_Ironwood",
+              "count": 1,
+              "recipeId": "Refined_Iron_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "This deadly shotgun ammunition is coated in a Miasmic film, giving you an edge in the wilderness of Icarus.",
+    "flavorText": "On Icarus, you need every advantage you can get.",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Workshop": {
+    "itemId": "Ammo_Pistol_Round_Workshop",
+    "displayName": "9mm CHAC Ammo ",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Workshop_Pistol.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Reliable CHAC branded 9mm ammunition.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Workshop_x25": {
+    "itemId": "Ammo_Pistol_Round_Workshop_x25",
+    "displayName": "9mm CHAC Ammo ",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Workshop_Pistol.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Reliable CHAC branded 9mm ammunition.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Pistol",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Pistol_Round_Workshop_Bundle": {
+    "itemId": "Ammo_Pistol_Round_Workshop_Bundle",
+    "displayName": "9mm CHAC Ammo Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Pistol_Round_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 9mm Ammo. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Shotgun_Casing": {
+    "itemId": "Shotgun_Casing",
+    "displayName": "12-Gauge Casing",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Shotgun_Casing.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Shotgun_Casing",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Copper",
+            "itemName": "Copper Ingot",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Shotgun_Casing",
+            "itemName": "12-Gauge Casing",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 32
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Shotgun_Casing",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Epoxy",
+              "to": "Shotgun_Casing",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Shotgun_Casing",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An empty shotgun shell that can be used to create all types of shotgun ammo.",
+    "flavorText": "An essential resource for a trusty firearm.",
+    "weight": 8,
+    "maxStack": 200,
+    "stats": null,
+    "tags": [
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round": {
+    "itemId": "Ammo_AssaultRifle_Round",
+    "displayName": "5.56mm Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Round",
+        "requiredMillijoules": 500,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Casing",
+            "itemName": "Ammo Casing",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 3
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 3
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 9
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      },
+      {
+        "recipeId": "Bulk_AssaultRifle_Round",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_Casing",
+            "itemName": "Ammo Casing",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 15
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 10
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 3
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 9
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 10,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 15,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard NATO 5.56mm ammunition.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Incendiary": {
+    "itemId": "Ammo_AssaultRifle_Round_Incendiary",
+    "displayName": "5.56mm Incendiary Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round_Incendiary.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Round_Incendiary",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round_Incendiary",
+            "itemName": "5.56mm Incendiary Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 24
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round_Incendiary",
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_AssaultRifle_Round",
+              "to": "Ammo_AssaultRifle_Round_Incendiary",
+              "count": 1,
+              "recipeId": "AssaultRifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round_Incendiary",
+              "count": 5,
+              "recipeId": "Gunpowder"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "5.56mm ammunition which can ignite flammable targets.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Explosive": {
+    "itemId": "Ammo_AssaultRifle_Round_Explosive",
+    "displayName": "5.56mm Explosive Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round_Explosive.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Round_Explosive",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round_Explosive",
+            "itemName": "5.56mm Explosive Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 17
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 51
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round_Explosive",
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Volatile_Substance",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_AssaultRifle_Round",
+              "to": "Ammo_AssaultRifle_Round_Explosive",
+              "count": 5,
+              "recipeId": "AssaultRifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Ammo_AssaultRifle_Round_Explosive",
+              "count": 1,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Explosive 5.56mm ammunition.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Armor_Piercing": {
+    "itemId": "Ammo_AssaultRifle_Round_Armor_Piercing",
+    "displayName": "5.56mm Armor Piercing Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round_Armor_Piercing.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Armor_Piercing_Round",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Shealth",
+            "itemName": "Platinum_Shealth",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round_Armor_Piercing",
+            "itemName": "5.56mm Armor Piercing Round",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Platinum_Shealth",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 3
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 9
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round_Armor_Piercing",
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Platinum_Shealth"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_AssaultRifle_Round",
+              "to": "Ammo_AssaultRifle_Round_Armor_Piercing",
+              "count": 1,
+              "recipeId": "AssaultRifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "5.56mm ammunition which can pierce the toughest surfaces",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Obsidian": {
+    "itemId": "Ammo_AssaultRifle_Round_Obsidian",
+    "displayName": "5.56mm Obsidian Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round_Obsidian.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Round_Obsidian",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Shaped_Obsidian",
+            "itemName": "Shaped Obsidian",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round_Obsidian",
+            "itemName": "5.56mm Obsidian Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Obsidian",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 15
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 45
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round_Obsidian",
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Shaped_Obsidian",
+            "Obsidian",
+            "Pyritic_Crust_Obsidian"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_AssaultRifle_Round",
+              "to": "Ammo_AssaultRifle_Round_Obsidian",
+              "count": 5,
+              "recipeId": "AssaultRifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Shaped_Obsidian",
+              "to": "Ammo_AssaultRifle_Round_Obsidian",
+              "count": 1,
+              "recipeId": "Shaped_Obsidian"
+            },
+            {
+              "from": "Obsidian",
+              "to": "Shaped_Obsidian",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Obsidian"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A lightweight round created with a sharpened point of Obsidian.",
+    "flavorText": "Made using volcanic glass created from the bowels of the planet, that has cooled rapidly with minimal crystal growth.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Cold_Steel": {
+    "itemId": "Ammo_AssaultRifle_Round_Cold_Steel",
+    "displayName": "5.56mm Cold Steel Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round_Cold_Steel.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Round_Cold_Steel",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Cold_Steel_Ingot",
+            "itemName": "Cold Steel Ingot",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round_Cold_Steel",
+            "itemName": "5.56mm Cold Steel Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Ore",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 1
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 26
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 15
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 45
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round_Cold_Steel",
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Cold_Steel_Ingot",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Super_Cooled_Ice",
+            "Frozen_Ore"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_AssaultRifle_Round",
+              "to": "Ammo_AssaultRifle_Round_Cold_Steel",
+              "count": 5,
+              "recipeId": "AssaultRifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Cold_Steel_Ingot",
+              "to": "Ammo_AssaultRifle_Round_Cold_Steel",
+              "count": 1,
+              "recipeId": "Cold_Steel_Ingot"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Super_Cooled_Ice",
+              "to": "Cold_Steel_Ingot",
+              "count": 1,
+              "recipeId": "Frozen_Ore"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A sturdy round crafted using Cold Steel, unique to Icarus.",
+    "flavorText": "One of the few items that are only available on Icarus, due to the nature of the materials required.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Iron_Wood": {
+    "itemId": "Ammo_AssaultRifle_Round_Iron_Wood",
+    "displayName": "5.56mm Miasmic Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_AssaultRifle_Round_Ironwood.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "AssaultRifle_Round_Iron_Wood",
+        "requiredMillijoules": 1000,
+        "stationIds": [
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Ammo_AssaultRifle_Round",
+            "itemName": "5.56mm Round",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Iron_Wood",
+            "itemName": "Distilled Miasmic Coating",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ammo_AssaultRifle_Round_Iron_Wood",
+            "itemName": "5.56mm Miasmic Round",
+            "count": 5
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 15
+            },
+            {
+              "itemId": "Raw_Iron_Wood",
+              "count": 1
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 45
+            }
+          ],
+          "nodes": [
+            "Ammo_AssaultRifle_Round_Iron_Wood",
+            "Ammo_AssaultRifle_Round",
+            "Ammo_Casing",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Gunpowder",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Refined_Iron_Wood",
+            "Raw_Iron_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Ammo_AssaultRifle_Round",
+              "to": "Ammo_AssaultRifle_Round_Iron_Wood",
+              "count": 5,
+              "recipeId": "AssaultRifle_Round"
+            },
+            {
+              "from": "Ammo_Casing",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 2,
+              "recipeId": "Ammo_Casing"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Ammo_Casing",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Ammo_AssaultRifle_Round",
+              "count": 3,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Refined_Iron_Wood",
+              "to": "Ammo_AssaultRifle_Round_Iron_Wood",
+              "count": 1,
+              "recipeId": "Refined_Iron_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A toxin-coated round, carefully crafted using Miasma harvested from Icarus wildlife.",
+    "flavorText": "The miasma coating this tool emits an almost unbearable stench.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Workshop": {
+    "itemId": "Ammo_Shell_Workshop",
+    "displayName": "12-Gauge CHAC Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Shell_Workshop_2.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A CHAC branded 12 gauge \"00\" buckshot.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Workshop_x25": {
+    "itemId": "Ammo_Shell_Workshop_x25",
+    "displayName": "12-Gauge CHAC Shell",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Shell_Workshop_2.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A CHAC branded 12 gauge \"00\" buckshot.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 12,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Shotgun",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Shell_Workshop_Bundle": {
+    "itemId": "Ammo_Shell_Workshop_Bundle",
+    "displayName": "12-Gauge CHAC Shell Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Shell_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 12-Gauge Shells. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Sniper_Round": {
+    "itemId": "Sniper_Round",
+    "displayName": "12.7mm CHAC Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Standard Anti-Materiel Rifle Round",
+    "flavorText": "Aim Front Towards Enemy",
+    "weight": 20,
+    "maxStack": 50,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Sniper_Round_Workshop_x25": {
+    "itemId": "Ammo_Sniper_Round_Workshop_x25",
+    "displayName": "12.7mm CHAC Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Standard Anti-Materiel Rifle Round",
+    "flavorText": "Aim Front Towards Enemy",
+    "weight": 20,
+    "maxStack": 50,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Sniper_Round_Workshop_Bundle": {
+    "itemId": "Ammo_Sniper_Round_Workshop_Bundle",
+    "displayName": "12.7mm CHAC Ammo Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Sniper_Round_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 12.7mm Ammo. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Biomass",
+          "amount": 10
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Sniper_Round_Explosive": {
+    "itemId": "Sniper_Round_Explosive",
+    "displayName": "12.7mm CHAC Explosive Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round_Explosive.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Explosive Anti-Materiel Rifle Round",
+    "flavorText": "Aim Front Towards Enemy",
+    "weight": 20,
+    "maxStack": 50,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Sniper_Round_Explosive_Workshop_x25": {
+    "itemId": "Ammo_Sniper_Round_Explosive_Workshop_x25",
+    "displayName": "12.7mm CHAC Explosive Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round_Explosive.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Explosive Anti-Materiel Rifle Round",
+    "flavorText": "Aim Front Towards Enemy",
+    "weight": 20,
+    "maxStack": 50,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Sniper_Round_Explosive_Workshop_Bundle": {
+    "itemId": "Ammo_Sniper_Round_Explosive_Workshop_Bundle",
+    "displayName": "12.7mm CHAC Explosive Ammo Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Sniper_Round_Explosive_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 12.7mm Ammo. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Biomass",
+          "amount": 15
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        }
+      ]
+    }
+  },
+  "Sniper_Round_Incendiary": {
+    "itemId": "Sniper_Round_Incendiary",
+    "displayName": "12.7mm CHAC Incendiary Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round_Incendiary.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Incendiary Anti-Materiel Rifle Round",
+    "flavorText": "Aim Front Towards Enemy",
+    "weight": 20,
+    "maxStack": 50,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Sniper_Round_Incendiary_Workshop_x25": {
+    "itemId": "Ammo_Sniper_Round_Incendiary_Workshop_x25",
+    "displayName": "12.7mm CHAC Incendiary Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round_Incendiary.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Incendiary Anti-Materiel Rifle Round",
+    "flavorText": "Aim Front Towards Enemy",
+    "weight": 20,
+    "maxStack": 50,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Sniper_Round_Incendiary_Workshop_Bundle": {
+    "itemId": "Ammo_Sniper_Round_Incendiary_Workshop_Bundle",
+    "displayName": "12.7mm CHAC Incendiary Ammo Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Sniper_Round_Incendiary_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 12.7mm Ammo. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Biomass",
+          "amount": 15
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        }
+      ]
+    }
+  },
+  "Ammo_Rifle_Round_Workshop": {
+    "itemId": "Ammo_Rifle_Round_Workshop",
+    "displayName": "7.62mm CHAC Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Workshop_Rifle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard NATO 7.62mm ammunition made by CHAC.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Workshop_x25": {
+    "itemId": "Ammo_Rifle_Round_Workshop_x25",
+    "displayName": "7.62mm CHAC Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Workshop_Rifle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard NATO 7.62mm ammunition made by CHAC.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_Rifle_Round_Workshop_Bundle": {
+    "itemId": "Ammo_Rifle_Round_Workshop_Bundle",
+    "displayName": "7.62mm CHAC Ammo Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Rifle_Round_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 7.62mm Ammo. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Ammo_AssaultRifle_Round_Workshop": {
+    "itemId": "Ammo_AssaultRifle_Round_Workshop",
+    "displayName": "5.56mm CHAC Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Workshop_AssaultRifle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard NATO 5.56mm ammunition made by CHAC.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Workshop_x25": {
+    "itemId": "Ammo_AssaultRifle_Round_Workshop_x25",
+    "displayName": "5.56mm CHAC Round",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Workshop_AssaultRifle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Standard NATO 5.56mm ammunition made by CHAC.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "GameStateRecorder.DontRecord",
+      "Item.Ammo.Bullet",
+      "Item.Ammo.Rifle",
+      "Item.Meta",
+      "Traits.Ballistic",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ammo_AssaultRifle_Round_Workshop_Bundle": {
+    "itemId": "Ammo_AssaultRifle_Round_Workshop_Bundle",
+    "displayName": "5.56mm CHAC Ammo Box",
+    "category": "Ammo",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Assualt_Rilfe_Round_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A Box of 25 CHAC 5.56mm Ammo. \\'CONSUME\\' to open box.",
+    "flavorText": "The latest addition from the China Hangzhou Armament Company",
+    "weight": 250,
+    "maxStack": null,
+    "stats": {
+      "Break Chance": 1
+    },
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Ballistic",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  }
+}

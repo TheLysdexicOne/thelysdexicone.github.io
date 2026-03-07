@@ -1,0 +1,339 @@
+{
+  "Yeast": {
+    "itemId": "Yeast",
+    "displayName": "Yeast",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Yeast.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A sugary herb, rich in natural yeasts. Add to a cooking ",
+    "flavorText": "Technically a fungus, yeast is a unicellular microbe of the genus Saccharomyces, seemingly unaffected by Icarus\\'s toxic atmosphere. Add to mortar and pestle with flour and water from a container to make dough.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Plant.Grain",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Yield_Fertilizer": {
+    "itemId": "Yield_Fertilizer",
+    "displayName": "High-Quality Fertilizer",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Fertilizer_Growth.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Yield_Fertilizer",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Chemistry_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Basic_Fertilizer",
+            "itemName": "Basic Fertilizer",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Sulfur",
+            "itemName": "Sulfur",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Yield_Fertilizer",
+            "itemName": "High-Quality Fertilizer",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Dirt",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 5
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Yield_Fertilizer",
+            "Basic_Fertilizer",
+            "Spoiled_Plants",
+            "Dirt",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur"
+          ],
+          "edges": [
+            {
+              "from": "Basic_Fertilizer",
+              "to": "Yield_Fertilizer",
+              "count": 1,
+              "recipeId": "Basic_Fertilizer"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Yield_Fertilizer",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Increases the yield of your crops",
+    "flavorText": "Fertilizer is a multivitamin for your plants",
+    "weight": 2000,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Fertilizer",
+      "Item.Resource",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Yeast_Lure": {
+    "itemId": "Yeast_Lure",
+    "displayName": "Yeast Lure",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Fishing/ITEM_Yeast_Lure.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Yeast_Lure",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Fishing_Bench_Rods"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Yeast",
+            "itemName": "Yeast",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Iron_Nail",
+            "itemName": "Iron Nail",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Yeast_Lure",
+            "itemName": "Yeast Lure",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Fiber",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Yeast",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Yeast_Lure",
+            "Yeast",
+            "Iron_Nail",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Rope",
+            "Fiber"
+          ],
+          "edges": [
+            {
+              "from": "Iron_Nail",
+              "to": "Yeast_Lure",
+              "count": 2,
+              "recipeId": "Iron_Nail"
+            },
+            {
+              "from": "Refined_Metal",
+              "to": "Iron_Nail",
+              "count": 1,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Rope",
+              "to": "Yeast_Lure",
+              "count": 2,
+              "recipeId": "Rope"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A basic lure carefully crafted from yeast, to attract more fish.",
+    "flavorText": "Surely you\\'ll catch a big one with this in your kit.",
+    "weight": 250,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.FishingRod",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Yeast_Seed": {
+    "itemId": "Yeast_Seed",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Yeast_Seeds",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Seed_Extractor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Yeast",
+            "itemName": "Yeast",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Yeast_Seed",
+            "itemName": "Seed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Yeast",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Yeast_Seed",
+            "Yeast"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Yeast_Seed_Pack": {
+    "itemId": "Yeast_Seed_Pack",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}

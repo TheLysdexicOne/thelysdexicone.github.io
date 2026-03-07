@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+    <defs>
+        <linearGradient id="ballGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#8b5a2b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#d2691e;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="400" height="300" fill="#2d1e1a"/>
+    <circle cx="200" cy="150" r="80" fill="url(#ballGrad)" stroke="#734325" stroke-width="3"/>
+    <circle cx="180" cy="120" r="15" fill="#ff6b35" opacity="0.7"/>
+    <circle cx="160" cy="180" r="20" fill="#ff8c42" opacity="0.6"/>
+    <circle cx="240" cy="160" r="18" fill="#ffd23f" opacity="0.5"/>
+    <text x="200" y="260" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#d2691e" text-anchor="middle">BALL X PIT</text>
+</svg>

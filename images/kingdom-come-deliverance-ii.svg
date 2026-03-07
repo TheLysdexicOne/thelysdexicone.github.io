@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+    <rect width="400" height="300" fill="#3a2a1a"/>
+    <path d="M 150 180 L 200 100 L 250 180 L 230 180 L 230 220 L 170 220 L 170 180 Z" fill="#8b4513" stroke="#654321" stroke-width="2"/>
+    <rect x="180" y="200" width="40" height="20" fill="#5a3a1a"/>
+    <path d="M 140 180 L 260 180 L 250 190 L 150 190 Z" fill="#a0522d"/>
+    <rect x="185" y="150" width="10" height="15" fill="#4a4a4a"/>
+    <rect x="205" y="150" width="10" height="15" fill="#4a4a4a"/>
+    <path d="M 180 100 L 200 85 L 220 100 L 210 95 L 200 105 L 190 95 Z" fill="#daa520"/>
+    <text x="200" y="265" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#daa520" text-anchor="middle">KINGDOM COME</text>
+    <text x="200" y="285" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#daa520" text-anchor="middle">DELIVERANCE II</text>
+</svg>

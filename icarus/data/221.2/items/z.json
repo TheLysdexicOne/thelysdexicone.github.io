@@ -1,0 +1,122 @@
+{
+  "Zebra_Head": {
+    "itemId": "Zebra_Head",
+    "displayName": "Zebra Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Zebra.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Zebra.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 2000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Zebra_Trophy": {
+    "itemId": "Zebra_Trophy",
+    "displayName": "Zebra Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Zebra_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Zebrah_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Zebra_Head",
+            "itemName": "Zebra Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Zebra_Trophy",
+            "itemName": "Zebra Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Zebra_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Zebra_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Zebra_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Zebra_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted Zebra head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}

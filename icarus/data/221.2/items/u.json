@@ -1,0 +1,146 @@
+{
+  "Unknown_Ore": {
+    "itemId": "Unknown_Ore",
+    "displayName": "\"Unknown Ore\"",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_Icon_FrozenOreOutputHiRes.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": null,
+    "flavorText": null,
+    "weight": 1,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable"
+    ],
+    "workshopCosts": null
+  },
+  "Ubis_Head": {
+    "itemId": "Ubis_Head",
+    "displayName": "Ubis Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Ubis.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Ubis.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Ubis_Trophy": {
+    "itemId": "Ubis_Trophy",
+    "displayName": "Ubis Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ubis_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Ubis_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Ubis_Head",
+            "itemName": "Ubis Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Ubis_Trophy",
+            "itemName": "Ubis Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Ubis_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Ubis_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Ubis_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Ubis_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A mounted Ubis head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}
