@@ -1,0 +1,662 @@
+[
+  {
+    "id": "Character",
+    "name": "Character",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Icons/Icon_PlayerCrafting.Icon_PlayerCrafting",
+      "assetPath": "Assets/2DArt/UI/Icons/Icon_PlayerCrafting.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Campfire",
+    "name": "Campfire",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Campfire.ITEM_Campfire",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Campfire.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Crafting_Bench",
+    "name": "Crafting Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Crafting_Bench.ITEM_Crafting_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Crafting_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Mortar_And_Pestle",
+    "name": "Mortar And Pestle",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.ITEM_Kit_Mortar_And_Pestle",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Oxite_Dissolver",
+    "name": "Oxite Dissolver",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Oxite_Dissolver.ITEM_Kit_Oxite_Dissolver",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Oxite_Dissolver.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Stone_Furnace",
+    "name": "Stone Furnace",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Stone_Furnace.ITEM_Kit_Stone_Furnace",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Stone_Furnace.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Concrete_Furnace",
+    "name": "Concrete Furnace",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Concrete_Furnace.ITEM_Kit_Concrete_Furnace",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Concrete_Furnace.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Electric_Furnace",
+    "name": "Electric Furnace",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Electric_Furnace.ITEM_Kit_Electric_Furnace",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Electric_Furnace.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Machining_Bench",
+    "name": "Machining Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Machining_Bench.ITEM_Kit_Machining_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Machining_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Composter",
+    "name": "Composter",
+    "description": "An active water connection will increase processing speed and reduce crafting cost.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter.ITEM_Composter",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Material_Processor",
+    "name": "Material Processor",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Material_Processor.ITEM_Material_Processor",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Material_Processor.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Meta_Extractor",
+    "name": "Extractor",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Extractor.ITEM_Kit_Extractor",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Extractor.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Cooking_Station",
+    "name": "Cooking Station",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Cooking_Station.ITEM_Cooking_Station",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Cooking_Station.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Fabricator",
+    "name": "Fabricator",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fabricator.ITEM_Fabricator",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fabricator.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Skinning_Bench",
+    "name": "Skinning Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Skinning_Bench.ITEM_Kit_Skinning_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Skinning_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 1.7999999523162842
+  },
+  {
+    "id": "Carpentry_Bench",
+    "name": "Carpentry Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carpentry_Bench.ITEM_Carpentry_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carpentry_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Carpentry_Bench_T4",
+    "name": "Electric Carpentry Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carpentry_Bench_T4.ITEM_Carpentry_Bench_T4",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carpentry_Bench_T4.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Composter_Wood",
+    "name": "Wood Composter",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter_Wood.ITEM_Composter_Wood",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter_Wood.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Rain_Collector",
+    "name": "Rain Collector",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rain_Reservoir.ITEM_Rain_Reservoir",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rain_Reservoir.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Metal_Oxite_Dissolver",
+    "name": "Metal Oxite Dissolver",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Metal_Oxite_Dissolver.ITEM_Metal_Oxite_Dissolver",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Metal_Oxite_Dissolver.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Armor_Bench",
+    "name": "Textiles Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Bench.T_ITEM_Armor_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Masonry_Bench",
+    "name": "Masonry Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Masonry_Bench.ITEM_Masonry_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Masonry_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Masonry_Bench_T4",
+    "name": "Electric Masonry Bench",
+    "description": "An active water connection will increase processing speed and reduce crafting cost.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Masonry_Bench_T4.ITEM_Masonry_Bench_T4",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Masonry_Bench_T4.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Cement_Mixer",
+    "name": "Cement Mixer",
+    "description": "An active water connection will increase processing speed and refund a portion of crafting costs.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Cement_Mixer.ITEM_Cement_Mixer",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Cement_Mixer.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Generator_Fuel",
+    "name": "Generator",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Generator.ITEM_Kit_Generator",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Generator.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Herbalism_Bench",
+    "name": "Herbalism Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Herbalism_Bench.ITEM_Herbalism_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Herbalism_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Chemistry_Bench",
+    "name": "Chemistry Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Chemistry_Bench.ITEM_Chemistry_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Chemistry_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Trophy_Bench",
+    "name": "Trophy Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Trophy_Bench.ITEM_Trophy_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Trophy_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Repair_Bench",
+    "name": "Repair Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Repair_Bench.ITEM_Repair_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Repair_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Anvil_Bench",
+    "name": "Anvil Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Anvil_Bench.ITEM_Anvil_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Anvil_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Firepit",
+    "name": "Firepit",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_FirePit.ITEM_FirePit",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_FirePit.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Glassworking_Bench",
+    "name": "Glassworking Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Glassworking_Bench_V2.ITEM_Glassworking_Bench_V2",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Glassworking_Bench_V2.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Kitchen_Bench",
+    "name": "Kitchen Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kitchen_Bench.ITEM_Kitchen_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kitchen_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Medicine_Bench",
+    "name": "Medicine Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Medicine_Bench.T_ITEM_Medicine_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Medicine_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Kitchen_Stove",
+    "name": "Kitchen Stove",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kitchen_Stove.ITEM_Kitchen_Stove",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kitchen_Stove.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "PotBellyStove",
+    "name": "Potbelly Stove",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_PotBellyStove.ITEM_PotBellyStove",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_PotBellyStove.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Drying_Rack",
+    "name": "Drying Rack",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_DryingRack.ITEM_DryingRack",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_DryingRack.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Rustic_Decorations_Bench",
+    "name": "Decoration Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Decoration_Bench.ITEM_Rustic_Decoration_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Decoration_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Alteration_Bench",
+    "name": "Alteration Bench",
+    "description": "Interact with the right side of the bench to connect attachments.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Alteration_Bench.ITEM_Alteration_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Alteration_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Advanced_Alteration_Bench",
+    "name": "Advanced Alteration Bench",
+    "description": "Interact with the right side of the bench to connect attachments.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Alteration_Bench.ITEM_Advanced_Alteration_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Alteration_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Advanced_Armor_Bench",
+    "name": "Advanced Textiles Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Armor_Bench.ITEM_Advanced_Armor_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Armor_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Electric_Armor_Bench",
+    "name": "Electric Textiles Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Electric_Armor_Bench.ITEM_Electric_Armor_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Electric_Armor_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Exotic_Processor",
+    "name": "Exotic Processor",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter.ITEM_Composter",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Electric_Stove",
+    "name": "Electric Stove",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Electric_Stove.ITEM_Electric_Stove",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Electric_Stove.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Advanced_Kitchen_Bench",
+    "name": "Advanced Kitchen Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Kitchen_Bench.ITEM_Advanced_Kitchen_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Kitchen_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Fishing_Bench_Recipes",
+    "name": "Basic Fishing Bench",
+    "description": "Interact with the left side of the bench to craft fishing equipment.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.ITEM_Fishing_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Fishing_Bench_Rods",
+    "name": "Basic Fishing Bench",
+    "description": "Interact with the right side of the bench to fillet fish.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.ITEM_Fishing_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Anvil_Bench_T3",
+    "name": "Forge",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T3.T_ITEM_Anvil_Bench_T3",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T3.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Anvil_Bench_T4",
+    "name": "Foundry",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T4.T_ITEM_Anvil_Bench_T4",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T4.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Masonry_Bench_T3",
+    "name": "Advanced Masonry Bench",
+    "description": "An active water connection will increase processing speed and reduce crafting cost.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Masonry_Bench_T3.T_ITEM_Masonry_Bench_T3",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Masonry_Bench_T3.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "RefundOnly",
+    "name": "[DNT] Refund Only",
+    "description": "[DNT] Intentially only for recipes to allow refund but no craft",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Icons/Icon_Close.Icon_Close",
+      "assetPath": "Assets/2DArt/UI/Icons/Icon_Close.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "T3_Smoker",
+    "name": "Smoker",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T3.T_ITEM_Smoker_T3",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T3.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "T4_Smoker",
+    "name": "[DNT] Electic Smoker",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T4.T_ITEM_Smoker_T4",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T4.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "WaterPurifierT2",
+    "name": "Water Purifier",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T2.T_ITEM_Water_Purifier_T2",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T2.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Cleaning_Device",
+    "name": "Cleaning Device",
+    "description": "An active water connection will increase processing speed.",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_T3_Cleaning_Device.T_ITEM_T3_Cleaning_Device",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_T3_Cleaning_Device.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Animal_Bench",
+    "name": "Ranching Station",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Bench.T_ITEM_Animal_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Butchery_Bench",
+    "name": "Butchery Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Butchery_Bench.T_ITEM_Butchery_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Butchery_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Advanced_Butchery_Bench",
+    "name": "Advanced Butchery Bench",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Advanced_Butchery_Bench.T_ITEM_Advanced_Butchery_Bench",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Advanced_Butchery_Bench.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Seed_Extractor",
+    "name": "Seed Extractor",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.ITEM_Kit_Mortar_And_Pestle",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  },
+  {
+    "id": "Food_Trough_T4",
+    "name": "Electronic Food Trough",
+    "description": "",
+    "icon": {
+      "unreal": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_T4.T_ITEM_Food_Trough_T4",
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_T4.webp",
+      "exists": true
+    },
+    "experienceMultiplier": 0.20000000298023224
+  }
+]

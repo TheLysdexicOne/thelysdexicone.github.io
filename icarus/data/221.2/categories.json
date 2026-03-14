@@ -1,0 +1,218 @@
+[
+  {
+    "id": "Tools",
+    "displayName": "Tools",
+    "itemCount": 114,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_ToolsMelee.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Ranged",
+    "displayName": "Ranged",
+    "itemCount": 87,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Ranged.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Ammo",
+    "displayName": "Ammo",
+    "itemCount": 121,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Ammo.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Equipment",
+    "displayName": "Equipment",
+    "itemCount": 118,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Equipments.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Benches",
+    "displayName": "Benches",
+    "itemCount": 53,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Benches.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Armor",
+    "displayName": "Armor",
+    "itemCount": 144,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Armor.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Suits & Modules",
+    "displayName": "Suits & Modules",
+    "itemCount": 34,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_SuitsModules.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Attachments",
+    "displayName": "Attachments",
+    "itemCount": 105,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Attachments.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Medicine",
+    "displayName": "Medicine",
+    "itemCount": 24,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Medicine.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Plants",
+    "displayName": "Plants",
+    "itemCount": 76,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Plants.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Food",
+    "displayName": "Food",
+    "itemCount": 233,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Food.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Fish",
+    "displayName": "Fish",
+    "itemCount": 70,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Filsh.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Ores",
+    "displayName": "Ores",
+    "itemCount": 28,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Ore.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Resources",
+    "displayName": "Resources",
+    "itemCount": 164,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Resources.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Carcasses",
+    "displayName": "Carcasses",
+    "itemCount": 94,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Carcasses.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Trophies",
+    "displayName": "Trophies",
+    "itemCount": 134,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Trophies.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Decorations",
+    "displayName": "Decorations",
+    "itemCount": 270,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Decorations.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Shields",
+    "displayName": "Shields",
+    "itemCount": 9,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Shield.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Defenses",
+    "displayName": "Defenses",
+    "itemCount": 19,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Defense.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Husbandry",
+    "displayName": "Husbandry",
+    "itemCount": 51,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_AnimalParts.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Buildings",
+    "displayName": "Buildings",
+    "itemCount": 133,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Buildings.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Resource Networks",
+    "displayName": "Resource Networks",
+    "itemCount": 15,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_ResourceNetworks.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Deployables",
+    "displayName": "Deployables",
+    "itemCount": 323,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Deployables.webp",
+      "exists": true
+    }
+  },
+  {
+    "id": "Other",
+    "displayName": "Other",
+    "itemCount": 141,
+    "representativeIcon": {
+      "assetPath": "Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Misc.webp",
+      "exists": true
+    }
+  }
+]

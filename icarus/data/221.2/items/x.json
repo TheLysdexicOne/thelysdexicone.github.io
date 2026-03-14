@@ -1,0 +1,752 @@
+{
+  "Envirosuit": {
+    "itemId": "Envirosuit",
+    "displayName": "Xigo S5 Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_1.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "An entry-level S5 life support system from Xigo, Earth\\'s largest employer.",
+    "flavorText": "In theory, a Xigo general issue \\'Self-contained Surface Survival Suit System\\' (S5) offers full body environmental containment and air processing. How many wore this before you is unclear. While no longer entirely air-tight, the suit should still provide sufficient protection to the average user.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Oxygen Slots": 1
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 25
+        }
+      ]
+    }
+  },
+  "Envirosuit_Sand": {
+    "itemId": "Envirosuit_Sand",
+    "displayName": "Xigo S5 Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_1.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "An entry-level S5 life support system from Xigo, Earth\\'s largest employer.",
+    "flavorText": "In theory, a Xigo general issue \\'Self-contained Surface Survival Suit System\\' (S5) offers full body environmental containment and air processing. How many wore this before you is unclear. While no longer entirely air-tight, the suit should still provide sufficient protection to the average user.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Upgrade Slots": 4,
+      "Oxygen Slots": 1
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Axe": {
+    "itemId": "Meta_Axe",
+    "displayName": "Xigo \"Jack\" Axe",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Axe.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mass-produced, but unremarkable hewing tool.",
+    "flavorText": "Xigo specialises in high-end look at a low-end price.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 40,
+      "Felling Damage": 50,
+      "Felling Efficiency": 1.25,
+      "Durability": 500000
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Meta",
+      "Item.Tool.Axe",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Pickaxe": {
+    "itemId": "Meta_Pickaxe",
+    "displayName": "Xigo \"Hertz\" Pickaxe",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A fancy name for a fairly ordinary mining device.",
+    "flavorText": "There\\'s a joke: \"Where Xigo goes, humanity is never far behind.\"",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 40,
+      "Mining Efficiency": 1.5,
+      "Mining Radius": 60,
+      "Durability": 500000
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Meta",
+      "Item.Tool.Pickaxe.T1",
+      "Item.Tool.Pickaxe.T2",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Meta_Knife": {
+    "itemId": "Meta_Knife",
+    "displayName": "Xigo \"Shimmer\" Knife",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Knife.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A low grade, serviceable knife from \\'the Purveyor of Everything\\'",
+    "flavorText": "Whatever you kill with this blade doesn\\'t need to know how little you paid.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 55,
+      "Skinning Efficiency": 2,
+      "Durability": 1000000
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Meta",
+      "Item.Tool.Knife.T1",
+      "Item.Tool.Knife.T2",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Envirosuit_Tier2": {
+    "itemId": "Envirosuit_Tier2",
+    "displayName": "Xigo S5-II Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_2.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A general issue S5 envirosuit with extended life support systems.",
+    "flavorText": "The Xigo S5-II is a full-spectrum environmental protection jumpsuit, helmet and life-support system, offering an augment slot and extended oxygen capacity.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Upgrade Slots": 1,
+      "Oxygen Slots": 1
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 25
+        }
+      ]
+    }
+  },
+  "Envirosuit_Tier3": {
+    "itemId": "Envirosuit_Tier3",
+    "displayName": "Xigo S5-X Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "An enhanced and lightly armored S5 envirosuit offering more functionality and life support systems than the S5-II.",
+    "flavorText": "The Xigo S5-X is a surprisingly high-spec unit for the price. A complete survival system, it features basic rebreather technology and ultra-high-density polyethylene construction, reducing weight and increasing strength.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Upgrade Slots": 1,
+      "Oxygen Slots": 1,
+      "Water Slots": 1,
+      "Damage Resistance %": 5
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ]
+    }
+  },
+  "Envirosuit_Tier4": {
+    "itemId": "Envirosuit_Tier4",
+    "displayName": "Xigo \"Gustav\" S5 Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "An upgraded S5-II suit with expanded resource storage.",
+    "flavorText": "On Earth they judge you by your shoes, on Icarus by your Envirosuit.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Food Slots": 1,
+      "Oxygen Slots": 1,
+      "Water Slots": 1,
+      "Damage Resistance %": 5
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ]
+    }
+  },
+  "Envirosuit_Tier5": {
+    "itemId": "Envirosuit_Tier5",
+    "displayName": "Xigo \"Duo\" S5 Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A lightweight HDPE S5 Envirosuit providing expanded upgrade slots, light armor and respectable storage.",
+    "flavorText": "Plastic\\'s come a long way since Tupperware",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Upgrade Slots": 2,
+      "Oxygen Slots": 1,
+      "Water Slots": 1,
+      "Damage Resistance %": 5
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Envirosuit_Tier6": {
+    "itemId": "Envirosuit_Tier6",
+    "displayName": "Xigo \"Hark\" S5 Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A lightly armored, double-module S5 suit with micro-texturing to reduce reflectivity.",
+    "flavorText": "A 2124 survey registered the Xigo \\'X\\' as one of the most widely-recognized symbols in the world.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Upgrade Slots": 2,
+      "Oxygen Slots": 1,
+      "Water Slots": 1,
+      "Damage Resistance %": 10
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Envirosuit_Tier7": {
+    "itemId": "Envirosuit_Tier7",
+    "displayName": "Xigo \"Fermi\" S5 Envirosuit",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_3.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A broad spectrum, armored S5 envirosuit with dual module slots and decent resource capacity.",
+    "flavorText": "Originally a website for price comparisons, the Xigo conglomerate grew to embrace distribution and, not long after, production. This was a seemingly indiscriminate expansion, focused not on one industry, but all of them - taking in so many fields that business analysts have largely rejected the idea of Xigo as a single entity. ",
+    "weight": 100,
+    "maxStack": null,
+    "stats": {
+      "Upgrade Slots": 2,
+      "Oxygen Slots": 1,
+      "Water Slots": 1
+    },
+    "tags": [
+      "Item.Envirosuit",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "UI.SilentItemPickup"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Hunters_Backpack": {
+    "itemId": "Hunters_Backpack",
+    "displayName": "Xenon Backpack",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Hunters_Backpack.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "A handy backpack to cover all your hunting needs.",
+    "flavorText": "Just think of the possibilities...",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 5500
+    },
+    "tags": [
+      "Item.Backpack",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 250
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 250
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 100
+        }
+      ]
+    }
+  },
+  "Workshop_Purification_Tablet": {
+    "itemId": "Workshop_Purification_Tablet",
+    "displayName": "Xigo Puri-tab",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Water_Purification_Tablet.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Will convert any Water into Treated Water. Removes any flavour effects. \\r\\n\\r\\nTo use, Craft the \\'Cool Water\\' recipe on your character with this tablet and a non-pure water source in your inventory.",
+    "flavorText": null,
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Medicine.Meta",
+      "Item.Meta",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 25
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "Workshop_Dressing_Kit": {
+    "itemId": "Workshop_Dressing_Kit",
+    "displayName": "Xigo Quick-Fix Kit",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Workshop_Dressing.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Provides the best healing Xigo can offer, treating most wounds, poisons\\', bacterial and parasitic infections instantly.",
+    "flavorText": "One of the latest Xigo products, for a better you.",
+    "weight": 1600,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Medicine.Bandage",
+      "Item.Medicine.Meta",
+      "Item.Meta.Consumable",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Workshop_Dressing_Kit_x5": {
+    "itemId": "Workshop_Dressing_Kit_x5",
+    "displayName": "Xigo Quick-Fix Kit",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Workshop_Dressing.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Provides the best healing Xigo can offer, treating most wounds, poisons\\', bacterial and parasitic infections instantly.",
+    "flavorText": "One of the latest Xigo products, for a better you.",
+    "weight": 1600,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Medicine.Bandage",
+      "Item.Medicine.Meta",
+      "Item.Meta.Consumable",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Workshop_Dressing_Bundle": {
+    "itemId": "Workshop_Dressing_Bundle",
+    "displayName": "Xigo Quick-Fix Bundle",
+    "category": "Food",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Workshop_Dressing_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Provides the best healing Xigo can offer, treating most wounds, poisons\\', bacterial and parasitic infections instantly. Consume for a pack of 5 Xigo Quick-Fix Kits",
+    "flavorText": "One of the latest Xigo products, for a better you.",
+    "weight": 8000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 50
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 50
+        }
+      ]
+    }
+  },
+  "Splint_Workshop": {
+    "itemId": "Splint_Workshop",
+    "displayName": "Xigo SplintX",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Splint_Workshop.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Heals a broken leg and provides resistance to falling for a period.",
+    "flavorText": "One of the latest Xigo products, for a better you.",
+    "weight": 1000,
+    "maxStack": 10,
+    "stats": null,
+    "tags": [
+      "Item.Equip.Quickbar",
+      "Item.Medicine.Bandage",
+      "Item.Meta",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Splint_Workshop_x5": {
+    "itemId": "Splint_Workshop_x5",
+    "displayName": "Xigo SplintX",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Splint_Workshop.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Heals a broken leg and provides resistance to falling for a period.",
+    "flavorText": "One of the latest Xigo products, for a better you.",
+    "weight": 1000,
+    "maxStack": 10,
+    "stats": null,
+    "tags": [
+      "Item.Equip.Quickbar",
+      "Item.Medicine.Bandage",
+      "Item.Meta",
+      "Traits.Actionable",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Splint_Workshop_Bundle": {
+    "itemId": "Splint_Workshop_Bundle",
+    "displayName": "Xigo SplintX Bundle",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Splint_Workshop_Bundle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "Workshop",
+    "description": "A pack of Splints which heal broken legs and provides resistance to falling for a period.",
+    "flavorText": "One of the latest Xigo products, for a better you.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta.Consumable",
+      "Item.Meta.Package",
+      "Traits.Consumable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 10
+        }
+      ]
+    }
+  }
+}

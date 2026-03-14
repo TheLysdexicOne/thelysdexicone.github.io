@@ -1,0 +1,165 @@
+{
+  "Queen_Bee": {
+    "itemId": "Queen_Bee",
+    "displayName": "Queen Bee",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Queen Bee that can be used for making Honeycomb or for breeding more bees.",
+    "flavorText": "The Bees of Icarus are known for their long, needle-like stingers which are capable of piercing even the toughest of envirosuits. Proceed with caution.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Bee.Queen",
+      "Item.Fuel.Combustible",
+      "Item.Resource.Fiber",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Quality_Fertilizer": {
+    "itemId": "Quality_Fertilizer",
+    "displayName": "Recovery Fertilizer",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Fertalizer_Recovery.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Quality_Fertilizer",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Herbalism_Bench",
+          "Medicine_Bench",
+          "Chemistry_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Basic_Fertilizer",
+            "itemName": "Basic Fertilizer",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Crushed_Bone",
+            "itemName": "Crushed Bone",
+            "count": 3
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Quality_Fertilizer",
+            "itemName": "Recovery Fertilizer",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 6
+            },
+            {
+              "itemId": "Dirt",
+              "count": 10
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 10
+            }
+          ],
+          "nodes": [
+            "Quality_Fertilizer",
+            "Basic_Fertilizer",
+            "Spoiled_Plants",
+            "Dirt",
+            "Crushed_Bone",
+            "Bone",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Basic_Fertilizer",
+              "to": "Quality_Fertilizer",
+              "count": 1,
+              "recipeId": "Basic_Fertilizer"
+            },
+            {
+              "from": "Crushed_Bone",
+              "to": "Quality_Fertilizer",
+              "count": 3,
+              "recipeId": "Crushed_Bone"
+            },
+            {
+              "from": "Bone",
+              "to": "Crushed_Bone",
+              "count": 2,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Promotes recovery of Crop Quality while the Crop is Wet.",
+    "flavorText": "Reach for the sky",
+    "weight": 2000,
+    "maxStack": 20,
+    "stats": {
+      "Durability": 1000
+    },
+    "tags": [
+      "Item.Fertilizer",
+      "Item.Resource",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Queen_Bee_Stack": {
+    "itemId": "Queen_Bee_Stack",
+    "displayName": "Queen Bee",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A Queen Bee that can be used for making Honeycomb or for breeding more bees.",
+    "flavorText": "The Bees of Icarus are known for their long, needle-like stingers which are capable of piercing even the toughest of envirosuits. Proceed with caution.",
+    "weight": 100,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Bee.Queen",
+      "Item.Fuel.Combustible",
+      "Item.Resource.Fiber",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  }
+}

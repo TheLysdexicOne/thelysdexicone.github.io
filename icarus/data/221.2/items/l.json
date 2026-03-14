@@ -1,0 +1,7286 @@
+{
+  "Leather": {
+    "itemId": "Leather",
+    "displayName": "Leather",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Leather.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Carcass_Deer",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Deer",
+            "itemName": "AnimalCarcass_Deer",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 18
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 15
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Chamois_M",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Chamois_M",
+            "itemName": "AnimalCarcass_Chamois_M",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 15
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Chamois_M"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_BabyDeer",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_BabyDeer",
+            "itemName": "AnimalCarcass_BabyDeer",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 20
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 10
+          },
+          {
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_BabyDeer"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Snow_Wolf",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Snow_Wolf",
+            "itemName": "AnimalCarcass_Snow_Wolf",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Snow_Wolf"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Lion_F",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Lion_F",
+            "itemName": "AnimalCarcass_Lion_F",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 4
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Lion_F"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Deer_Desert",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_DeerDesert",
+            "itemName": "AnimalCarcass_DeerDesert",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 18
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 15
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_DeerDesert"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Conifer_Wolf",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Conifer_Wolf",
+            "itemName": "AnimalCarcass_Conifer_Wolf",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Conifer_Wolf"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Pack_Wolf",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Pack_Wolf",
+            "itemName": "AnimalCarcass_Pack_Wolf",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Pack_Wolf"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Jaguar",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Jaguar",
+            "itemName": "AnimalCarcass_Jaguar",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Jaguar"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_SnowLeopord",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_SnowLeopard",
+            "itemName": "AnimalCarcass_SnowLeopard",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_SnowLeopard"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Desert_Wolf",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Desert_Wolf",
+            "itemName": "AnimalCarcass_Desert_Wolf",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Stringy_Meat",
+            "itemName": "Raw Stringy Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Desert_Wolf"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Rabbit",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Rabbit",
+            "itemName": "AnimalCarcass_Rabbit",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 20
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Rabbit"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Kea",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Kea",
+            "itemName": "AnimalCarcass_Kea",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "White_Meat",
+            "itemName": "Raw White Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 2
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 2
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Kea",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "White_Meat",
+            "AnimalCarcass_Kea"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Snow_Rabbit",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Snow_Rabbit",
+            "itemName": "AnimalCarcass_Snow_Rabbit",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 20
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 6
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Snow_Rabbit"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Boar",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_WildBoar",
+            "itemName": "AnimalCarcass_WildBoar",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Bacon",
+            "itemName": "Raw Bacon",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 8
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "White_Meat",
+            "itemName": "Raw White Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_WildBoar",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Bacon",
+            "AnimalCarcass_WildBoar"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Zebra",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Zebra",
+            "itemName": "AnimalCarcass_Zebra",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 16
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 15
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Zebra"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Pronghorn",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Pronghorn",
+            "itemName": "AnimalCarcass_Pronghorn",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 15
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Pronghorn"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_BatDog",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_BatDog",
+            "itemName": "AnimalCarcass_BatDog",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 10
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Fatty_Tbone",
+            "itemName": "Fatty_Tbone",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_BatDog"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Deer_Variant",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Deer_Variant",
+            "itemName": "AnimalCarcass_Deer_Variant",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 28
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 15
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Deer_Variant"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Chamois_Var",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Chamois_Var",
+            "itemName": "AnimalCarcass_Chamois_Var",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 40
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 15
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 20
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Chamois_Var"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_PredatorBird",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_PredatorBird",
+            "itemName": "AnimalCarcass_PredatorBird",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "White_Meat",
+            "itemName": "Raw White Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 2
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 2
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Kea",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "White_Meat",
+            "AnimalCarcass_PredatorBird"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Roat_Swamp",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Roat_Swamp",
+            "itemName": "AnimalCarcass_Roat_Swamp",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 16
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 12
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 4
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Roat_Swamp"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Roat_Lava",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Roat_Lava",
+            "itemName": "AnimalCarcass_Roat_Lava",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 16
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 12
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 4
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Roat_Lava"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Wooly_Zebra",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Wooly_Zebra",
+            "itemName": "AnimalCarcass_Wooly_Zebra",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 3
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 30
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 15
+          },
+          {
+            "itemId": "Gamey_Meat",
+            "itemName": "Raw Gamey Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Polarbear_Pelt",
+            "itemName": "Arctic Pelt",
+            "count": 8
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Wooly_Zebra"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Rabbit_Variant",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Rabbit_Variant",
+            "itemName": "AnimalCarcass_Rabbit_Variant",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 2
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 10
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 10
+          },
+          {
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Rabbit_Variant"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Rabbit_Variant_Snow",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Rabbit_Variant_Snow",
+            "itemName": "AnimalCarcass_Rabbit_Variant_Snow",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 2
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 10
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 10
+          },
+          {
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Rabbit_Variant_Snow"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Chick",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Chick",
+            "itemName": "AnimalCarcass_Chick",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "White_Meat",
+            "itemName": "Raw White Meat",
+            "count": 2
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 2
+          },
+          {
+            "itemId": "Fur",
+            "itemName": "Fur",
+            "count": 2
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 2
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Kea",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "White_Meat",
+            "AnimalCarcass_Chick"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Pig",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Pig",
+            "itemName": "AnimalCarcass_Pig",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 30
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 8
+          },
+          {
+            "itemId": "White_Meat",
+            "itemName": "Raw White Meat",
+            "count": 8
+          },
+          {
+            "itemId": "Raw_Bacon",
+            "itemName": "Raw Bacon",
+            "count": 20
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Leather",
+            "AnimalCarcass_Pig"
+          ],
+          "edges": []
+        }
+      },
+      {
+        "recipeId": "Carcass_Piglet",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Skinning_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "AnimalCarcass_Piglet",
+            "itemName": "AnimalCarcass_Piglet",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Raw_Meat",
+            "itemName": "Raw Meat",
+            "count": 5
+          },
+          {
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 4
+          },
+          {
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 5
+          },
+          {
+            "itemId": "Soft_Meat",
+            "itemName": "Raw Soft Meat",
+            "count": 3
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Raw_Meat",
+            "AnimalCarcass_Piglet"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Tanned and stretched animal skin.",
+    "flavorText": "Tanning stabilizes collagens, ensuring the skin does not rot when wet.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Creature.Loot",
+      "Item.Resource.Leather",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Longbow": {
+    "itemId": "Longbow",
+    "displayName": "Longbow",
+    "category": "Ranged",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Weapons/Bows/ITEM_Longbow.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Longbow",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench",
+          "Anvil_Bench_T3",
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 32
+          },
+          {
+            "kind": "item",
+            "itemId": "Bone",
+            "itemName": "Bone",
+            "count": 4
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Longbow",
+            "itemName": "Longbow",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 36
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 24
+            }
+          ],
+          "nodes": [
+            "Longbow",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Bone"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Longbow",
+              "count": 24,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Longbow",
+              "count": 32,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Bone",
+              "to": "Longbow",
+              "count": 4,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A powerful, but heavy long-range weapon.",
+    "flavorText": "Xeno-biologists hurriedly altered the genes of the tree from which this weapon is made, so that it might thrive on Icarus, never imagining that one day, a bow would be fashioned from it.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Fire Rate (RPM)": 300,
+      "Reload Time (s)": 0.699999988079071
+    },
+    "tags": [
+      "Item.Weapon.Bow",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lantern": {
+    "itemId": "Lantern",
+    "displayName": "Lantern",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Lantern.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lantern",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Rope",
+            "itemName": "Rope",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Animal_Fat",
+            "itemName": "Animal Fat",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lantern",
+            "itemName": "Lantern",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 5
+            },
+            {
+              "itemId": "Fiber",
+              "count": 48
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 192
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 24
+            }
+          ],
+          "nodes": [
+            "Lantern",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Rope",
+            "Fiber",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Animal_Fat",
+            "Raw_Meat",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Lantern",
+              "count": 8,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Rope",
+              "to": "Lantern",
+              "count": 4,
+              "recipeId": "Rope"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Lantern",
+              "count": 12,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Animal_Fat",
+              "to": "Lantern",
+              "count": 5,
+              "recipeId": "Animal_Fat"
+            },
+            {
+              "from": "Raw_Meat",
+              "to": "Animal_Fat",
+              "count": 1,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A portable, animal-fat-powered light, can be refilled on crafting bench.",
+    "flavorText": "Fear not the dark.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 2700
+    },
+    "tags": [
+      "Item.Tool.Light",
+      "Item.Upgrade.Vision",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Thermal",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Head": {
+    "itemId": "Leather_Head",
+    "displayName": "Leather Head Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Leather_Head.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Head_Armor",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Head",
+            "itemName": "Leather Head Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 12
+            },
+            {
+              "itemId": "Fiber",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Leather_Head",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Leather_Head",
+              "count": 12,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Headgear, providing some insulation and damage protection.",
+    "flavorText": null,
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 3750,
+      "Damage Resistance %": 4
+    },
+    "tags": [
+      "Item.Armor.Helmet",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Chest": {
+    "itemId": "Leather_Chest",
+    "displayName": "Leather Chest Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Leather_Chest.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Chest_Armor",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 60
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 24
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Chest",
+            "itemName": "Leather Chest Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 24
+            },
+            {
+              "itemId": "Fiber",
+              "count": 60
+            }
+          ],
+          "nodes": [
+            "Leather_Chest",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Leather_Chest",
+              "count": 24,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A basic cuirass, gives limited insulation and damage protection",
+    "flavorText": null,
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 3750,
+      "Damage Resistance %": 10
+    },
+    "tags": [
+      "Item.Armor.Chest",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Feet": {
+    "itemId": "Leather_Feet",
+    "displayName": "Leather Feet Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Leather_Feet.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Feet_Armor",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 12
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Feet",
+            "itemName": "Leather Feet Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 12
+            },
+            {
+              "itemId": "Fiber",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "Leather_Feet",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Leather_Feet",
+              "count": 12,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Roughly made boots, increase temperature and damage resistance.",
+    "flavorText": null,
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 3750,
+      "Damage Resistance %": 2
+    },
+    "tags": [
+      "Item.Armor.Boots",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Arms": {
+    "itemId": "Leather_Arms",
+    "displayName": "Leather Arms Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Leather_Arms.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Arms_Armor",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 40
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 8
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Arms",
+            "itemName": "Leather Arms Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 8
+            },
+            {
+              "itemId": "Fiber",
+              "count": 40
+            }
+          ],
+          "nodes": [
+            "Leather_Arms",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Leather_Arms",
+              "count": 8,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Gauntlets, providing basic protection and insulation.",
+    "flavorText": null,
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 3750,
+      "Damage Resistance %": 4
+    },
+    "tags": [
+      "Item.Armor.Gloves",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Legs": {
+    "itemId": "Leather_Legs",
+    "displayName": "Leather Leg Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Leather_Legs.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Legs_Armor",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 60
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 18
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Legs",
+            "itemName": "Leather Leg Armor",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 18
+            },
+            {
+              "itemId": "Fiber",
+              "count": 60
+            }
+          ],
+          "nodes": [
+            "Leather_Legs",
+            "Fiber",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Leather",
+              "to": "Leather_Legs",
+              "count": 18,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Simple chausses, improving insulation and damage resistance.",
+    "flavorText": null,
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 3750,
+      "Damage Resistance %": 8
+    },
+    "tags": [
+      "Item.Armor.Pants",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lily": {
+    "itemId": "Lily",
+    "displayName": "Lily",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/ITEM_Lily.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A wildflower reputed to have medicinal properties.",
+    "flavorText": "Adapting to the exotics-infused soil of Icarus, this lily has acquired unusual and useful new chemical properties.",
+    "weight": 10,
+    "maxStack": 100,
+    "stats": null,
+    "tags": [
+      "Item.Plant.Herb",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "LightningRod_Basic": {
+    "itemId": "LightningRod_Basic",
+    "displayName": "Lightning Rod",
+    "category": "Resource Networks",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_LightningRod_Basic.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "LightningRod_Basic",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Refined_Copper",
+            "itemName": "Copper Ingot",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "LightningRod_Basic",
+            "itemName": "Lightning Rod",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 20
+            }
+          ],
+          "nodes": [
+            "LightningRod_Basic",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Copper",
+              "to": "LightningRod_Basic",
+              "count": 10,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Channels lightning strikes safely toward the ground, saving structures from fiery destruction.",
+    "flavorText": "The effect of Minos\\'s gravitational tides on the atmosphere creates extraordinarily powerful electrical storms, making these devices indispensible.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 800
+    },
+    "tags": [
+      "Item.Deployable.LightningRod",
+      "LightningTarget",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Curtain_Door": {
+    "itemId": "Leather_Curtain_Door",
+    "displayName": "Leather Curtain Door",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Leather_Curtain_Door.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Curtain_Door",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator",
+          "Armor_Bench",
+          "Advanced_Armor_Bench",
+          "Electric_Armor_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 15
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Curtain_Door",
+            "itemName": "Leather Curtain Door",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 15
+            },
+            {
+              "itemId": "Fiber",
+              "count": 20
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            }
+          ],
+          "nodes": [
+            "Leather_Curtain_Door",
+            "Fiber",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Leather_Curtain_Door",
+              "count": 5,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Leather_Curtain_Door",
+              "count": 15,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A heavily curtained doorway.",
+    "flavorText": "A door for those unimpressed by hinges and handles.",
+    "weight": 1000,
+    "maxStack": 20,
+    "stats": null,
+    "tags": [
+      "Item.BuildingTrim",
+      "Item.Deployable.Door.ClothPhysics",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Leather_Curtain_Window": {
+    "itemId": "Leather_Curtain_Window",
+    "displayName": "Leather Curtain Window",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Leather_Curtain_Window.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Leather_Curtain_Window",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Crafting_Bench",
+          "Machining_Bench",
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Fiber",
+            "itemName": "Fiber",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood",
+            "itemName": "Wood",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Leather",
+            "itemName": "Leather",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Leather_Curtain_Window",
+            "itemName": "Leather Curtain Window",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 10
+            },
+            {
+              "itemId": "Fiber",
+              "count": 15
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 5
+            }
+          ],
+          "nodes": [
+            "Leather_Curtain_Window",
+            "Fiber",
+            "Wood",
+            "Frozen_Wood",
+            "Leather",
+            "AnimalCarcass_Deer"
+          ],
+          "edges": [
+            {
+              "from": "Wood",
+              "to": "Leather_Curtain_Window",
+              "count": 5,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Leather",
+              "to": "Leather_Curtain_Window",
+              "count": 10,
+              "recipeId": "Carcass_Deer"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Heavy duty leather curtains.",
+    "flavorText": "Happier with flaps.",
+    "weight": 1000,
+    "maxStack": 20,
+    "stats": null,
+    "tags": [
+      "Item.BuildingTrim",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Flammable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landmine": {
+    "itemId": "Landmine",
+    "displayName": "Makeshift Landmine",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Landmine",
+        "requiredMillijoules": 4500,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Nail",
+            "itemName": "Copper Nail",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Gunpowder",
+            "itemName": "Gunpowder",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Landmine",
+            "itemName": "Makeshift Landmine",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 36
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 54
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 12
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 10
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 18
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Landmine",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Copper_Nail",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Volatile_Substance",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Composites",
+              "to": "Landmine",
+              "count": 2,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Electronics",
+              "to": "Landmine",
+              "count": 1,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Copper_Nail",
+              "to": "Landmine",
+              "count": 12,
+              "recipeId": "Copper_Nail"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Nail",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Landmine",
+              "count": 4,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Landmine",
+              "count": 1,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "Place to Trigger and Arm.",
+    "flavorText": "Dangerous... Very Dangerous....",
+    "weight": 1000,
+    "maxStack": 20,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Defense",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Large_Advanced_Aquarium": {
+    "itemId": "Large_Advanced_Aquarium",
+    "displayName": "Large Advanced Aquarium",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Large_Advanced_Aquarium.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Large_Advanced_Aquarium",
+        "requiredMillijoules": 5000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Glass",
+            "itemName": "Glass",
+            "count": 50
+          },
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Gold",
+            "itemName": "Refined Gold",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Paste",
+            "itemName": "Carbon Paste",
+            "count": 20
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Large_Advanced_Aquarium",
+            "itemName": "Large Advanced Aquarium",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 924
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 180
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 84
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 92
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 75
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 70
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 104
+            }
+          ],
+          "nodes": [
+            "Large_Advanced_Aquarium",
+            "Glass",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Electronics",
+            "Gold_Wire",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Carbon_Paste",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite"
+          ],
+          "edges": [
+            {
+              "from": "Glass",
+              "to": "Large_Advanced_Aquarium",
+              "count": 50,
+              "recipeId": "Glass"
+            },
+            {
+              "from": "Silica",
+              "to": "Glass",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Platinum_Ingot",
+              "to": "Large_Advanced_Aquarium",
+              "count": 15,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Large_Advanced_Aquarium",
+              "count": 12,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Electronics",
+              "to": "Large_Advanced_Aquarium",
+              "count": 6,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Large_Advanced_Aquarium",
+              "count": 20,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "Galileo",
+    "cosmeticPack": "",
+    "description": "A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.",
+    "flavorText": "The latest technology for storing your fish friends.",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 2000
+    },
+    "tags": [
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Inventory",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Layered_Plating": {
+    "itemId": "Layered_Plating",
+    "displayName": "Layered Plating",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Layered_Plating.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Layered_Plating",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Concrete_Mix",
+            "itemName": "Concrete Mix",
+            "count": 20
+          },
+          {
+            "kind": "item",
+            "itemId": "Aluminium",
+            "itemName": "Aluminium Ingot",
+            "count": 16
+          },
+          {
+            "kind": "item",
+            "itemId": "Titanium_Ingot",
+            "itemName": "Titanium Ingot",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Composites",
+            "itemName": "Composites",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 40
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Layered_Plating",
+            "itemName": "Layered Plating",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 104
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 40
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 288
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 104
+            },
+            {
+              "itemId": "Pyritic_Crust_Stone",
+              "count": 160
+            },
+            {
+              "itemId": "Pyritic_Crust_Titanium",
+              "count": 50
+            }
+          ],
+          "nodes": [
+            "Layered_Plating",
+            "Concrete_Mix",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Stone",
+            "Pyritic_Crust_Stone",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Titanium_Ingot",
+            "Titanium_Ore",
+            "Pyritic_Crust_Titanium",
+            "Composites",
+            "Composite_Paste",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Organic_Resin",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal"
+          ],
+          "edges": [
+            {
+              "from": "Concrete_Mix",
+              "to": "Layered_Plating",
+              "count": 20,
+              "recipeId": "Concrete_Mix"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Concrete_Mix",
+              "count": 1,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Stone",
+              "to": "Concrete_Mix",
+              "count": 8,
+              "recipeId": "Pyritic_Crust_Stone"
+            },
+            {
+              "from": "Silica",
+              "to": "Concrete_Mix",
+              "count": 4,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Layered_Plating",
+              "count": 16,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Titanium_Ingot",
+              "to": "Layered_Plating",
+              "count": 10,
+              "recipeId": "Titanium_Ingot"
+            },
+            {
+              "from": "Titanium_Ore",
+              "to": "Titanium_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Titanium"
+            },
+            {
+              "from": "Composites",
+              "to": "Layered_Plating",
+              "count": 24,
+              "recipeId": "Composites"
+            },
+            {
+              "from": "Composite_Paste",
+              "to": "Composites",
+              "count": 1,
+              "recipeId": "Composite_Paste"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Composite_Paste",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Silica",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Composite_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Layered_Plating",
+              "count": 40,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Layered metal plates for protection.",
+    "flavorText": "Simple enough to make on the surface, strong enough to protect from harsh weather.",
+    "weight": 90000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 5000
+    },
+    "tags": [
+      "Item.Quest",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lily_Seed": {
+    "itemId": "Lily_Seed",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lily_Seeds",
+        "requiredMillijoules": 15000,
+        "stationIds": [
+          "Seed_Extractor"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lily",
+            "itemName": "Lily",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lily_Seed",
+            "itemName": "Seed",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Lily",
+              "count": 2
+            }
+          ],
+          "nodes": [
+            "Lily_Seed",
+            "Lily"
+          ],
+          "edges": []
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lily_Seed_Pack": {
+    "itemId": "Lily_Seed_Pack",
+    "displayName": "Seed",
+    "category": "Plants",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Can be planted in a Dirt Mound or Crop Plot.",
+    "flavorText": "You reap what you sow.",
+    "weight": 10,
+    "maxStack": 400,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Resource",
+      "Item.Seed",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Highlightable",
+      "Traits.Hitable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Larkwell_Armor_Alpha_Head": {
+    "itemId": "Larkwell_Armor_Alpha_Head",
+    "displayName": "Larkwell Martinez Tachyon Head Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Alpha_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "Workshop",
+    "description": "This tactical armor provides an increase to sprint speed and stamina.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 3
+    },
+    "tags": [
+      "Item.Armor.Helmet",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Alpha_Chest": {
+    "itemId": "Larkwell_Armor_Alpha_Chest",
+    "displayName": "Larkwell Martinez Tachyon Chest Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Alpha_Chest.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "Workshop",
+    "description": "This tactical armor provides an increase to sprint speed and stamina.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 6
+    },
+    "tags": [
+      "Item.Armor.Chest",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Alpha_Arms": {
+    "itemId": "Larkwell_Armor_Alpha_Arms",
+    "displayName": "Larkwell Martinez Tachyon Arm Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Alpha_Arms.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "Workshop",
+    "description": "This tactical armor provides an increase to sprint speed and stamina.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 2
+    },
+    "tags": [
+      "Item.Armor.Gloves",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Alpha_Legs": {
+    "itemId": "Larkwell_Armor_Alpha_Legs",
+    "displayName": "Larkwell Martinez Tachyon Legs Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Alpha_Legs.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "Workshop",
+    "description": "This tactical armor provides an increase to sprint speed and stamina.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 6
+    },
+    "tags": [
+      "Item.Armor.Pants",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Alpha_Feet": {
+    "itemId": "Larkwell_Armor_Alpha_Feet",
+    "displayName": "Larkwell Martinez Tachyon Feet Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Alpha_Feet.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "Workshop",
+    "description": "This tactical armor provides an increase to sprint speed and stamina.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 1
+    },
+    "tags": [
+      "Item.Armor.Boots",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Lava_Hunter_Head": {
+    "itemId": "Lava_Hunter_Head",
+    "displayName": "Lava Hunter Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_LavaHunter.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Lava Hunter.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 5000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Unique",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Broodling_Head": {
+    "itemId": "Lava_Broodling_Head",
+    "displayName": "Lava Broodling Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_LavaBroodling.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Lava Broodling.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Viscid_Head": {
+    "itemId": "Lava_Viscid_Head",
+    "displayName": "Ignari Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Vicid.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Ignari.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Uncommon",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Land_Shark_Head": {
+    "itemId": "Land_Shark_Head",
+    "displayName": "Landshark Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Landshark.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved memory of a once-great Landshark.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 5000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Unique",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Broodling_Trophy": {
+    "itemId": "Lava_Hunter_Broodling_Trophy",
+    "displayName": "Lava Broodling Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lava_Hunter_Broodling_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Broodling_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Broodling_Head",
+            "itemName": "Lava Broodling Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Broodling_Trophy",
+            "itemName": "Lava Broodling Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Lava_Broodling_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Broodling_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Lava_Broodling_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Lava_Hunter_Broodling_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A mounted Lava Broodling head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Viscid_Trophy": {
+    "itemId": "Lava_Viscid_Trophy",
+    "displayName": "Ignari Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lava_Viscid_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Viscid_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Viscid_Head",
+            "itemName": "Ignari Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Viscid_Trophy",
+            "itemName": "Ignari Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Lava_Viscid_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Lava_Viscid_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Lava_Viscid_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Lava_Viscid_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "NewFrontiers",
+    "cosmeticPack": "",
+    "description": "A mounted Ignari head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landshark_Trophy": {
+    "itemId": "Landshark_Trophy",
+    "displayName": "Landshark Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Landshark_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Landshark_Trophy",
+        "requiredMillijoules": 10000,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          },
+          {
+            "kind": "item",
+            "itemId": "Land_Shark_Head",
+            "itemName": "Landshark Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Landshark_Trophy",
+            "itemName": "Landshark Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Land_Shark_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Landshark_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Land_Shark_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Landshark_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A mounted Landshark head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Larkwell_Armor_Black_Head": {
+    "itemId": "Larkwell_Armor_Black_Head",
+    "displayName": "LM Beastmaster Head Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Black_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Part of an armor set designed for fighting alongside your creature companions.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 3
+    },
+    "tags": [
+      "Item.Armor.Helmet",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Black_Chest": {
+    "itemId": "Larkwell_Armor_Black_Chest",
+    "displayName": "LM Beastmaster Chest Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Black_Chest.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Part of an armor set designed for fighting alongside your creature companions.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 6
+    },
+    "tags": [
+      "Item.Armor.Chest",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Black_Arms": {
+    "itemId": "Larkwell_Armor_Black_Arms",
+    "displayName": "LM Beastmaster Arm Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Black_Arms.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Part of an armor set designed for fighting alongside your creature companions.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 2
+    },
+    "tags": [
+      "Item.Armor.Gloves",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Black_Legs": {
+    "itemId": "Larkwell_Armor_Black_Legs",
+    "displayName": "LM Beastmaster Leg Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Black_Legs.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Part of an armor set designed for fighting alongside your creature companions.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 6
+    },
+    "tags": [
+      "Item.Armor.Pants",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Larkwell_Armor_Black_Feet": {
+    "itemId": "Larkwell_Armor_Black_Feet",
+    "displayName": "LM Beastmaster Feet Armor",
+    "category": "Armor",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Larkwell_Armor_Black_Feet.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "Workshop",
+    "description": "Part of an armor set designed for fighting alongside your creature companions.",
+    "flavorText": "Larkwell Martinez: Your Companion In Adventure",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Damage Resistance %": 1
+    },
+    "tags": [
+      "Item.Armor.Boots",
+      "Item.Meta",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": {
+      "researchCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 200
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 150
+        }
+      ],
+      "replicationCost": [
+        {
+          "currencyId": "Credits",
+          "amount": 100
+        },
+        {
+          "currencyId": "Exotic1",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "Licence": {
+    "itemId": "Licence",
+    "displayName": "Legendary Licence",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Icons/T_ICON_Licence.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Licence which allows the purchasing of a Legendary Item.",
+    "flavorText": "Granted by the Norex Special Weapons Division.",
+    "weight": 10,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Meta.Resource",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Trophy": {
+    "itemId": "Lava_Hunter_Trophy",
+    "displayName": "Lava Hunter Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lava_Hunter_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Trophy_Head",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Head",
+            "itemName": "Lava Hunter Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 30
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Trophy",
+            "itemName": "Lava Hunter Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 30
+            },
+            {
+              "itemId": "Lava_Hunter_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Trophy",
+            "Lava_Hunter_Head",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Lava_Hunter_Trophy",
+              "count": 30,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A mounted Lava Hunter head.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Black_Wolf_Revolver": {
+    "itemId": "LegendaryWeapon_Black_Wolf_Revolver",
+    "displayName": "Frontier Revolver",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Black_Wolf_Revolver.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Revolver created via studying of the Black Wolf.",
+    "flavorText": "Someone at Norex was a fan of old westerns.",
+    "weight": 2500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 35000,
+      "Fire Rate (RPM)": 80,
+      "Mag Size": 6,
+      "Reload Time (s)": 3.75
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Firearm.Pistol",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Scorpion_Rifle": {
+    "itemId": "LegendaryWeapon_Scorpion_Rifle",
+    "displayName": "Kinetic Rifle",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Scorpion_Rifle.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Rifle created via studying of the Giant Scorpion.",
+    "flavorText": "How did Norex turn a Scorpion into a Rifle? You know what, I don\\'t wanna know.",
+    "weight": 5000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 35000,
+      "Fire Rate (RPM)": 85,
+      "Mag Size": 6,
+      "Reload Time (s)": 3
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Firearm.Rifle",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Sandworm_Crossbow": {
+    "itemId": "LegendaryWeapon_Sandworm_Crossbow",
+    "displayName": "Javelin Launcher",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Sandworm_Crossbow.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Javelin Launcher created via studying of the Sandworm.",
+    "flavorText": "Norex knows we need to carry these things, right?",
+    "weight": 15000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 20000,
+      "Reload Time (s)": 4.5
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Bow",
+      "Item.Weapon.Crossbow",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lightning_Rod_Platnium": {
+    "itemId": "Lightning_Rod_Platnium",
+    "displayName": "Platinum Lightning Rod",
+    "category": "Resource Networks",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_LightningRod_Platinum.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "LightningRod_Platinum",
+        "requiredMillijoules": 25000,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Platinum_Ingot",
+            "itemName": "Platinum Ingot",
+            "count": 12
+          },
+          {
+            "kind": "item",
+            "itemId": "Copper_Wire",
+            "itemName": "Copper Wire",
+            "count": 25
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lightning_Rod_Platnium",
+            "itemName": "Platinum Lightning Rod",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 68
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 110
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 20
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Platinum",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Lightning_Rod_Platnium",
+            "Platinum_Ingot",
+            "Platinum_Ore",
+            "Pyritic_Crust_Platinum",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick"
+          ],
+          "edges": [
+            {
+              "from": "Platinum_Ingot",
+              "to": "Lightning_Rod_Platnium",
+              "count": 12,
+              "recipeId": "Platinum_Ingot"
+            },
+            {
+              "from": "Platinum_Ore",
+              "to": "Platinum_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Platinum"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Lightning_Rod_Platnium",
+              "count": 25,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Electronics",
+              "to": "Lightning_Rod_Platnium",
+              "count": 2,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Channels lightning strikes safely toward the ground, saving structures from fiery destruction. Can be connected to a power network to charge batteries when struck.",
+    "flavorText": "The effect of Minos\\'s gravitational tides on the atmosphere creates extraordinarily powerful electrical storms, making these devices indispensible.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 10000
+    },
+    "tags": [
+      "Item.Deployable.LightningRod",
+      "LightningTarget",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Mine": {
+    "itemId": "Lava_Hunter_Mine",
+    "displayName": "Lava Hunter Bomber Mine",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lava_Hunter_Mine.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Mine",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Volatile_Substance",
+            "itemName": "Volatile Substance",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Mine",
+            "itemName": "Lava Hunter Bomber Mine",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 34
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 6
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 30
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            },
+            {
+              "itemId": "Spoiled_Meat",
+              "count": 12
+            },
+            {
+              "itemId": "Spoiled_Plants",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Mine",
+            "Lava_Hunter_Magma",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Lava_Hunter_Horn",
+            "Volatile_Substance",
+            "Gunpowder",
+            "Charcoal",
+            "Spoiled_Meat",
+            "Spoiled_Plants"
+          ],
+          "edges": [
+            {
+              "from": "Electronics",
+              "to": "Lava_Hunter_Mine",
+              "count": 1,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Volatile_Substance",
+              "to": "Lava_Hunter_Mine",
+              "count": 2,
+              "recipeId": "Volatile_Substance"
+            },
+            {
+              "from": "Gunpowder",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Gunpowder"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Gunpowder",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Charcoal",
+              "to": "Gunpowder",
+              "count": 3,
+              "recipeId": "Charcoal"
+            },
+            {
+              "from": "Oxite",
+              "to": "Volatile_Substance",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Oxite"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "When placed will break open Lava Hunter Eggs and Release Bombers.",
+    "flavorText": "Let\\'s see how they like it.",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Defense",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Backpack": {
+    "itemId": "Lava_Hunter_Backpack",
+    "displayName": "Lava Hunter Heated Backpack",
+    "category": "Equipment",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Lava_Hunter_Backpack.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Backpack",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Fabricator"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Advanced_Leather",
+            "itemName": "Cured Leather",
+            "count": 25
+          },
+          {
+            "kind": "item",
+            "itemId": "Electronics",
+            "itemName": "Electronics",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 16
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Backpack",
+            "itemName": "Lava Hunter Heated Backpack",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "AnimalCarcass_Deer",
+              "count": 150
+            },
+            {
+              "itemId": "Frozen_Wood",
+              "count": 926
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 2
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Copper",
+              "count": 450
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 150
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 60
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 54
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 6
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 84
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Backpack",
+            "Advanced_Leather",
+            "Leather",
+            "AnimalCarcass_Deer",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood",
+            "Electronics",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Copper_Wire",
+            "Refined_Copper",
+            "Copper_Ore",
+            "Pyritic_Crust_Copper",
+            "Organic_Resin",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Lava_Hunter_Magma",
+            "Lava_Hunter_Horn"
+          ],
+          "edges": [
+            {
+              "from": "Advanced_Leather",
+              "to": "Lava_Hunter_Backpack",
+              "count": 25,
+              "recipeId": "Cured_Leather"
+            },
+            {
+              "from": "Leather",
+              "to": "Advanced_Leather",
+              "count": 6,
+              "recipeId": "Carcass_Deer"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Advanced_Leather",
+              "count": 2,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Electronics",
+              "to": "Lava_Hunter_Backpack",
+              "count": 15,
+              "recipeId": "Electronics"
+            },
+            {
+              "from": "Gold_Wire",
+              "to": "Electronics",
+              "count": 5,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Copper_Wire",
+              "to": "Electronics",
+              "count": 15,
+              "recipeId": "Copper_Wire"
+            },
+            {
+              "from": "Refined_Copper",
+              "to": "Copper_Wire",
+              "count": 1,
+              "recipeId": "Refined_Copper"
+            },
+            {
+              "from": "Copper_Ore",
+              "to": "Refined_Copper",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Copper"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Electronics",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Carbon_Fiber",
+              "to": "Lava_Hunter_Backpack",
+              "count": 6,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Lava_Hunter_Backpack",
+              "count": 10,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A powered backpack that emits an aura of warmth. Can be recharged at the Charging Station.",
+    "flavorText": "Who would have thought carrying around a lava core was good idea.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 5500
+    },
+    "tags": [
+      "Item.Backpack",
+      "Item.Powered.Battery",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Equippable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Attachment": {
+    "itemId": "Lava_Hunter_Attachment",
+    "displayName": "Lava Hunter Scorch Attachment",
+    "category": "Attachments",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttTool_LavaHunter.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Attachment",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Attachment",
+            "itemName": "Lava Hunter Scorch Attachment",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 72
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 2
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 8
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Attachment",
+            "Lava_Hunter_Magma",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Lava_Hunter_Horn"
+          ],
+          "edges": [
+            {
+              "from": "Carbon_Fiber",
+              "to": "Lava_Hunter_Attachment",
+              "count": 2,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "An attachment that grants fire damage and chance to burn on melee weapons.",
+    "flavorText": "Can be equipped to a valid melee weapon at an Alteration Bench.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Attachment.Melee",
+      "Item.Attachment.Rank.LavaHunter",
+      "Item.Meta",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Module": {
+    "itemId": "Lava_Hunter_Module",
+    "displayName": "Lava Hunter Volcanic Module",
+    "category": "Suits & Modules",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_LavaHunter.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Module",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Advanced_Alteration_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 10
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Ingot",
+            "itemName": "Steel Ingot",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 2
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Module",
+            "itemName": "Lava Hunter Volcanic Module",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 32
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 4
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 4
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Module",
+            "Lava_Hunter_Magma",
+            "Lava_Hunter_Horn",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Wood",
+            "Frozen_Wood"
+          ],
+          "edges": [
+            {
+              "from": "Steel_Ingot",
+              "to": "Lava_Hunter_Module",
+              "count": 4,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Lava_Hunter_Module",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Provides advantages in Volcanic Environments.",
+    "flavorText": "A module which can grant envirosuits characteristics of the Lava Hunter Creature.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "Item.Upgrade.Passive",
+      "Traits.Equippable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Sickle": {
+    "itemId": "Lava_Hunter_Sickle",
+    "displayName": "Lava Hunter Sickle",
+    "category": "Tools",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Lava_Hunter_Sickle.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Sickle",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Anvil_Bench_T4"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Carbon_Fiber",
+            "itemName": "Carbon Fiber",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 2
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Epoxy",
+            "itemName": "Epoxy",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Titanium_Ingot",
+            "itemName": "Titanium Ingot",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Sickle",
+            "itemName": "Lava Hunter Sickle",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 208
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 6
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 2
+            },
+            {
+              "itemId": "Pyritic_Crust_Bauxite",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Oxite",
+              "count": 16
+            },
+            {
+              "itemId": "Pyritic_Crust_Silicon",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Sulfur",
+              "count": 24
+            },
+            {
+              "itemId": "Pyritic_Crust_Titanium",
+              "count": 50
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Sickle",
+            "Carbon_Fiber",
+            "Carbon_Paste",
+            "Silica",
+            "Pyritic_Crust_Silicon",
+            "Aluminium",
+            "Bauxite",
+            "Pyritic_Crust_Bauxite",
+            "Organic_Resin",
+            "Wood",
+            "Frozen_Wood",
+            "Oxite",
+            "Pyritic_Crust_Oxite",
+            "Epoxy",
+            "Sulfur",
+            "Pyritic_Crust_Sulfur",
+            "Tree_Sap",
+            "Stick",
+            "Lava_Hunter_Magma",
+            "Lava_Hunter_Horn",
+            "Titanium_Ingot",
+            "Titanium_Ore",
+            "Pyritic_Crust_Titanium"
+          ],
+          "edges": [
+            {
+              "from": "Carbon_Fiber",
+              "to": "Lava_Hunter_Sickle",
+              "count": 4,
+              "recipeId": "Carbon_Fiber"
+            },
+            {
+              "from": "Carbon_Paste",
+              "to": "Carbon_Fiber",
+              "count": 1,
+              "recipeId": "Carbon_Paste"
+            },
+            {
+              "from": "Silica",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Silicon"
+            },
+            {
+              "from": "Aluminium",
+              "to": "Carbon_Paste",
+              "count": 1,
+              "recipeId": "Aluminum"
+            },
+            {
+              "from": "Bauxite",
+              "to": "Aluminium",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Bauxite"
+            },
+            {
+              "from": "Organic_Resin",
+              "to": "Carbon_Paste",
+              "count": 4,
+              "recipeId": "Organic_Resin"
+            },
+            {
+              "from": "Wood",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Oxite",
+              "to": "Organic_Resin",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Oxite"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Carbon_Paste",
+              "count": 2,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Sulfur",
+              "to": "Epoxy",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Sulfur"
+            },
+            {
+              "from": "Tree_Sap",
+              "to": "Epoxy",
+              "count": 4,
+              "recipeId": "Tree_Sap"
+            },
+            {
+              "from": "Stick",
+              "to": "Tree_Sap",
+              "count": 4,
+              "recipeId": "Stick"
+            },
+            {
+              "from": "Wood",
+              "to": "Stick",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            },
+            {
+              "from": "Epoxy",
+              "to": "Lava_Hunter_Sickle",
+              "count": 4,
+              "recipeId": "Epoxy"
+            },
+            {
+              "from": "Titanium_Ingot",
+              "to": "Lava_Hunter_Sickle",
+              "count": 10,
+              "recipeId": "Titanium_Ingot"
+            },
+            {
+              "from": "Titanium_Ore",
+              "to": "Titanium_Ingot",
+              "count": 5,
+              "recipeId": "Pyritic_Crust_Titanium"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Sickle crafted from the spoils of victory against a Lava Hunter.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 70,
+      "Durability": 60000
+    },
+    "tags": [
+      "Item.Tool.Sickle",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Trophy_Chair": {
+    "itemId": "Lava_Hunter_Trophy_Chair",
+    "displayName": "Lava Hunter Throne",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lava_Hunter_Chair.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Trophy_Throne",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Head",
+            "itemName": "Lava Hunter Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Refined_Metal",
+            "itemName": "Iron Ingot",
+            "count": 6
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 8
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 5
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Trophy_Chair",
+            "itemName": "Lava Hunter Throne",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Lava_Hunter_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 5
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 5
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 8
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 60
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Trophy_Chair",
+            "Lava_Hunter_Head",
+            "Refined_Metal",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Lava_Hunter_Horn",
+            "Lava_Hunter_Magma"
+          ],
+          "edges": [
+            {
+              "from": "Refined_Metal",
+              "to": "Lava_Hunter_Trophy_Chair",
+              "count": 6,
+              "recipeId": "Refined_Metal"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Refined_Metal",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Lava_Hunter_Trophy_Chair",
+              "count": 8,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Throne crafted from the spoils of victory against a Lava Hunter.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Trophy_Feature": {
+    "itemId": "Lava_Hunter_Trophy_Feature",
+    "displayName": "Lava Hunter Display",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lava_Hunter_Feature.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lava_Hunter_Trophy_Feature",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Head",
+            "itemName": "Lava Hunter Vestige",
+            "count": 1
+          },
+          {
+            "kind": "item",
+            "itemId": "Gold_Wire",
+            "itemName": "Gold Wire",
+            "count": 24
+          },
+          {
+            "kind": "item",
+            "itemId": "Steel_Screw",
+            "itemName": "Steel Screw",
+            "count": 4
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Horn",
+            "itemName": "Hardened Horn",
+            "count": 5
+          },
+          {
+            "kind": "item",
+            "itemId": "Lava_Hunter_Magma",
+            "itemName": "Hardened Magma",
+            "count": 10
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lava_Hunter_Trophy_Feature",
+            "itemName": "Lava Hunter Display",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Lava_Hunter_Head",
+              "count": 1
+            },
+            {
+              "itemId": "Lava_Hunter_Horn",
+              "count": 5
+            },
+            {
+              "itemId": "Lava_Hunter_Magma",
+              "count": 10
+            },
+            {
+              "itemId": "Pyritic_Crust_Coal",
+              "count": 4
+            },
+            {
+              "itemId": "Pyritic_Crust_Gold",
+              "count": 48
+            },
+            {
+              "itemId": "Pyritic_Crust_Iron",
+              "count": 24
+            }
+          ],
+          "nodes": [
+            "Lava_Hunter_Trophy_Feature",
+            "Lava_Hunter_Head",
+            "Gold_Wire",
+            "Refined_Gold",
+            "Gold_Ore",
+            "Pyritic_Crust_Gold",
+            "Steel_Screw",
+            "Steel_Ingot",
+            "Steel_Bloom",
+            "Metal_Ore",
+            "Pyritic_Crust_Iron",
+            "Coal_Ore",
+            "Pyritic_Crust_Coal",
+            "Lava_Hunter_Horn",
+            "Lava_Hunter_Magma"
+          ],
+          "edges": [
+            {
+              "from": "Gold_Wire",
+              "to": "Lava_Hunter_Trophy_Feature",
+              "count": 24,
+              "recipeId": "Gold_Wire"
+            },
+            {
+              "from": "Refined_Gold",
+              "to": "Gold_Wire",
+              "count": 1,
+              "recipeId": "Refined_Gold"
+            },
+            {
+              "from": "Gold_Ore",
+              "to": "Refined_Gold",
+              "count": 2,
+              "recipeId": "Pyritic_Crust_Gold"
+            },
+            {
+              "from": "Steel_Screw",
+              "to": "Lava_Hunter_Trophy_Feature",
+              "count": 4,
+              "recipeId": "Steel_Screw"
+            },
+            {
+              "from": "Steel_Ingot",
+              "to": "Steel_Screw",
+              "count": 1,
+              "recipeId": "Steel_Ingot"
+            },
+            {
+              "from": "Steel_Bloom",
+              "to": "Steel_Ingot",
+              "count": 1,
+              "recipeId": "Steel_Bloom"
+            },
+            {
+              "from": "Metal_Ore",
+              "to": "Steel_Bloom",
+              "count": 6,
+              "recipeId": "Pyritic_Crust_Iron"
+            },
+            {
+              "from": "Coal_Ore",
+              "to": "Steel_Bloom",
+              "count": 1,
+              "recipeId": "Pyritic_Crust_Coal"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A preserved specimen from a Lava Hunter that once lived on Icarus.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 500
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Magma": {
+    "itemId": "Lava_Hunter_Magma",
+    "displayName": "Hardened Magma",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Lava_Hunter_Magma.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A piece of tough magma taken from the body of a great beast.",
+    "flavorText": "Evidence of a hard-won fight.",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Creature.Loot",
+      "Item.Fuel.Combustible",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lava_Hunter_Horn": {
+    "itemId": "Lava_Hunter_Horn",
+    "displayName": "Hardened Horn",
+    "category": "Resources",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Lava_Hunter_Horn.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A piece of horn taken from the body of a great beast.",
+    "flavorText": "Evidence of a hard-won fight.",
+    "weight": 1000,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Creature.Loot",
+      "Item.Resource",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_ApeClub": {
+    "itemId": "LegendaryWeapon_ApeClub",
+    "displayName": "Biotech Maul",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Ape_Club.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Club created via studying of the Garganutan.",
+    "flavorText": "An Ape Club? Real original, Norex",
+    "weight": 12000,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 130,
+      "Durability": 25000
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Tool.Sledgehammer",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_SlugLauncher": {
+    "itemId": "LegendaryWeapon_SlugLauncher",
+    "displayName": "Slugger",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_SlugLauncher.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Launcher created via studying of the Hammerhead Slug.",
+    "flavorText": "Another Weird Norex Invention, this one shoots Slime?",
+    "weight": 2500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 20000,
+      "Fire Rate (RPM)": 45,
+      "Reload Time (s)": 0.8999999761581421
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.Fillable.Water.NoAlteration",
+      "Item.Fillable.Water.NoDrink",
+      "Item.Fillable.Water.NoShow",
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Utility.AlwaysShow",
+      "Item.Weapon.Launcher",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_GolemGauntlet": {
+    "itemId": "LegendaryWeapon_GolemGauntlet",
+    "displayName": "Mining Armature",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_GolemGauntlet.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Gauntlet created via studying of the Quarrite. Primarily used for mining.",
+    "flavorText": "The first step in Norex\\'s efforts towards an Exoskeleton.",
+    "weight": 8000,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 60,
+      "Mining Efficiency": 1.4500000476837158,
+      "Mining Radius": 80,
+      "Durability": 140000
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Tool.Pickaxe.T1",
+      "Item.Tool.Pickaxe.T2",
+      "Item.Weapon.Gauntlet",
+      "Traits.Actionable",
+      "Traits.Armour",
+      "Traits.Durable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_LavaHunter_Flamethrower": {
+    "itemId": "LegendaryWeapon_LavaHunter_Flamethrower",
+    "displayName": "Heavy Flamethrower",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_LavaHunter_FlameThrower.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Flamethrower created via studying of the Lava Hunter.",
+    "flavorText": "Norex just wants to watch the world burn.",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 10000,
+      "Fire Rate (RPM)": 60,
+      "Reload Time (s)": 0.8999999761581421
+    },
+    "tags": [
+      "Item.Fillable.Biofuel",
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Utility",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Fillable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_IceMammoth_Sledgehammer": {
+    "itemId": "LegendaryWeapon_IceMammoth_Sledgehammer",
+    "displayName": "Frostbreaker",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_IceMammoth_Sledgehammer.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Sledgehammer created via studying of the Rimetusk mutated mammoth.",
+    "flavorText": "A Giant Sledgehammer made from a Mutated Mammoth. Thanks Norex.",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Melee Damage": 85,
+      "Durability": 40000
+    },
+    "tags": [
+      "FieldGuide.BlackList",
+      "Item.HasBlocking",
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Tool.Pickaxe.T1",
+      "Item.Tool.Pickaxe.T2",
+      "Item.Tool.Sledgehammer",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lab_Stool": {
+    "itemId": "Lab_Stool",
+    "displayName": "Battered Stool",
+    "category": "Deployables",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_ResearchEquipment_LabStool.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A basic metal stool, a little worse for wear.",
+    "flavorText": null,
+    "weight": 1500,
+    "maxStack": null,
+    "stats": {
+      "Durability": 750
+    },
+    "tags": [
+      "Audio.Shelter.Check",
+      "Item.Decoration",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landmine_Poison": {
+    "itemId": "Landmine_Poison",
+    "displayName": "Poison Gas Landmine",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Place to Trigger and Arm.",
+    "flavorText": "Dangerous... Very Dangerous....",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Defense",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landmine_Burn": {
+    "itemId": "Landmine_Burn",
+    "displayName": "Incendiary Landmine",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Place to Trigger and Arm.",
+    "flavorText": "Dangerous... Very Dangerous....",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Defense",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landmine_Shock": {
+    "itemId": "Landmine_Shock",
+    "displayName": "Volt Landmine",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Place to Trigger and Arm.",
+    "flavorText": "Dangerous... Very Dangerous....",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Defense",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landmine_Freeze": {
+    "itemId": "Landmine_Freeze",
+    "displayName": "Cryo Landmine",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Place to Trigger and Arm.",
+    "flavorText": "Dangerous... Very Dangerous....",
+    "weight": 1000,
+    "maxStack": null,
+    "stats": null,
+    "tags": [
+      "FieldGuide.Defense",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Landmine_Enemy": {
+    "itemId": "Landmine_Enemy",
+    "displayName": "Makeshift Landmine",
+    "category": "Defenses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Landmine.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "Place to Trigger and Arm.",
+    "flavorText": "Dangerous... Very Dangerous....",
+    "weight": 1000,
+    "maxStack": 20,
+    "stats": null,
+    "tags": [
+      "FieldGuide.BlackList",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Bow": {
+    "itemId": "LegendaryWeapon_Bow",
+    "displayName": "Tactical Bow",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Bow.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Bow created via studying of the Rimetusk mutated mammoth.",
+    "flavorText": "A Masterwork Bow - Created by our Friends at Norex.",
+    "weight": 3000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 30000,
+      "Fire Rate (RPM)": 300,
+      "Reload Time (s)": 0.699999988079071
+    },
+    "tags": [
+      "Item.HasBlocking",
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Bow",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "LegendaryWeapon_Sniper": {
+    "itemId": "LegendaryWeapon_Sniper",
+    "displayName": "Anti-materiel Rifle",
+    "category": "Other",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Sniper.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "GreatHunts",
+    "cosmeticPack": "",
+    "description": "A Prototype Upgradeable Sniper created via studying of the Garganutan.",
+    "flavorText": "What the UDA should have Armed Prospectors with. ",
+    "weight": 10000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 7500,
+      "Fire Rate (RPM)": 60,
+      "Reload Time (s)": 5
+    },
+    "tags": [
+      "Item.LivingWeapon",
+      "Item.Meta",
+      "Item.Weapon.Firearm.Rifle",
+      "Traits.Actionable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  },
+  "Lamb_Head": {
+    "itemId": "Lamb_Head",
+    "displayName": "Lamb Vestige",
+    "category": "Carcasses",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Lamb_Head.webp",
+      "exists": true
+    },
+    "recipes": [],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "Once a little fur ball.",
+    "flavorText": "Who knew taxidermy would be so popular on Icarus?",
+    "weight": 500,
+    "maxStack": 5,
+    "stats": null,
+    "tags": [
+      "Item.Vestige.Common",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable"
+    ],
+    "workshopCosts": null
+  },
+  "Lamb_Trophy": {
+    "itemId": "Lamb_Trophy",
+    "displayName": "Lamb Trophy",
+    "category": "Trophies",
+    "icon": {
+      "assetPath": "Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lamb_Trophy.webp",
+      "exists": true
+    },
+    "recipes": [
+      {
+        "recipeId": "Lamb_Trophy",
+        "requiredMillijoules": 0,
+        "stationIds": [
+          "Trophy_Bench"
+        ],
+        "inputs": [
+          {
+            "kind": "item",
+            "itemId": "Wood_Refined",
+            "itemName": "Refined Wood",
+            "count": 15
+          },
+          {
+            "kind": "item",
+            "itemId": "Lamb_Head",
+            "itemName": "Lamb Vestige",
+            "count": 1
+          }
+        ],
+        "queryInputs": [],
+        "resourceInputs": [],
+        "outputs": [
+          {
+            "itemId": "Lamb_Trophy",
+            "itemName": "Lamb Trophy",
+            "count": 1
+          }
+        ],
+        "workflow": {
+          "rawMaterials": [
+            {
+              "itemId": "Frozen_Wood",
+              "count": 15
+            },
+            {
+              "itemId": "Lamb_Head",
+              "count": 1
+            }
+          ],
+          "nodes": [
+            "Lamb_Trophy",
+            "Wood_Refined",
+            "Wood",
+            "Frozen_Wood",
+            "Lamb_Head"
+          ],
+          "edges": [
+            {
+              "from": "Wood_Refined",
+              "to": "Lamb_Trophy",
+              "count": 15,
+              "recipeId": "Refined_Wood"
+            },
+            {
+              "from": "Wood",
+              "to": "Wood_Refined",
+              "count": 1,
+              "recipeId": "Frozen_Wood"
+            }
+          ]
+        }
+      }
+    ],
+    "requiredFeatureLevel": "",
+    "cosmeticPack": "",
+    "description": "A mounted Lamb.",
+    "flavorText": "Evidence of skill, patience and accuracy.",
+    "weight": 2000,
+    "maxStack": null,
+    "stats": {
+      "Durability": 250
+    },
+    "tags": [
+      "Item.Decoration.Trophy",
+      "Traits.Actionable",
+      "Traits.Deployable",
+      "Traits.Durable",
+      "Traits.Highlightable",
+      "Traits.Interactable",
+      "Traits.Itemable",
+      "Traits.Meshable",
+      "Traits.Usable"
+    ],
+    "workshopCosts": null
+  }
+}
