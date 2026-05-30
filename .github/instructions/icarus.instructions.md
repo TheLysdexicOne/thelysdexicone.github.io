@@ -8,6 +8,8 @@ applyTo: "projects/icarus/**"
 
 This is an offline-friendly companion site for the survival game **Icarus**, served at `thelysdexicone.github.io/icarus`. It is a Next.js 15 App Router project with a static export (`output: 'export'`). All game data is pre-processed from ripped game assets and shipped as static JSON files under `public/data/`.
 
+Legacy exception: this project currently contains a checked-in pipeline under `projects/icarus/pipeline/`. Treat that pipeline as maintenance-oriented legacy structure. New or expanded data-processing work should be created in the active game workspace, with optional shell launchers in the repo-root `pipeline/` folder.
+
 ## Project Location
 
 ```
@@ -59,7 +61,7 @@ projects/icarus/
 
 ## Data Pipeline
 
-All game data originates from Unreal Engine pak files ripped with FModel/UnrealPak. The Python pipeline lives in the repo at `projects/icarus/pipeline/` and processes the raw JSON exports into the staged data consumed by the web app.
+All game data originates from Unreal Engine pak files ripped with FModel/UnrealPak. The current checked-in Python pipeline under `projects/icarus/pipeline/` is a legacy in-repo implementation that processes the raw JSON exports into the staged data consumed by the web app. Prefer moving future pipeline growth into the active game workspace rather than expanding the website repo copy.
 
 ### Pipeline Location
 
