@@ -4,7 +4,7 @@
   "description": "GitHub Pages monorepo for TheLysdexicOne projects",
   "private": true,
   "scripts": {
-    "install-all": "npm install && npm install -w landing-page && npm install -w projects/ball-x-pit && npm install -w projects/icarus && npm install -w projects/kingdom-come-deliverance-ii && npm install -w projects/blue-prince && npm install -w projects/factorio && npm install -w projects/satisfactory && npm install -w projects/widget-inc",
+    "install-all": "npm install && npm install -w landing-page && npm install -w projects/ball-x-pit && npm install -w projects/icarus && npm install -w projects/kingdom-come-deliverance-ii && npm install -w projects/blue-prince && npm install -w projects/factorio && npm install -w projects/satisfactory && npm install -w projects/widget-inc && npm install -w projects/conan-exiles-enhanced",
     "dev:all": "node scripts/dev-all.js",
     "dev:landing": "npm run dev -w landing-page",
     "dev:ball-x-pit": "npm run dev -w projects/ball-x-pit",
@@ -14,6 +14,7 @@
     "dev:factorio": "npm run dev -w projects/factorio",
     "dev:satisfactory": "npm run dev -w projects/satisfactory",
     "dev:widget-inc": "npm run dev -w projects/widget-inc",
+    "dev:conan-exiles-enhanced": "npm run dev -w projects/conan-exiles-enhanced",
     "build:landing": "npm run build -w landing-page",
     "build:ball-x-pit": "npm run build -w projects/ball-x-pit",
     "build:icarus": "npm run build -w projects/icarus",
@@ -22,7 +23,8 @@
     "build:factorio": "npm run build -w projects/factorio",
     "build:satisfactory": "npm run build -w projects/satisfactory",
     "build:widget-inc": "npm run build -w projects/widget-inc",
-    "build": "npm run build:landing && npm run build:ball-x-pit && npm run build:icarus && npm run build:kingdom-come && npm run build:blue-prince && npm run build:factorio && npm run build:satisfactory && npm run build:widget-inc",
+    "build:conan-exiles-enhanced": "npm run build -w projects/conan-exiles-enhanced",
+    "build": "npm run build:landing && npm run build:ball-x-pit && npm run build:icarus && npm run build:kingdom-come && npm run build:blue-prince && npm run build:factorio && npm run build:satisfactory && npm run build:widget-inc && npm run build:conan-exiles-enhanced",
     "build:all": "npm run install-all && npm run build",
     "deploy": "npm run build && node scripts/deploy.js",
     "test": "jest",
@@ -48,6 +50,7 @@
     "projects/blue-prince",
     "projects/factorio",
     "projects/satisfactory",
-    "projects/widget-inc"
+    "projects/widget-inc",
+    "projects/conan-exiles-enhanced"
   ]
 }

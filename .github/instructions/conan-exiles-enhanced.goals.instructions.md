@@ -82,6 +82,7 @@ applyTo: "projects/conan-exiles-enhanced/**"
 - Search results should expose surrounding context text when practical.
 - Only unlocked lore should be searchable and readable in the main lore experience.
 - Use a modal or similar focused UI to manage unlock state from a searchable list.
+- The manage-unlocks surface should support the same core search and filtering workflow as the main lore browser rather than behaving like a separate reduced-capability list.
 - The default behavior is that lore starts locked until unlocked.
 - A checkbox or equivalent toggle should unlock or enable a specific lore entry.
 - Provide an unlock-all option in settings.
@@ -106,3 +107,4 @@ applyTo: "projects/conan-exiles-enhanced/**"
 - Build search with room to grow. The first implementation should be simple, but the data shape should not block richer indexing later.
 - Favor stable URLs and sharable section entry points where practical.
 - Keep the project compatible with the monorepo’s static-export deployment model.
+- Defer formatting polish and low-priority presentation bug fixing while the lore extraction and staging pipeline is still settling. Prefer locking data shape and interaction requirements first, then revisit formatting cleanup afterward.

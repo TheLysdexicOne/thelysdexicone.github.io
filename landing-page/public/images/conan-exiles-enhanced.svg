@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+    <title id="title">Conan Exiles Enhanced</title>
+    <desc id="desc">A bronze shield and crossed blades on a dark slate background.</desc>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1e2528" />
+            <stop offset="100%" stop-color="#11171a" />
+        </linearGradient>
+        <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#d4b277" />
+            <stop offset="50%" stop-color="#9a6d35" />
+            <stop offset="100%" stop-color="#f2d29b" />
+        </linearGradient>
+    </defs>
+    <rect width="256" height="256" rx="28" fill="url(#bg)" />
+    <path d="M128 34 64 58v62c0 46 26 77 64 102 38-25 64-56 64-102V58l-64-24Z" fill="#0f1417" stroke="url(#metal)" stroke-width="10" />
+    <path d="m100 78 18 18-46 46-18-18Zm56 0 46 46-18 18-46-46Z" fill="url(#metal)" opacity=".95" />
+    <path d="M128 88c-20 0-36 16-36 36s16 36 36 36 36-16 36-36-16-36-36-36Zm0 18c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18Z" fill="url(#metal)" />
+    <path d="M92 184h72" stroke="url(#metal)" stroke-width="10" stroke-linecap="round" />
+    <path d="M112 206h32" stroke="url(#metal)" stroke-width="10" stroke-linecap="round" opacity=".8" />
+</svg>

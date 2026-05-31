@@ -64,6 +64,16 @@ const projects = [
     isPinned: false,
     comingSoon: true,
   },
+  {
+    id: 'conan-exiles-enhanced',
+    name: 'Conan Exiles Enhanced',
+    description:
+      'Lore browser, item database, and map companion for Conan Exiles',
+    href: '/conan-exiles-enhanced/',
+    image: '/images/conan-exiles-enhanced.svg',
+    isPinned: true,
+    comingSoon: false,
+  },
 ];
 
 export default function Home() {
