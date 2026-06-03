@@ -3,6 +3,7 @@
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FieldGuideLayout, type FieldGuideSection } from "@shared/components/field-guide";
 import { useConanSettings } from "@/components/conan-settings-provider";
 import {
   categoryIconDatasetPath,
@@ -13,7 +14,6 @@ import {
 } from "@/lib/items";
 import ConanCategoryGrid from "./conan-category-grid";
 import ConanCategoryPanel from "./conan-category-panel";
-import ConanFieldGuideLayout from "./conan-field-guide-layout";
 import ConanItemDetailPanel from "./conan-item-detail-panel";
 import ConanItemGrid from "./conan-item-grid";
 import {
@@ -22,6 +22,10 @@ import {
   slugify,
   type ItemCategory,
 } from "./conan-field-guide-items-helpers";
+
+const SECTIONS: FieldGuideSection[] = [
+  { label: "Items", href: "/conan-exiles-enhanced/items" },
+];
 
 export default function ConanFieldGuideItems() {
   const { settings } = useConanSettings();
@@ -325,14 +329,15 @@ export default function ConanFieldGuideItems() {
 
   return (
     <main className="bg-main">
-      <ConanFieldGuideLayout
+      <FieldGuideLayout
+        sections={SECTIONS}
         searchSlot={searchSlot}
         onBack={selectedItemId || selectedCategoryId ? handleBack : undefined}
         onCategories={handleCategories}
         leftPanel={leftPanel}
       >
         {mainContent}
-      </ConanFieldGuideLayout>
+      </FieldGuideLayout>
     </main>
   );
 }

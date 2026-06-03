@@ -13,7 +13,7 @@ import type {
   IcarusStation,
   WorkshopCurrencyDef,
 } from "@/types/icarus";
-import FieldGuideLayout from "./field-guide-layout";
+import { FieldGuideLayout, type FieldGuideSection } from "@shared/components/field-guide";
 import CategoryPanel from "./category-panel";
 import CategoryGrid from "./category-grid";
 import ItemGrid from "./item-grid";
@@ -22,6 +22,12 @@ import ItemDetailPanel from "./item-detail-panel";
 import { DATA_VERSION } from "@/lib/data-version";
 
 const ICARUS_BASE_PATH = "/icarus";
+
+const SECTIONS: FieldGuideSection[] = [
+  { label: "Items", href: "/icarus/field-guide/items" },
+  { label: "Bestiary", href: "/icarus/field-guide/bestiary" },
+  { label: "Fishing", href: "/icarus/field-guide/fishing" },
+];
 
 function toDataUrl(p: string) {
   return `${ICARUS_BASE_PATH}/data/${DATA_VERSION}/${p}`;
@@ -285,6 +291,7 @@ export default function FieldGuideItems() {
 
   return (
     <FieldGuideLayout
+      sections={SECTIONS}
       searchSlot={searchSlot}
       onBack={selectedItemId || selectedCategoryId ? handleBack : undefined}
       onCategories={handleCategories}
