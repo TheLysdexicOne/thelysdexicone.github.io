@@ -1,6 +1,6 @@
 /**
  * Shared icon tile component with fallback placeholder.
- * 
+ *
  * Renders an icon image if available, otherwise displays a colored placeholder
  * with a text label. Used for category icons, item icons, etc.
  */

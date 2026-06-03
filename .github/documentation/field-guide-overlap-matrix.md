@@ -14,6 +14,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 **Overlap**: 95% identical structure and styling
 
 **Similarities**:
+
 - Two-pane shell (left accordion panel + main content area)
 - Top control bar with search slot, section tabs, nav buttons
 - Same nav buttons: Back (chevron), Categories (grid), Home
@@ -22,6 +23,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 - Same FontAwesome icons
 
 **Differences**:
+
 - Icarus: 3 section tabs (Items, Bestiary, Fishing) with active highlighting via `usePathname()`
 - Conan: 1 section tab (Items) without pathname logic
 - Section configuration could be props-based
@@ -35,6 +37,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 **Overlap**: 90% identical structure and grid logic
 
 **Similarities**:
+
 - Same responsive grid: `grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-4 2xl:grid-cols-5`
 - Same icon sizes at breakpoints: `h-8 w-8 md:h-16 md:w-16 xl:h-32 xl:w-32`
 - Same card styling: `border-2 border-primary bg-card`, hover states
@@ -42,6 +45,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 - Same padding, gap, and text sizing
 
 **Differences**:
+
 - Conan: Uses `IconTile` helper for icon rendering, includes dataset version + item count header
 - Icarus: Inline `<img>` with fallback `<div>`, simpler header
 - Category data shape differs (Conan has `officialIconPath`, Icarus has `representativeIcon.exists/assetPath`)
@@ -55,6 +59,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 **Overlap**: 95% identical accordion logic and styling
 
 **Similarities**:
+
 - Accordion structure: category header + collapsible item list
 - Split-button pattern: left button navigates to grid, right button toggles accordion
 - Auto-expand on search
@@ -64,6 +69,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 - Secondary indicators: recipe count, DLC/status dots
 
 **Differences**:
+
 - Conan: Categories pre-include items array, uses `matchesItemSearch()` helper
 - Icarus: Computes `itemsByCategory` map via `useMemo`, uses inline `.includes()` search
 - Icon rendering: Conan uses `IconTile`, Icarus uses inline `<img>`
@@ -78,6 +84,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 **Overlap**: 90% identical grid structure and card layout
 
 **Similarities**:
+
 - Same responsive grid: `grid-cols-4 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 2xl:grid-cols-10`
 - Same icon sizes: `h-8 w-8 md:h-12 md:w-12 xl:h-16 xl:w-16`
 - Same card styling: `border-2 border-primary bg-card`, hover states
@@ -85,6 +92,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 - Relative positioned icon container for badge overlays
 
 **Differences**:
+
 - Conan: Map availability badges (EL/IOS/Both), "crafted" label for craftable items
 - Icarus: DLC badges (feature-level top-left, cosmetic-pack bottom-left), recipe count label
 - Workshop items in Icarus have `border-highlight` instead of `border-primary`
@@ -99,6 +107,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 **Overlap**: 85% identical structure
 
 **Similarities**:
+
 - Header: icon + item name
 - Acquisition/stats section with key-value pairs
 - Recipe inputs section (if applicable)
@@ -107,6 +116,7 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 - Same text hierarchy: `text-lg font-bold text-primary` for name, `text-sm font-bold` for section headers
 
 **Differences**:
+
 - Conan: Map availability, learned from, found in, biome, source references
 - Icarus: Different metadata fields (tier, station, feature-level, etc.)
 - Recipe format differs (Conan uses `recipe[]`, Icarus uses different structure)
@@ -121,19 +131,23 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 **Overlap**: Varies by utility
 
 **IconTile (Conan-only)**:
+
 - Renders icon with fallback placeholder
 - Could be generalized with `renderIcon` prop
 
 **ItemIcon (Conan-only)**:
+
 - Wrapper for item icon rendering
 - Similar to Icarus inline icon rendering
 
 **matchesItemSearch (Conan-only)**:
+
 - Searches item name + tags
 - Icarus uses inline `.includes()`
 - Could be shared with customizable search fields
 
 **Badge mapping helpers**:
+
 - Conan: `mapBadgeTone()`, `mapShortBadge()` for map availability
 - Icarus: Inline badge logic for DLC packs
 - Game-specific, should stay local
@@ -145,20 +159,24 @@ Both Conan and Icarus now share nearly identical component boundaries. All field
 ## Extraction Priority
 
 ### Phase 1: Core Layout (Immediate)
+
 1. **FieldGuideLayout** - 95% overlap, minimal game-specific logic
 2. **EmptyState / LoadingState / ErrorState** - Not yet written but needed by both
 
 ### Phase 2: Grid Components (Next)
+
 3. **CategoryGrid** - 90% overlap, icon rendering varies
-4. **ItemGrid** - 90% overlap, badge logic varies
+2. **ItemGrid** - 90% overlap, badge logic varies
 
 ### Phase 3: Panel Components (Then)
+
 5. **CategoryPanel** - 95% overlap, item filtering varies
-6. **ItemDetailPanel** - 85% overlap, metadata sections vary
+2. **ItemDetailPanel** - 85% overlap, metadata sections vary
 
 ### Phase 4: Utilities (Last)
+
 7. **IconTile** - Shared icon rendering primitive
-8. **matchesItemSearch** - Shared search logic with field selectors
+2. **matchesItemSearch** - Shared search logic with field selectors
 
 ---
 

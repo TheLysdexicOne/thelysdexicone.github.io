@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../../conan-exiles-enhanced-data"
+		},
+		{
+			"path": "../../../icarus-data"
 		}
 	],
 	"settings": {

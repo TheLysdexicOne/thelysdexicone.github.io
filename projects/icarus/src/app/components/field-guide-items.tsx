@@ -13,10 +13,13 @@ import type {
   IcarusStation,
   WorkshopCurrencyDef,
 } from "@/types/icarus";
-import { FieldGuideLayout, type FieldGuideSection } from "@shared/components/field-guide";
+import {
+  FieldGuideLayout,
+  type FieldGuideSection,
+} from "@shared/components/field-guide";
 import CategoryPanel from "./category-panel";
-import CategoryGrid from "./category-grid";
-import ItemGrid from "./item-grid";
+import CategoryGrid from "./icarus-category-grid";
+import ItemGrid from "./icarus-item-grid";
 import ItemDetailPanel from "./item-detail-panel";
 
 import { DATA_VERSION } from "@/lib/data-version";

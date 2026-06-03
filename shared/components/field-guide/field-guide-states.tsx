@@ -1,6 +1,6 @@
 /**
  * Shared empty/loading/error state components for field guides.
- * 
+ *
  * Provides consistent messaging and styling across all game field guides.
  */
 

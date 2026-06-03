@@ -31,7 +31,7 @@ export type FieldGuideLayoutProps = {
 
 /**
  * Shared field-guide layout shell.
- * 
+ *
  * Two-pane layout with top control bar, optional left accordion panel, and main content area.
  * Used by Conan, Icarus, and other game field guides.
  */

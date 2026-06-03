@@ -3,7 +3,10 @@
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FieldGuideLayout, type FieldGuideSection } from "@shared/components/field-guide";
+import {
+  FieldGuideLayout,
+  type FieldGuideSection,
+} from "@shared/components/field-guide";
 import { useConanSettings } from "@/components/conan-settings-provider";
 import {
   categoryIconDatasetPath,
@@ -12,10 +15,10 @@ import {
   type ItemDataset,
   type ItemEntry,
 } from "@/lib/items";
-import ConanCategoryGrid from "./conan-category-grid";
+import ConanCategoryGrid from "./conan-category-grid-shared";
 import ConanCategoryPanel from "./conan-category-panel";
 import ConanItemDetailPanel from "./conan-item-detail-panel";
-import ConanItemGrid from "./conan-item-grid";
+import ConanItemGrid from "./conan-item-grid-shared";
 import {
   humanizeCategoryName,
   matchesItemSearch,

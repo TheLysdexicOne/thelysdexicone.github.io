@@ -6,6 +6,7 @@
 ## What Was Accomplished
 
 ### 1. Shared Component Infrastructure Created
+
 - Created `shared/components/field-guide/` directory with first shared primitives
 - Extracted 4 shared components:
   - `FieldGuideLayout` - Two-pane shell with top control bar (95% overlap)
@@ -13,18 +14,21 @@
   - `IconTile` - Icon rendering with fallback placeholder
 
 ### 2. Both Projects Migrated to Shared Layout
+
 - **Icarus**: Migrated from local `field-guide-layout.tsx` to shared `FieldGuideLayout`
 - **Conan**: Migrated from local `conan-field-guide-layout.tsx` to shared `FieldGuideLayout`
 - Both projects now use `@shared/components/field-guide` imports
 - TypeScript paths updated: `@shared/*` → `../../shared/*`
 
 ### 3. Zero Regressions
+
 - Conan build: ✅ Success (items route: 5.15 kB)
 - Icarus build: ✅ Success (field-guide/items route: 3.71 kB)
 - No TypeScript errors, no lint errors
 - Identical UI behavior preserved
 
 ### 4. Documentation Written
+
 - Created comprehensive overlap matrix: `.github/documentation/field-guide-overlap-matrix.md`
 - Documented 6 component families with extraction priorities
 - Established design principles for shared components (generic types, render props, minimal assumptions)
@@ -40,19 +44,23 @@
 ## What Remains (Next Phases)
 
 ### Phase 2: Grid Components
+
 - [ ] Extract `CategoryGrid` (90% overlap, needs icon resolver prop)
 - [ ] Extract `ItemGrid` (90% overlap, needs badge/label render props)
 
 ### Phase 3: Panel Components
+
 - [ ] Extract `CategoryPanel` (95% overlap, needs filter/indicator props)
 - [ ] Extract `ItemDetailPanel` shell (85% overlap, needs metadata slots)
 
 ### Phase 4: Additional Utilities
+
 - [ ] Extract `matchesItemSearch` with field selectors
 - [ ] Standardize search input component
 - [ ] Shared badge/label utilities where applicable
 
 ### Phase 5: Beyond Field Guide
+
 - [ ] Audit header/nav components across projects
 - [ ] Identify card pattern primitives
 - [ ] Extract modal/dialog shells if shared
@@ -61,11 +69,13 @@
 ## Design Pattern Established
 
 **Three-Layer Model**:
+
 1. **Game-local extraction** - Unique data pipelines per game (stays local)
 2. **Normalized staged contracts** - Shared UI contracts per component (shared types)
 3. **Boilerplate structural components** - Reusable primitives (shared components)
 
 **Shared Component Philosophy**:
+
 - Generic type parameters for category/item shapes
 - Render props for game-specific logic (icons, badges, metadata)
 - Minimal assumptions about data structure
@@ -74,12 +84,14 @@
 ## Build Validation
 
 **Conan Exiles Enhanced**:
+
 ```
 Route (app)                                 Size  First Load JS    
 ├ ○ /items                               5.15 kB         132 kB
 ```
 
 **Icarus**:
+
 ```
 Route (app)                                 Size  First Load JS    
 ├ ○ /field-guide/items                   3.71 kB         134 kB
@@ -88,6 +100,7 @@ Route (app)                                 Size  First Load JS
 ## Key Files Changed
 
 **Created**:
+
 - `shared/components/field-guide/field-guide-layout.tsx`
 - `shared/components/field-guide/field-guide-states.tsx`
 - `shared/components/field-guide/icon-tile.tsx`
@@ -95,12 +108,14 @@ Route (app)                                 Size  First Load JS
 - `.github/documentation/field-guide-overlap-matrix.md`
 
 **Modified**:
+
 - `projects/icarus/src/app/components/field-guide-items.tsx` - Import from shared
 - `projects/conan-exiles-enhanced/src/app/components/conan-field-guide-items.tsx` - Import from shared
 - `projects/icarus/tsconfig.json` - Fixed `@shared/*` path
 - `projects/conan-exiles-enhanced/tsconfig.json` - Fixed `@shared/*` path
 
 **Can Be Deleted** (no longer needed):
+
 - `projects/icarus/src/app/components/field-guide-layout.tsx` ❌
 - `projects/conan-exiles-enhanced/src/app/components/conan-field-guide-layout.tsx` ❌
 
