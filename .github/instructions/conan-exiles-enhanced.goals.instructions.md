@@ -14,7 +14,7 @@ applyTo: "projects/conan-exiles-enhanced/**"
 ## Site Standards
 
 - Use the established project shell pattern: left side-panel navigation, top header bar, and responsive mobile fallback.
-- Keep navigation stable across major sections so users can move between Home, Items, Lore, and future map tools without relearning the layout.
+- Keep navigation stable across major sections so users can move between Home, Lore, Items, Checklists, and future map tools without relearning the layout.
 - Optimize for dense but readable information display. This project should feel closer to a modern game database than a marketing site.
 - Prefer progressive delivery. Ship the reference and search surfaces first, then add richer exploration features like map tooling.
 - Treat local storage as the persistence layer for user-side preferences and unlock state until a stronger requirement appears.
@@ -28,9 +28,19 @@ applyTo: "projects/conan-exiles-enhanced/**"
 - Prioritize the content and interaction model that unlocks the core companion experience.
 - Build in this order unless the user redirects scope:
   1. Home page and navigation shell
-  2. Item browser and settings model
-  3. Lore unlocker and searchable lore browser
-  4. Higher-complexity map and discovery tools
+  2. Lore unlocker and searchable lore browser
+  3. Checklist surfaces for Journey and Sorcery
+  4. Item browser and settings model
+  5. Higher-complexity map and discovery tools
+
+## Checklists
+
+- Add a top-level Checklists section ahead of Map Tools in the site information architecture.
+- Stage Journey and Sorcery first.
+- Treat Journey as a checklist surface driven by extracted journey steps and, when available, unlock requirements.
+- Treat Sorcery as a checklist surface that begins with Journey-related onboarding but progresses through Thaumaturgy Bench systems afterward.
+- Sorcery costs should align with the same crafting cost multiplier model already used for the item browser and settings.
+- Do not block checklist page staging on having the full dataset. Placeholder surfaces are acceptable while the extraction pipeline catches up.
 
 ## Look And Feel
 
@@ -102,7 +112,7 @@ applyTo: "projects/conan-exiles-enhanced/**"
 ## Standards For Implementation
 
 - Keep major user-facing state explicit and recoverable: settings, unlocked lore, favorites, selected map, and search mode should be easy to reason about.
-- Prefer modular section ownership. Home, Items, Lore, and future Map features should each have a clear state owner and data contract.
+- Prefer modular section ownership. Home, Lore, Items, Checklists, and future Map features should each have a clear state owner and data contract.
 - Avoid burying key game metadata in presentation-only code. Source-of-truth distinctions like map exclusivity, thrall tiering, and obtain methods should come from structured data.
 - Build search with room to grow. The first implementation should be simple, but the data shape should not block richer indexing later.
 - Favor stable URLs and sharable section entry points where practical.

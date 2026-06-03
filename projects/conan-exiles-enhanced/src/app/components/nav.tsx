@@ -21,8 +21,21 @@ const NAV: NavLink[] = [
     children: [
       { label: "Lore Browser", href: "/lore" },
       { label: "Item Browser", href: "/items" },
-      { label: "Map Tools", href: "/map" },
     ],
+  },
+  {
+    label: "Checklists",
+    isHeader: true,
+    children: [
+      { label: "Overview", href: "/checklists" },
+      { label: "Journey", href: "/checklists/journey" },
+      { label: "Sorcery", href: "/checklists/sorcery" },
+    ],
+  },
+  {
+    label: "Exploration",
+    isHeader: true,
+    children: [{ label: "Map Tools", href: "/map" }],
   },
   {
     label: "Controls",

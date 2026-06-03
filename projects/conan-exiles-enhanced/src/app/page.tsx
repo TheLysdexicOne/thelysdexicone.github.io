@@ -17,6 +17,13 @@ const SECTIONS = [
       "Browse craftable and non-craftable items, recipes, drop sources, map exclusivity, and future thrall modifiers.",
   },
   {
+    href: "/checklists",
+    title: "Checklists",
+    kicker: "Staged Next",
+    description:
+      "Track progression-oriented checklist surfaces starting with Journey and Sorcery before the heavier map tooling arrives.",
+  },
+  {
     href: "/map",
     title: "Map Tools",
     kicker: "Wish Goal",
@@ -41,16 +48,18 @@ export default function Home() {
             Conan Exiles Enhanced
           </p>
           <h1 className="mt-3 font-pixel text-2xl leading-snug tracking-wide text-primary sm:text-3xl">
-            Static companion for Conan lore now, with items and map tools next.
+            Static companion for Conan lore now, with checklists, items, and map
+            tools staged in sequence.
           </h1>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-secondary sm:text-base">
             The site already ships a real lore browser backed by staged Conan
             data from the pipeline workspace. The next major milestones are the
-            item browser and, later, map-driven exploration tools.
+            first checklist surfaces, then the item browser, and later
+            map-driven exploration tools.
           </p>
           <p className="mt-3 text-xs text-secondary opacity-60">
-            Site data version {DATA_VERSION} · Lore browser live · Item browser
-            next
+            Site data version {DATA_VERSION} · Lore browser live · Checklists
+            staged next
           </p>
         </section>
 
@@ -64,7 +73,7 @@ export default function Home() {
           <h2 className="font-pixel text-xl tracking-wide text-primary sm:text-2xl">
             Delivery Focus
           </h2>
-          <div className="mt-4 grid gap-4 md:grid-cols-3">
+          <div className="mt-4 grid gap-4 md:grid-cols-4">
             <div className="rounded-lg border border-highlight bg-body p-4">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
                 Step 1
@@ -79,13 +88,22 @@ export default function Home() {
                 Step 2
               </p>
               <p className="mt-2 text-sm leading-relaxed text-secondary">
+                Stage checklist surfaces for Journey and Sorcery on top of
+                simple extracted progression data.
+              </p>
+            </div>
+            <div className="rounded-lg border border-highlight bg-body p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
+                Step 3
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-secondary">
                 Build the first real item browser on top of a staged Conan item
                 dataset.
               </p>
             </div>
             <div className="rounded-lg border border-highlight bg-body p-4">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
-                Step 3
+                Step 4
               </p>
               <p className="mt-2 text-sm leading-relaxed text-secondary">
                 Expand into map layers, cross-linking, and richer discovery

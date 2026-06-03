@@ -15,6 +15,8 @@
     "dev:satisfactory": "npm run dev -w projects/satisfactory",
     "dev:widget-inc": "npm run dev -w projects/widget-inc",
     "dev:conan-exiles-enhanced": "npm run dev -w projects/conan-exiles-enhanced",
+    "pipeline:conan-exiles-enhanced": "bash pipeline/conan-exiles-enhanced-pipeline.sh",
+    "pipeline:conan-exiles-enhanced-items": "bash pipeline/conan-exiles-enhanced-items-pipeline.sh",
     "build:landing": "npm run build -w landing-page",
     "build:ball-x-pit": "npm run build -w projects/ball-x-pit",
     "build:icarus": "npm run build -w projects/icarus",

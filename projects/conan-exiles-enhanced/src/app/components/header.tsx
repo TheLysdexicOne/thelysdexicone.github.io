@@ -6,6 +6,9 @@ const TITLE_MAP: Record<string, string> = {
   "/": "Conan Exiles Enhanced",
   "/lore": "Lore Browser",
   "/items": "Item Browser",
+  "/checklists": "Checklists",
+  "/checklists/journey": "Journey Checklist",
+  "/checklists/sorcery": "Sorcery Checklist",
   "/map": "Map Tools",
   "/settings": "Settings",
 };

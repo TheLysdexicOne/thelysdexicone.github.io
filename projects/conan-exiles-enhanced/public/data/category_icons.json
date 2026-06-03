@@ -1,0 +1,85 @@
+{
+  "version": "0.3.16-pattern-classification-v2",
+  "generatedAt": "2026-06-03T00:12:19.483597Z",
+  "description": "Official category filter icons from Conan Exiles, mapped to item categories",
+  "categoryIcons": {
+    "Armor": {
+      "categoryName": "Armor",
+      "filterIconName": "T_UI_Filter_Armor",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Armor.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "BuildingItem": {
+      "categoryName": "BuildingItem",
+      "filterIconName": "T_UI_Filter_BuildingItems",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_BuildingItems.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Component": {
+      "categoryName": "Component",
+      "filterIconName": "T_UI_Filter_Components",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Components.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Craftingstations": {
+      "categoryName": "Craftingstations",
+      "filterIconName": "T_UI_Filter_CraftingStations",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_CraftingStations.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Consumable": {
+      "categoryName": "Consumable",
+      "filterIconName": "T_UI_Filter_Food",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Food.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "PetItem": {
+      "categoryName": "PetItem",
+      "filterIconName": "T_UI_Filter_PetItems",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_PetItems.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Decoration": {
+      "categoryName": "Decoration",
+      "filterIconName": "T_UI_Filter_Placeables",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Placeables.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Material": {
+      "categoryName": "Material",
+      "filterIconName": "T_UI_Filter_Resources",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Resources.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Tools": {
+      "categoryName": "Tools",
+      "filterIconName": "T_UI_Filter_Tools",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Tools.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Treasure": {
+      "categoryName": "Treasure",
+      "filterIconName": "T_UI_Filter_Treasure",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Treasure.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Utility": {
+      "categoryName": "Utility",
+      "filterIconName": "T_UI_Filter_Utility",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Utility.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Warpaints": {
+      "categoryName": "Warpaints",
+      "filterIconName": "T_UI_Filter_Warpaints",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Warpaints.webp",
+      "iconSource": "official_filter_icon"
+    },
+    "Weapon": {
+      "categoryName": "Weapon",
+      "filterIconName": "T_UI_Filter_Weapons",
+      "iconPath": "/conan-exiles-enhanced/data/category-filter-icons/T_UI_Filter_Weapons.webp",
+      "iconSource": "official_filter_icon"
+    }
+  }
+}

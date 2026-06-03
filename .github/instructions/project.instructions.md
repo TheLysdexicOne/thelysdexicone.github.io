@@ -48,12 +48,24 @@ description: "Repository-wide instructions for the website monorepo, workspace b
 - Preserve established project conventions unless the task requires a change.
 - Keep diffs focused. Do not bundle unrelated cleanup into feature work.
 
+## Bug List Scope
+
+- Treat `.github/bug-lists/` inside the current repository as the source of truth for bug investigation and bug-fix scope in that repository.
+- When working on one game or workspace, do not proactively investigate or fix bug-list items from a different game or sibling repository unless the user explicitly redirects scope.
+- If a bug appears to cross the boundary between the current data workspace and the website repo, keep the investigation anchored to the active game's bug list and apply fixes only in the repos needed for that game's issue.
+
 ## Monorepo Practices
 
 - Respect the npm workspace layout defined in the root `package.json`.
 - Run commands from the narrowest scope that proves the change when possible, such as a single project build before a full monorepo build.
 - Keep GitHub Pages constraints in mind: static export, correct `basePath`, correct `assetPrefix`, and deployable output under `dist/`.
 - Treat the landing page and each project site as independently shippable frontend surfaces inside one repository.
+
+## Wish Goals
+
+- Build a reusable field-guide foundation for the monorepo so future survival and RPG projects can start from a shared layout/template instead of rebuilding the same browse shell repeatedly.
+- Scope that future shared foundation around structural primitives such as the field-guide shell, top control bar, category grid, accordion panel, compact item grid, and detail-panel framing.
+- Keep game-specific data contracts, search semantics, filters, and detail content local to each project even if the field-guide layout primitives become shared.
 
 ## Data Handoff Expectations
 

@@ -47,7 +47,7 @@ function countDisplayEntries(groups: LoreGroup[]): number {
 }
 
 function isCollapsibleGroup(group: VisibleLoreGroup): boolean {
-  return group.totalEntryCount > 1;
+  return group.totalEntryCount > 0;
 }
 
 function includesAnyEntryId(ids: string[], group: LoreGroup): boolean {
@@ -60,7 +60,28 @@ function normalizeLoreText(value: string): string {
     .replace(/\\n/g, "\n")
     .replace(/\\r/g, "\n")
     .replace(/\\'/g, "'")
-    .replace(/\\"/g, '"');
+    .replace(/\\"/g, '"')
+    .replace(/[^\S\n]{2,}/g, " ");
+}
+
+function formatLoreLabel(value: string): string {
+  return normalizeLoreText(value)
+    .replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")
+    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+    .replace(/([A-Za-z])(\d)/g, "$1 $2")
+    .replace(/(\d)([A-Za-z])/g, "$1 $2")
+    .replace(/[^\S\n]{2,}/g, " ")
+    .trim();
+}
+
+function formatLoreBodyText(entry: LoreEntry): string {
+  const normalizedText = normalizeLoreText(entry.text);
+
+  if (entry.type === "dialogue") {
+    return normalizedText.replace(/\n{2,}/g, "\n");
+  }
+
+  return normalizedText;
 }
 
 function entryMatchesQuery(
@@ -73,9 +94,9 @@ function entryMatchesQuery(
   }
 
   const haystacks = [
-    normalizeLoreText(entry.title),
-    normalizeLoreText(entry.groupLabel),
-    normalizeLoreText(entry.speakerName ?? ""),
+    formatLoreLabel(entry.title),
+    formatLoreLabel(entry.groupLabel),
+    formatLoreLabel(entry.speakerName ?? ""),
     entry.tags.join(" "),
   ];
 
@@ -90,7 +111,7 @@ function entryMatchesQuery(
 }
 
 function buildContextSnippet(entry: LoreEntry, query: string): string {
-  const normalizedEntryText = normalizeLoreText(entry.text);
+  const normalizedEntryText = formatLoreBodyText(entry);
 
   if (!query) {
     return normalizedEntryText.slice(0, 180);
@@ -297,9 +318,9 @@ export default function LorePage() {
         const previewEntry = matchingEntries[0] ?? group.entries[0];
         items.push({
           id: group.id,
-          title: normalizeLoreText(group.label),
+          title: formatLoreLabel(group.label),
           subtitle: `${group.entries.length} dialogue header${group.entries.length === 1 ? "" : "s"}`,
-          preview: `${normalizeLoreText(previewEntry.title)}: ${buildContextSnippet(previewEntry, normalizedQuery)}`,
+          preview: `${formatLoreLabel(previewEntry.title)}: ${buildContextSnippet(previewEntry, normalizedQuery)}`,
           type: "dialogue",
           isUnlocked: isDialogueGroupUnlocked(group),
         });
@@ -326,8 +347,8 @@ export default function LorePage() {
 
         items.push({
           id: entry.id,
-          title: normalizeLoreText(entry.title),
-          subtitle: normalizeLoreText(entry.groupLabel),
+          title: formatLoreLabel(entry.title),
+          subtitle: formatLoreLabel(entry.groupLabel),
           preview: buildContextSnippet(entry, normalizedQuery),
           type: entry.type,
           isUnlocked:
@@ -346,11 +367,6 @@ export default function LorePage() {
     unlockManagerQuery,
     unlockManagerSelectedType,
   ]);
-
-  const visibleCount = useMemo(
-    () => countDisplayEntries(visibleGroups),
-    [visibleGroups],
-  );
 
   const totalDisplayCount = useMemo(
     () => countDisplayEntries(groupedDatasetEntries),
@@ -376,117 +392,94 @@ export default function LorePage() {
     <main className="app-shell">
       <div className="app-container max-w-6xl">
         <section className="rounded-lg border-2 border-primary bg-card p-6 sm:p-8">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-secondary opacity-70">
-                Lore Browser MVP
-              </p>
-              <h1 className="mt-3 font-pixel text-2xl tracking-wide text-primary sm:text-3xl">
-                Unlock-aware lore browsing with grouped journals and dialogue.
-              </h1>
-              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-secondary sm:text-base">
-                This lore browser runs on the current staged Conan dataset,
-                including grouped NPC dialogue, journal series, persisted group
-                favorites, and search that can expand into entry text.
-              </p>
+          <div className="grid gap-4 lg:grid-cols-[minmax(0,3fr),minmax(0,1fr)] lg:items-start">
+            <div className="space-y-3">
+              <div className="grid gap-3 md:grid-cols-[minmax(0,1fr),auto] md:items-end">
+                <label className="block min-w-0">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
+                    Search
+                  </span>
+                  <input
+                    type="search"
+                    value={query}
+                    onChange={(event) => setQuery(event.target.value)}
+                    placeholder={
+                      includeLoreTextInSearch
+                        ? "Search title, groups, and lore text"
+                        : "Search unlocked lore"
+                    }
+                    className="mt-2 h-[52px] w-full rounded-lg border border-highlight bg-body px-4 py-3 text-primary focus:border-primary focus:outline-none"
+                  />
+                </label>
+
+                <label className="flex h-[52px] items-center gap-3 rounded-lg border border-highlight bg-body px-4 py-3 text-sm text-secondary md:mb-0.5">
+                  <input
+                    type="checkbox"
+                    checked={includeLoreTextInSearch}
+                    onChange={(event) =>
+                      setIncludeLoreTextInSearch(event.target.checked)
+                    }
+                    className="h-4 w-4 rounded border-highlight bg-card text-highlight"
+                  />
+                  <span>Search Text</span>
+                </label>
+              </div>
+
+              <div className="grid gap-3 md:grid-cols-[minmax(0,1fr),auto] md:items-end">
+                <label className="block min-w-0">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
+                    Lore Type
+                  </span>
+                  <select
+                    value={selectedType}
+                    onChange={(event) =>
+                      setSelectedType(
+                        event.target.value as LoreEntryType | typeof ALL_TYPES,
+                      )
+                    }
+                    className="mt-2 h-[52px] w-full rounded-lg border border-highlight bg-body px-4 py-3 text-primary focus:border-primary focus:outline-none"
+                  >
+                    <option value={ALL_TYPES}>All Types</option>
+                    <option value="journal">Journals</option>
+                    <option value="dialogue">NPC Dialogue</option>
+                    <option value="lorestone">Lorestones</option>
+                  </select>
+                </label>
+
+                <button
+                  type="button"
+                  onClick={() => setIsUnlockManagerOpen(true)}
+                  className="h-[52px] w-full rounded-lg border border-highlight bg-body px-4 py-3 text-sm font-semibold text-secondary transition-colors hover:border-primary hover:text-primary md:min-w-44"
+                >
+                  Manage Unlocks
+                </button>
+              </div>
             </div>
 
-            <div className="grid min-w-64 gap-3 sm:grid-cols-3 lg:grid-cols-1">
-              <div className="rounded-lg border border-highlight bg-body p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
+            <div className="grid gap-3 border-t border-highlight pt-4 lg:border-t-0 lg:border-l lg:pl-4 lg:pt-0">
+              <label className="block min-w-0">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
                   Dataset
-                </p>
-                <p className="mt-2 text-sm text-primary">
-                  {dataset ? dataset.version : "Loading"}
-                </p>
-              </div>
-              <div className="rounded-lg border border-highlight bg-body p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
-                  Visible Entries
-                </p>
-                <p className="mt-2 text-sm text-primary">{visibleCount}</p>
-              </div>
-              <div className="rounded-lg border border-highlight bg-body p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
-                  Unlocked Count
-                </p>
-                <p className="mt-2 text-sm text-primary">{unlockedCount}</p>
-              </div>
+                </span>
+                <div className="mt-2 flex min-h-[52px] items-center rounded-lg border border-highlight bg-body px-4 py-3 text-sm text-primary">
+                  <span className="break-words">
+                    {dataset ? dataset.version : "Loading"}
+                  </span>
+                </div>
+              </label>
+              <label className="block min-w-0">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
+                  Unlocked
+                </span>
+                <div className="mt-2 flex min-h-[52px] items-center rounded-lg border border-highlight bg-body px-4 py-3 text-sm text-primary">
+                  <span>{unlockedCount}</span>
+                </div>
+              </label>
             </div>
           </div>
         </section>
 
-        <section className="mt-8 grid gap-4 xl:grid-cols-[18rem,minmax(0,1fr)]">
-          <aside className="space-y-4">
-            <div className="rounded-lg border border-highlight bg-card p-5">
-              <h2 className="font-pixel text-lg tracking-wide text-primary">
-                Search Controls
-              </h2>
-              <label className="mt-4 block">
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
-                  Search
-                </span>
-                <input
-                  type="search"
-                  value={query}
-                  onChange={(event) => setQuery(event.target.value)}
-                  placeholder={
-                    includeLoreTextInSearch
-                      ? "Search title, groups, and lore text"
-                      : "Search unlocked lore"
-                  }
-                  className="mt-2 w-full rounded-lg border border-highlight bg-body px-4 py-3 text-primary focus:border-primary focus:outline-none"
-                />
-              </label>
-
-              <label className="mt-4 flex items-start gap-3 rounded-lg border border-highlight bg-body px-4 py-3 text-sm text-secondary">
-                <input
-                  type="checkbox"
-                  checked={includeLoreTextInSearch}
-                  onChange={(event) =>
-                    setIncludeLoreTextInSearch(event.target.checked)
-                  }
-                  className="mt-0.5 h-4 w-4 rounded border-highlight bg-card text-highlight"
-                />
-                <span>
-                  Search lore text too
-                  <span className="block text-xs opacity-70">
-                    Include entry body text and source fields, not just titles
-                    and metadata.
-                  </span>
-                </span>
-              </label>
-
-              <label className="mt-4 block">
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
-                  Lore Type
-                </span>
-                <select
-                  value={selectedType}
-                  onChange={(event) =>
-                    setSelectedType(
-                      event.target.value as LoreEntryType | typeof ALL_TYPES,
-                    )
-                  }
-                  className="mt-2 w-full rounded-lg border border-highlight bg-body px-4 py-3 text-primary focus:border-primary focus:outline-none"
-                >
-                  <option value={ALL_TYPES}>All Types</option>
-                  <option value="journal">Journals</option>
-                  <option value="dialogue">NPC Dialogue</option>
-                  <option value="lorestone">Lorestones</option>
-                </select>
-              </label>
-
-              <button
-                type="button"
-                onClick={() => setIsUnlockManagerOpen(true)}
-                className="mt-4 w-full rounded-lg border border-highlight bg-body px-4 py-3 text-sm font-semibold text-secondary transition-colors hover:border-primary hover:text-primary"
-              >
-                Manage Unlocks
-              </button>
-            </div>
-          </aside>
-
+        <section className="mt-8 space-y-4">
           <section className="space-y-4">
             {error && (
               <div className="rounded-lg border border-red-500/60 bg-card p-5 text-sm text-secondary">
@@ -524,16 +517,13 @@ export default function LorePage() {
                 >
                   <div className="flex flex-col gap-3 border-b border-highlight pb-4 sm:flex-row sm:items-end sm:justify-between">
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
-                        Group
-                      </p>
-                      <h2 className="mt-2 font-pixel text-lg tracking-wide text-primary sm:text-xl">
-                        {normalizeLoreText(group.label)}
+                      <h2 className="font-pixel text-lg tracking-wide text-primary sm:text-xl">
+                        {formatLoreLabel(group.label)}
                       </h2>
                     </div>
                     <div className="flex items-center gap-3">
                       <p className="text-sm text-secondary">
-                        {group.totalEntryCount} entr
+                        {group.entries.length} of {group.totalEntryCount} entr
                         {group.totalEntryCount === 1 ? "y" : "ies"}
                       </p>
                       <button
@@ -585,20 +575,7 @@ export default function LorePage() {
                   <div id={`lore-group-${group.id}`}>
                     {!isExpanded ? (
                       <div className="mt-4 rounded-lg border border-highlight bg-body px-4 py-4 text-sm text-secondary">
-                        <p className="font-semibold text-primary">
-                          {group.isDialogueGroup
-                            ? `Expand to read ${group.entries.length} unlocked dialogue header${group.entries.length === 1 ? "" : "s"}.`
-                            : `Expand to read ${group.entries.length} unlocked entr${group.entries.length === 1 ? "y" : "ies"} in this series.`}
-                        </p>
-                        {lockedEntryCount > 0 && (
-                          <p className="mt-2 leading-relaxed">
-                            {lockedEntryCount} locked entr
-                            {lockedEntryCount === 1
-                              ? "y remains"
-                              : "ies remain"}{" "}
-                            in this series.
-                          </p>
-                        )}
+                        Expand to view unlocked entries in this group.
                       </div>
                     ) : group.isDialogueGroup ? (
                       <article className="mt-4 rounded-lg border border-highlight bg-body p-4">
@@ -620,14 +597,14 @@ export default function LorePage() {
                             >
                               <div className="flex flex-wrap items-center gap-2">
                                 <h3 className="text-lg font-semibold text-primary">
-                                  {normalizeLoreText(entry.title)}
+                                  {formatLoreLabel(entry.title)}
                                 </h3>
                                 <span className="text-xs text-secondary opacity-70">
                                   {entry.map}
                                 </span>
                               </div>
                               <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-secondary">
-                                {normalizeLoreText(entry.text)}
+                                {formatLoreBodyText(entry)}
                               </p>
                               <div className="mt-3 flex flex-wrap gap-2">
                                 {entry.tags.map((tag) => (
@@ -665,7 +642,7 @@ export default function LorePage() {
                                 <div>
                                   <div className="flex flex-wrap items-center gap-2">
                                     <h3 className="text-lg font-semibold text-primary">
-                                      {normalizeLoreText(entry.title)}
+                                      {formatLoreLabel(entry.title)}
                                     </h3>
                                     <span className="text-xs text-secondary opacity-70">
                                       {entry.map}
@@ -673,12 +650,12 @@ export default function LorePage() {
                                     {entry.speakerName && (
                                       <span className="text-xs text-secondary opacity-70">
                                         Speaker:{" "}
-                                        {normalizeLoreText(entry.speakerName)}
+                                        {formatLoreLabel(entry.speakerName)}
                                       </span>
                                     )}
                                   </div>
                                   <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-secondary">
-                                    {normalizeLoreText(entry.text)}
+                                    {formatLoreBodyText(entry)}
                                   </p>
                                   <div className="mt-3 flex flex-wrap gap-2">
                                     {entry.tags.map((tag) => (
@@ -743,7 +720,7 @@ export default function LorePage() {
 
               <div className="max-h-[70vh] overflow-y-auto px-6 py-4">
                 <div className="mb-4 grid gap-4 border-b border-highlight pb-4 md:grid-cols-[minmax(0,1fr),14rem]">
-                  <label>
+                  <div>
                     <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">
                       Search
                     </span>
@@ -760,7 +737,7 @@ export default function LorePage() {
                       }
                       className="mt-2 w-full rounded-lg border border-highlight bg-body px-4 py-3 text-primary focus:border-primary focus:outline-none"
                     />
-                    <span className="mt-3 flex items-start gap-3 rounded-lg border border-highlight bg-card px-4 py-3 text-sm text-secondary">
+                    <label className="mt-3 flex items-start gap-3 rounded-lg border border-highlight bg-card px-4 py-3 text-sm text-secondary">
                       <input
                         type="checkbox"
                         checked={includeUnlockManagerTextInSearch}
@@ -772,14 +749,14 @@ export default function LorePage() {
                         className="mt-0.5 h-4 w-4 rounded border-highlight bg-body text-highlight"
                       />
                       <span>
-                        Search lore text too
+                        Search Text
                         <span className="block text-xs opacity-70">
                           Include entry body text and source fields for unlock
                           management.
                         </span>
                       </span>
-                    </span>
-                  </label>
+                    </label>
+                  </div>
 
                   <label>
                     <span className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary opacity-70">

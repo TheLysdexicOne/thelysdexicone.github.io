@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../conan-exiles-enhanced-data"
+		}
+	],
+	"settings": {
+		"chat.tools.terminal.autoApprove": {
+			"npm install": true
+		}
+	}
+}
